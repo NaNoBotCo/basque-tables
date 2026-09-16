@@ -764,7 +764,7 @@ excluded from every filter that would put two people in a car.</p>
 
 # ---------------------------------------------------------------- wander
 def wander_page(nodes, d, shell, write):
-    ids = json.dumps([url(n) for n in nodes.values()])
+    ids = json.dumps([C.BASE + url(n) for n in nodes.values()])
     js = ("(function(){var U=__U__;function go(){location.href=U[Math.floor(Math.random()*U.length)];}"
           "document.getElementById('roll').addEventListener('click',go);"
           "document.addEventListener('keydown',function(e){if(e.key==='r'||e.key==='R')go();});})();"
@@ -875,7 +875,7 @@ def machine(nodes, d, shell, write):
             '<p class="lede">That address is not in the directory. Try <a href="/places/">the rooms</a>, '
             '<a href="/search/">search</a>, or <a href="/wander/">wander</a>.</p>')
     with open(os.path.join(C.BUILD, "404.html"), "w", encoding="utf-8") as fh:
-        fh.write(shell("Not found — Basque Tables", body, "Not found.", "/404.html"))
+        fh.write(C.rebase(shell("Not found — Basque Tables", body, "Not found.", "/404.html")))
 
 
 def render_all(nodes, d, shell, write):

@@ -2,6 +2,7 @@
 import json
 import os
 import re
+import urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -11,7 +12,13 @@ SCHEMA = os.path.join(ROOT, "schema", "node.schema.json")
 BUILD = os.path.join(ROOT, "build")
 DOCS = os.path.join(ROOT, "docs")
 
-SITE_URL = os.environ.get("SITE_URL", "https://nanobotco.github.io/basque-tables")
+SITE_URL = os.environ.get("SITE_URL", "https://nanobotco.github.io/basque-tables").rstrip("/")
+
+# A GitHub *project* page is served under a path, not at a host root, so a link written
+# as "/places/" lands on the USER site and 404s. Everything internal is written root-
+# relative and then prefixed with BASE at write time. A bought domain makes BASE "" and
+# nothing is prefixed. serve.py mounts the build under BASE too, so local matches live.
+BASE = urllib.parse.urlparse(SITE_URL).path.rstrip("/")
 SITE_NAME = "Basque Tables"
 BYLINE = "NaN"
 
@@ -121,3 +128,23 @@ def jload(path):
 
 def node_list():
     return list(load_nodes().values())
+
+
+# href= or src= pointing at a site-root path. Absolute URLs, protocol-relative URLs,
+# fragments and mailto/tel never match.
+ROOTED = re.compile(r'\b(href=|src=)"(/(?!/)[^"]*)"')
+
+
+def rebase(html_body):
+    """Prefix every internal root path with BASE. A path already under BASE is left
+    alone, so this is safe to run twice, and with BASE empty it is a no-op."""
+    if not BASE:
+        return html_body
+
+    def sub(m):
+        path = m.group(2)
+        if path == BASE or path.startswith(BASE + "/"):
+            return m.group(0)
+        return '%s"%s%s"' % (m.group(1), BASE, path)
+
+    return ROOTED.sub(sub, html_body)

@@ -71,6 +71,18 @@ def main():
                 badld.append(f)
     check("every JSON-LD block parses and is typed", not badld, str(badld[:3]))
 
+    # THE BUG THIS GUARDS: the site is published under /<repo>/ on GitHub Pages, so a
+    # link written "/places/" lands on the USER site and 404s. Every internal path must
+    # carry BASE. Caught in the wild after publishing; never again silently.
+    unbased = {}
+    for f in htmls:
+        src = open(f, encoding="utf-8").read()
+        for path in re.findall(r'(?:href|src)="(/[^"]*)"', src):
+            if C.BASE and not (path == C.BASE or path.startswith(C.BASE + "/")):
+                unbased.setdefault(path, f)
+    check("every internal path carries the base path %r" % (C.BASE or "(none)"),
+          not unbased, str(list(unbased.items())[:4]))
+
     have = set()
     for f in htmls:
         rel = os.path.relpath(f, C.BUILD)
@@ -79,7 +91,8 @@ def main():
     for f in htmls:
         s = open(f, encoding="utf-8").read()
         for href in re.findall(r'href=[\'"](/[^\'"#?]*)[\'"]', s):
-            if href.startswith(("/api/", "/llms", "/sitemap", "/robots", "/images/")):
+            href = href[len(C.BASE):] or "/" if C.BASE and href.startswith(C.BASE) else href
+            if href.startswith(("/api/", "/llms", "/sitemap", "/robots", "/images/", "/cards/")):
                 continue
             if href.rstrip("/").split("/")[-1] in ("place", "dish", "drink", "term", "person",
                                                    "org", "event", "story", "region"):

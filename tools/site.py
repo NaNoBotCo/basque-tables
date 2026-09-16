@@ -277,11 +277,12 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
  <p>Built by %s · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
  <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
 </div></footer>
-<script>document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!=='/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href='/wander/';}});</script>
+<script>(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
 </body></html>""" % (head_lang, C.esc(title), C.esc(desc or title), full, C.esc(title), C.esc(desc or title),
                       full, card, C.esc(title), card, C.SITE_NAME,
                       C.SITE_URL.rstrip("/") + path, C.SITE_URL.rstrip("/") + "/eu" + path,
-                      CSS, ld, extra_head, nav, body, C.BYLINE)
+                      CSS, ld, extra_head, nav, body, C.BYLINE,
+                      json.dumps(C.BASE))
 
 
 def write(path, html_body):
@@ -293,6 +294,7 @@ def write(path, html_body):
         html_body = html_body.replace('href="/eu/sitemap.xml"', 'href="/sitemap.xml"')
         html_body = html_body.replace('href="/eu/images/', 'href="/images/')
         path = "/eu" + path if path != "/" else "/eu/"
+    html_body = C.rebase(html_body)
     out = os.path.join(C.BUILD, path.strip("/"), "index.html") if path != "/" else os.path.join(C.BUILD, "index.html")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, "w", encoding="utf-8") as fh:
