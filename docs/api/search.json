@@ -452,7 +452,7 @@
   "type": "story",
   "name": "The bitter has a supply problem",
   "town": "",
-  "text": "The bitter has a supply problem Nevada made the Picon Punch its state cocktail in 2025. The bitter it is built on has never reliably crossed the Atlantic, and the version Nevada made official is distilled in Reno."
+  "text": "The bitter has a supply problem Nevada made the Picon Punch its state cocktail in 2025 — the year the American bitter it is built on stopped being made. No factory closed: the recipe was given away, to Reno."
  },
  {
   "id": "boarders-table",
@@ -460,6 +460,13 @@
   "name": "The Boarder's Table",
   "town": "",
   "text": "The Boarder's Table Chino, the last Saturday of the month, 12:30. One sitting, everyone at it. Centro Basco sets it the way the building fed the men who lived upstairs."
+ },
+ {
+  "id": "brass-rail-alturas",
+  "type": "place",
+  "name": "The Brass Rail",
+  "town": "Alturas, CA",
+  "text": "The Brass Rail Alturas, Modoc County, on Lakeview Drive. Family style, five courses, a wood fire and a jukebox — and a Picon at the bar. The furthest north-east room in this directory, a long way from any other. A regular names the french fries here as the best of any room in it. Five courses before the entree: bread and butter, soup, salad, the day's dish, then what you ordered, with wine, coffee and ice cream after. Alturas CA family-style Basque"
  },
  {
   "id": "lekumberry-family",
@@ -488,6 +495,13 @@
   "name": "The Martin Hotel",
   "town": "Winnemucca, NV",
   "text": "The Martin Hotel Winnemucca, 1898. Built by the railroad to feed sheepherders; still serving the full set dinner. Every dinner carries the same long tail of courses, whatever the entree. It went up in 1898 beside the tracks, and took in Basque men working sheep in the Humboldt country. Winnemucca NV Basque tradition, full set dinner"
+ },
+ {
+  "id": "picon-glass",
+  "type": "term",
+  "name": "The Picon glass",
+  "town": "",
+  "text": "The Picon glass Georgian Irish coffee glass Libbey 8054 Northern Nevada pours a Picon into a six-ounce stemmed glass. Two of them exist: a stock restaurant glass everyone can buy, and a custom one made in Sparks. Outside northern Nevada the drink lands in a highball or a Collins, which changes the proportions more than people admit — the stem glass holds six ounces, and a Collins holds twice that."
  },
  {
   "id": "relish-tray",

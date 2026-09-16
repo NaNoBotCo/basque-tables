@@ -89,5 +89,52 @@
  "provenance": "cited",
  "confidence": "high",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "the-basque-market/the-basque-market-concurso-internacional-de-paella-de-sueca-2016-44.jpg",
+   "source": "commons",
+   "title": "File:Concurso Internacional de Paella de Sueca 2016 - 44.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Concurso_Internacional_de_Paella_de_Sueca_2016_-_44.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AConcurso_Internacional_de_Paella_de_Sueca_2016_-_44.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Carlos Delgado",
+   "credit": "Own work",
+   "alt": "56th International Paella Contest of Sueca, 2016.",
+   "date": "2016-09-11 10:37:06",
+   "primary": true,
+   "sha256": "9c78315835a19df59990f0f6090b2fe7995f588abca03c0502b401e381a3a377"
+  },
+  {
+   "file": "the-basque-market/the-basque-market-cooking-a-paella.jpg",
+   "source": "commons",
+   "title": "File:Cooking a paella.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Cooking_a_paella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACooking_a_paella.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Jebulon",
+   "credit": "Own work",
+   "alt": "paella cooking in Spain, by José-Manuel",
+   "date": "2010-08-04",
+   "primary": false,
+   "sha256": "d5298268410dfac0e58b87ad894042df2e2a15ce7e3bb78e6d9540564b360569"
+  },
+  {
+   "file": "the-basque-market/the-basque-market-paella-mixta.jpg",
+   "source": "commons",
+   "title": "File:Paella-mixta.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Paella-mixta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APaella-mixta.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Brillante",
+   "credit": "https://www.brillante.es/recetas/paella-mixta/",
+   "alt": "Spanish paella",
+   "date": "2019-01-15",
+   "primary": false,
+   "sha256": "319cc5d6f8412a65562069bdd6573ef3c8e97d281abcb93986560256bd536e6e"
+  }
+ ]
 }

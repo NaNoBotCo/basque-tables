@@ -231,3 +231,133 @@ def scatter_map(rows, towns, width=760):
         out.append(_t(lx + 18, ly, lab, "lab"))
     out.append("</svg>")
     return "".join(out)
+
+
+# ---------------------------------------------------------------- drawn heroes
+# A record with no photograph still opens on a picture. These are drawn from the
+# record's own fields, so they carry information rather than decoration — a room
+# gets its own county, a word gets its root, a person gets the rooms they opened.
+
+def _wrap(s, n):
+    out, line = [], ""
+    for word in str(s).split():
+        if len(line) + len(word) + 1 > n:
+            out.append(line)
+            line = word
+        else:
+            line = (line + " " + word).strip()
+    if line:
+        out.append(line)
+    return out
+
+
+def locator_svg(row, rows, haversine, width=760, height=300):
+    """The room's own state, its towns plotted, this one lit. Honest geography:
+    real coordinates, no invented borders, and the nearest neighbour measured."""
+    mine = [r for r in rows if r["state"] == row["state"] and r.get("lat")]
+    if not row.get("lat") or len(mine) < 2:
+        return ""
+    lats = [r["lat"] for r in mine]
+    lons = [r["lon"] for r in mine]
+    padx = max(0.8, (max(lons) - min(lons)) * 0.18)
+    pady = max(0.6, (max(lats) - min(lats)) * 0.22)
+    lo_x, hi_x = min(lons) - padx, max(lons) + padx
+    lo_y, hi_y = min(lats) - pady, max(lats) + pady
+    L, R, TOP, BOT = 150, width - 30, 54, height - 34
+
+    def X(lon):
+        return L + (R - L) * (lon - lo_x) / (hi_x - lo_x or 1)
+
+    def Y(lat):
+        return BOT - (BOT - TOP) * (lat - lo_y) / (hi_y - lo_y or 1)
+
+    state = {"CA": "California", "NV": "Nevada", "ID": "Idaho"}.get(row["state"], row["state"])
+    others = [r for r in mine if r["town"] != row["town"]]
+    near, miles = None, None
+    for r in others:
+        d = haversine((row["lat"], row["lon"]), (r["lat"], r["lon"]))
+        if miles is None or d < miles:
+            near, miles = r, d
+
+    out = ['<svg viewBox="0 0 %d %d" role="img" class="chart plate" '
+           'aria-label="%s in %s, with the other rooms in the state">'
+           % (width, height, C.esc(row["name"]), C.esc(state))]
+    out.append(_t(0, 22, "%s · %s" % (row["town"] or "", state), "ttl"))
+    for lat in range(int(lo_y), int(hi_y) + 1):
+        if lo_y <= lat <= hi_y:
+            out.append('<line x1="%d" y1="%.1f" x2="%d" y2="%.1f" class="grid"/>' % (L, Y(lat), R, Y(lat)))
+    for lon in range(int(lo_x), int(hi_x) + 1):
+        if lo_x <= lon <= hi_x:
+            out.append('<line x1="%.1f" y1="%d" x2="%.1f" y2="%d" class="grid"/>' % (X(lon), TOP, X(lon), BOT))
+    if near:
+        out.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" stroke="var(--rule)" '
+                   'stroke-width="1.5" stroke-dasharray="4 4"/>'
+                   % (X(row["lon"]), Y(row["lat"]), X(near["lon"]), Y(near["lat"])))
+    seen = set()
+    for r in others:
+        if r["town"] in seen:
+            continue
+        seen.add(r["town"])
+        out.append('<circle cx="%.1f" cy="%.1f" r="4.5" fill="var(--rule)"><title>%s</title></circle>'
+                   % (X(r["lon"]), Y(r["lat"]), C.esc(r["town"] or "")))
+    x, y = X(row["lon"]), Y(row["lat"])
+    out.append('<circle cx="%.1f" cy="%.1f" r="15" fill="%s" fill-opacity="0.18"/>' % (x, y, CAT[0]))
+    out.append('<circle cx="%.1f" cy="%.1f" r="7.5" fill="%s" stroke="var(--paper)" stroke-width="2.5"/>'
+               % (x, y, CAT[0]))
+    anchor = "end" if x > width * 0.72 else "start"
+    out.append(_t(x + (-14 if anchor == "end" else 14), y + 4,
+                  (row["town"] or "").split(",")[0], "val", anchor))
+
+    ly = 74
+    for line in _wrap(row["name"], 18)[:3]:
+        out.append(_t(0, ly, line, "big"))
+        ly += 26
+    ly += 6
+    facts = []
+    if row.get("founded"):
+        facts.append("opened %s" % row["founded"])
+    if row.get("dinner_low") is not None:
+        facts.append("dinner %s–%s" % (C.money(row["dinner_low"]), C.money(row["dinner_high"])))
+    if row.get("open"):
+        facts.append("%d days published" % len(row["open"]))
+    if near and miles:
+        facts.append("%d mi to %s" % (round(miles), (near["town"] or "").split(",")[0]))
+    for f in facts[:4]:
+        out.append(_t(0, ly, f, "lab"))
+        ly += 18
+    out.append("</svg>")
+    return "".join(out)
+
+
+def plate_svg(eyebrow, title, sub=None, lines=None, accent=0, width=760, height=250):
+    """A typographic hero for a record with no photograph: the name set large over a
+    quiet ruled ground, with whatever the record already knows printed beside it."""
+    col = CAT[accent % 4]
+    out = ['<svg viewBox="0 0 %d %d" role="img" class="chart plate" aria-label="%s">'
+           % (width, height, C.esc(title))]
+    out.append('<defs><linearGradient id="g%d" x1="0" y1="0" x2="1" y2="1">'
+               '<stop offset="0" stop-color="%s" stop-opacity="0.14"/>'
+               '<stop offset="1" stop-color="%s" stop-opacity="0.02"/></linearGradient></defs>' % (accent, col, col))
+    out.append('<rect x="0" y="0" width="%d" height="%d" rx="14" fill="url(#g%d)"/>' % (width, height, accent))
+    for i in range(1, 9):
+        out.append('<line x1="%d" y1="0" x2="%d" y2="%d" stroke="%s" stroke-opacity="0.10" stroke-width="1"/>'
+                   % (width - i * 42, width - i * 42 - 70, height, col))
+    out.append('<rect x="0" y="0" width="5" height="%d" rx="2.5" fill="%s"/>' % (height, col))
+    out.append(_t(28, 34, eyebrow, "ttl"))
+    size = 46 if len(title) < 16 else (36 if len(title) < 26 else 28)
+    ly = 46 + size
+    for line in _wrap(title, max(14, int(620 / (size * 0.52))))[:3]:
+        out.append('<text x="28" y="%d" class="plate-title" style="font-size:%dpx">%s</text>'
+                   % (ly, size, C.esc(line)))
+        ly += size + 6
+    if sub:
+        ly += 4
+        out.append(_t(28, ly, sub, "val"))
+        ly += 22
+    for line in (lines or [])[:3]:
+        for seg in _wrap(line, 62)[:2]:
+            out.append(_t(28, ly, seg, "lab"))
+            ly += 18
+        ly += 2
+    out.append("</svg>")
+    return "".join(out)

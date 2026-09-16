@@ -1,26 +1,26 @@
 {
  "hours": {
   "have": 24,
-  "of": 28
+  "of": 29
  },
  "seating": {
-  "have": 26,
-  "of": 28
+  "have": 27,
+  "of": 29
  },
  "picon": {
-  "have": 3,
-  "of": 28
+  "have": 5,
+  "of": 29
  },
  "prices": {
   "have": 4,
-  "of": 28
+  "of": 29
  },
  "founded": {
   "have": 19,
-  "of": 28
+  "of": 29
  },
  "address": {
-  "have": 28,
-  "of": 28
+  "have": 29,
+  "of": 29
  }
 }

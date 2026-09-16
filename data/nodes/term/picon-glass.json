@@ -1,0 +1,67 @@
+{
+ "id": "picon-glass",
+ "type": "term",
+ "names": {
+  "name": "The Picon glass",
+  "aliases": [
+   "Georgian Irish coffee glass",
+   "Libbey 8054"
+  ]
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Northern Nevada pours a Picon into a six-ounce stemmed glass. Two of them exist: a stock restaurant glass everyone can buy, and a custom one made in Sparks.",
+  "note": "Outside northern Nevada the drink lands in a highball or a Collins, which changes the proportions more than people admit — the stem glass holds six ounces, and a Collins holds twice that."
+ },
+ "sections": [
+  {
+   "heading": "The one you can buy",
+   "body": "A Libbey 8054, the Georgian Irish coffee glass: six ounces, a slightly contoured bowl, a rimmed stem over a wide foot. It is a stock item at restaurant suppliers, which is why it is the glass most bars actually use — availability decided this, not design.",
+   "tier": "cited",
+   "source": "libbey-8054"
+  },
+  {
+   "heading": "The one made for it",
+   "body": "The Louie Picon Glass Company of Sparks, Nevada, incorporated in 2009, makes a custom stemmed glass for the drink. It is a two-person business. A directory listing puts its annual revenue near $110,000, which is the scale of the whole enterprise: one small firm in one town, making the glass for one cocktail.",
+   "tier": "harvested",
+   "source": "manta-louie-picon-glass"
+  },
+  {
+   "heading": "Why it matters to what you are handed",
+   "body": "A six-ounce stem forces the build tight — amer, a spoon of grenadine, a short top of soda, a float of brandy, a twist. Poured into a twelve-ounce Collins the same measures need lengthening, and what arrives is a longer, weaker drink wearing the same name. When people say the Picon is different away from Reno, part of what they are tasting is the glassware.",
+   "tier": "inference",
+   "source": "wikipedia-picon-punch"
+  }
+ ],
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "what is poured into it"
+  },
+  {
+   "id": "the-picon-supply",
+   "how": "the rest of the supply question"
+  },
+  {
+   "id": "nevada",
+   "how": "the state whose bars set the standard"
+  }
+ ],
+ "needs_verification": [
+  "whether the Louie Picon Glass Company still trades, and what a glass costs",
+  "which rooms in this directory use which glass"
+ ],
+ "sources": [
+  "libbey-8054",
+  "manta-louie-picon-glass",
+  "wikipedia-picon-punch",
+  "westernlife-picon"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-17"
+}

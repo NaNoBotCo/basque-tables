@@ -1,0 +1,25 @@
+{
+ "_note": "How to say Euskara out loud, for an English speaker standing at a bar. Written by this project and NOT reviewed by a Basque speaker — same caveat as the interface strings in eu.json.",
+ "_unreviewed": true,
+ "letters": [
+  {"eu": "x", "say": "sh", "like": "as in shop", "word": "kaixo", "gloss": "hello", "as": "KAI-sho"},
+  {"eu": "tx", "say": "ch", "like": "as in church", "word": "txakoli", "gloss": "the coastal white wine", "as": "cha-ko-LEE"},
+  {"eu": "tz", "say": "ts", "like": "as in cats", "word": "bertso", "gloss": "a sung improvised verse", "as": "BEHR-tso"},
+  {"eu": "ts", "say": "ts", "like": "the same, but softer — tongue tip higher", "word": "hots", "gloss": "a sound", "as": "hots"},
+  {"eu": "z", "say": "s", "like": "a sharp s — never a z", "word": "zazpi", "gloss": "seven", "as": "SAS-pee"},
+  {"eu": "s", "say": "s", "like": "a whistlier s, tongue tip up", "word": "sagardoa", "gloss": "cider", "as": "sa-gar-DO-ah"},
+  {"eu": "j", "say": "y or h", "like": "y in the north, a throaty h in Bizkaia and in Spanish-influenced speech", "word": "jaialdi", "gloss": "festival", "as": "yai-AL-dee"},
+  {"eu": "ñ", "say": "ny", "like": "as in canyon; -in- often does the same", "word": "Gernika", "gloss": "the town", "as": "gehr-NEE-ka"},
+  {"eu": "r", "say": "r", "like": "a single tap between vowels", "word": "ogi bero", "gloss": "hot bread", "as": "OH-ghee BEH-ro"},
+  {"eu": "rr", "say": "rr", "like": "trilled", "word": "errioxa", "gloss": "Rioja", "as": "eh-RREE-oh-sha"},
+  {"eu": "h", "say": "—", "like": "silent in the south, breathed in the north", "word": "hiru", "gloss": "three", "as": "EE-roo"},
+  {"eu": "g", "say": "g", "like": "hard, always — never the g in gem", "word": "gazta", "gloss": "cheese", "as": "GAS-ta"},
+  {"eu": "a e i o u", "say": "ah eh ee oh oo", "like": "pure, every time, as in Spanish or Italian", "word": "etxea", "gloss": "the house", "as": "eh-CHEH-ah"}
+ ],
+ "rules": [
+  "Vowels never slide. Basque has five and they keep their value wherever they fall.",
+  "Stress is light. Nobody will misunderstand you for putting it in the wrong place; the second syllable is a safe guess.",
+  "A final -a is often the word for \"the\": ogi is bread, ogia is the bread, sagardo is cider, sagardoa is the cider.",
+  "Euskara is related to no other living language. There is nothing to transfer from Spanish or French, which is why the spelling looks stranger than it sounds."
+ ]
+}

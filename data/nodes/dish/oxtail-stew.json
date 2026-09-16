@@ -27,5 +27,52 @@
  "provenance": "cited",
  "confidence": "medium",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "oxtail-stew/oxtail-stew-coda-alla-vaccinara-01.jpg",
+   "source": "commons",
+   "title": "File:Coda alla vaccinara-01.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Coda_alla_vaccinara-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACoda_alla_vaccinara-01.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "shu tu",
+   "credit": "Satutee Oxtail auf flickr",
+   "alt": "Coda alla vaccinara – Schmorgericht der römischen Küche aus Ochsenschwanz.",
+   "date": "2009-10-14",
+   "primary": true,
+   "sha256": "eeae52b9197b4e25b591681da30ab6a5c4f7632bee179c7b3afa46498f3f7d02"
+  },
+  {
+   "file": "oxtail-stew/oxtail-stew-oxtail-stew.jpg",
+   "source": "commons",
+   "title": "File:Oxtail Stew.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Oxtail_Stew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOxtail_Stew.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Aderiqueza",
+   "credit": "Own work",
+   "alt": "Freshly made oxtail Stew",
+   "date": "2022-07-02",
+   "primary": false,
+   "sha256": "f163520604061290da57f9a84287c32a8ee54e4ae46792c86a94040d4cd3c9d7"
+  },
+  {
+   "file": "oxtail-stew/oxtail-stew-oxtail-stew-mashed-potato-and-broccoli-36249955535.jpg",
+   "source": "commons",
+   "title": "File:Oxtail stew, mashed potato and broccoli (36249955535).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Oxtail_stew%2C_mashed_potato_and_broccoli_%2836249955535%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOxtail_stew%2C_mashed_potato_and_broccoli_%2836249955535%29.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "CharmaineZoe's Marvelous Melange from England",
+   "credit": "Oxtail stew, mashed potato and broccoli",
+   "alt": "Oxtail stew, mashed potato and broccoli",
+   "date": "2017-07-02 20:11",
+   "primary": false,
+   "sha256": "2169c862b84d05f461082d76f7b2662cf5bbb7c6137bd8f5c51dacb00d9ea508"
+  }
+ ]
 }

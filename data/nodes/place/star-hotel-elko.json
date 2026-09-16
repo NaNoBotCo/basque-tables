@@ -52,11 +52,11 @@
   "checked": "2026-09-16"
  },
  "picon": {
-  "served": "unknown",
-  "note": "The bar runs past the kitchen; the site prints no drink list.",
-  "tier": "cited",
-  "source": "starhotel-site",
-  "checked": "2026-09-16"
+  "served": "yes",
+  "note": "The house prints no drink list; a regular confirms the bar pours one.",
+  "tier": "field",
+  "source": "field-report",
+  "checked": "2026-09-17"
  },
  "hours": {
   "open": [
@@ -94,8 +94,7 @@
   }
  ],
  "needs_verification": [
-  "dinner prices",
-  "whether the bar makes a Picon Punch"
+  "dinner prices"
  ],
  "sources": [
   "starhotel-site",
@@ -105,5 +104,5 @@
  "provenance": "cited",
  "confidence": "high",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-17"
 }

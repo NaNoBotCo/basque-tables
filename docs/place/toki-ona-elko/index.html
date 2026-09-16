@@ -7,6 +7,10 @@
 <link rel="canonical" href="https://nanobotco.github.io/basque-tables/place/toki-ona-elko/">
 <meta property="og:title" content="Toki Ona — Basque Tables"><meta property="og:description" content="Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://nanobotco.github.io/basque-tables/place/toki-ona-elko/">
+<meta property="og:image" content="https://nanobotco.github.io/basque-tables/cards/place-toki-ona-elko.jpg"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Toki Ona — Basque Tables">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://nanobotco.github.io/basque-tables/cards/place-toki-ona-elko.jpg">
 <meta property="og:site_name" content="Basque Tables">
 <link rel="alternate" hreflang="en" href="https://nanobotco.github.io/basque-tables/place/toki-ona-elko/"><link rel="alternate" hreflang="eu" href="https://nanobotco.github.io/basque-tables/eu/place/toki-ona-elko/">
 <style>
@@ -125,6 +129,10 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
 .hero{margin:1.4rem 0 1.8rem;padding:0}
 .hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
  box-shadow:var(--shadow);display:block}
+.hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
+.chart.plate{min-width:0}
+.chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}
+.chart .big{font-family:var(--display);font-size:22px;fill:var(--ink)}
 .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
  align-items:start}
 .shot{margin:0;font-size:.9rem}
@@ -139,6 +147,54 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 .featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
 .featured h2 a{text-decoration:none}
 .featured .facts{margin:1rem 0}
+.thumb{width:100%;height:8.5rem;object-fit:cover;border-radius:10px;display:block;
+ background:var(--paper);transition:transform .25s ease}
+.thumb.tile{display:flex;align-items:center;justify-content:center;text-align:center;
+ background:color-mix(in oklab,var(--tile) 16%,var(--lift));
+ border:1px solid color-mix(in oklab,var(--tile) 34%,transparent)}
+.thumb.tile span{font-family:var(--display);font-size:1.15rem;line-height:1.2;color:var(--ink2);
+ padding:.4rem .6rem;word-break:break-word}
+.kin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.kin-card{display:block;text-decoration:none;background:var(--lift);border:1px solid var(--rule);
+ border-radius:12px;overflow:hidden;box-shadow:var(--shadow);
+ transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.kin-card:hover{transform:translateY(-2px);border-color:var(--ink3);
+ box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.kin-card:hover .thumb{transform:scale(1.04)}
+.kin-card .thumb{height:6.5rem;border-radius:0}
+.kin-body{display:block;padding:.7rem .85rem .85rem}
+.kin-body b{display:block;font-family:var(--display);font-weight:normal;font-size:1.08rem;
+ line-height:1.25;color:var(--ink)}
+.kin-body em{display:block;font:600 .68rem/1.6 var(--sign);letter-spacing:.13em;text-transform:uppercase;
+ color:var(--ink3);font-style:normal;margin:.1rem 0 .35rem}
+.kin-body span{display:block;font-size:.92rem;line-height:1.45;color:var(--ink2)}
+.kin-body span.back{color:var(--ink3);margin-top:.3rem;font-size:.88rem}
+.card-link{display:block;text-decoration:none;padding:0;overflow:hidden}
+.card-link .thumb{border-radius:0}
+.card-link h3,.card-link p{padding:0 1.1rem}
+.card-link h3{margin:.8rem 0 .25rem}
+.card-link p{margin:.15rem 0}
+.card-link p:last-child{padding-bottom:1rem}
+.card-link p.where{font:600 .7rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.say{background:linear-gradient(135deg,color-mix(in oklab,var(--accent) 9%,var(--lift)),var(--lift));
+ border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:12px;
+ padding:1rem 1.2rem;margin:2rem 0;max-width:34rem}
+.say p{margin:0;max-width:none}
+.say-eu{font-family:var(--display);font-size:1.55rem;line-height:1.2;margin:.25rem 0 .1rem!important;
+ color:var(--ink)}
+.say-how{font:600 .92rem/1.5 var(--ui);color:var(--accent);letter-spacing:.02em}
+.say-en{font-size:1.02rem;color:var(--ink);margin-top:.3rem!important}
+.say-use{font-size:.92rem;color:var(--ink2);margin-top:.35rem!important}
+.say-more{margin-top:.6rem!important;font:0.88rem var(--ui)}
+.say-more a{color:var(--ink3)}
+.phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.phrase{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.05rem;
+ box-shadow:var(--shadow);transition:transform .18s ease}
+.phrase:hover{transform:translateY(-2px)}
+.phrase p{margin:0;max-width:none}
+td.eu,th.eu{font-family:var(--display);font-size:1.05rem}
+.rules{max-width:44rem;color:var(--ink2)}
+.rules li{margin:.4rem 0}
 .note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
 .gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
 .kin{list-style:none;padding:0;margin:.6rem 0}
@@ -160,9 +216,13 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
 <a class="skip" href="#main">Skip to the page</a>
 <header class="top"><div class="wrap">
  <a class="brand" href="/">Basque <b>Tables</b></a>
- <nav class="top-nav" aria-label="Sections"><a href="/">Front</a><a href="/two/">A table for two</a><a href="/places/">Rooms</a><a href="/drink/picon-punch/">Picon</a><a href="/pictures/">Pictures</a><a href="/words/">Words</a><a href="/numbers/">Numbers</a><a href="/stories/">Stories</a><a href="/gaps/">Gaps</a><a href="/wander/">Wander</a><a href="/eu/place/toki-ona-elko/" hreflang="eu" lang="eu">Euskaraz</a></nav>
+ <nav class="top-nav" aria-label="Sections"><a href="/">Front</a><a href="/two/">A table for two</a><a href="/places/">Rooms</a><a href="/drink/picon-punch/">Picon</a><a href="/pictures/">Pictures</a><a href="/say/">Say it</a><a href="/words/">Words</a><a href="/numbers/">Numbers</a><a href="/stories/">Stories</a><a href="/gaps/">Gaps</a><a href="/wander/">Wander</a><a href="/eu/place/toki-ona-elko/" hreflang="eu" lang="eu">Euskaraz</a></nav>
 </div></header>
-<main id="main"><div class="wrap"><p class="eyebrow">room</p><h1>Toki Ona</h1><p class="lede">Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days.</p><dl class="facts"><dt>Where</dt><dd>1550 Idaho Street, Elko, NV, 89801<span class="tier" data-t="cited">cited</span></dd><dt>Phone</dt><dd><a href="tel:(775)738-3214">(775) 738-3214</a></dd><dt>Its own site</dt><dd><a href="https://www.eattokiona.com/" rel="nofollow">https://www.eattokiona.com/</a></dd><dt>Opened</dt><dd>1990<span class="tier" data-t="harvested">harvested</span></dd><dt>Status</dt><dd>open<br><span style='color:var(--ink3)'>checked 2026-09-16</span><span class="tier" data-t="harvested">harvested</span></dd><dt>Seating</dt><dd>a long table, with strangers · reservations walk-in<br><span style='color:var(--ink2)'>Family style, by the local paper's account of the house. A diner room as well as a Basque one.</span><span class="tier" data-t="harvested">harvested</span></dd><dt><a href="/drink/picon-punch/" style="color:inherit">Picon Punch</a></dt><dd>not published<span class="tier" data-t="harvested">harvested</span></dd><dt>Week</dt><dd><span class="week" role="img" aria-label="open Mon, Tue, Wed, Thu, Fri, Sat, Sun"><i class="o" title="Mon open">M</i><i class="o" title="Tue open">T</i><i class="o" title="Wed open">W</i><i class="o" title="Thu open">T</i><i class="o" title="Fri open">F</i><i class="o" title="Sat open">S</i><i class="o" title="Sun open">S</i></span><br>every day 6am–9:30pm<br><span style='color:var(--ink3)'>checked 2026-09-16</span><span class="tier" data-t="harvested">harvested</span></dd><dt>Calls its kitchen</dt><dd>&ldquo;family-style Basque&rdquo;<span class="tier" data-t="harvested">harvested</span></dd></dl><h2>Now</h2><p>The longest opening hours of any room in this directory. Breakfast through dinner, every day.</p><h2>At the table</h2><p>Homemade soups, Caesar salads, baked potatoes, served family style.</p><h2>Note</h2><p>Toki ona is good place in Euskara — the same two words as Leku Ona in Boise, said the other way round.</p><h2>Kin</h2><ul class="kin"><li><a href='/place/leku-ona/'>Leku Ona</a> — the same two Euskara words, 400 miles north<br><span>&larr; and back: the same two Euskara words, 400 miles south</span></li><li><a href='/place/star-hotel-elko/'>The Star Hotel</a> — the 1910 room on Silver Street<br><span>&larr; and back: the other Basque room in Elko</span></li><li><a href='/place/ogi-deli-elko/'>Ogi Deli</a> — the third Basque door in Elko</li><li><a href='/term/euskara/'>Euskara</a> — the language the name is in<br><span>&larr; and back: named in it: good place</span></li><li><a href='/region/nevada/'>Nevada</a> — the state this room sits in</li></ul><div class="gap"><b>Open on this page</b><ul><li>dinner prices</li><li>the family's name</li><li>whether the bar makes a Picon Punch</li></ul></div><h2>Sources</h2><ul class="src"><li><a href='https://elkodaily.com/news/local/business/family-run-toki-ona-restaurant-still-serves-up-basque-specialties/article_739e636a-88bb-11ee-9ff5-87c9f77e5a15.html' rel='nofollow'>Family-run Toki Ona restaurant still serves up Basque specialties</a> — Elko Daily Free Press, news · read 2026-09-16</li><li><a href='https://www.eattokiona.com/' rel='nofollow'>Toki Ona</a> — the restaurant, the house's own site · read 2026-09-16</li><li><a href='https://euskalkazeta.com/basquerestaurants/nevada/' rel='nofollow'>Basque Restaurants — Nevada</a> — Euskal Kazeta, directory · read 2026-09-16</li><li><a href='https://travelnevada.com/basque/exploring-basque-culture-in-northern-nevada/' rel='nofollow'>Exploring Basque Culture in Elko, Winnemucca &amp; Reno</a> — Travel Nevada, state tourism office · read 2026-09-16</li></ul><p class="src">Record provenance: harvested · confidence high · updated 2026-09-16</p></div></main>
+<main id="main"><div class="wrap"><p class="eyebrow">room</p><h1>Toki Ona</h1><p class="lede">Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days.</p><figure class="hero drawn"><svg viewBox="0 0 760 300" role="img" class="chart plate" aria-label="Toki Ona in Nevada, with the other rooms in the state"><text x="0.0" y="22.0" class="ttl" text-anchor="start">Elko, NV · Nevada</text><line x1="150" y1="222.8" x2="730" y2="222.8" class="grid"/><line x1="150" y1="157.2" x2="730" y2="157.2" class="grid"/><line x1="150" y1="91.6" x2="730" y2="91.6" class="grid"/><line x1="213.0" y1="54" x2="213.0" y2="266" class="grid"/><line x1="315.6" y1="54" x2="315.6" y2="266" class="grid"/><line x1="418.3" y1="54" x2="418.3" y2="266" class="grid"/><line x1="520.9" y1="54" x2="520.9" y2="266" class="grid"/><line x1="623.6" y1="54" x2="623.6" y2="266" class="grid"/><line x1="726.2" y1="54" x2="726.2" y2="266" class="grid"/><line x1="647.9" y1="102.6" x2="445.4" y2="93.4" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="4 4"/><circle cx="238.7" cy="226.6" r="4.5" fill="var(--rule)"><title>Gardnerville, NV</title></circle><circle cx="232.1" cy="188.0" r="4.5" fill="var(--rule)"><title>Reno, NV</title></circle><circle cx="445.4" cy="93.4" r="4.5" fill="var(--rule)"><title>Winnemucca, NV</title></circle><circle cx="236.9" cy="212.0" r="4.5" fill="var(--rule)"><title>Carson City, NV</title></circle><circle cx="647.9" cy="102.6" r="15" fill="var(--c1)" fill-opacity="0.18"/><circle cx="647.9" cy="102.6" r="7.5" fill="var(--c1)" stroke="var(--paper)" stroke-width="2.5"/><text x="633.9" y="106.6" class="val" text-anchor="end">Elko</text><text x="0.0" y="74.0" class="big" text-anchor="start">Toki Ona</text><text x="0.0" y="106.0" class="lab" text-anchor="start">opened 1990</text><text x="0.0" y="124.0" class="lab" text-anchor="start">7 days published</text><text x="0.0" y="142.0" class="lab" text-anchor="start">103 mi to Winnemucca</text></svg><figcaption>Where it stands, and the nearest room to it. Town centroids, not doorways.</figcaption></figure><dl class="facts"><dt>Where</dt><dd>1550 Idaho Street, Elko, NV, 89801<span class="tier" data-t="cited">cited</span></dd><dt>Phone</dt><dd><a href="tel:(775)738-3214">(775) 738-3214</a></dd><dt>Its own site</dt><dd><a href="https://www.eattokiona.com/" rel="nofollow">https://www.eattokiona.com/</a></dd><dt>Opened</dt><dd>1990<span class="tier" data-t="harvested">harvested</span></dd><dt>Status</dt><dd>open<br><span style='color:var(--ink3)'>checked 2026-09-16</span><span class="tier" data-t="harvested">harvested</span></dd><dt>Seating</dt><dd>a long table, with strangers · reservations walk-in<br><span style='color:var(--ink2)'>Family style, by the local paper's account of the house. A diner room as well as a Basque one.</span><span class="tier" data-t="harvested">harvested</span></dd><dt><a href="/drink/picon-punch/" style="color:inherit">Picon Punch</a></dt><dd>not published<span class="tier" data-t="harvested">harvested</span></dd><dt>Week</dt><dd><span class="week" role="img" aria-label="open Mon, Tue, Wed, Thu, Fri, Sat, Sun"><i class="o" title="Mon open">M</i><i class="o" title="Tue open">T</i><i class="o" title="Wed open">W</i><i class="o" title="Thu open">T</i><i class="o" title="Fri open">F</i><i class="o" title="Sat open">S</i><i class="o" title="Sun open">S</i></span><br>every day 6am–9:30pm<br><span style='color:var(--ink3)'>checked 2026-09-16</span><span class="tier" data-t="harvested">harvested</span></dd><dt>Calls its kitchen</dt><dd>&ldquo;family-style Basque&rdquo;<span class="tier" data-t="harvested">harvested</span></dd></dl><h2>Now</h2><p>The longest opening hours of any room in this directory. Breakfast through dinner, every day.</p><h2>At the table</h2><p>Homemade soups, Caesar salads, baked potatoes, served family style.</p><h2>Note</h2><p>Toki ona is good place in Euskara — the same two words as Leku Ona in Boise, said the other way round.</p><aside class="say"><p class="eyebrow">Esan / say it</p><p class="say-eu" lang="eu">Ongi etorri</p><p class="say-how">ON-ghee eh-TOH-rri</p><p class="say-en">Welcome</p><p class="say-use">What the house says to you, not the other way round. Worth knowing when you hear it.</p><p class="say-more"><a href="/say/">The rest of the phrasebook &rarr;</a></p></aside><h2>Kin</h2><div class="kin-grid"><a class="kin-card" href="/place/leku-ona/"><img class="thumb" src="/images/leku-ona/leku-ona-basque-center-in-boise-idaho.jpg" alt="A Basque center in Boise, Idaho" loading="lazy" decoding="async"><span class="kin-body"><b>Leku Ona</b><em>room</em><span>the same two Euskara words, 400 miles north</span><span class="back">&larr; the same two Euskara words, 400 miles south</span></span></a><a class="kin-card" href="/place/star-hotel-elko/"><span class="thumb tile" style="--tile:var(--c1)" aria-hidden="true"><span>The Star Hot…</span></span><span class="kin-body"><b>The Star Hotel</b><em>room</em><span>the 1910 room on Silver Street</span><span class="back">&larr; the other Basque room in Elko</span></span></a><a class="kin-card" href="/place/ogi-deli-elko/"><span class="thumb tile" style="--tile:var(--c1)" aria-hidden="true"><span>ogi</span></span><span class="kin-body"><b>Ogi Deli</b><em>room</em><span>the third Basque door in Elko</span></span></a><a class="kin-card" href="/term/euskara/"><img class="thumb" src="/images/euskara/euskara-basque-notice-in-boise-idaho.jpg" alt="a notice in English and Basque in a restaurant in Boise, Idaho" loading="lazy" decoding="async"><span class="kin-body"><b>Euskara</b><em>word</em><span>the language the name is in</span><span class="back">&larr; named in it: good place</span></span></a><a class="kin-card" href="/region/nevada/"><img class="thumb" src="/images/nevada/nevada-gateway-to-the-scenic-west-hotel-humboldt-winnemucca-ebc59f6.jpg" alt="Title: Gateway to the scenic west, Hotel Humboldt, Winnemucca, Nevada
+Subjects: Hotels
+Places: Nevada &amp;gt; Humboldt (county) &amp;gt; Winnemucca
+Notes: Title from item.
+Extent: 1 print (postcard) : linen " loading="lazy" decoding="async"><span class="kin-body"><b>Nevada</b><em>region</em><span>the state this room sits in</span></span></a></div><div class="gap"><b>Open on this page</b><ul><li>dinner prices</li><li>the family's name</li><li>whether the bar makes a Picon Punch</li></ul></div><h2>Sources</h2><ul class="src"><li><a href='https://elkodaily.com/news/local/business/family-run-toki-ona-restaurant-still-serves-up-basque-specialties/article_739e636a-88bb-11ee-9ff5-87c9f77e5a15.html' rel='nofollow'>Family-run Toki Ona restaurant still serves up Basque specialties</a> — Elko Daily Free Press, news · read 2026-09-16</li><li><a href='https://www.eattokiona.com/' rel='nofollow'>Toki Ona</a> — the restaurant, the house's own site · read 2026-09-16</li><li><a href='https://euskalkazeta.com/basquerestaurants/nevada/' rel='nofollow'>Basque Restaurants — Nevada</a> — Euskal Kazeta, directory · read 2026-09-16</li><li><a href='https://travelnevada.com/basque/exploring-basque-culture-in-northern-nevada/' rel='nofollow'>Exploring Basque Culture in Elko, Winnemucca &amp; Reno</a> — Travel Nevada, state tourism office · read 2026-09-16</li></ul><p class="src">Record provenance: harvested · confidence high · updated 2026-09-16</p></div></main>
 <footer class="foot"><div class="wrap">
  <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
  a field with no source reads <b>unknown</b> and stays out of the filters.</p>

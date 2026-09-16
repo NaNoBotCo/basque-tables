@@ -35,15 +35,15 @@
  "sections": [
   {
    "heading": "The glass is regional",
-   "body": "Northern Nevada pours it into a stemmed glass made for the purpose by the Louie Picon Glass Company. Elsewhere it lands in a highball or a Collins.",
+   "body": "Northern Nevada pours it into a six-ounce stemmed glass — a stock Libbey 8054 Georgian Irish coffee, or a custom one from the Louie Picon Glass Company of Sparks. Elsewhere it lands in a highball or a Collins, at twice the volume.",
    "tier": "cited",
-   "source": "wikipedia-picon-punch"
+   "source": "libbey-8054"
   },
   {
    "heading": "The bitter has a supply problem",
-   "body": "Amer Picon from Marseille is not reliably available in the United States, so bars pour Torani Amer instead — a San Francisco product. In 2024 a production change sent Torani back for recertification in California while the company turned toward its syrup business, and the Basque bars ran short. In 2025 Torani handed the recipe to Ferino Distillery in Reno. Nevada's state cocktail is now made in Nevada.",
+   "body": "Amer Picon from Marseille is not reliably available in the United States, so bars pour Torani Amer instead — a San Francisco product, made for more than sixty years. In 2024 California required an ingredient re-certified and it vanished from the market; drinkers carried their own bottles into the bars. In December 2024 Torani gave the recipe and the global rights to Ferino Distillery in Reno for nothing, stopped making it in March 2025, and Ferino began in April. Nevada's state cocktail is now made in Nevada.",
    "tier": "cited",
-   "source": "wikipedia-picon-punch"
+   "source": "businesswire-ferino"
   },
   {
    "heading": "What it was for",
@@ -72,6 +72,14 @@
   {
    "id": "nevada",
    "how": "the state that made it official"
+  },
+  {
+   "id": "picon-glass",
+   "how": "the six ounces it is built in"
+  },
+  {
+   "id": "brass-rail-alturas",
+   "how": "poured at the far north-east corner of California"
   }
  ],
  "sources": [
@@ -79,12 +87,15 @@
   "punch-picon",
   "wineenthusiast-picon",
   "euskalkazeta-picon",
-  "sifestival-picon"
+  "sifestival-picon",
+  "businesswire-ferino",
+  "thisisreno-picon-panic",
+  "libbey-8054"
  ],
  "provenance": "cited",
  "confidence": "high",
  "schema": 1,
- "updated": "2026-09-16",
+ "updated": "2026-09-17",
  "images": [
   {
    "file": "picon-punch/picon-punch-picon-punch-5307913384.jpg",

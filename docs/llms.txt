@@ -57,6 +57,7 @@
 - [Bar Gernika](https://nanobotco.github.io/basque-tables/place/bar-gernika/): Boise, at Capitol and Grove. A Basque pub on the corner of the Block, five days a week.
 - [Basquenese](https://nanobotco.github.io/basque-tables/place/basquenese/): Boise, in the Warehouse Food Hall. Basque and Vietnamese in one kitchen, run by a couple who are each half of it.
 - [Benji's French Basque Restaurant](https://nanobotco.github.io/basque-tables/place/benjis-basque/): Bakersfield, on Rosedale. French Basque, six days, lunch and dinner with the afternoon shut.
+- [The Brass Rail](https://nanobotco.github.io/basque-tables/place/brass-rail-alturas/): Alturas, Modoc County, on Lakeview Drive. Family style, five courses, a wood fire and a jukebox — and a Picon at the bar.
 - [Centro Basco](https://nanobotco.github.io/basque-tables/place/centro-basco-chino/): Chino, 1940. A boarding house that still sets a boarders' table one Saturday a month.
 - [Chalet Basque](https://nanobotco.github.io/basque-tables/place/chalet-basque/): Bakersfield, 1969, on Oak Street. Family style, seven days, and one owner since 2002.
 - [Dom's Taverna](https://nanobotco.github.io/basque-tables/place/doms-taverna/): Santa Barbara, on Victoria. Chef Dom Crisp cooks Basque against the Central Coast — seafood, cured meat, farm produce.
@@ -85,7 +86,7 @@
 - [Idaho](https://nanobotco.github.io/basque-tables/region/idaho/): One city block in Boise carries more Basque life than any other address in the United States — a museum in a boarding house, a bar, a market, a dining room, a c
 - [Nevada](https://nanobotco.github.io/basque-tables/region/nevada/): Hotels built beside the tracks to feed sheepherders, still setting the long table. In 2025 the state made the Picon Punch its official cocktail.
 - [The Basque Block](https://nanobotco.github.io/basque-tables/story/the-basque-block/): Grove Street between Sixth and Capitol, Boise. A pub, a market, a dining room, a club and a museum — and the museum is the boarding house all of it came out of.
-- [The bitter has a supply problem](https://nanobotco.github.io/basque-tables/story/the-picon-supply/): Nevada made the Picon Punch its state cocktail in 2025. The bitter it is built on has never reliably crossed the Atlantic, and the version Nevada made official 
+- [The bitter has a supply problem](https://nanobotco.github.io/basque-tables/story/the-picon-supply/): Nevada made the Picon Punch its state cocktail in 2025 — the year the American bitter it is built on stopped being made. No factory closed: the recipe was given
 - [The long table](https://nanobotco.github.io/basque-tables/story/the-long-table/): You booked dinner for two. The house seats you with four strangers and brings everyone the same nine dishes. This directory counts which rooms do that, and leav
 - [Artzain](https://nanobotco.github.io/basque-tables/term/artzain/): Shepherd. The job that brought the men the boarding houses were built for.
 - [Baserri](https://nanobotco.github.io/basque-tables/term/baserri/): The Basque farmhouse: house, barn, byre and family under one roof, and the unit of inheritance that sent younger sons to America.
@@ -98,6 +99,7 @@
 - [Ostatua](https://nanobotco.github.io/basque-tables/term/ostatua/): The boarding house. Every old room in this directory was one first.
 - [Pilota](https://nanobotco.github.io/basque-tables/term/pilota/): The handball game, played against a wall. Every Basque town has a fronton; so do Boise and Elko.
 - [Sagardotegi](https://nanobotco.github.io/basque-tables/term/sagardotegi/): A cider house: barrels along one wall, txotx called when a barrel is opened, cod omelette and a beef chop at a shared table standing up.
+- [The Picon glass](https://nanobotco.github.io/basque-tables/term/picon-glass/): Northern Nevada pours a Picon into a six-ounce stemmed glass. Two of them exist: a stock restaurant glass everyone can buy, and a custom one made in Sparks.
 - [Txistu](https://nanobotco.github.io/basque-tables/term/txistu/): A three-holed flute played with the left hand while the right beats a drum. One musician, two instruments.
 - [Txoko](https://nanobotco.github.io/basque-tables/term/txoko/): A members' cooking society — a kitchen a group keeps and cooks in for itself.
 - [Zazpiak Bat](https://nanobotco.github.io/basque-tables/term/zazpiak-bat/): Seven provinces, one people. The motto, and the name of clubs from Reno to Vancouver.

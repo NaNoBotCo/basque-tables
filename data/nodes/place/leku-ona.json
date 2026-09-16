@@ -104,5 +104,67 @@
  "provenance": "cited",
  "confidence": "high",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "leku-ona/leku-ona-basque-center-in-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Basque center in Boise, Idaho.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Basque_center_in_Boise%2C_Idaho.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_center_in_Boise%2C_Idaho.JPG",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "No machine-readable author provided. Terfili assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "A Basque center in Boise, Idaho",
+   "date": "28 December 2005 (according to Exif data",
+   "primary": true,
+   "sha256": "2fe9f8d35ac3ae1707263be04736bfd66e88238bd79ec115ced09c2410b282e3"
+  },
+  {
+   "file": "leku-ona/leku-ona-basque-notice-in-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Basque notice in Boise, Idaho.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Basque_notice_in_Boise%2C_Idaho.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_notice_in_Boise%2C_Idaho.JPG",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "No machine-readable author provided. Terfili assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "a notice in English and Basque in a restaurant in Boise, Idaho",
+   "date": "28 December 2005 (according to Exif data",
+   "primary": false,
+   "sha256": "e7626e3d4c240a82f46c4dfe22aa8b6ede90adbd7374398a6139d17dd11be676"
+  },
+  {
+   "file": "leku-ona/leku-ona-boise-centre-and-downtown-at-night.jpg",
+   "source": "commons",
+   "title": "File:Boise Centre and downtown at night.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Boise_Centre_and_downtown_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABoise_Centre_and_downtown_at_night.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Ac530",
+   "credit": "Own work",
+   "alt": "View of downtown Boise at night, with the Boise Centre in the foreground, and the Wells Fargo Center, 8th and Main, Clearwater Building, and US Bank Building in the background",
+   "date": "2019-11-15 17:44:09",
+   "primary": false,
+   "sha256": "bca446e657e9c17ea53c7ef11e0e24645f18cddcba5e177aee41347de62ab1e8"
+  },
+  {
+   "file": "leku-ona/leku-ona-laiak-basque-block-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Laiak, Basque Block, Boise, Idaho.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Laiak%2C_Basque_Block%2C_Boise%2C_Idaho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALaiak%2C_Basque_Block%2C_Boise%2C_Idaho.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Ken Lund",
+   "credit": "https://www.flickr.com/photos/kenlund/23012320796/",
+   "alt": "Laiak, Basque Block, Boise, Idaho.  A plaque commemorating Basque Americans in Idaho.",
+   "date": "2015-11-12 16:24:08",
+   "primary": false,
+   "sha256": "b2d28ecff74eef29054d8cab86241c899cfbedf6f476dd85a62b3735c1613795"
+  }
+ ]
 }

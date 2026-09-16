@@ -137,5 +137,37 @@
   "says": "Basque chorizos, marinated solomo and Basque bacon, with a lunch counter",
   "tier": "cited",
   "source": "ansots-site"
- }
+ },
+ "images": [
+  {
+   "file": "ansots/ansots-ard-che-chorizo-cuire.jpg",
+   "source": "commons",
+   "title": "File:Ardèche - Chorizo à cuire.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ard%C3%A8che_-_Chorizo_%C3%A0_cuire.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AArd%C3%A8che_-_Chorizo_%C3%A0_cuire.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Romainbehar",
+   "credit": "Own work",
+   "alt": "Chorizo à cuire, au barbecue.",
+   "date": "2018-07-20 13:24:59",
+   "primary": true,
+   "sha256": "6c426b076c66752f65c852ec59413fea7514f7c06cff3dbe2ce596b976885225"
+  },
+  {
+   "file": "ansots/ansots-chorizo-ahumado-picada-argentina.jpg",
+   "source": "commons",
+   "title": "File:Chorizo ahumado (picada argentina).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Chorizo_ahumado_%28picada_argentina%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AChorizo_ahumado_%28picada_argentina%29.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Horacio Cambeiro",
+   "credit": "Own work",
+   "alt": "Chorizo ahumado (picada argentina).",
+   "date": "1 August 2025 (according to Exif data)",
+   "primary": false,
+   "sha256": "1498efb0d66c91947cbab8221799f81bbafed765f78442afff136710a681ea83"
+  }
+ ]
 }

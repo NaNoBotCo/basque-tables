@@ -1,0 +1,96 @@
+{
+ "id": "brass-rail-alturas",
+ "type": "place",
+ "names": {
+  "name": "The Brass Rail",
+  "sort": "Brass Rail"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Alturas, Modoc County, on Lakeview Drive. Family style, five courses, a wood fire and a jukebox — and a Picon at the bar.",
+  "today": "The furthest north-east room in this directory, a long way from any other. A regular names the french fries here as the best of any room in it.",
+  "table": "Five courses before the entree: bread and butter, soup, salad, the day's dish, then what you ordered, with wine, coffee and ice cream after."
+ },
+ "x_kitchen": {
+  "says": "family-style Basque",
+  "tier": "harvested",
+  "source": "tripadvisor-brassrail"
+ },
+ "address": {
+  "street": "395 Lakeview Drive",
+  "city": "Alturas",
+  "state": "CA",
+  "zip": "96101",
+  "phone": "(530) 233-2906",
+  "tier": "cited",
+  "source": "yelp-brassrail"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-17",
+  "tier": "harvested",
+  "source": "yelp-brassrail"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "unknown",
+  "note": "Family style with the sides passed, by every account we read.",
+  "tier": "harvested",
+  "source": "tripadvisor-brassrail",
+  "checked": "2026-09-17"
+ },
+ "picon": {
+  "served": "yes",
+  "note": "Confirmed by a regular; the listings agree the bar makes a good one.",
+  "tier": "field",
+  "source": "field-report",
+  "checked": "2026-09-17"
+ },
+ "courses": [
+  "bread and butter",
+  "soup",
+  "salad",
+  "the day's dish",
+  "the entree you ordered",
+  "wine",
+  "coffee or tea",
+  "ice cream"
+ ],
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "poured at this bar"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "five courses before the entree, and three after"
+  },
+  {
+   "id": "the-long-table",
+   "how": "family style, and a long way from anywhere"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "hours",
+  "the year it opened",
+  "the family's name",
+  "dinner prices",
+  "brassrailbasque.com did not resolve on 2026-09-17"
+ ],
+ "sources": [
+  "yelp-brassrail",
+  "tripadvisor-brassrail",
+  "field-report"
+ ],
+ "provenance": "harvested",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-17"
+}

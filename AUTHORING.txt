@@ -72,6 +72,11 @@ THE CAST — what has a record, and what does not yet
   a person record for the Erreguible and Artiach families, an event record for the
   Sheepherders' Ball, and the National Basque Festival at Elko.
 
+ADDING A PHRASE
+  data/vocab/phrases.json, in the group it belongs to: eu, say (an approximation for an
+  English ear), en, and use (when you would actually say it). It appears on /say/ and
+  joins the pool that is dealt out as callouts. Nothing else to wire up.
+
 ADDING A SOURCE
   Put it in data/sources/sources.json with title, publisher, url, kind and the date you
   read it. The validator refuses a record that cites an id the registry does not hold.

@@ -27,5 +27,52 @@
  "provenance": "cited",
  "confidence": "medium",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "pickled-tongue/pickled-tongue-beef-tongue-langue-de-b-uf.jpg",
+   "source": "commons",
+   "title": "File:BEEF TONGUE - LANGUE DE BŒUF.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/BEEF_TONGUE_-_LANGUE_DE_B%C5%92UF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABEEF_TONGUE_-_LANGUE_DE_B%C5%92UF.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Béotien lambda",
+   "credit": "Own work",
+   "alt": "Beef tongue",
+   "date": "8 June 2008, 11:37:08 (according to Exif",
+   "primary": true,
+   "sha256": "18ccc0ce850821efec61c0ca94eface9399ef36bb93f87d4adbe2add9801ece8"
+  },
+  {
+   "file": "pickled-tongue/pickled-tongue-lengua-a-la-vinagreta.jpg",
+   "source": "commons",
+   "title": "File:Lengua a la vinagreta.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Lengua_a_la_vinagreta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALengua_a_la_vinagreta.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Diosverde",
+   "credit": "Own work",
+   "alt": "Lengua a la vinagreta",
+   "date": "2025-03-13",
+   "primary": false,
+   "sha256": "190e8fe4f124359878a44896e39312cf7c044fd8943e24b41d3dba307882031b"
+  },
+  {
+   "file": "pickled-tongue/pickled-tongue-ox-tongue-with-salad-and-fries-from-gathering.jpg",
+   "source": "commons",
+   "title": "File:Ox tongue with salad and fries from Gathering.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ox_tongue_with_salad_and_fries_from_Gathering.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOx_tongue_with_salad_and_fries_from_Gathering.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Peachyeung316",
+   "credit": "Own work",
+   "alt": "Ox tongue with salad and fries from Gathering in Yuen Long",
+   "date": "2021-01-31 15:52:06",
+   "primary": false,
+   "sha256": "ec27af4ebdc7403bda9679146025acac3c6712770b3f9a1f3b54c6709cda7a38"
+  }
+ ]
 }

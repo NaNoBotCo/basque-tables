@@ -340,5 +340,9 @@
   "en": "Basque Tables — dining rooms of California, Nevada and Idaho",
   "eu": "Euskal Mahaiak — Kalifornia, Nevada eta Idahoko jatetxeak",
   "check": true
+ },
+ "say": {
+  "en": "Say it",
+  "eu": "Esan"
  }
 }

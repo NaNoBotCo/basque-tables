@@ -460,5 +460,92 @@
   "url": "https://www.yelp.com/biz/taylors-cafe-chino",
   "kind": "listing",
   "read": "2026-09-16"
+ },
+ "field-report": {
+  "title": "Reported to this project in person",
+  "publisher": "a regular of these rooms",
+  "kind": "field report",
+  "read": "2026-09-17",
+  "note": "someone who drinks in them, naming rooms they have been served a Picon Punch in"
+ },
+ "yelp-brassrail": {
+  "title": "Brass Rail, Alturas",
+  "publisher": "Yelp",
+  "url": "https://www.yelp.com/biz/brass-rail-alturas",
+  "kind": "listing",
+  "read": "2026-09-17"
+ },
+ "tripadvisor-brassrail": {
+  "title": "The Brass Rail, Alturas",
+  "publisher": "Tripadvisor",
+  "url": "https://www.tripadvisor.com/Restaurant_Review-g29087-d671212-Reviews-The_Brass_Rail-Alturas_California.html",
+  "kind": "listing",
+  "read": "2026-09-17"
+ },
+ "thisisreno-picon-panic": {
+  "title": "Picon Panic: key ingredient for iconic Nevada cocktail unavailable until mid-August at the earliest",
+  "publisher": "This Is Reno",
+  "url": "https://thisisreno.com/2024/08/picon-panic-key-ingredient-for-iconic-nevada-cocktail-unavailable-until-mid-august-at-the-earliest/",
+  "kind": "news",
+  "read": "2026-09-17",
+  "note": "403 to a fetch from this machine; read through search-result summaries"
+ },
+ "businesswire-ferino": {
+  "title": "Torani and Ferino Distillery Partner to Preserve the Iconic Amer Liqueur",
+  "publisher": "Business Wire",
+  "url": "https://www.businesswire.com/news/home/20241210191416/en/Torani-and-Ferino-Distillery-Partner-to-Preserve-the-Iconic-Amer-Liqueur",
+  "kind": "press release",
+  "read": "2026-09-17"
+ },
+ "nnbw-ferino": {
+  "title": "Torani and Ferino Distillery partner to preserve Amer Liqueur",
+  "publisher": "Northern Nevada Business Weekly",
+  "url": "https://www.nnbw.com/news/2025/jan/03/torani-and-ferino-distillery-partner-to-preserve-amer-liqueur/",
+  "kind": "news",
+  "read": "2026-09-17",
+  "note": "403 to a fetch; read through search-result summaries"
+ },
+ "ferino-shop": {
+  "title": "Ferino Amer",
+  "publisher": "Ferino Distillery",
+  "url": "https://ship.ferinodistillery.com/products/pre-order-now-ferino-amer",
+  "kind": "the distiller's own shop",
+  "read": "2026-09-17"
+ },
+ "kolo-ferino": {
+  "title": "Ferino Distillery owner celebrates acquisition of Torani Amer",
+  "publisher": "KOLO 8",
+  "url": "https://www.kolotv.com/2024/12/17/kolo-cooks-ferino-distillery-owner-joins-reno-recipes-chefs-celebrate-acquisition-torani-amer/",
+  "kind": "news",
+  "read": "2026-09-17"
+ },
+ "saveur-amer": {
+  "title": "The Obscure French Bitter That Took Over Nevada",
+  "publisher": "Saveur",
+  "url": "https://www.saveur.com/amer-picon-nevada",
+  "kind": "magazine",
+  "read": "2026-09-17",
+  "note": "403 to a fetch; read through search-result summaries"
+ },
+ "westernlife-picon": {
+  "title": "The Picon Punch",
+  "publisher": "Western Life Today",
+  "url": "https://www.westernlifetoday.com/picon-punch/",
+  "kind": "magazine",
+  "read": "2026-09-17"
+ },
+ "libbey-8054": {
+  "title": "Libbey 8054 Georgian Irish Coffee stemmed glass, 6 oz",
+  "publisher": "Bargreen Ellingson",
+  "url": "https://bargreen.com/products/LIB8054",
+  "kind": "restaurant supplier",
+  "read": "2026-09-17"
+ },
+ "manta-louie-picon-glass": {
+  "title": "Louie Picon Glass Company, Sparks NV",
+  "publisher": "Manta",
+  "url": "https://www.manta.com/c/mtc7x5z/louie-picon-glass-company",
+  "kind": "business directory",
+  "read": "2026-09-17"
  }
 }

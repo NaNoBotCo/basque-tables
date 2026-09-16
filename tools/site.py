@@ -126,6 +126,10 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
 .hero{margin:1.4rem 0 1.8rem;padding:0}
 .hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
  box-shadow:var(--shadow);display:block}
+.hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
+.chart.plate{min-width:0}
+.chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}
+.chart .big{font-family:var(--display);font-size:22px;fill:var(--ink)}
 .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
  align-items:start}
 .shot{margin:0;font-size:.9rem}
@@ -140,6 +144,54 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 .featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
 .featured h2 a{text-decoration:none}
 .featured .facts{margin:1rem 0}
+.thumb{width:100%;height:8.5rem;object-fit:cover;border-radius:10px;display:block;
+ background:var(--paper);transition:transform .25s ease}
+.thumb.tile{display:flex;align-items:center;justify-content:center;text-align:center;
+ background:color-mix(in oklab,var(--tile) 16%,var(--lift));
+ border:1px solid color-mix(in oklab,var(--tile) 34%,transparent)}
+.thumb.tile span{font-family:var(--display);font-size:1.15rem;line-height:1.2;color:var(--ink2);
+ padding:.4rem .6rem;word-break:break-word}
+.kin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.kin-card{display:block;text-decoration:none;background:var(--lift);border:1px solid var(--rule);
+ border-radius:12px;overflow:hidden;box-shadow:var(--shadow);
+ transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.kin-card:hover{transform:translateY(-2px);border-color:var(--ink3);
+ box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.kin-card:hover .thumb{transform:scale(1.04)}
+.kin-card .thumb{height:6.5rem;border-radius:0}
+.kin-body{display:block;padding:.7rem .85rem .85rem}
+.kin-body b{display:block;font-family:var(--display);font-weight:normal;font-size:1.08rem;
+ line-height:1.25;color:var(--ink)}
+.kin-body em{display:block;font:600 .68rem/1.6 var(--sign);letter-spacing:.13em;text-transform:uppercase;
+ color:var(--ink3);font-style:normal;margin:.1rem 0 .35rem}
+.kin-body span{display:block;font-size:.92rem;line-height:1.45;color:var(--ink2)}
+.kin-body span.back{color:var(--ink3);margin-top:.3rem;font-size:.88rem}
+.card-link{display:block;text-decoration:none;padding:0;overflow:hidden}
+.card-link .thumb{border-radius:0}
+.card-link h3,.card-link p{padding:0 1.1rem}
+.card-link h3{margin:.8rem 0 .25rem}
+.card-link p{margin:.15rem 0}
+.card-link p:last-child{padding-bottom:1rem}
+.card-link p.where{font:600 .7rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.say{background:linear-gradient(135deg,color-mix(in oklab,var(--accent) 9%,var(--lift)),var(--lift));
+ border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:12px;
+ padding:1rem 1.2rem;margin:2rem 0;max-width:34rem}
+.say p{margin:0;max-width:none}
+.say-eu{font-family:var(--display);font-size:1.55rem;line-height:1.2;margin:.25rem 0 .1rem!important;
+ color:var(--ink)}
+.say-how{font:600 .92rem/1.5 var(--ui);color:var(--accent);letter-spacing:.02em}
+.say-en{font-size:1.02rem;color:var(--ink);margin-top:.3rem!important}
+.say-use{font-size:.92rem;color:var(--ink2);margin-top:.35rem!important}
+.say-more{margin-top:.6rem!important;font:0.88rem var(--ui)}
+.say-more a{color:var(--ink3)}
+.phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.phrase{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.05rem;
+ box-shadow:var(--shadow);transition:transform .18s ease}
+.phrase:hover{transform:translateY(-2px)}
+.phrase p{margin:0;max-width:none}
+td.eu,th.eu{font-family:var(--display);font-size:1.05rem}
+.rules{max-width:44rem;color:var(--ink2)}
+.rules li{margin:.4rem 0}
 .note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
 .gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
 .kin{list-style:none;padding:0;margin:.6rem 0}
@@ -159,10 +211,28 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
 """
 
 NAV = [("/", "front"), ("/two/", "two"), ("/places/", "rooms"),
-       ("/drink/picon-punch/", "picon"), ("/pictures/", "pictures"), ("/words/", "words"),
+       ("/drink/picon-punch/", "picon"), ("/pictures/", "pictures"), ("/say/", "say"), ("/words/", "words"),
        ("/numbers/", "numbers"), ("/stories/", "stories"), ("/gaps/", "gaps"), ("/wander/", "wander")]
 
 INTERNAL = re.compile(r'(href=")(/(?!eu/)[^"]*)(")')
+
+
+STANDING = {"/": "page-index", "/two/": "page-two", "/places/": "page-places",
+            "/say/": "page-say", "/pictures/": "page-pictures", "/numbers/": "page-numbers",
+            "/gaps/": "page-gaps"}
+
+
+def card_for(path):
+    """Which share card belongs to this page. Node pages have their own; the standing
+    pages have one each; everything else falls back to the front card."""
+    p = path[3:] if path.startswith("/eu") else path
+    if p in STANDING:
+        return STANDING[p]
+    bits = [b for b in p.split("/") if b]
+    if len(bits) == 2 and bits[0] in ("place", "dish", "drink", "term", "person",
+                                      "org", "event", "story", "region"):
+        return "%s-%s" % (bits[0], bits[1])
+    return "page-index"
 
 
 def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
@@ -176,6 +246,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
     for block in (jsonld or []):
         ld += '<script type="application/ld+json">%s</script>' % json.dumps(block, ensure_ascii=False)
     full = C.SITE_URL.rstrip("/") + path
+    card = "%s/cards/%s.jpg" % (C.SITE_URL.rstrip("/"), card_for(path))
     head_lang = lang
     return """<!doctype html>
 <html lang="%s"><head>
@@ -186,6 +257,10 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
 <link rel="canonical" href="%s">
 <meta property="og:title" content="%s"><meta property="og:description" content="%s">
 <meta property="og:type" content="website"><meta property="og:url" content="%s">
+<meta property="og:image" content="%s"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="%s">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="%s">
 <meta property="og:site_name" content="%s">
 <link rel="alternate" hreflang="en" href="%s"><link rel="alternate" hreflang="eu" href="%s">
 <style>%s</style>%s%s
@@ -204,7 +279,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
 </div></footer>
 <script>document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!=='/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href='/wander/';}});</script>
 </body></html>""" % (head_lang, C.esc(title), C.esc(desc or title), full, C.esc(title), C.esc(desc or title),
-                      full, C.SITE_NAME,
+                      full, card, C.esc(title), card, C.SITE_NAME,
                       C.SITE_URL.rstrip("/") + path, C.SITE_URL.rstrip("/") + "/eu" + path,
                       CSS, ld, extra_head, nav, body, C.BYLINE)
 

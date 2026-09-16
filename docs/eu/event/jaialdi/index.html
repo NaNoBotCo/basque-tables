@@ -7,6 +7,10 @@
 <link rel="canonical" href="https://nanobotco.github.io/basque-tables/event/jaialdi/">
 <meta property="og:title" content="Jaialdi — Basque Tables"><meta property="og:description" content="Boise, every five years, six days. Between 30,000 and 50,000 people. Last held 29 July to 3 August 2025; next in 2030.">
 <meta property="og:type" content="website"><meta property="og:url" content="https://nanobotco.github.io/basque-tables/event/jaialdi/">
+<meta property="og:image" content="https://nanobotco.github.io/basque-tables/cards/event-jaialdi.jpg"><meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Jaialdi — Basque Tables">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://nanobotco.github.io/basque-tables/cards/event-jaialdi.jpg">
 <meta property="og:site_name" content="Basque Tables">
 <link rel="alternate" hreflang="en" href="https://nanobotco.github.io/basque-tables/event/jaialdi/"><link rel="alternate" hreflang="eu" href="https://nanobotco.github.io/basque-tables/eu/event/jaialdi/">
 <style>
@@ -125,6 +129,10 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
 .hero{margin:1.4rem 0 1.8rem;padding:0}
 .hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
  box-shadow:var(--shadow);display:block}
+.hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
+.chart.plate{min-width:0}
+.chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}
+.chart .big{font-family:var(--display);font-size:22px;fill:var(--ink)}
 .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
  align-items:start}
 .shot{margin:0;font-size:.9rem}
@@ -139,6 +147,54 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 .featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
 .featured h2 a{text-decoration:none}
 .featured .facts{margin:1rem 0}
+.thumb{width:100%;height:8.5rem;object-fit:cover;border-radius:10px;display:block;
+ background:var(--paper);transition:transform .25s ease}
+.thumb.tile{display:flex;align-items:center;justify-content:center;text-align:center;
+ background:color-mix(in oklab,var(--tile) 16%,var(--lift));
+ border:1px solid color-mix(in oklab,var(--tile) 34%,transparent)}
+.thumb.tile span{font-family:var(--display);font-size:1.15rem;line-height:1.2;color:var(--ink2);
+ padding:.4rem .6rem;word-break:break-word}
+.kin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.kin-card{display:block;text-decoration:none;background:var(--lift);border:1px solid var(--rule);
+ border-radius:12px;overflow:hidden;box-shadow:var(--shadow);
+ transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.kin-card:hover{transform:translateY(-2px);border-color:var(--ink3);
+ box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.kin-card:hover .thumb{transform:scale(1.04)}
+.kin-card .thumb{height:6.5rem;border-radius:0}
+.kin-body{display:block;padding:.7rem .85rem .85rem}
+.kin-body b{display:block;font-family:var(--display);font-weight:normal;font-size:1.08rem;
+ line-height:1.25;color:var(--ink)}
+.kin-body em{display:block;font:600 .68rem/1.6 var(--sign);letter-spacing:.13em;text-transform:uppercase;
+ color:var(--ink3);font-style:normal;margin:.1rem 0 .35rem}
+.kin-body span{display:block;font-size:.92rem;line-height:1.45;color:var(--ink2)}
+.kin-body span.back{color:var(--ink3);margin-top:.3rem;font-size:.88rem}
+.card-link{display:block;text-decoration:none;padding:0;overflow:hidden}
+.card-link .thumb{border-radius:0}
+.card-link h3,.card-link p{padding:0 1.1rem}
+.card-link h3{margin:.8rem 0 .25rem}
+.card-link p{margin:.15rem 0}
+.card-link p:last-child{padding-bottom:1rem}
+.card-link p.where{font:600 .7rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.say{background:linear-gradient(135deg,color-mix(in oklab,var(--accent) 9%,var(--lift)),var(--lift));
+ border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:12px;
+ padding:1rem 1.2rem;margin:2rem 0;max-width:34rem}
+.say p{margin:0;max-width:none}
+.say-eu{font-family:var(--display);font-size:1.55rem;line-height:1.2;margin:.25rem 0 .1rem!important;
+ color:var(--ink)}
+.say-how{font:600 .92rem/1.5 var(--ui);color:var(--accent);letter-spacing:.02em}
+.say-en{font-size:1.02rem;color:var(--ink);margin-top:.3rem!important}
+.say-use{font-size:.92rem;color:var(--ink2);margin-top:.35rem!important}
+.say-more{margin-top:.6rem!important;font:0.88rem var(--ui)}
+.say-more a{color:var(--ink3)}
+.phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 2rem}
+.phrase{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.05rem;
+ box-shadow:var(--shadow);transition:transform .18s ease}
+.phrase:hover{transform:translateY(-2px)}
+.phrase p{margin:0;max-width:none}
+td.eu,th.eu{font-family:var(--display);font-size:1.05rem}
+.rules{max-width:44rem;color:var(--ink2)}
+.rules li{margin:.4rem 0}
 .note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
 .gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
 .kin{list-style:none;padding:0;margin:.6rem 0}
@@ -160,9 +216,9 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
 <a class="skip" href="#main">Skip to the page</a>
 <header class="top"><div class="wrap">
  <a class="brand" href="/eu/">Basque <b>Tables</b></a>
- <nav class="top-nav" aria-label="Sections"><a href="/eu/">Hasiera</a><a href="/eu/two/">Bi lagunentzako mahaia</a><a href="/eu/places/">Jatetxeak</a><a href="/eu/drink/picon-punch/">Picon</a><a href="/eu/pictures/">Argazkiak</a><a href="/eu/words/">Hitzak</a><a href="/eu/numbers/">Zenbakiak</a><a href="/eu/stories/">Istorioak</a><a href="/eu/gaps/">Hutsuneak</a><a href="/eu/wander/">Ausaz</a><a href="/eu/event/jaialdi/" hreflang="en" lang="en">English</a></nav>
+ <nav class="top-nav" aria-label="Sections"><a href="/eu/">Hasiera</a><a href="/eu/two/">Bi lagunentzako mahaia</a><a href="/eu/places/">Jatetxeak</a><a href="/eu/drink/picon-punch/">Picon</a><a href="/eu/pictures/">Argazkiak</a><a href="/eu/say/">Esan</a><a href="/eu/words/">Hitzak</a><a href="/eu/numbers/">Zenbakiak</a><a href="/eu/stories/">Istorioak</a><a href="/eu/gaps/">Hutsuneak</a><a href="/eu/wander/">Ausaz</a><a href="/eu/event/jaialdi/" hreflang="en" lang="en">English</a></nav>
 </div></header>
-<main id="main"><div class="wrap"><p class="eyebrow">ekitaldia</p><h1>Jaialdi</h1><p class="note" lang="eu">Interfazea euskaraz dago. Testuak ingelesez daude: ez zegoen ingelesetik euskarara itzultzeko makinarik eskuragarri, eta ez da itzulpen faltsurik egin.</p><p class="lede">Boise, every five years, six days. Between 30,000 and 50,000 people. Last held 29 July to 3 August 2025; next in 2030.</p><figure class="hero"><img src="/images/jaialdi/jaialdi-basque-joaldunak-folk-tradition-and-festival-visit-w-6bd5b78.jpg" alt="Joaldun is a traditional carnival character the the Basque Country that wears fur and cow bells to ward off evil." loading="eager" decoding="async"><figcaption>Joaldun is a traditional carnival character the the Basque Country that wears fur and cow bells to ward off evil.<br><span class="cred">Maitemangos · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File%3ABasque_Joaldunak_Folk_tradition_and_festival_visit_Washington%2C_DC_in_2016.jpg" rel="nofollow">Commons</a></span></figcaption></figure><dl class="facts"><dt>Erroa</dt><dd>jai + aldi — festival time <span style='color:var(--ink3)'>(Euskara)</span><span class="tier" data-t="tradition">tradition</span></dd></dl><h2>Oharra</h2><p>Jaialdi is festival in Euskara.</p><h2>Argazkiak</h2><div class="shots"><figure class="shot"><a href="https://commons.wikimedia.org/wiki/File%3AUrkullu-Jaialdia_2015-Karrokanpo.jpg"><img src="/images/jaialdi/jaialdi-urkullu-jaialdia-2015-karrokanpo.jpg" alt="Basque president Iñigo Urkullu in Boise's Jaialdia 2015 Basque festival with wife in a Basque Shepherd Wagon expo" loading="lazy" decoding="async"></a><figcaption>Basque president Iñigo Urkullu in Boise's Jaialdia 2015 Basque festival with wife in a Basque Shepherd Wagon expo<br><span class="cred">Irekia · <a href="https://creativecommons.org/licenses/by/4.0/" rel="license nofollow">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File%3AUrkullu-Jaialdia_2015-Karrokanpo.jpg" rel="nofollow">Commons</a></span></figcaption></figure></div><h2>Senideak</h2><ul class="kin"><li><a href='/region/idaho/'>Idaho</a> — the state that holds it<br><span>&larr; and back: what happens here every five years</span></li><li><a href='/story/the-basque-block/'>The Basque Block</a> — the streets it centres on<br><span>&larr; and back: what fills it every five years</span></li><li><a href='/org/nabo/'>North American Basque Organizations</a> — the federation whose clubs come to it<br><span>&larr; and back: what its clubs travel to</span></li><li><a href='/drink/kalimotxo/'>Kalimotxo</a> — <span>points here: where it is poured by the thousand</span></li><li><a href='/term/dantza/'>Dantza</a> — <span>points here: six days of it</span></li><li><a href='/term/ikurrina/'>Ikurriña</a> — <span>points here: where it fills a street in Boise</span></li><li><a href='/term/pilota/'>Pilota</a> — <span>points here: played there</span></li><li><a href='/term/txistu/'>Txistu</a> — <span>points here: heard there</span></li></ul><h2>Iturriak</h2><ul class="src"><li><a href='https://www.jaialdi.com/faq/' rel='nofollow'>Jaialdi FAQ</a> — Jaialdi, the festival's own site · read 2026-09-16</li><li><a href='https://www.ktvb.com/article/news/local/idaho-press/boises-jaialdi-festival-to-return-2025/277-0f3959a5-b831-4e41-96c2-f4d9cd02b529' rel='nofollow'>Boise's Jaialdi Festival set to return in 2025</a> — KTVB, news · read 2026-09-16</li><li><a href='https://visitboise.com/play/arts-and-culture/basque/' rel='nofollow'>Basque — Visit Boise</a> — Visit Boise, visitor bureau · read 2026-09-16</li></ul><p class="src">Record provenance: cited · confidence high · updated 2026-09-16</p></div></main>
+<main id="main"><div class="wrap"><p class="eyebrow">ekitaldia</p><h1>Jaialdi</h1><p class="note" lang="eu">Interfazea euskaraz dago. Testuak ingelesez daude: ez zegoen ingelesetik euskarara itzultzeko makinarik eskuragarri, eta ez da itzulpen faltsurik egin.</p><p class="lede">Boise, every five years, six days. Between 30,000 and 50,000 people. Last held 29 July to 3 August 2025; next in 2030.</p><figure class="hero"><img src="/images/jaialdi/jaialdi-basque-joaldunak-folk-tradition-and-festival-visit-w-6bd5b78.jpg" alt="Joaldun is a traditional carnival character the the Basque Country that wears fur and cow bells to ward off evil." loading="eager" decoding="async"><figcaption>Joaldun is a traditional carnival character the the Basque Country that wears fur and cow bells to ward off evil.<br><span class="cred">Maitemangos · <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File%3ABasque_Joaldunak_Folk_tradition_and_festival_visit_Washington%2C_DC_in_2016.jpg" rel="nofollow">Commons</a></span></figcaption></figure><dl class="facts"><dt>Erroa</dt><dd>jai + aldi — festival time <span style='color:var(--ink3)'>(Euskara)</span><span class="tier" data-t="tradition">tradition</span></dd></dl><h2>Oharra</h2><p>Jaialdi is festival in Euskara.</p><h2>Argazkiak</h2><div class="shots"><figure class="shot"><a href="https://commons.wikimedia.org/wiki/File%3AUrkullu-Jaialdia_2015-Karrokanpo.jpg"><img src="/images/jaialdi/jaialdi-urkullu-jaialdia-2015-karrokanpo.jpg" alt="Basque president Iñigo Urkullu in Boise's Jaialdia 2015 Basque festival with wife in a Basque Shepherd Wagon expo" loading="lazy" decoding="async"></a><figcaption>Basque president Iñigo Urkullu in Boise's Jaialdia 2015 Basque festival with wife in a Basque Shepherd Wagon expo<br><span class="cred">Irekia · <a href="https://creativecommons.org/licenses/by/4.0/" rel="license nofollow">CC BY 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File%3AUrkullu-Jaialdia_2015-Karrokanpo.jpg" rel="nofollow">Commons</a></span></figcaption></figure></div><aside class="say"><p class="eyebrow">Esan / say it</p><p class="say-eu" lang="eu">Aupa!</p><p class="say-how">OW-pah</p><p class="say-en">Hey! Come on!</p><p class="say-use">Greeting a friend across a room, or urging on a team.</p><p class="say-more"><a href="/eu/say/">The rest of the phrasebook &rarr;</a></p></aside><h2>Senideak</h2><div class="kin-grid"><a class="kin-card" href="/eu/region/idaho/"><img class="thumb" src="/images/idaho/idaho-basque-immigrant-graves.jpg" alt="Graves belonging to Basque immigrants and their descendants buried in Morris Hill Cemetery, Boise, Idaho, USA." loading="lazy" decoding="async"><span class="kin-body"><b>Idaho</b><em>estatua</em><span>the state that holds it</span><span class="back">&larr; what happens here every five years</span></span></a><a class="kin-card" href="/eu/story/the-basque-block/"><img class="thumb" src="/images/the-basque-block/the-basque-block-a-bench-outside-the-basque-museum-and-cultural-cente-5716554.jpg" alt="A bench outside the Basque Museum and Cultural Center in Boise, Idaho" loading="lazy" decoding="async"><span class="kin-body"><b>The Basque Block</b><em>istorioa</em><span>the streets it centres on</span><span class="back">&larr; what fills it every five years</span></span></a><a class="kin-card" href="/eu/org/nabo/"><span class="thumb tile" style="--tile:var(--c4)" aria-hidden="true"><span>North Americ…</span></span><span class="kin-body"><b>North American Basque Organizations</b><em>erakundea</em><span>the federation whose clubs come to it</span><span class="back">&larr; what its clubs travel to</span></span></a><a class="kin-card" href="/eu/drink/kalimotxo/"><img class="thumb" src="/images/kalimotxo/kalimotxo-kalimotxo2.jpg" alt="Bottle of calimotxo (Lidl)" loading="lazy" decoding="async"><span class="kin-body"><b>Kalimotxo</b><em>edaria</em><span>&larr; where it is poured by the thousand</span></span></a><a class="kin-card" href="/eu/term/dantza/"><img class="thumb" src="/images/dantza/dantza-au-pays-basque-danse.jpg" alt="Au Pays Basque - danse du Fandango" loading="lazy" decoding="async"><span class="kin-body"><b>Dantza</b><em>hitza</em><span>&larr; six days of it</span></span></a><a class="kin-card" href="/eu/term/ikurrina/"><img class="thumb" src="/images/ikurrina/ikurrina-funerary-st-le-with-the-basque-flag-in-espelette.jpg" alt="Funerary stele with the basque flag (ikurrina) in the old cemetery of the church Saint-Étienne in Espelette (Pyrénées-Atlantiques, France)." loading="lazy" decoding="async"><span class="kin-body"><b>Ikurriña</b><em>hitza</em><span>&larr; where it fills a street in Boise</span></span></a><a class="kin-card" href="/eu/term/pilota/"><img class="thumb" src="/images/pilota/pilota-berrizko-bola-jokoa.jpg" alt="Berrizko (Bizkaia) bolatokia, zabaleko hiru txirlotara jokatzen" loading="lazy" decoding="async"><span class="kin-body"><b>Pilota</b><em>hitza</em><span>&larr; played there</span></span></a><a class="kin-card" href="/eu/term/txistu/"><img class="thumb" src="/images/txistu/txistu-juanan-aroma.jpg" alt="Txistularia. Durango" loading="lazy" decoding="async"><span class="kin-body"><b>Txistu</b><em>hitza</em><span>&larr; heard there</span></span></a></div><h2>Iturriak</h2><ul class="src"><li><a href='https://www.jaialdi.com/faq/' rel='nofollow'>Jaialdi FAQ</a> — Jaialdi, the festival's own site · read 2026-09-16</li><li><a href='https://www.ktvb.com/article/news/local/idaho-press/boises-jaialdi-festival-to-return-2025/277-0f3959a5-b831-4e41-96c2-f4d9cd02b529' rel='nofollow'>Boise's Jaialdi Festival set to return in 2025</a> — KTVB, news · read 2026-09-16</li><li><a href='https://visitboise.com/play/arts-and-culture/basque/' rel='nofollow'>Basque — Visit Boise</a> — Visit Boise, visitor bureau · read 2026-09-16</li></ul><p class="src">Record provenance: cited · confidence high · updated 2026-09-16</p></div></main>
 <footer class="foot"><div class="wrap">
  <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
  a field with no source reads <b>unknown</b> and stays out of the filters.</p>

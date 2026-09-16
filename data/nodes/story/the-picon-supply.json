@@ -10,7 +10,7 @@
   "west"
  ],
  "text": {
-  "short": "Nevada made the Picon Punch its state cocktail in 2025. The bitter it is built on has never reliably crossed the Atlantic, and the version Nevada made official is distilled in Reno."
+  "short": "Nevada made the Picon Punch its state cocktail in 2025 — the year the American bitter it is built on stopped being made. No factory closed: the recipe was given away, to Reno."
  },
  "sections": [
   {
@@ -21,21 +21,33 @@
   },
   {
    "heading": "It never got imported",
-   "body": "Amer Picon from Marseille does not reach the United States in any dependable quantity. American bars pour Torani Amer, made in San Francisco largely because Basque bars needed it.",
+   "body": "Amer Picon from Marseille does not reach the United States in any dependable quantity. American bars pour Torani Amer instead — made in San Francisco, and made largely because Basque bars needed it. Torani made it for more than sixty years.",
    "tier": "cited",
    "source": "wikipedia-picon-punch"
   },
   {
-   "heading": "2024: the shortage",
-   "body": "A production change sent Torani Amer back for recertification by California authorities while the company leaned toward its syrup business. Bars from Bakersfield to Elko rationed.",
+   "heading": "2024: the Picon panic",
+   "body": "California required re-certification of one of the ingredients, and Torani Amer went off the market with no date for its return; by August the trade was told mid-August at the earliest. Reno press called it the Picon panic. Regulars in rural Nevada carried their own bottles into their own bars so the bartender could keep making the drink. That is the hoarding people remember, and the speculation that came with it.",
    "tier": "cited",
-   "source": "wikipedia-picon-punch"
+   "source": "thisisreno-picon-panic"
   },
   {
-   "heading": "2025: Reno takes it over",
-   "body": "Torani handed the recipe to Ferino Distillery in Reno. The same year, Nevada named the drink its official state cocktail. Gardnerville's bar now names Ferino on its own page.",
+   "heading": "What actually happened to Torani — no factory closed",
+   "body": "The story circulates as a factory closure. It was not one. In December 2024 Torani announced it was handing the confidential Amer formula, and the global rights to it, to Ferino Distillery in Reno — free of charge, with the stated hope that they would carry it on. Torani stopped making Amer in March 2025 and turned to its syrup business. Ferino put it into production in April 2025 as Ferino Amer. Torani's plant did not shut; the company stopped making one product and gave it away.",
+   "tier": "cited",
+   "source": "businesswire-ferino"
+  },
+  {
+   "heading": "2025: Reno takes it over, and the state makes it official",
+   "body": "The same year, Nevada named the Picon Punch its official state cocktail. The drink and the bitter it needs are now both made in Nevada. Gardnerville's bar names Ferino on its own page.",
    "tier": "cited",
    "source": "jt-site"
+  },
+  {
+   "heading": "The glass is its own supply question",
+   "body": "Northern Nevada serves it in a six-ounce stemmed glass — usually a Libbey 8054 Georgian Irish coffee, a stock restaurant-supply item, and sometimes a custom one from the Louie Picon Glass Company of Sparks, a two-person firm incorporated in 2009. Everywhere else it goes into a highball or a Collins, which is twice the volume.",
+   "tier": "cited",
+   "source": "libbey-8054"
   },
   {
    "heading": "Not a Basque Country drink",
@@ -50,8 +62,20 @@
    "how": "the record with the build and the glassware"
   },
   {
+   "id": "picon-glass",
+   "how": "the six ounces this all has to fit into"
+  },
+  {
    "id": "jt-basque-gardnerville",
    "how": "names Ferino on its own page"
+  },
+  {
+   "id": "brass-rail-alturas",
+   "how": "pours one, 300 miles from Reno"
+  },
+  {
+   "id": "star-hotel-elko",
+   "how": "pours one, and prints no drink list at all"
   },
   {
    "id": "nevada",
@@ -63,10 +87,22 @@
   "punch-picon",
   "wineenthusiast-picon",
   "jt-site",
-  "sifestival-picon"
+  "sifestival-picon",
+  "thisisreno-picon-panic",
+  "businesswire-ferino",
+  "nnbw-ferino",
+  "kolo-ferino",
+  "ferino-shop",
+  "saveur-amer",
+  "libbey-8054",
+  "manta-louie-picon-glass"
  ],
  "provenance": "cited",
  "confidence": "high",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-17",
+ "needs_verification": [
+  "whether Ferino Amer is in steady supply now, and what a bottle costs",
+  "whether any room in this directory still pours from a hoarded Torani bottle"
+ ]
 }

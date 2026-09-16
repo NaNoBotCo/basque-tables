@@ -32,5 +32,82 @@
  "provenance": "cited",
  "confidence": "medium",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "patxaran/patxaran-botella-del-consejo-regulador-de-pachar-n-navarro.jpg",
+   "source": "commons",
+   "title": "File:Botella del Consejo Regulador de Pacharán Navarro.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Botella_del_Consejo_Regulador_de_Pachar%C3%A1n_Navarro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABotella_del_Consejo_Regulador_de_Pachar%C3%A1n_Navarro.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Infopildoras",
+   "credit": "Own work",
+   "alt": "Botella genérica con la imagen del Consejo Regulador de Pacharán Navarro junto a las endrinas con las que se elabora el pacharán",
+   "date": "2013-01-09",
+   "primary": true,
+   "sha256": "ba7d3080b4436b959b79a1a296cebbd154da6c9af60d402f8ed5b6baa2331668"
+  },
+  {
+   "file": "patxaran/patxaran-etxeko-patxaran-lehiaketa.jpg",
+   "source": "commons",
+   "title": "File:Etxeko patxaran lehiaketa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Etxeko_patxaran_lehiaketa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AEtxeko_patxaran_lehiaketa.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Imanol Soriano (goiena.eus",
+   "credit": "https://goiena.eus/aretxabaleta/1386611355186-aretxabaletako-gastronomia-eta-folklore-jaialdia",
+   "alt": "Aretxabaletako patxaran lehiaketako partehartzaileak",
+   "date": "2013-10-23",
+   "primary": false,
+   "sha256": "958f8af0e5ce110dc75b8ee27c75a3d9b099a1bcf7423812350ad0935dc90bf3"
+  },
+  {
+   "file": "patxaran/patxaran-pachar-n-con-hielo.jpg",
+   "source": "commons",
+   "title": "File:Pacharán con hielo.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Pachar%C3%A1n_con_hielo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APachar%C3%A1n_con_hielo.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Juan Emilio Prades Bel",
+   "credit": "Own work",
+   "alt": "Pacharán con hielo",
+   "date": "2024-11-28 15:30:58",
+   "primary": false,
+   "sha256": "d933df9edbf303a5464a11dab865eb045975ea08b230284e3ec03355c209b192"
+  },
+  {
+   "file": "patxaran/patxaran-patxaran-casero.jpg",
+   "source": "commons",
+   "title": "File:Patxaran casero.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Patxaran_casero.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APatxaran_casero.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Ardo Beltz",
+   "credit": "Own work",
+   "alt": "Bottle of Patxaran",
+   "date": "2006-06-17",
+   "primary": false,
+   "sha256": "bd62455a573b77634bf3c96d77fdeed802bb7b9a08a1ccc8a30cc005add769d9"
+  },
+  {
+   "file": "patxaran/patxaran-patxaran-des-laminak-1.jpg",
+   "source": "commons",
+   "title": "File:Patxaran des laminak 1.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Patxaran_des_laminak_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APatxaran_des_laminak_1.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Patxaran des laminak made in Laguinge (Pyrénées-Atlantiques, France).",
+   "date": "2023-06-09",
+   "primary": false,
+   "sha256": "508ba34882a484e6db602edc2cb611c47878736639b6f125805af238f2fe7e0e"
+  }
+ ]
 }

@@ -100,5 +100,22 @@
  "needs_verification": [
   "prices",
   "Pete and Martha's years at this address"
+ ],
+ "images": [
+  {
+   "file": "villa-basque-deli/villa-basque-deli-chorizobilbao.jpg",
+   "source": "commons",
+   "title": "File:ChorizoBilbao.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/ChorizoBilbao.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AChorizoBilbao.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Markoolio97",
+   "credit": "Own work",
+   "alt": "An example of chorizo de bilbao of King Sue brand. Thin sliced pieces were made to present the contents and cross-section of the sausage. The example provided is cold from being kept in the refrigerat",
+   "date": "2022-03-09 19:38:55",
+   "primary": true,
+   "sha256": "4aafe2fac750f0b146f33bbc830ed2b5145d2a089779e2e38f910fd974752057"
+  }
  ]
 }

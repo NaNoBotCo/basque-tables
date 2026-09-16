@@ -1,10 +1,10 @@
 {
- "records": 84,
+ "records": 86,
  "by_type": {
-  "place": 28,
+  "place": 29,
   "dish": 17,
   "drink": 5,
-  "term": 14,
+  "term": 15,
   "person": 8,
   "org": 2,
   "event": 4,
@@ -12,7 +12,7 @@
   "region": 3
  },
  "by_state": {
-  "CA": 13,
+  "CA": 14,
   "ID": 7,
   "NV": 8
  }

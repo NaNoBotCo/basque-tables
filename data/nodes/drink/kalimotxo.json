@@ -40,5 +40,37 @@
  "provenance": "tradition",
  "confidence": "low",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "kalimotxo/kalimotxo-kalimotxo2.jpg",
+   "source": "commons",
+   "title": "File:Kalimotxo2.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Kalimotxo2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AKalimotxo2.jpg",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+   "author": "ECardenal",
+   "credit": "Own work",
+   "alt": "Bottle of calimotxo (Lidl)",
+   "date": "2011-07-25",
+   "primary": true,
+   "sha256": "4fa503e9d9e9f51a9420bf0f5cc1db4f7bc1dc002c35ec669f26c2167138b1d0"
+  },
+  {
+   "file": "kalimotxo/kalimotxo-porr-n-1.jpg",
+   "source": "commons",
+   "title": "File:Porrón 1.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Porr%C3%B3n_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APorr%C3%B3n_1.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "",
+   "credit": "",
+   "alt": "Porrón 1.jpg",
+   "date": "",
+   "primary": false,
+   "sha256": "6b25720e8947a9d1619afa94e3f7dd5da1a7adec8632d84633604c29f25564f9"
+  }
+ ]
 }

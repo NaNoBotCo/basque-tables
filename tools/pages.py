@@ -76,10 +76,48 @@ def credit(im):
     return " · ".join(bits)
 
 
-def hero(n):
+ACCENT = {"place": 0, "region": 0, "dish": 1, "drink": 2, "term": 3,
+          "person": 1, "org": 3, "event": 2, "story": 0}
+
+
+def drawn_hero(n, d):
+    """Every record opens on a picture. With no photograph, one is drawn from the
+    record's own fields — a room gets its county and its neighbours measured, a word
+    gets its root, a person gets what they opened."""
+    import build as B
+    t = n["type"]
+    names = n["names"]
+    text = n.get("text") or {}
+    if t == "place":
+        row = next((r for r in d["places"] if r["id"] == n["id"]), None)
+        if row:
+            svg = viz.locator_svg(row, d["places"], B.haversine)
+            if svg:
+                return ('<figure class="hero drawn">%s<figcaption>%s</figcaption></figure>'
+                        % (svg, C.esc("Where it stands, and the nearest room to it. "
+                                      "Town centroids, not doorways.")))
+    eyebrow = type_word(t)
+    sub, lines = None, []
+    et = n.get("etymology") or {}
+    if et.get("root"):
+        sub = "%s — %s" % (et["root"], et.get("gloss", ""))
+    elif names.get("eu") and names["eu"].lower() != names["name"].lower():
+        sub = names["eu"]
+    elif (n.get("address") or {}).get("city"):
+        sub = "%s, %s" % (n["address"]["city"], n["address"].get("state", ""))
+    if text.get("short"):
+        lines.append(text["short"])
+    kin = [k for k in n.get("kin", [])][:2]
+    for k in kin:
+        other = kin and None
+    return ('<figure class="hero drawn">%s</figure>'
+            % viz.plate_svg(eyebrow, names["name"], sub, lines, ACCENT.get(t, 0)))
+
+
+def hero(n, d=None):
     ims = n.get("images") or []
     if not ims:
-        return ""
+        return drawn_hero(n, d) if d is not None else ""
     im = next((i for i in ims if i.get("primary")), ims[0])
     return ('<figure class="hero"><img src="%s" alt="%s" loading="eager" decoding="async">'
             '<figcaption>%s<br><span class="cred">%s</span></figcaption></figure>'
@@ -220,6 +258,7 @@ def front(nodes, d, shell, write):
 <p class="note">%s</p>
 <hr>
 %s
+%s
 <hr>
 <div class="dir">%s</div>
 <hr>
@@ -232,6 +271,7 @@ def front(nodes, d, shell, write):
        C.esc(t_("stat_long")), seat.get("shared", 0),
        C.esc(t_("stat_picon")), picon.get("yes", 0),
        C.esc(t_("front_note") % (seat.get("unknown", 0), by["place"])),
+       say_block(phrase_named("Ongi etorri")),
        featured(nodes, d),
        "".join([col("region"), col("place", 8), col("story"), col("dish", 6),
                 col("drink"), col("term", 6), col("person"), col("event"), col("org")]),
@@ -269,8 +309,9 @@ def places_page(nodes, d, shell, write):
 <p class="note">A dashed square in the week strip means no source publishes that day either way.
 It is never counted as open and never counted as closed.</p>
 %s
+%s
 """ % (t_("rooms"), t_("rooms"), len(rows), t_("room"), t_("town"), t_("seating"), t_("dinner"), t_("week"),
-       t_("opened"), "".join(out), viz.week_strip(d["days"]))
+       t_("opened"), "".join(out), say_block(phrase_named("Kaixo")), viz.week_strip(d["days"]))
     write("/places/", shell("Rooms — every Basque dining room here", body,
                             "Every Basque dining room in this directory, by state, with seating, dinner price, "
                             "Picon Punch and published days.", "/places/"))
@@ -383,6 +424,7 @@ everybody at one table. Some still do. Pick what you want and the list answers f
  <button class="chip" data-filter="today" data-value="1" aria-pressed="false">Open <span id="today-name">today</span></button>
  <button class="chip" data-filter="price" data-value="1" aria-pressed="false">Prints its prices</button>
 </div>
+%s
 <p><b id="two-count">%d</b> rooms.</p>
 <div class="cols" id="two-results"></div>
 <hr>
@@ -394,7 +436,7 @@ ordinary work — a phone call each — and it is listed on <a href="/gaps/">Gap
 <p>The <i>open today</i> chip reads your own clock and matches it against days a source published.
 A day nobody published never counts as open.</p>
 <script>%s</script>
-""" % (len(rows),
+""" % (say_block(phrase_named("Adiskide onekin orduak labur")), len(rows),
        viz.three_state_bar(seat, "How the houses seat two people",
                            ["own", "both", "shared", "bar", "unknown"],
                            {"own": "your own table", "both": "both", "shared": "a long table",
@@ -502,7 +544,7 @@ def node_page(n, nodes, d, shell, write):
     if kt.get("says"):
         fact(t_("calls_kitchen"), "&ldquo;%s&rdquo;" % C.esc(kt["says"]), kt)
 
-    body = ["".join(head), hero(n)]
+    body = ["".join(head), hero(n, d)]
     if facts:
         body.append('<dl class="facts">%s</dl>' % "".join(facts))
     for key, label in (("today", t_("now")), ("table", t_("at_the_table")),
@@ -539,24 +581,8 @@ def node_page(n, nodes, d, shell, write):
                         '<th>Picon</th><th>Week</th></tr></thead><tbody>%s</tbody></table></div>'
                         % (len(mine), trs))
 
-    kin = n.get("kin", [])
-    backs = [b for b in d["backlinks"].get(n["id"], []) if b["id"] not in {k["id"] for k in kin}]
-    if kin or backs:
-        li = []
-        for k in kin:
-            other = nodes.get(k["id"])
-            if not other:
-                continue
-            reply = next((b["how"] for b in other.get("kin", []) if b["id"] == n["id"]), None)
-            li.append("<li><a href='%s'>%s</a> — %s%s</li>"
-                      % (url(other), C.esc(other["names"]["name"]), C.esc(k["how"]),
-                         "<br><span>&larr; and back: %s</span>" % C.esc(reply) if reply else ""))
-        for b in backs:
-            other = nodes.get(b["id"])
-            if other:
-                li.append("<li><a href='%s'>%s</a> — <span>points here: %s</span></li>"
-                          % (url(other), C.esc(other["names"]["name"]), C.esc(b["how"])))
-        body.append('<h2>%s</h2><ul class="kin">%s</ul>' % (t_("kin"), "".join(li)))
+    body.append(callout(n))
+    body.append(kin_cards(n, nodes, d))
 
     if n.get("needs_verification"):
         body.append('<div class="gap"><b>%s</b><ul>%s</ul></div>'
@@ -592,6 +618,47 @@ def node_page(n, nodes, d, shell, write):
                         text.get("short", names["name"]), url(n), jsonld=[ld]))
 
 
+TILE = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)"]
+
+
+def thumb(n, d=None):
+    """A picture for a card. A photograph if the record has one; otherwise a small
+    drawn tile carrying the record's own word, so no card is a blank rectangle."""
+    ims = n.get("images") or []
+    if ims:
+        im = next((i for i in ims if i.get("primary")), ims[0])
+        return ('<img class="thumb" src="%s" alt="%s" loading="lazy" decoding="async">'
+                % (C.esc(img_src(im)), C.esc(im.get("alt") or n["names"]["name"])))
+    col = TILE[ACCENT.get(n["type"], 0) % 4]
+    name = n["names"].get("eu") or n["names"]["name"]
+    short = name if len(name) < 13 else name[:12] + "\u2026"
+    return ('<span class="thumb tile" style="--tile:%s" aria-hidden="true">'
+            '<span>%s</span></span>' % (col, C.esc(short)))
+
+
+def kin_cards(n, nodes, d):
+    kin = n.get("kin", [])
+    seen = {k["id"] for k in kin}
+    backs = [b for b in d["backlinks"].get(n["id"], []) if b["id"] not in seen]
+    items = [(k["id"], k["how"], False) for k in kin] + [(b["id"], b["how"], True) for b in backs]
+    if not items:
+        return ""
+    cards = []
+    for nid, how, is_back in items:
+        other = nodes.get(nid)
+        if not other:
+            continue
+        reply = next((b["how"] for b in other.get("kin", []) if b["id"] == n["id"]), None)
+        cards.append(
+            '<a class="kin-card" href="%s">%s<span class="kin-body">'
+            '<b>%s</b><em>%s</em>%s%s</span></a>'
+            % (url(other), thumb(other, d), C.esc(other["names"]["name"]),
+               C.esc(type_word(other["type"])),
+               "<span>%s%s</span>" % ("&larr; " if is_back else "", C.esc(how)),
+               "<span class=\"back\">&larr; %s</span>" % C.esc(reply) if reply and not is_back else ""))
+    return '<h2>%s</h2><div class="kin-grid">%s</div>' % (t_("kin"), "".join(cards))
+
+
 def type_index(kind, nodes, d, shell, write):
     types = C.vocab("types")
     items = C.by_type(nodes, kind)
@@ -599,9 +666,9 @@ def type_index(kind, nodes, d, shell, write):
     for n in items:
         ad = n.get("address") or {}
         where = ", ".join(x for x in [ad.get("city"), ad.get("state")] if x)
-        cards.append('<div class="card"><h3><a href="%s">%s</a></h3>%s<p>%s</p></div>'
-                     % (url(n), C.esc(n["names"]["name"]),
-                        "<p>%s</p>" % C.esc(where) if where else "",
+        cards.append('<a class="card card-link" href="%s">%s<h3>%s</h3>%s<p>%s</p></a>'
+                     % (url(n), thumb(n, d), C.esc(n["names"]["name"]),
+                        "<p class=\"where\">%s</p>" % C.esc(where) if where else "",
                         C.esc((n.get("text") or {}).get("short", ""))))
     label = t_({"dish": "dishes", "drink": "drinks", "term": "words", "person": "people",
                 "org": "orgs", "event": "events", "story": "stories",
@@ -636,6 +703,7 @@ spend <b>%s</b> before the Picon, and the Picon at that bar is <b>$8</b>.</p>
 <figcaption>Rooms that publish a founding year: %d of %d. A red dot is a room that has closed.</figcaption>
 %s
 %s
+%s
 <h2>How far apart</h2>
 <p>Closest pair of towns holding rooms in different states: <b>%s miles</b>. Widest pair anywhere
 in the set: <b>%s miles</b> — Chino to Boise. Both computed from town centroids, which is why they
@@ -651,6 +719,7 @@ most of it.</p>
                            {"own": "your own table", "both": "both", "shared": "a long table",
                             "bar": "a counter", "unknown": "not published"}),
        viz.week_strip(d["days"]),
+       say_block(phrase_named("Zenbat da?")),
        "{:,}".format(d["distance"]["nearest_west_to_ohio_mi"] or 0),
        "{:,}".format(d["distance"]["widest_pair_mi"] or 0))
     write("/numbers/", shell("Numbers — Basque Tables", body,
@@ -679,6 +748,7 @@ counted.</p>
 <tbody>%s</tbody></table></div>
 <p class="note">Every one of these closes with a phone call and a note of who answered.
 None of them closes by guessing.</p>
+%s
 <h2>Open questions, by record</h2>
 <ol class="src">%s</ol>
 <h2>Rooms we have not reached</h2>
@@ -686,7 +756,8 @@ None of them closes by guessing.</p>
 a phone number, a name. They are here because leaving them out would misrepresent how many
 Basque rooms these three states hold. Their status reads <b>not established</b> and they are
 excluded from every filter that would put two people in a car.</p>
-""" % (rows, qs, len([r for r in d["places"] if r["status"] == "unknown"]))
+""" % (rows, say_block(phrase_named("Ez dakit euskaraz")), qs,
+       len([r for r in d["places"] if r["status"] == "unknown"]))
     write("/gaps/", shell("Gaps — Basque Tables", body,
                           "What this directory does not know, counted field by field.", "/gaps/"))
 
@@ -701,9 +772,10 @@ def wander_page(nodes, d, shell, write):
     body = """
 <p class="eyebrow">Wander</p><h1>Take a ride</h1>
 <p class="lede">%d records. Press the button, or press <b>r</b> anywhere on the site.</p>
+%s
 <p><button class="chip" id="roll" style="font-size:1.1rem;padding:.8rem 1.4rem">Somewhere &rarr;</button></p>
 <script>%s</script>
-""" % (len(nodes), js)
+""" % (len(nodes), say_block(phrase_named("Aupa!")), js)
     write("/wander/", shell("Wander — Basque Tables", body, "A random record.", "/wander/"))
 
 
@@ -816,6 +888,7 @@ def render_all(nodes, d, shell, write):
     wander_page(nodes, d, shell, write); n += 1
     search_page(nodes, d, shell, write); n += 1
     pictures_page(nodes, d, shell, write); n += 1
+    say_page(nodes, d, shell, write); n += 1
     for kind in TYPE_INDEX:
         if kind == "place":
             continue
@@ -852,6 +925,7 @@ def pictures_page(nodes, d, shell, write):
 or FAL, and carries its photographer and its licence here and in a sidecar file beside the image.</p>
 <p class="src">%s</p>
 <div class="shots">%s</div>
+%s
 <h2>Where they come from</h2>
 <p>All of them from Wikimedia Commons, pulled by <code>tools/harvest_commons.py</code>, which reads the
 licence off each file and refuses anything that is not free to reuse. Share-alike is complied with, not
@@ -860,7 +934,108 @@ dodged: the licence and the photographer ride with the file and are printed besi
 The Commons material is strong on the Basque Country itself, on the Boise block, and on the sheep
 camps — and nearly silent on Bakersfield, Elko and Gardnerville interiors. That gap is
 <a href="/gaps/">on the gaps page</a>, not papered over with a stock photograph.</p>
-""" % (t_("pictures"), t_("pictures"), len(rows), with_pics, len(nodes), C.esc(lic), "".join(cards))
+""" % (t_("pictures"), t_("pictures"), len(rows), with_pics, len(nodes), C.esc(lic),
+       "".join(cards), say_block(phrase_named("Oso goxoa")))
     write("/pictures/", shell("%s — %s" % (t_("pictures"), t_("site_name")), body,
                               "Freely licensed Basque pictures, each with its photographer and licence.",
                               "/pictures/"))
+
+
+# ---------------------------------------------------------------- Euskara, out loud
+CALLOUT_GROUP = {"place": ["arriving", "table", "bar"], "dish": ["table"], "drink": ["bar"],
+                 "term": ["keepers", "manners"], "person": ["manners"], "org": ["arriving"],
+                 "event": ["bar", "arriving"], "story": ["keepers"], "region": ["arriving", "keepers"]}
+
+
+def _phrases():
+    return C.vocab("phrases")["groups"]
+
+
+def phrase_for(n):
+    """One phrase per page, picked from the record's own id so it is stable across
+    builds, and from a group that suits the kind of page it lands on."""
+    groups = {g["key"]: g for g in _phrases()}
+    keys = CALLOUT_GROUP.get(n["type"], ["manners"])
+    h = sum(ord(c) * (i + 3) for i, c in enumerate(n["id"]))
+    if n["type"] == "place" and (n.get("picon") or {}).get("served") == "yes":
+        keys = ["bar"]
+    g = groups[keys[h % len(keys)]]
+    return g["phrases"][h % len(g["phrases"])]
+
+
+def phrase_named(eu):
+    for g in _phrases():
+        for p in g["phrases"]:
+            if p["eu"] == eu:
+                return p
+    return None
+
+
+def say_block(p):
+    if not p:
+        return ""
+    return ('<aside class="say"><p class="eyebrow">Esan / say it</p>'
+            '<p class="say-eu" lang="eu">%s</p>'
+            '<p class="say-how">%s</p><p class="say-en">%s</p>%s'
+            '<p class="say-more"><a href="/say/">The rest of the phrasebook &rarr;</a></p></aside>'
+            % (C.esc(p["eu"]), C.esc(p["say"]), C.esc(p["en"]),
+               '<p class="say-use">%s</p>' % C.esc(p["use"]) if p.get("use") else ""))
+
+
+def callout(n):
+    p = phrase_for(n)
+    return say_block(p)
+
+
+def say_page(nodes, d, shell, write):
+    pr = C.vocab("pronounce")
+    ph = _phrases()
+    rows = "".join(
+        "<tr><td class='eu'>%s</td><td><b>%s</b><br><span>%s</span></td>"
+        "<td class='eu'>%s</td><td>%s<br><span>%s</span></td></tr>"
+        % (C.esc(l["eu"]), C.esc(l["say"]), C.esc(l["like"]), C.esc(l["word"]),
+           C.esc(l["as"]), C.esc(l["gloss"])) for l in pr["letters"])
+    rules = "".join("<li>%s</li>" % C.esc(r) for r in pr["rules"])
+    blocks = []
+    for g in ph:
+        cards = "".join(
+            "<div class='phrase'><p class='say-eu' lang='eu'>%s</p><p class='say-how'>%s</p>"
+            "<p class='say-en'>%s</p>%s</div>"
+            % (C.esc(p["eu"]), C.esc(p["say"]), C.esc(p["en"]),
+               "<p class='say-use'>%s</p>" % C.esc(p["use"]) if p.get("use") else "")
+            for p in g["phrases"])
+        blocks.append("<h2>%s</h2><div class='phrases'>%s</div>" % (C.esc(g["label"]), cards))
+    terms = C.by_type(nodes, "term")
+    gloss = "".join(
+        "<tr><td class='eu'><a href='%s'>%s</a></td><td>%s</td><td>%s</td><td>%s</td></tr>"
+        % (url(t), C.esc(t["names"].get("eu") or t["names"]["name"]),
+           C.esc(t["names"].get("said", "")),
+           C.esc((t.get("etymology") or {}).get("gloss", "")),
+           C.esc((t.get("text") or {}).get("short", ""))) for t in terms)
+    body = """
+<p class="eyebrow">Euskara</p><h1>Say it out loud</h1>
+<p class="lede">Basque is related to no other living language, so there is nothing to carry over from
+Spanish or French. That makes the spelling look harder than the sound is. Six letters do most of the work.</p>
+<div class="tbl-scroll"><table>
+<thead><tr><th>Letters</th><th>Say</th><th>In a word</th><th>Which is</th></tr></thead>
+<tbody>%s</tbody></table></div>
+<ul class="rules">%s</ul>
+<hr>
+<p class="eyebrow">Phrasebook</p>
+<h2 style="margin-top:.2rem">Twenty-eight things worth having ready</h2>
+<p class="lede">Enough to come in, be fed, raise a glass and admit you have run out of Basque.</p>
+%s
+<hr>
+<h2>Glossary</h2>
+<p>Every word with a record of its own on this site.</p>
+<div class="tbl-scroll"><table>
+<thead><tr><th>Word</th><th>Said</th><th>Which means</th><th>Which is</th></tr></thead>
+<tbody>%s</tbody></table></div>
+<div class="gap"><b>Not checked by a Basque speaker.</b> The pronunciations are approximations written
+for an English ear, and the phrases were assembled by this project rather than by a speaker. Corrections
+are welcome and belong in <code>data/vocab/phrases.json</code> and <code>pronounce.json</code>, where the
+English sits beside the Basque for exactly that reason.</div>
+""" % (rows, rules, "".join(blocks), gloss)
+    write("/say/", shell("Say it out loud — Basque Tables", body,
+                         "A pronunciation key for Euskara, twenty-eight phrases for a Basque dining room, "
+                         "and a glossary of every word on this site.", "/say/"))

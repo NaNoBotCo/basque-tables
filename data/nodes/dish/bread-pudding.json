@@ -26,5 +26,52 @@
  "provenance": "cited",
  "confidence": "medium",
  "schema": 1,
- "updated": "2026-09-16"
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "bread-pudding/bread-pudding-bpl-bread-pudding.jpg",
+   "source": "commons",
+   "title": "File:BPL Bread Pudding.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/BPL_Bread_Pudding.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABPL_Bread_Pudding.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Pacamah",
+   "credit": "Own work",
+   "alt": "Delicious bread pudding from the Boston Public Library",
+   "date": "2023-09-20 15:30:48",
+   "primary": true,
+   "sha256": "b3f324b47ae284b51c4c77a0c0244183ca40a77570157aeb49a9c0aac891573a"
+  },
+  {
+   "file": "bread-pudding/bread-pudding-bread-pudding-1.jpg",
+   "source": "commons",
+   "title": "File:Bread Pudding 1.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bread_Pudding_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABread_Pudding_1.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Rocky Yeh from Seattle, USA",
+   "credit": "Bread Pudding",
+   "alt": "Bread Pudding 1.jpg",
+   "date": "2006-03-07 22:01",
+   "primary": false,
+   "sha256": "1468a3ef5c9b6cf4feef2680807871540196f54367aaba6bafd63a2a84f2b6f1"
+  },
+  {
+   "file": "bread-pudding/bread-pudding-bread-pudding-arnaud-s-french-quarter-new-orleans-lo-9b55b3d.jpg",
+   "source": "commons",
+   "title": "File:Bread pudding, Arnaud's, French Quarter, New Orleans, Louisiana, USA.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Bread_pudding%2C_Arnaud%27s%2C_French_Quarter%2C_New_Orleans%2C_Louisiana%2C_USA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABread_pudding%2C_Arnaud%27s%2C_French_Quarter%2C_New_Orleans%2C_Louisiana%2C_USA.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Cory Doctorow",
+   "credit": "https://www.flickr.com/photos/doctorow/52657120150/",
+   "alt": "Bread pudding, Arnaud's, French Quarter, New Orleans, Louisiana, USA",
+   "date": "2023-01-29 12:25:45",
+   "primary": false,
+   "sha256": "a593737a1f3586255b15604b3541e6c82d00b45b4e5dddbc03c34a7c738adc59"
+  }
+ ]
 }

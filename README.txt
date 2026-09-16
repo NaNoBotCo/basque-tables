@@ -40,6 +40,13 @@ PICTURES
       photographer, the licence and a sha256, and the credit is printed on every page.
 
 EUSKARA
+  /say/ is the pronunciation key, a 28-phrase phrasebook and the glossary. The data is
+  data/vocab/pronounce.json and data/vocab/phrases.json, both written by this project
+  and NOT reviewed by a Basque speaker — the English sits beside the Basque so a speaker
+  can correct it without reading code. One phrase is dealt to every record page as a
+  callout, picked from the record's own id so it is stable, and from a group that suits
+  the page (a bar toast on a drink, a greeting on a room).
+
   data/vocab/eu.json is the interface, English beside Basque, with `check: true` on the
   strings a Basque speaker should look at first. The record write-ups are NOT translated.
   No English-to-Basque machine translator was available: Cloudflare Workers AI's
@@ -49,7 +56,8 @@ EUSKARA
 LAYOUT
   data/nodes/<type>/<id>.json   the records
   data/sources/sources.json     every source id a record may cite; the validator refuses others
-  data/vocab/                   types, regions, tiers, banned words, the Euskara interface
+  data/vocab/                   types, regions, tiers, banned words, the Euskara interface,
+                                the pronunciation key and the phrasebook
   data/geo/towns.json           town centroids — not doorways — for the map and distances
   data/images/                  downloaded pictures, each with a .json sidecar
   schema/node.schema.json       the record shape

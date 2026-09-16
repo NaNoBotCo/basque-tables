@@ -11,6 +11,7 @@ export SITE_URL="$HOST"
 echo "publishing for $SITE_URL"
 python3 tools/validate.py
 python3 tools/site.py
+python3 tools/cards.py
 python3 tests/test_all.py
 [ -f docs/CNAME ] && cp docs/CNAME /tmp/_bt_cname || true
 rm -rf docs
