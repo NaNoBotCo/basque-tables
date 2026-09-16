@@ -13,25 +13,49 @@
   "west"
  ],
  "text": {
-  "short": "Northern Nevada pours a Picon into a six-ounce stemmed glass. Two of them exist: a stock restaurant glass everyone can buy, and a custom one made in Sparks.",
+  "short": "Northern Nevada pours a Picon into a six-ounce stemmed glass. One of them you can order this afternoon. The other has a name, a town, and a trail that goes cold in 2015.",
   "note": "Outside northern Nevada the drink lands in a highball or a Collins, which changes the proportions more than people admit — the stem glass holds six ounces, and a Collins holds twice that."
  },
  "sections": [
   {
-   "heading": "The one you can buy",
-   "body": "A Libbey 8054, the Georgian Irish coffee glass: six ounces, a slightly contoured bowl, a rimmed stem over a wide foot. It is a stock item at restaurant suppliers, which is why it is the glass most bars actually use — availability decided this, not design.",
+   "heading": "The one every bar actually uses",
+   "body": "A Libbey 8054 Georgian Irish coffee: six ounces, a slightly contoured bowl, a rimmed stem over a wide foot, five and three quarter inches tall. Libbey has made the Georgian since 1952 and it has been San Francisco's Irish coffee glass that whole time. It is a stock restaurant-supply item, and that — not design — is why it became the Picon glass. Availability decided this.",
    "tier": "cited",
-   "source": "libbey-8054"
+   "source": "libbey-fs-8054"
   },
   {
-   "heading": "The one made for it",
-   "body": "The Louie Picon Glass Company of Sparks, Nevada, incorporated in 2009, makes a custom stemmed glass for the drink. It is a two-person business. A directory listing puts its annual revenue near $110,000, which is the scale of the whole enterprise: one small firm in one town, making the glass for one cocktail.",
+   "heading": "How to get that one",
+   "body": "Any restaurant supplier, by the case of 36. Priced around $205 a case at the suppliers that publish a figure, which is about $5.70 a glass, and in stock for same-day shipping. Bargreen Ellingson lists it but hides the price behind a trade login; WebstaurantStore, Zoro and Wasserstrom do not. Thirty-six is more Picon glasses than one house needs and considerably fewer than one house regrets.",
+   "tier": "cited",
+   "source": "webstaurant-8054"
+  },
+  {
+   "heading": "The custom one, and why nobody can find it",
+   "body": "The Louie Picon Glass Company of Sparks, Nevada makes a stemmed glass for the drink. Two staff. Public business directories list it under a Sparks address with the phone (775) 626-0141, read 17 September 2026 — a directory listing, not a confirmation, and we have not called it. No website resolves: louiepicon.com, louiepiconglass.com, piconglass.com and two more were all tried on the same day and none answered.",
    "tier": "harvested",
-   "source": "manta-louie-picon-glass"
+   "source": "chamberofcommerce-louie-picon"
   },
   {
-   "heading": "Why it matters to what you are handed",
-   "body": "A six-ounce stem forces the build tight — amer, a spoon of grenadine, a short top of soda, a float of brandy, a twist. Poured into a twelve-ounce Collins the same measures need lengthening, and what arrives is a longer, weaker drink wearing the same name. When people say the Picon is different away from Reno, part of what they are tasting is the glassware.",
+   "heading": "Where the story actually comes from",
+   "body": "Every retelling of the custom glass traces back to one source: a home cook's blog post about dinner at Louis' Basque Corner, written in 2015. Its words were “Check out the Louie Picon Glass Company website for retail locations, additional recipes, stories, and photos.” It did not link that website. The blog's own domain is gone and the post survives only in the Internet Archive. Wikipedia cites it. Everyone else cites Wikipedia. So the answer to why a Reno resident could never track down the glass factory is that the paper trail is one sentence, ten years old, pointing at a website nobody has produced since.",
+   "tier": "cited",
+   "source": "holm-2015"
+  },
+  {
+   "heading": "What we could not settle",
+   "body": "Whether the company still trades. Nevada's business registry would answer it and would not respond to this machine. Anyone in Sparks with a phone can close this in five minutes, and we would like the answer.",
+   "tier": "inference",
+   "source": "chamberofcommerce-louie-picon"
+  },
+  {
+   "heading": "Other doors worth knocking on",
+   "body": "The bars that pour into them: Louis' Basque Corner and J.T. in Gardnerville both serve the drink in a stemmed glass and both answer the phone. Basque clubs sell glassware as fundraisers. Etsy carries a small trade in Picon glasses, mostly secondhand and mostly unetched. None of these is confirmed to sell one; they are the leads we would try next.",
+   "tier": "inference",
+   "source": "louis-site"
+  },
+  {
+   "heading": "Why the glass changes the drink",
+   "body": "A six-ounce stem forces the build tight — amer, a teaspoon of grenadine, a short top of soda, a float of brandy, a twist. Poured into a twelve-ounce Collins the same measures need lengthening, and what arrives is a longer, weaker drink wearing the same name. When people say a Picon is different away from Reno, part of what they are tasting is the glassware.",
    "tier": "inference",
    "source": "wikipedia-picon-punch"
   }
@@ -43,7 +67,15 @@
   },
   {
    "id": "the-picon-supply",
-   "how": "the rest of the supply question"
+   "how": "the bitter has the same problem as the glass"
+  },
+  {
+   "id": "louis-basque-corner",
+   "how": "pours into a stemmed one, and answers its phone"
+  },
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "the other bar worth asking"
   },
   {
    "id": "nevada",
@@ -52,13 +84,22 @@
  ],
  "needs_verification": [
   "whether the Louie Picon Glass Company still trades, and what a glass costs",
-  "which rooms in this directory use which glass"
+  "whether it ever had a website, and what was on it",
+  "which rooms in this directory use the Libbey and which use the custom glass",
+  "whether any Basque club or restaurant sells one over the counter"
  ],
  "sources": [
+  "libbey-fs-8054",
+  "webstaurant-8054",
+  "zoro-8054",
   "libbey-8054",
+  "chamberofcommerce-louie-picon",
+  "amfibi-louie-picon",
+  "holm-2015",
   "manta-louie-picon-glass",
   "wikipedia-picon-punch",
-  "westernlife-picon"
+  "westernlife-picon",
+  "louis-site"
  ],
  "provenance": "cited",
  "confidence": "medium",

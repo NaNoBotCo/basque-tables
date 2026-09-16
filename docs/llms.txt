@@ -99,7 +99,7 @@
 - [Ostatua](https://nanobotco.github.io/basque-tables/term/ostatua/): The boarding house. Every old room in this directory was one first.
 - [Pilota](https://nanobotco.github.io/basque-tables/term/pilota/): The handball game, played against a wall. Every Basque town has a fronton; so do Boise and Elko.
 - [Sagardotegi](https://nanobotco.github.io/basque-tables/term/sagardotegi/): A cider house: barrels along one wall, txotx called when a barrel is opened, cod omelette and a beef chop at a shared table standing up.
-- [The Picon glass](https://nanobotco.github.io/basque-tables/term/picon-glass/): Northern Nevada pours a Picon into a six-ounce stemmed glass. Two of them exist: a stock restaurant glass everyone can buy, and a custom one made in Sparks.
+- [The Picon glass](https://nanobotco.github.io/basque-tables/term/picon-glass/): Northern Nevada pours a Picon into a six-ounce stemmed glass. One of them you can order this afternoon. The other has a name, a town, and a trail that goes cold
 - [Txistu](https://nanobotco.github.io/basque-tables/term/txistu/): A three-holed flute played with the left hand while the right beats a drum. One musician, two instruments.
 - [Txoko](https://nanobotco.github.io/basque-tables/term/txoko/): A members' cooking society — a kitchen a group keeps and cooks in for itself.
 - [Zazpiak Bat](https://nanobotco.github.io/basque-tables/term/zazpiak-bat/): Seven provinces, one people. The motto, and the name of clubs from Reno to Vancouver.

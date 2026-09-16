@@ -2,51 +2,210 @@
  "_note": "Things worth saying out loud in a Basque dining room. Written by this project and NOT reviewed by a Basque speaker. Pronunciations are approximations for an English speaker.",
  "_unreviewed": true,
  "groups": [
-  {"key": "arriving", "label": "Coming in",
+  {
+   "key": "arriving",
+   "label": "Coming in",
    "phrases": [
-    {"eu": "Kaixo", "say": "KAI-sho", "en": "Hello", "use": "Any hour, anyone."},
-    {"eu": "Egun on", "say": "eh-GOON own", "en": "Good morning", "use": "Until about one."},
-    {"eu": "Arratsalde on", "say": "ah-rrat-SAL-deh own", "en": "Good afternoon", "use": "From lunch until dark."},
-    {"eu": "Gabon", "say": "ga-BONE", "en": "Good evening", "use": "Also goodnight on the way out."},
-    {"eu": "Ongi etorri", "say": "ON-ghee eh-TOH-rri", "en": "Welcome", "use": "What the house says to you, not the other way round. Worth knowing when you hear it."}
-   ]},
-  {"key": "manners", "label": "Manners",
+    {
+     "eu": "Kaixo",
+     "say": "KAI-sho",
+     "en": "Hello",
+     "use": "Any hour, anyone."
+    },
+    {
+     "eu": "Egun on",
+     "say": "eh-GOON own",
+     "en": "Good morning",
+     "use": "Until about one."
+    },
+    {
+     "eu": "Arratsalde on",
+     "say": "ah-rrat-SAL-deh own",
+     "en": "Good afternoon",
+     "use": "From lunch until dark."
+    },
+    {
+     "eu": "Gabon",
+     "say": "ga-BONE",
+     "en": "Good evening",
+     "use": "Also goodnight on the way out."
+    },
+    {
+     "eu": "Ongi etorri",
+     "say": "ON-ghee eh-TOH-rri",
+     "en": "Welcome",
+     "use": "What the house says to you, not the other way round. Worth knowing when you hear it."
+    }
+   ]
+  },
+  {
+   "key": "manners",
+   "label": "Manners",
    "phrases": [
-    {"eu": "Mesedez", "say": "meh-seh-DES", "en": "Please", "use": "Goes on the end: beste bat, mesedez."},
-    {"eu": "Eskerrik asko", "say": "es-KEH-rreek AS-ko", "en": "Thank you very much", "use": "The everyday thanks."},
-    {"eu": "Mila esker", "say": "MEE-la es-KEHR", "en": "A thousand thanks", "use": "Warmer. For someone who has gone to trouble."},
-    {"eu": "Ez horregatik", "say": "es oh-rreh-GA-teek", "en": "You're welcome", "use": "Literally: not for that."},
-    {"eu": "Barkatu", "say": "bar-KA-too", "en": "Sorry, or excuse me", "use": "Getting past someone, or getting attention."},
-    {"eu": "Bai / Ez", "say": "bye / es", "en": "Yes / no", "use": "Bai sounds exactly like the English bye."}
-   ]},
-  {"key": "table", "label": "At the table",
+    {
+     "eu": "Mesedez",
+     "say": "meh-seh-DES",
+     "en": "Please",
+     "use": "Goes on the end: beste bat, mesedez."
+    },
+    {
+     "eu": "Eskerrik asko",
+     "say": "es-KEH-rreek AS-ko",
+     "en": "Thank you very much",
+     "use": "The everyday thanks."
+    },
+    {
+     "eu": "Mila esker",
+     "say": "MEE-la es-KEHR",
+     "en": "A thousand thanks",
+     "use": "Warmer. For someone who has gone to trouble."
+    },
+    {
+     "eu": "Ez horregatik",
+     "say": "es oh-rreh-GA-teek",
+     "en": "You're welcome",
+     "use": "Literally: not for that."
+    },
+    {
+     "eu": "Barkatu",
+     "say": "bar-KA-too",
+     "en": "Sorry, or excuse me",
+     "use": "Getting past someone, or getting attention."
+    },
+    {
+     "eu": "Bai / Ez",
+     "say": "bye / es",
+     "en": "Yes / no",
+     "use": "Bai sounds exactly like the English bye."
+    }
+   ]
+  },
+  {
+   "key": "table",
+   "label": "At the table",
    "phrases": [
-    {"eu": "On egin!", "say": "own EH-gheen", "en": "Enjoy your meal", "use": "Said to anyone already eating as you pass their table. Literally: may it do good."},
-    {"eu": "Oso goxoa", "say": "OH-so go-SHO-ah", "en": "Very good indeed", "use": "About food. The one compliment worth having ready."},
-    {"eu": "Beste bat, mesedez", "say": "BES-teh bat meh-seh-DES", "en": "Another one, please", "use": "Works for the drink and the bread."},
-    {"eu": "Kontua, mesedez", "say": "kon-TOO-ah meh-seh-DES", "en": "The bill, please", "use": ""},
-    {"eu": "Zenbat da?", "say": "SEN-bat da", "en": "How much is it?", "use": ""},
-    {"eu": "Jan eta edan", "say": "yan EH-ta EH-dan", "en": "Eat and drink", "use": "What the whole institution is for."}
-   ]},
-  {"key": "bar", "label": "At the bar",
+    {
+     "eu": "On egin!",
+     "say": "own EH-gheen",
+     "en": "Enjoy your meal",
+     "use": "Said to anyone already eating as you pass their table. Literally: may it do good."
+    },
+    {
+     "eu": "Oso goxoa",
+     "say": "OH-so go-SHO-ah",
+     "en": "Very good indeed",
+     "use": "About food. The one compliment worth having ready."
+    },
+    {
+     "eu": "Beste bat, mesedez",
+     "say": "BES-teh bat meh-seh-DES",
+     "en": "Another one, please",
+     "use": "Works for the drink and the bread."
+    },
+    {
+     "eu": "Kontua, mesedez",
+     "say": "kon-TOO-ah meh-seh-DES",
+     "en": "The bill, please",
+     "use": ""
+    },
+    {
+     "eu": "Zenbat da?",
+     "say": "SEN-bat da",
+     "en": "How much is it?",
+     "use": ""
+    },
+    {
+     "eu": "Jan eta edan",
+     "say": "yan EH-ta EH-dan",
+     "en": "Eat and drink",
+     "use": "What the whole institution is for."
+    }
+   ]
+  },
+  {
+   "key": "bar",
+   "label": "At the bar",
    "phrases": [
-    {"eu": "Topa!", "say": "TOH-pah", "en": "Cheers!", "use": "Glasses up. The one to have ready when the Picon lands."},
-    {"eu": "Osasuna!", "say": "oh-sa-SOO-nah", "en": "To your health!", "use": "Also the name of the Pamplona football club, which is why people grin."},
-    {"eu": "Gora!", "say": "GO-rah", "en": "Up with —!", "use": "Gora zu! — up with you. A toast, a cheer, a shout."},
-    {"eu": "Zorionak", "say": "so-ree-OH-nak", "en": "Congratulations, or happy birthday", "use": ""},
-    {"eu": "Aupa!", "say": "OW-pah", "en": "Hey! Come on!", "use": "Greeting a friend across a room, or urging on a team."}
-   ]},
-  {"key": "honest", "label": "Coming clean",
+    {
+     "eu": "Topa!",
+     "say": "TOH-pah",
+     "en": "Cheers!",
+     "use": "Glasses up. The one to have ready when the Picon lands."
+    },
+    {
+     "eu": "Osasuna!",
+     "say": "oh-sa-SOO-nah",
+     "en": "To your health!",
+     "use": "Also the name of the Pamplona football club, which is why people grin."
+    },
+    {
+     "eu": "Gora!",
+     "say": "GO-rah",
+     "en": "Up with —!",
+     "use": "Gora zu! — up with you. A toast, a cheer, a shout."
+    },
+    {
+     "eu": "Zorionak",
+     "say": "so-ree-OH-nak",
+     "en": "Congratulations, or happy birthday",
+     "use": ""
+    },
+    {
+     "eu": "Aupa!",
+     "say": "OW-pah",
+     "en": "Hey! Come on!",
+     "use": "Greeting a friend across a room, or urging on a team."
+    }
+   ]
+  },
+  {
+   "key": "honest",
+   "label": "Coming clean",
    "phrases": [
-    {"eu": "Ez dakit euskaraz", "say": "es DA-keet eus-KA-ras", "en": "I don't speak Basque", "use": "Said after the first four phrases have raised expectations."},
-    {"eu": "Euskaraz badakizu?", "say": "eus-KA-ras ba-da-KEE-soo", "en": "Do you speak Basque?", "use": "In an American Basque room the answer is often no, and asking is still welcome."},
-    {"eu": "Berriz, mesedez", "say": "BEH-rrees meh-seh-DES", "en": "Again, please", "use": "Ask twice. Nobody minds."}
-   ]},
-  {"key": "keepers", "label": "Worth keeping",
+    {
+     "eu": "Ez dakit euskaraz",
+     "say": "es DA-keet eus-KA-ras",
+     "en": "I don't speak Basque",
+     "use": "Said after the first four phrases have raised expectations."
+    },
+    {
+     "eu": "Euskaraz badakizu?",
+     "say": "eus-KA-ras ba-da-KEE-soo",
+     "en": "Do you speak Basque?",
+     "use": "In an American Basque room the answer is often no, and asking is still welcome."
+    },
+    {
+     "eu": "Berriz, mesedez",
+     "say": "BEH-rrees meh-seh-DES",
+     "en": "Again, please",
+     "use": "Ask twice. Nobody minds."
+    }
+   ]
+  },
+  {
+   "key": "keepers",
+   "label": "Worth keeping",
    "phrases": [
-    {"eu": "Adiskide onekin orduak labur", "say": "a-dees-KEE-deh oh-NEH-keen or-DOO-ak la-BOOR", "en": "With a good friend the hours are short", "use": "Carved into a bench on the Basque Block in Boise, in Euskara and English. It is on the Basque Block page here, photographed.", "source": "commons"},
-    {"eu": "Zazpiak bat", "say": "SAS-pee-ak bat", "en": "The seven are one", "use": "Seven provinces. On club walls from Reno to Vancouver."},
-    {"eu": "Maite zaitut", "say": "MAI-teh ZAI-toot", "en": "I love you", "use": "Across a long table with strangers on both sides of you, which is how these rooms were built."}
-   ]}
+    {
+     "eu": "Adiskide onekin orduak labur",
+     "say": "a-dees-KEE-deh oh-NEH-keen or-DOO-ak la-BOOR",
+     "en": "With a good friend the hours are short",
+     "use": "Carved into a bench on the Basque Block in Boise, in Euskara and English, and photographed on that page here. A diner at Louis' Basque Corner wrote it down in 2015 as well, translating it “time flies when you are among friends”.",
+     "source": "holm-2015"
+    },
+    {
+     "eu": "Zazpiak bat",
+     "say": "SAS-pee-ak bat",
+     "en": "The seven are one",
+     "use": "Seven provinces. On club walls from Reno to Vancouver."
+    },
+    {
+     "eu": "Maite zaitut",
+     "say": "MAI-teh ZAI-toot",
+     "en": "I love you",
+     "use": "Across a long table with strangers on both sides of you, which is how these rooms were built."
+    }
+   ]
+  }
  ]
 }

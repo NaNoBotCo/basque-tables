@@ -547,5 +547,48 @@
   "url": "https://www.manta.com/c/mtc7x5z/louie-picon-glass-company",
   "kind": "business directory",
   "read": "2026-09-17"
+ },
+ "chamberofcommerce-louie-picon": {
+  "title": "Louie Picon Glass Company, Sparks NV",
+  "publisher": "ChamberofCommerce.com",
+  "url": "https://chamberofcommerce.com/united-states/nevada/sparks/miscellaneous/45770755-louie-picon-glass-company",
+  "kind": "business directory",
+  "read": "2026-09-17"
+ },
+ "amfibi-louie-picon": {
+  "title": "Louie Picon Glass Company, Sparks NV",
+  "publisher": "Amfibi",
+  "url": "https://www.amfibi.com/us/c/16424703-a728fb89",
+  "kind": "business directory",
+  "read": "2026-09-17"
+ },
+ "holm-2015": {
+  "title": "Louis' Basque Corner in Reno",
+  "publisher": "Holm Family Cookbook",
+  "url": "https://web.archive.org/web/20150703162651/http://www.holmfamilycookbook.com/apps/blog/show/5459332-louis-basque-corner-in-reno",
+  "kind": "a home cook's blog, 2015, read in the Internet Archive",
+  "read": "2026-09-17",
+  "note": "the original domain is gone; this is the only source behind the widely-repeated claim about the custom glass"
+ },
+ "webstaurant-8054": {
+  "title": "Libbey 8054 Georgian 6 oz Irish Coffee Glass, 36 per case",
+  "publisher": "WebstaurantStore",
+  "url": "https://www.webstaurantstore.com/libbey-8054-georgian-6-oz-irish-glass-coffee-mug-case/5518054.html",
+  "kind": "restaurant supplier",
+  "read": "2026-09-17"
+ },
+ "zoro-8054": {
+  "title": "Libbey Georgian 6 oz Irish Coffee Glass, PK36",
+  "publisher": "Zoro",
+  "url": "https://www.zoro.com/libbey-libbey-georgian-6-oz-irish-coffee-glass-pk36-8054/i/G6398057/",
+  "kind": "supplier",
+  "read": "2026-09-17"
+ },
+ "libbey-fs-8054": {
+  "title": "Georgian Irish Coffee 8054",
+  "publisher": "Libbey Foodservice",
+  "url": "https://libbeyfoodservice.com/product/libbey/georgian-irish-coffee/8054",
+  "kind": "the maker's own catalogue",
+  "read": "2026-09-17"
  }
 }
