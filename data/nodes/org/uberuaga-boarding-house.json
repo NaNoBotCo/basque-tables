@@ -1,0 +1,162 @@
+{
+ "id": "uberuaga-boarding-house",
+ "type": "org",
+ "names": {
+  "name": "Basque Museum & Cultural Center",
+  "aliases": [
+   "Cyrus Jacobs-Uberuaga House"
+  ]
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, Grove Street. A boarding house that took Basque men from 1917 to 1969, and has been the country's first Basque museum since 1985.",
+  "history": "Cyrus Jacobs built the brick house in 1864. Basque families ran it as a boarding house; the Uberuagas took it on in 1917, bought it in 1928, and kept boarders until 1969. Adelia Simplot, a Basque immigrant's daughter, bought it from the family and opened the museum inside it in 1985."
+ },
+ "sections": [
+  {
+   "heading": "Why it matters to a directory of restaurants",
+   "body": "Every long table in this directory descends from a room like this one — a bed, a meal at a set hour, somebody who spoke Euskara, and a table long enough for everyone in the building. California and Nevada kept the table and lost the building. Boise kept the building.",
+   "tier": "inference",
+   "source": "basquemuseum-house"
+  }
+ ],
+ "address": {
+  "street": "611 Grove Street",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "tier": "harvested",
+  "source": "basquemuseum-house"
+ },
+ "founded": {
+  "year": 1864,
+  "note": "as a house; a Basque boarding house from the 1910s; a museum since 1985",
+  "tier": "cited",
+  "source": "basquemuseum-house"
+ },
+ "kin": [
+  {
+   "id": "ostatua",
+   "how": "the word for what this building was"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the table this building set"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "the block grew around it"
+  },
+  {
+   "id": "idaho",
+   "how": "the state it stands in"
+  }
+ ],
+ "needs_verification": [
+  "the museum's street number and current opening hours"
+ ],
+ "sources": [
+  "basquemuseum-house",
+  "sah-uberuaga",
+  "visitboise-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-cyrus-jacobs-uberuaga-house-1.jpg",
+   "source": "commons",
+   "title": "File:Cyrus Jacobs-Uberuaga House (1).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Cyrus_Jacobs-Uberuaga_House_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACyrus_Jacobs-Uberuaga_House_%281%29.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Tamanoeconomico",
+   "credit": "Own work",
+   "alt": "The Cyrus Jacobs House (1864) in Boise, Idaho, is listed on the National Register of Historic Places. The building is also known as the Cyrus Jacobs-Uberuaga House, and it is part of the Basque Museum",
+   "date": "2019-02-15 12:54:01",
+   "primary": true,
+   "sha256": "ba3dd7318c2044828c76072d462480819a66193380839cf3a820c81efb5d37d5"
+  },
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-cyrus-jacobs-uberuaga-house-3.jpg",
+   "source": "commons",
+   "title": "File:Cyrus Jacobs-Uberuaga House (3).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Cyrus_Jacobs-Uberuaga_House_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACyrus_Jacobs-Uberuaga_House_%283%29.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Tamanoeconomico",
+   "credit": "Own work",
+   "alt": "The Cyrus Jacobs House (1864) in Boise, Idaho, is listed on the National Register of Historic Places. The building is also known as the Cyrus Jacobs-Uberuaga House, and it is part of the Basque Museum",
+   "date": "2019-02-15 12:54:40",
+   "primary": false,
+   "sha256": "08dca14ec86bd000d515b0720b4560c99cc96c8481d49748e51c7f94c8965ed2"
+  },
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-cyrus-jacobs-uberuaga-house-5.jpg",
+   "source": "commons",
+   "title": "File:Cyrus Jacobs-Uberuaga House (5).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Cyrus_Jacobs-Uberuaga_House_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACyrus_Jacobs-Uberuaga_House_%285%29.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Tamanoeconomico",
+   "credit": "Own work",
+   "alt": "The Cyrus Jacobs House (1864) in Boise, Idaho, is listed on the National Register of Historic Places. The building is also known as the Cyrus Jacobs-Uberuaga House, and it is part of the Basque Museum",
+   "date": "2019-02-15 12:57:38",
+   "primary": false,
+   "sha256": "916994720a430eedbb1a0760f5f9a00814842b2d4aa36b4f21027e93bb700bb5"
+  },
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-cyrus-jacobs-house-boise.jpg",
+   "source": "commons",
+   "title": "File:Cyrus Jacobs House, Boise.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Cyrus_Jacobs_House%2C_Boise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACyrus_Jacobs_House%2C_Boise.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Carl Burnett",
+   "credit": "Own work",
+   "alt": "Plaque on the facade of the Cyrus Jacobs House, 607 Grove Street, Boise, Idaho, USA. Former boarding house for Basque immigrants.",
+   "date": "Taken on 22 September 2013, 11:05:40",
+   "primary": false,
+   "sha256": "ab8413888a63ac7c19e9953bb39eb8beaf541e3952e441a58a056c86a331e1b0"
+  },
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-entry-to-cyrus-jacobs-house-boise.jpg",
+   "source": "commons",
+   "title": "File:Entry to Cyrus Jacobs House, Boise.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Entry_to_Cyrus_Jacobs_House%2C_Boise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AEntry_to_Cyrus_Jacobs_House%2C_Boise.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Carl Burnett",
+   "credit": "Own work",
+   "alt": "Front door of the Cyrus Jacobs House, 607 Grove Street, Boise, Idaho, USA. Former boarding house for Basque immigrants.",
+   "date": "Taken on 22 September 2013, 11:05:02",
+   "primary": false,
+   "sha256": "0349d46c36d7cc5c373deb1bcdec6852d29f1c2383fac7fd67255bdd86e0cd3e"
+  },
+  {
+   "file": "uberuaga-boarding-house/uberuaga-boarding-house-front-of-cyrus-jacobs-house-boise.jpg",
+   "source": "commons",
+   "title": "File:Front of Cyrus Jacobs House, Boise.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Front_of_Cyrus_Jacobs_House%2C_Boise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AFront_of_Cyrus_Jacobs_House%2C_Boise.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Carl Burnett",
+   "credit": "Own work",
+   "alt": "Cyrus Jacobs House, 607 Grove Street, Boise, Idaho, USA. Former boarding house for Basque immigrants.",
+   "date": "Taken on 22 September 2013, 11:03:51",
+   "primary": false,
+   "sha256": "fc95ab9fa181c51fcf7bd8a9f2745722484513a7b80d1575457e7d99487fcf27"
+  }
+ ]
+}

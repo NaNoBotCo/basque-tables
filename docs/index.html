@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basque Tables — dining rooms of California, Nevada and Idaho</title>
+<meta name="description" content="A sourced directory of Basque dining rooms in California, Nevada and Idaho: seating, prices, hours and the Picon Punch, with every field naming where it came from.">
+<link rel="canonical" href="https://nanobotco.github.io/basque-tables/">
+<meta property="og:title" content="Basque Tables — dining rooms of California, Nevada and Idaho"><meta property="og:description" content="A sourced directory of Basque dining rooms in California, Nevada and Idaho: seating, prices, hours and the Picon Punch, with every field naming where it came from.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://nanobotco.github.io/basque-tables/">
+<meta property="og:site_name" content="Basque Tables">
+<link rel="alternate" hreflang="en" href="https://nanobotco.github.io/basque-tables/"><link rel="alternate" hreflang="eu" href="https://nanobotco.github.io/basque-tables/eu/">
+<style>
+:root{
+ --paper:#faf6ef; --ink:#221c15; --ink2:#5c5043; --ink3:#867a6c;
+ --rule:#d8cdbb; --lift:#fffdf8; --accent:#9a2b2b; --accent2:#0f8f79;
+ --c1:#2a6fd6; --c2:#c2620a; --c3:#0f8f79; --c4:#9333ea;
+ --ok:#0f8f79; --no:#c0392b;
+ --display:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+ --sign:Futura,"Avenir Next",Optima,"Gill Sans","Trebuchet MS",sans-serif;
+ --body:Georgia,"Iowan Old Style",serif;
+ --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+ --shadow:0 1px 0 rgba(34,28,21,.04),0 8px 24px -14px rgba(34,28,21,.30);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}}
+:root[data-theme="dark"]{
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:19px/1.65 var(--body);margin:0;
+ -webkit-text-size-adjust:100%;}
+.wrap{max-width:66rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+a{color:var(--ink);text-decoration-color:var(--rule);text-underline-offset:3px}
+a:hover{color:var(--accent);text-decoration-color:currentColor}
+h1,h2,h3{font-family:var(--display);font-weight:normal;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,5.5vw,3.3rem);margin:.2em 0 .1em}
+h2{font-size:clamp(1.45rem,3.2vw,2rem);margin:2.2rem 0 .4rem}
+h3{font-size:1.2rem;margin:1.6rem 0 .3rem}
+.eyebrow{font:600 .78rem/1.4 var(--sign);letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin:0}
+.lede{font-size:1.22rem;color:var(--ink2);max-width:46rem}
+p{max-width:44rem}
+hr{border:0;border-top:1px solid var(--rule);margin:2.4rem 0}
+header.top{border-bottom:1px solid var(--rule);background:var(--lift);position:sticky;top:0;z-index:20;
+ backdrop-filter:saturate(1.2)}
+header.top .wrap{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem}
+.brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;white-space:nowrap}
+.brand b{font-weight:normal;color:var(--accent)}
+nav.top-nav{display:flex;gap:.1rem .95rem;flex-wrap:wrap;font:500 .95rem/1.9 var(--ui)}
+nav.top-nav a{text-decoration:none;color:var(--ink2);padding:0 .15rem;border-radius:4px}
+nav.top-nav a:hover{color:var(--ink);background:linear-gradient(transparent 72%,var(--rule) 72%)}
+main{padding:2rem 0 4rem}
+footer.foot{border-top:1px solid var(--rule);color:var(--ink3);font:0.92rem/1.7 var(--ui);padding:2rem 0 4rem}
+footer.foot a{color:var(--ink2)}
+
+/* the 1997 directory front */
+.dir{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:.4rem 2.4rem;margin:1.2rem 0}
+.dir section{break-inside:avoid;padding:.6rem 0}
+.dir h2{font-size:1.15rem;margin:.2rem 0 .3rem;font-family:var(--sign);letter-spacing:.09em;
+ text-transform:uppercase;font-size:.84rem;color:var(--ink3)}
+.dir ul{list-style:none;margin:0;padding:0;font-size:1.02rem;line-height:1.85}
+.dir li em{font-style:normal;color:var(--ink3);font-size:.9em}
+.dir a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.dir a:hover{border-bottom-color:currentColor}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.6rem}
+.card{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:1.05rem 1.15rem;
+ box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.card h3{margin:.1rem 0 .3rem;font-size:1.12rem}
+.card p{margin:.2rem 0;font-size:.98rem;color:var(--ink2)}
+
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.1rem;margin:1.2rem 0;font-size:1rem}
+.facts dt{font:600 .74rem/1.9 var(--sign);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
+ white-space:nowrap}
+.facts dd{margin:0}
+.tier{font:600 .68rem/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
+ border:1px solid var(--rule);border-radius:999px;padding:.18rem .42rem;margin-left:.4rem;white-space:nowrap}
+.tier[data-t="cited"]{color:var(--accent2);border-color:currentColor}
+.tier[data-t="tradition"],.tier[data-t="inference"]{font-style:italic}
+
+table{border-collapse:collapse;width:100%;font-size:.97rem;font-family:var(--ui)}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+th{text-align:left;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;
+ color:var(--ink3);border-bottom:2px solid var(--rule);padding:.5rem .6rem;white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.55rem .6rem;vertical-align:top}
+tr:hover td{background:var(--lift)}
+td a{text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.chip{display:inline-flex;align-items:center;gap:.35rem;font:600 .78rem/1 var(--ui);
+ border:1px solid var(--rule);border-radius:999px;padding:.38rem .7rem;background:var(--lift);
+ color:var(--ink2);cursor:pointer;transition:transform .14s ease,border-color .14s ease,color .14s ease}
+.chip:hover{transform:translateY(-1px);border-color:var(--ink3);color:var(--ink)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem}
+
+.week{display:inline-flex;gap:4px;vertical-align:middle;margin:.15rem 0}
+.week i{width:21px;height:21px;border-radius:5px;display:inline-block;font:700 11px/21px var(--ui);
+ text-align:center;font-style:normal;color:var(--paper)}
+.week i.o{background:var(--ok)}
+.week i.c{background:var(--no)}
+.week i.u{background:none;border:1.5px dashed var(--rule);color:var(--ink3);line-height:18px}
+
+.fig{margin:1.8rem 0;padding:0}
+.fig-scroll{overflow-x:auto}
+.chart{width:100%;height:auto;min-width:32rem;font-family:var(--ui)}
+.chart .ttl{font:600 .78rem/1 var(--sign);letter-spacing:.14em;text-transform:uppercase;fill:var(--ink3)}
+.chart .lab{font-size:12px;fill:var(--ink2)}
+.chart .val{font-size:12px;font-weight:600;fill:var(--ink)}
+.chart .cap{font-size:11px;fill:var(--ink3)}
+.chart .grid{stroke:var(--rule);stroke-width:1;opacity:.55}
+.chart .bar,.chart .dot{transition:opacity .16s ease}
+.chart:hover .bar{opacity:.55}
+.chart .bar:hover,.chart .dot:hover{opacity:1}
+figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-width:44rem}
+
+.hero{margin:1.4rem 0 1.8rem;padding:0}
+.hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
+ box-shadow:var(--shadow);display:block}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
+ align-items:start}
+.shot{margin:0;font-size:.9rem}
+.shot figcaption{margin-top:.45rem;line-height:1.45}
+.shot img{width:100%;height:11rem;object-fit:cover;border-radius:10px;display:block;
+ transition:transform .22s ease,filter .22s ease;box-shadow:var(--shadow)}
+.shot a{display:block;border-radius:10px;overflow:hidden}
+.shot:hover img{transform:scale(1.03)}
+figcaption .cred{color:var(--ink3);font-size:.82rem}
+.featured{background:var(--lift);border:1px solid var(--rule);border-radius:16px;
+ padding:1.4rem 1.6rem 1.2rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
+.featured h2 a{text-decoration:none}
+.featured .facts{margin:1rem 0}
+.note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
+.gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
+.kin{list-style:none;padding:0;margin:.6rem 0}
+.kin li{padding:.42rem 0;border-bottom:1px solid var(--rule)}
+.kin li span{color:var(--ink3)}
+.src{font:0.9rem/1.7 var(--ui);color:var(--ink2)}
+.src li{margin:.25rem 0}
+.big{font-family:var(--display);font-size:clamp(2.4rem,7vw,4rem);line-height:1;letter-spacing:-.02em}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.2rem;margin:1.6rem 0}
+.stat div span{display:block;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px solid var(--rule);
+ border-radius:8px;background:var(--lift);color:var(--ink);min-width:14rem}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:.5rem;position:fixed;background:var(--lift);padding:.6rem 1rem;border-radius:8px;z-index:99}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{header.top{position:static}.chip{display:none}}
+</style><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Basque Tables", "url": "https://nanobotco.github.io/basque-tables", "description": "Basque dining rooms of California, Nevada and Idaho."}</script>
+</head><body>
+<a class="skip" href="#main">Skip to the page</a>
+<header class="top"><div class="wrap">
+ <a class="brand" href="/">Basque <b>Tables</b></a>
+ <nav class="top-nav" aria-label="Sections"><a href="/">Front</a><a href="/two/">A table for two</a><a href="/places/">Rooms</a><a href="/drink/picon-punch/">Picon</a><a href="/pictures/">Pictures</a><a href="/words/">Words</a><a href="/numbers/">Numbers</a><a href="/stories/">Stories</a><a href="/gaps/">Gaps</a><a href="/wander/">Wander</a><a href="/eu/" hreflang="eu" lang="eu">Euskaraz</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="eyebrow">A directory</p>
+<h1>Basque tables</h1>
+<p class="lede">Every Basque dining room this directory can document in California, Nevada and Idaho, with the four facts two people need before they choose one: how the house seats you, what dinner costs, which nights the door opens, and whether the bar makes a Picon Punch.</p>
+
+<p><a class="chip" href="/two/" aria-pressed="false">Find a table for two →</a>
+<a class="chip" href="/story/the-long-table/" aria-pressed="false">Why the tables are long</a>
+<a class="chip" href="/region/idaho/" aria-pressed="false">The Basque Block</a></p>
+<div class="stat">
+ <div><span>Rooms</span><b class="big">28</b></div>
+ <div><span>Your own table</span><b class="big">13</b></div>
+ <div><span>A long table</span><b class="big">8</b></div>
+ <div><span>Picon confirmed</span><b class="big">3</b></div>
+</div>
+<p class="note">Those counts leave out every room whose seating no source states — 2 of 28. An unlisted room is not a room that seats you badly; it is a room nobody has published it for.</p>
+<hr>
+<section class="featured">
+ <p class="eyebrow">Room</p>
+ <h2 style="margin-top:.2rem"><a href="/place/ogi-deli-elko/">Ogi Deli, Elko</a></h2>
+ <p class="lede">Elko, 460 Commercial Street. Bread all day, and on Thursday and Friday nights the only pintxo-pote in this directory — a pintxo and a pint for $5.</p>
+ <div class="facts" style="grid-template-columns:auto 1fr">
+  <dt>Where</dt><dd>460 Commercial Street, Elko, NV</dd>
+  <dt>Seating</dt><dd>A counter and tables. On pintxo nights the counter is the point: you stand, you eat off a skewer, and on Fridays there is a card game going.</dd>
+  <dt>Week</dt><dd><span class="week" role="img" aria-label="open Mon, Tue, Wed, Thu, Fri; closed Sat, Sun"><i class="o" title="Mon open">M</i><i class="o" title="Tue open">T</i><i class="o" title="Wed open">W</i><i class="o" title="Thu open">T</i><i class="o" title="Fri open">F</i><i class="c" title="Sat closed">S</i><i class="c" title="Sun closed">S</i></span><br>Deli Mon–Fri 8am–3pm · Bar &amp; Pintxos Thu and Fri 4:30pm–10pm · pintxo-pote 4:30–6</dd>
+  <dt>Dinner</dt><dd><b>$5</b> Pintxo-pote — a pintxo and a pint, a glass of house wine, or a glass of sagardoa</dd>
+ </div>
+ <p><a class="chip" href="/place/ogi-deli-elko/">The whole record &rarr;</a>
+ <a class="chip" href="/event/pintxo-pote/">What a pintxo-pote is</a>
+ <a class="chip" href="/term/mus/">And what mus is</a></p>
+</section>
+<hr>
+<div class="dir"><section><h2>Regions (3)</h2><ul><li><a href="/region/california/">California</a></li><li><a href="/region/idaho/">Idaho</a></li><li><a href="/region/nevada/">Nevada</a></li></ul></section><section><h2>Rooms (28)</h2><ul><li><a href="/place/ansots/">Ansots Basque Chorizos</a> <em>Boise</em></li><li><a href="/place/bar-gernika/">Bar Gernika</a> <em>Boise</em></li><li><a href="/place/basquenese/">Basquenese</a> <em>Boise</em></li><li><a href="/place/benjis-basque/">Benji's French Basque Restaurant</a> <em>Bakersfield</em></li><li><a href="/place/centro-basco-chino/">Centro Basco</a> <em>Chino</em></li><li><a href="/place/chalet-basque/">Chalet Basque</a> <em>Bakersfield</em></li><li><a href="/place/doms-taverna/">Dom's Taverna</a> <em>Santa Barbara</em></li><li><a href="/place/epis-meridian/">Epi's, a Basque Restaurant</a> <em>Meridian</em></li><li><a href="/places/">all 28 &rsaquo;</a></li></ul></section><section><h2>Stories (3)</h2><ul><li><a href="/story/the-basque-block/">The Basque Block</a></li><li><a href="/story/the-picon-supply/">The bitter has a supply problem</a></li><li><a href="/story/the-long-table/">The long table</a></li></ul></section><section><h2>Dishes (17)</h2><ul><li><a href="/dish/bacalao-al-pil-pil/">Bacalao al pil-pil</a></li><li><a href="/dish/basque-beans/">Basque beans</a></li><li><a href="/dish/bread-pudding/">Bread pudding</a></li><li><a href="/dish/croquetas/">Croquetas</a></li><li><a href="/dish/garlic-fried-chicken/">Garlic fried chicken</a></li><li><a href="/dish/gateau-basque/">Gâteau basque</a></li><li><a href="/dishes/">all 17 &rsaquo;</a></li></ul></section><section><h2>Drinks (5)</h2><ul><li><a href="/drink/kalimotxo/">Kalimotxo</a></li><li><a href="/drink/patxaran/">Patxaran</a></li><li><a href="/drink/picon-punch/">Picon Punch</a></li><li><a href="/drink/sagardoa/">Sagardoa</a></li><li><a href="/drink/txakoli/">Txakoli</a></li></ul></section><section><h2>Words (14)</h2><ul><li><a href="/term/artzain/">Artzain</a></li><li><a href="/term/baserri/">Baserri</a></li><li><a href="/term/dantza/">Dantza</a></li><li><a href="/term/etxe/">Etxe</a></li><li><a href="/term/euskara/">Euskara</a></li><li><a href="/term/ikurrina/">Ikurriña</a></li><li><a href="/words/">all 14 &rsaquo;</a></li></ul></section><section><h2>People (8)</h2><ul><li><a href="/person/michelle-anchustegui/">Michelle Anchustegui</a></li><li><a href="/person/dan-ansotegui/">Dan Ansotegui</a></li><li><a href="/person/jose-mari-artiach/">Jose Mari Artiach</a></li><li><a href="/person/louis-erreguible/">Louis Erreguible</a></li><li><a href="/person/epi-inchausti/">Maria Epifania Lamiquis-Inchausti</a></li><li><a href="/person/lekumberry-family/">The Lekumberry family</a></li><li><a href="/person/anamarie-lopategui/">Anamarie Lopategui</a></li><li><a href="/person/maitia-family/">The Maitia family</a></li></ul></section><section><h2>Events (4)</h2><ul><li><a href="/event/basque-breakfast/">Basque breakfast</a></li><li><a href="/event/jaialdi/">Jaialdi</a></li><li><a href="/event/pintxo-pote/">Pintxo-pote</a></li><li><a href="/event/boarders-table/">The Boarder's Table</a></li></ul></section><section><h2>Organizations (2)</h2><ul><li><a href="/org/uberuaga-boarding-house/">Basque Museum &amp; Cultural Center</a> <em>Boise</em></li><li><a href="/org/nabo/">North American Basque Organizations</a></li></ul></section></div>
+<hr>
+<svg viewBox="0 0 760 420" role="img" class="chart map" aria-label="Every room in this directory plotted by longitude and latitude"><text x="0.0" y="18.0" class="ttl" text-anchor="start">Every room, by longitude and latitude</text><line x1="284.6" y1="40" x2="284.6" y2="380" class="grid"/><text x="284.6" y="396.0" class="cap" text-anchor="middle">121°W</text><line x1="533.8" y1="40" x2="533.8" y2="380" class="grid"/><text x="533.8" y="396.0" class="cap" text-anchor="middle">116°W</text><line x1="40" y1="331.0" x2="720" y2="331.0" class="grid"/><text x="34.0" y="335.0" class="cap" text-anchor="end">33°N</text><line x1="40" y1="273.0" x2="720" y2="273.0" class="grid"/><text x="34.0" y="277.0" class="cap" text-anchor="end">36°N</text><line x1="40" y1="215.0" x2="720" y2="215.0" class="grid"/><text x="34.0" y="219.0" class="cap" text-anchor="end">39°N</text><line x1="40" y1="157.0" x2="720" y2="157.0" class="grid"/><text x="34.0" y="161.0" class="cap" text-anchor="end">42°N</text><line x1="40" y1="99.0" x2="720" y2="99.0" class="grid"/><text x="34.0" y="103.0" class="cap" text-anchor="end">45°N</text><circle cx="517.5" cy="118.5" r="7.5" fill="var(--c2)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Sweet, ID — 1</title></circle><text x="503.0" y="122.5" class="lab" text-anchor="end">Sweet (1)</text><circle cx="523.7" cy="125.8" r="11.2" fill="var(--c2)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Boise, ID — 5</title></circle><line x1="510.5" y1="125.8" x2="507.5" y2="140.8" stroke="var(--rule)" stroke-width="1"/><text x="505.5" y="144.8" class="lab" text-anchor="end">Boise (5)</text><circle cx="514.3" cy="125.8" r="7.5" fill="var(--c2)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Meridian, ID — 1</title></circle><line x1="504.8" y1="125.8" x2="501.8" y2="155.8" stroke="var(--rule)" stroke-width="1"/><text x="499.8" y="159.8" class="lab" text-anchor="end">Meridian (1)</text><circle cx="447.3" cy="176.9" r="8.7" fill="var(--c3)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Winnemucca, NV — 2</title></circle><text x="463.0" y="180.9" class="lab" text-anchor="start">Winnemucca (2)</text><circle cx="545.6" cy="179.6" r="9.7" fill="var(--c3)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Elko, NV — 3</title></circle><line x1="533.9" y1="179.6" x2="530.9" y2="194.6" stroke="var(--rule)" stroke-width="1"/><text x="528.9" y="198.6" class="lab" text-anchor="end">Elko (3)</text><circle cx="343.7" cy="204.8" r="7.5" fill="var(--c3)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Reno, NV — 1</title></circle><text x="358.2" y="208.8" class="lab" text-anchor="start">Reno (1)</text><circle cx="346.0" cy="211.8" r="7.5" fill="var(--c3)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Carson City, NV — 1</title></circle><line x1="355.5" y1="211.8" x2="358.5" y2="226.8" stroke="var(--rule)" stroke-width="1"/><text x="360.5" y="230.8" class="lab" text-anchor="start">Carson City (1)</text><circle cx="346.9" cy="216.1" r="7.5" fill="var(--c3)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Gardnerville, NV — 1</title></circle><line x1="356.4" y1="216.1" x2="359.4" y2="246.1" stroke="var(--rule)" stroke-width="1"/><text x="361.4" y="250.1" class="lab" text-anchor="start">Gardnerville (1)</text><circle cx="214.4" cy="241.0" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>South San Francisco, CA — 1</title></circle><line x1="223.9" y1="241.0" x2="226.9" y2="271.0" stroke="var(--rule)" stroke-width="1"/><text x="228.9" y="275.0" class="lab" text-anchor="start">South San Francisco (1)</text><circle cx="292.1" cy="252.6" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Los Banos, CA — 1</title></circle><line x1="301.6" y1="252.6" x2="304.6" y2="297.6" stroke="var(--rule)" stroke-width="1"/><text x="306.6" y="301.6" class="lab" text-anchor="start">Los Banos (1)</text><circle cx="345.8" cy="258.6" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Fresno, CA — 1</title></circle><line x1="355.3" y1="258.6" x2="358.3" y2="318.6" stroke="var(--rule)" stroke-width="1"/><text x="360.3" y="322.6" class="lab" text-anchor="start">Fresno (1)</text><circle cx="383.3" cy="285.1" r="11.2" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Bakersfield, CA — 5</title></circle><text x="401.5" y="289.1" class="lab" text-anchor="start">Bakersfield (5)</text><circle cx="349.5" cy="303.6" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Santa Barbara, CA — 1</title></circle><line x1="359.0" y1="303.6" x2="362.0" y2="333.6" stroke="var(--rule)" stroke-width="1"/><text x="364.0" y="337.6" class="lab" text-anchor="start">Santa Barbara (1)</text><circle cx="440.8" cy="309.1" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Glendora, CA — 1</title></circle><text x="455.3" y="313.1" class="lab" text-anchor="start">Glendora (1)</text><circle cx="414.9" cy="310.0" r="7.5" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>West Hollywood, CA — 1</title></circle><line x1="424.4" y1="310.0" x2="427.4" y2="355.0" stroke="var(--rule)" stroke-width="1"/><text x="429.4" y="359.0" class="lab" text-anchor="start">West Hollywood (1)</text><circle cx="449.6" cy="311.5" r="8.7" fill="var(--c1)" fill-opacity="0.8" stroke="var(--paper)" stroke-width="2" class="dot"><title>Chino, CA — 2</title></circle><line x1="460.3" y1="311.5" x2="463.3" y2="266.5" stroke="var(--rule)" stroke-width="1"/><text x="465.3" y="270.5" class="lab" text-anchor="start">Chino (2)</text><circle cx="6" cy="404" r="6" fill="var(--c1)"/><text x="18.0" y="408.0" class="lab" text-anchor="start">California</text><circle cx="126" cy="404" r="6" fill="var(--c3)"/><text x="138.0" y="408.0" class="lab" text-anchor="start">Nevada</text><circle cx="246" cy="404" r="6" fill="var(--c2)"/><text x="258.0" y="408.0" class="lab" text-anchor="start">Idaho</text></svg>
+<figcaption>Bakersfield holds the most rooms of any town here; Boise holds the most Basque institutions of any town in America. Town coordinates are centroids, not doorways.</figcaption>
+</div></main>
+<footer class="foot"><div class="wrap">
+ <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
+ a field with no source reads <b>unknown</b> and stays out of the filters.</p>
+ <p>Built by NaN · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
+ <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
+</div></footer>
+<script>document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!=='/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href='/wander/';}});</script>
+</body></html>

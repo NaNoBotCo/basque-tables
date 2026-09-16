@@ -1,0 +1,104 @@
+{
+ "id": "sagardotegi",
+ "type": "term",
+ "names": {
+  "name": "Sagardotegi",
+  "eu": "sagardotegi"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "sagardo + -tegi",
+  "language": "Euskara",
+  "gloss": "cider house",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "A cider house: barrels along one wall, txotx called when a barrel is opened, cod omelette and a beef chop at a shared table standing up."
+ },
+ "kin": [
+  {
+   "id": "the-long-table",
+   "how": "the Basque Country's own version of eating with strangers"
+  },
+  {
+   "id": "txuleta",
+   "how": "what comes off the grill there"
+  },
+  {
+   "id": "txoko",
+   "how": "the other room a group eats in together"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "sagardotegi/sagardotegi-irigoien-herrero-sagardotegia-astigarraga.jpg",
+   "source": "commons",
+   "title": "File:Irigoien Herrero sagardotegia, Astigarraga.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Irigoien_Herrero_sagardotegia%2C_Astigarraga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AIrigoien_Herrero_sagardotegia%2C_Astigarraga.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "author": "Mikel Arrazola",
+   "credit": "http://argazki.irekia.euskadi.net/eu/search/87895/photos/2340",
+   "alt": "Sidreria \"Irigoien Herrero\" de Astigarraga",
+   "date": "2009-11-24 18:42:11",
+   "primary": true,
+   "sha256": "4ed82752511a304cb95ca6da8cd9eda18287e7e8883edd48ab2af5197b709efc"
+  },
+  {
+   "file": "sagardotegi/sagardotegi-sagardo.jpg",
+   "source": "commons",
+   "title": "File:Sagardo.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sagardo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASagardo.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Asp.",
+   "credit": "Own work",
+   "alt": "Service du cidre en Sagardotegi, Oiartzun.",
+   "date": "2010-03-13 15:20:39",
+   "primary": false,
+   "sha256": "9c2ae523083d9a10e999f1aa039536fca8963ebd1dc953ea107e24d69858c59e"
+  },
+  {
+   "file": "sagardotegi/sagardotegi-sagardotegi-baten-barnealdea.jpg",
+   "source": "commons",
+   "title": "File:Sagardotegi baten barnealdea.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sagardotegi_baten_barnealdea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASagardotegi_baten_barnealdea.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "https://www.flickr.com/people/jonnyhunter/",
+   "credit": "https://www.flickr.com/photos/jonnyhunter/378226897/sizes/o/in/set-72157594515371379/",
+   "alt": "Sagardotegi baten barnealdea.",
+   "date": "2007-02-03",
+   "primary": false,
+   "sha256": "33ea81ad00a9bf6912dd3fd74e06cdb1967002e85d34ecbb1f726d92e61cd32d"
+  },
+  {
+   "file": "sagardotegi/sagardotegi-txuletak.jpg",
+   "source": "commons",
+   "title": "File:Txuletak.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Txuletak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ATxuletak.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Txapisotegi",
+   "credit": "Own work",
+   "alt": "Txuletak sagardotegi batetan",
+   "date": "31 July 2019 (according to Exif data)",
+   "primary": false,
+   "sha256": "6814935c5b1b251996f68543de3bab25092b2b9b3b9023fe4431b2a01e893007"
+  }
+ ]
+}

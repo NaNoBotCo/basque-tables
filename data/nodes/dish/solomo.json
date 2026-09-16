@@ -1,0 +1,34 @@
+{
+ "id": "solomo",
+ "type": "dish",
+ "names": {
+  "name": "Solomo"
+ },
+ "region": [
+  "west",
+  "idaho"
+ ],
+ "text": {
+  "short": "Pork loin marinated with pimentos, served in a sandwich. Boise's own counter food."
+ },
+ "kin": [
+  {
+   "id": "epis-meridian",
+   "how": "serves it"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "where it is easiest to find"
+  }
+ ],
+ "needs_verification": [
+  "which Boise rooms serve it, from each house's own menu"
+ ],
+ "sources": [
+  "kivi-epis"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

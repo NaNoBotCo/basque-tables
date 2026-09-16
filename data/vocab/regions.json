@@ -1,0 +1,23 @@
+{
+ "california": {
+  "label": "California",
+  "state": "CA"
+ },
+ "nevada": {
+  "label": "Nevada",
+  "state": "NV"
+ },
+ "west": {
+  "label": "the American West"
+ },
+ "euskal-herria": {
+  "label": "Euskal Herria"
+ },
+ "everywhere": {
+  "label": "everywhere"
+ },
+ "idaho": {
+  "label": "Idaho",
+  "state": "ID"
+ }
+}

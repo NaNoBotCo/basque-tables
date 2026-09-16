@@ -1,0 +1,233 @@
+{
+ "id": "the-basque-block",
+ "type": "story",
+ "names": {
+  "name": "The Basque Block"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Grove Street between Sixth and Capitol, Boise. A pub, a market, a dining room, a club and a museum — and the museum is the boarding house all of it came out of."
+ },
+ "sections": [
+  {
+   "heading": "One block, five doors",
+   "body": "Bar Gernika on the Capitol corner. The Basque Market halfway down, cooking paella on the pavement on Wednesdays and Fridays. Leku Ona at the Sixth Street end, with a hotel over it. The Basque Center, which is the club. And the Basque Museum & Cultural Center, in the Cyrus Jacobs-Uberuaga house.",
+   "tier": "cited",
+   "source": "basqueblock-site"
+  },
+  {
+   "heading": "The house came first",
+   "body": "Cyrus Jacobs built it in 1864. It became a Basque boarding house, the Uberuagas ran it from 1917 and owned it from 1928, and it took boarders until 1969. Sixteen years later Adelia Simplot opened a museum in it. The block assembled itself around a building that had been feeding Basque men for half a century.",
+   "tier": "cited",
+   "source": "basquemuseum-house"
+  },
+  {
+   "heading": "What this does to a dinner for two",
+   "body": "In Winnemucca or Gardnerville the boarding house is the restaurant, so the long table comes with the meal. On the Basque Block the boarding house is a museum, and the restaurants beside it seat you at your own table. Same descent, different arrangement — and two people who want a room to themselves will find one more easily on Grove Street than on Highway 395.",
+   "tier": "inference",
+   "source": "basqueblock-site"
+  },
+  {
+   "heading": "Every five years it fills up",
+   "body": "Jaialdi runs six days and draws 30,000 to 50,000 people to these streets. The last was 29 July to 3 August 2025; the next is 2030. Anyone planning a quiet dinner in Boise that week should know it.",
+   "tier": "cited",
+   "source": "ktvb-jaialdi"
+  }
+ ],
+ "kin": [
+  {
+   "id": "idaho",
+   "how": "the state page, with the shorter version"
+  },
+  {
+   "id": "uberuaga-boarding-house",
+   "how": "the building at the centre of it"
+  },
+  {
+   "id": "leku-ona",
+   "how": "the dining room on it"
+  },
+  {
+   "id": "bar-gernika",
+   "how": "the pub on it"
+  },
+  {
+   "id": "the-basque-market",
+   "how": "the counter on it"
+  },
+  {
+   "id": "jaialdi",
+   "how": "what fills it every five years"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the question this block answers differently"
+  }
+ ],
+ "sources": [
+  "basqueblock-site",
+  "basquemuseum-house",
+  "ktvb-jaialdi",
+  "visitboise-basque",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "the-basque-block/the-basque-block-a-bench-outside-the-basque-museum-and-cultural-cente-5716554.jpg",
+   "source": "commons",
+   "title": "File:A bench outside the Basque Museum and Cultural Center 2022-05-05 130331 100 4303.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/A_bench_outside_the_Basque_Museum_and_Cultural_Center_2022-05-05_130331_100_4303.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AA_bench_outside_the_Basque_Museum_and_Cultural_Center_2022-05-05_130331_100_4303.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Lhimec",
+   "credit": "Own work",
+   "alt": "A bench outside the Basque Museum and Cultural Center in Boise, Idaho",
+   "date": "2022-05-05 13:03:31",
+   "primary": true,
+   "sha256": "f58fff9100afa10098e922416faa9aff7f4d57acb97cb833f2345d6b31084461"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-a-sign-outside-the-basque-museum-and-cultural-center-5931aef.jpg",
+   "source": "commons",
+   "title": "File:A sign outside the Basque Museum and Cultural Center 2022-05-05 130404 100 4306.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/A_sign_outside_the_Basque_Museum_and_Cultural_Center_2022-05-05_130404_100_4306.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AA_sign_outside_the_Basque_Museum_and_Cultural_Center_2022-05-05_130404_100_4306.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Lhimec",
+   "credit": "Own work",
+   "alt": "A sign outside the Basque Museum and Cultural Center",
+   "date": "2022-05-05 13:04:04",
+   "primary": false,
+   "sha256": "43e3795d6bb880dfc9d94f7fed7b583a7b56bd34505a983279a0c3fff0932db7"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-anduiza-hotel-building-boise.jpg",
+   "source": "commons",
+   "title": "File:Anduiza Hotel Building, Boise.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Anduiza_Hotel_Building%2C_Boise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AAnduiza_Hotel_Building%2C_Boise.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Carl Burnett",
+   "credit": "Own work",
+   "alt": "Former Anduiza Hotel building (1914), 619 Grove Street, Boise, Idaho, USA. Housed a Basque social club and frontón court.",
+   "date": "Taken on 22 September 2013, 11:11:47",
+   "primary": false,
+   "sha256": "5a33c5b55ff0e24e72d8fb7c2e9cb6b56bf9c8373fbaa43819e6633d051bc421"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-basque-center-in-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Basque center in Boise, Idaho.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Basque_center_in_Boise%2C_Idaho.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_center_in_Boise%2C_Idaho.JPG",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "No machine-readable author provided. Terfili assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "A Basque center in Boise, Idaho",
+   "date": "28 December 2005 (according to Exif data",
+   "primary": false,
+   "sha256": "2fe9f8d35ac3ae1707263be04736bfd66e88238bd79ec115ced09c2410b282e3"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-berrizko-bola-jokoa.jpg",
+   "source": "commons",
+   "title": "File:Berrizko bola jokoa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Berrizko_bola_jokoa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABerrizko_bola_jokoa.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Janfri",
+   "credit": "Own work",
+   "alt": "Berrizko (Bizkaia) bolatokia, zabaleko hiru txirlotara jokatzen",
+   "date": "2025-10-04 17:43:49",
+   "primary": false,
+   "sha256": "0e0aad0fd65c8dac1276b782aa4fb2cb7ca9786f4e120491b68f6f52d799e4f9"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-boise-basque-block.jpg",
+   "source": "commons",
+   "title": "File:Boise-basque-block.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Boise-basque-block.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABoise-basque-block.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Dmharris26",
+   "credit": "Own work",
+   "alt": "Looking down the Basque Block in Boise towards Capitol Blvd in early spring.",
+   "date": "2008-09-10",
+   "primary": false,
+   "sha256": "26058820f32506cbab9c453898c396ea21ff4bf32e01aa1680efb4771eada6bc"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-bola-jokoa-0001.jpg",
+   "source": "commons",
+   "title": "File:Bola jokoa 0001.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bola_jokoa_0001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABola_jokoa_0001.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Joxemai",
+   "credit": "Own work",
+   "alt": "Bola jokoa",
+   "date": "2015-09-05 09:29:41",
+   "primary": false,
+   "sha256": "c6548374d8c1855d85704c1850390704918182ce3caa460aed72a2e275f5ab1c"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-bola-jokoa-foruen-plazan.jpg",
+   "source": "commons",
+   "title": "File:Bola jokoa Foruen plazan.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bola_jokoa_Foruen_plazan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABola_jokoa_Foruen_plazan.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Birasuegi",
+   "credit": "Own work",
+   "alt": "Erromeria eguneko bola jokoa Errenteriako Foruen plazan 2026-07-18",
+   "date": "18 July 2026 (according to Exif data)",
+   "primary": false,
+   "sha256": "52e33adfcf282250482029899cfe97b44222f39e067fb009e9eba3a9d3949182"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-historical-home-on-boise-s-basque-block.jpg",
+   "source": "commons",
+   "title": "File:Historical Home on Boise's Basque Block.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Historical_Home_on_Boise%27s_Basque_Block.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AHistorical_Home_on_Boise%27s_Basque_Block.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Rickmouser45",
+   "credit": "Own work",
+   "alt": "A historical home located on Boise's Basque Block.",
+   "date": "2020-04-06",
+   "primary": false,
+   "sha256": "5a45c62980147502eab04dfad9e9df321ca0cb956880c6fcd5a0d4032b219c60"
+  },
+  {
+   "file": "the-basque-block/the-basque-block-laiak-basque-block-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Laiak, Basque Block, Boise, Idaho.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Laiak%2C_Basque_Block%2C_Boise%2C_Idaho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALaiak%2C_Basque_Block%2C_Boise%2C_Idaho.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Ken Lund",
+   "credit": "https://www.flickr.com/photos/kenlund/23012320796/",
+   "alt": "Laiak, Basque Block, Boise, Idaho.  A plaque commemorating Basque Americans in Idaho.",
+   "date": "2015-11-12 16:24:08",
+   "primary": false,
+   "sha256": "b2d28ecff74eef29054d8cab86241c899cfbedf6f476dd85a62b3735c1613795"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "id": "oxtail-stew",
+ "type": "dish",
+ "names": {
+  "name": "Oxtail stew"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "A boarding-house cut cooked long. $30 at Wool Growers; on the family-style list at Louis'."
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "prints it at $30"
+  },
+  {
+   "id": "louis-basque-corner",
+   "how": "serves it family style"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site",
+  "louis-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

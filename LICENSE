@@ -1,0 +1,47 @@
+BASQUE TABLES — licences, in layers
+
+The layers are deliberate. Different parts of this repository come from different
+places and cannot carry one licence between them.
+
+RECORDS  — data/nodes/, data/sources/, data/vocab/, schema/
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+  https://creativecommons.org/licenses/by/4.0/
+  Attribute to: Basque Tables (NaN), with a link to this repository.
+
+PICTURES — data/images/ and docs/images/
+  EACH PICTURE CARRIES ITS OWN LICENCE, and that licence is the one that governs it.
+  Every file has a sidecar .json beside it naming the photographer, the licence, the
+  Wikimedia Commons file page and a sha256. The licences in use are CC0 1.0, public
+  domain, CC BY (2.0/2.5/3.0/4.0), CC BY-SA (2.0/2.5/3.0/4.0) and FAL 1.3.
+  Share-alike is complied with, not dodged: the credit rides with the file and is
+  printed beside it on every page it appears on. If you reuse a picture, take its
+  terms from the sidecar, not from this file.
+
+TOWN COORDINATES — data/geo/towns.json
+  Town centroids, compiled for this project. CC BY 4.0 with the records.
+
+CODE — tools/, tests/, publish.sh, the launcher
+  MIT.
+
+  Copyright (c) 2026 NaN
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of
+  this software and associated documentation files (the "Software"), to deal in the
+  Software without restriction, including without limitation the rights to use,
+  copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+  Software, and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+  AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+NOT OURS TO LICENCE
+  The facts themselves, and the words of the houses quoted on their own pages. Those
+  are quoted with a source and a date, and they belong to whoever said them.

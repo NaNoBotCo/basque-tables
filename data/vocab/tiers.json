@@ -1,0 +1,7 @@
+{
+ "cited": {"label": "cited", "mark": "●", "blurb": "a named source says it"},
+ "harvested": {"label": "harvested", "mark": "◐", "blurb": "pulled from a directory or listing"},
+ "tradition": {"label": "tradition", "mark": "○", "blurb": "what the trade says, with no source that tests it"},
+ "inference": {"label": "inference", "mark": "△", "blurb": "reasoning from other records here"},
+ "field": {"label": "field", "mark": "⚑", "blurb": "seen in person"}
+}

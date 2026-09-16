@@ -1,0 +1,31 @@
+{
+ "id": "jose-mari-artiach",
+ "type": "person",
+ "names": {
+  "name": "Jose Mari Artiach",
+  "sort": "Artiach, Jose Mari"
+ },
+ "region": [
+  "idaho"
+ ],
+ "text": {
+  "short": "Came from the Basque Country to herd sheep, and opened Leku Ona on the Basque Block in December 2005."
+ },
+ "kin": [
+  {
+   "id": "leku-ona",
+   "how": "the room he opened"
+  },
+  {
+   "id": "artzain",
+   "how": "the trade he arrived in"
+  }
+ ],
+ "sources": [
+  "lekuona-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

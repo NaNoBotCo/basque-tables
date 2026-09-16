@@ -1,0 +1,31 @@
+{
+ "id": "louis-erreguible",
+ "type": "person",
+ "names": {
+  "name": "Louis Erreguible",
+  "sort": "Erreguible, Louis"
+ },
+ "region": [
+  "nevada"
+ ],
+ "text": {
+  "short": "Opened Louis' Basque Corner in Reno with Lorraine Erreguible in 1967."
+ },
+ "kin": [
+  {
+   "id": "louis-basque-corner",
+   "how": "the room he opened"
+  },
+  {
+   "id": "picon-punch",
+   "how": "the drink his house claims"
+  }
+ ],
+ "sources": [
+  "louis-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

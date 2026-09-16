@@ -1,0 +1,113 @@
+{
+ "id": "louis-basque-corner",
+ "type": "place",
+ "names": {
+  "name": "Louis' Basque Corner",
+  "sort": "Louis Basque Corner"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Reno, 1967. Family style at the corner of Fourth and Evans, and it says so about the Picon.",
+  "today": "Dinner is family style — shrimp and tongue Basquaise, oxtails, tripas callos, lamb chops, sirloin. The banquet room holds 125.",
+  "history": "Louis and Lorraine Erreguible opened it in 1967, ten blocks from where Reno's Basque hotels stood."
+ },
+ "x_kitchen": {
+  "says": "Basque, family style",
+  "tier": "cited",
+  "source": "louis-site"
+ },
+ "address": {
+  "street": "301 East 4th Street",
+  "city": "Reno",
+  "state": "NV",
+  "zip": "89501",
+  "phone": "(775) 323-7203",
+  "url": "https://louisbasquecorner.com/",
+  "tier": "cited",
+  "source": "louis-site"
+ },
+ "founded": {
+  "year": 1967,
+  "by": "Louis and Lorraine Erreguible",
+  "tier": "cited",
+  "source": "louis-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "louis-site"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "taken",
+  "note": "Family style, and the house asks you to call.",
+  "tier": "cited",
+  "source": "louis-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "yes",
+  "note": "The house bills itself as home of the Picon Punch.",
+  "tier": "cited",
+  "source": "louis-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "Mon 4pm–close · Tue–Sat 11am–close · Sun 4pm–9pm",
+  "tier": "cited",
+  "source": "louis-site",
+  "checked": "2026-09-16"
+ },
+ "recognitions": [
+  {
+   "by": "USA Today",
+   "what": "Restaurants of the Year",
+   "year": 2024,
+   "source": "travelnevada-basque"
+  }
+ ],
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "the house claims it"
+  },
+  {
+   "id": "louis-erreguible",
+   "how": "opened this room in 1967"
+  },
+  {
+   "id": "the-long-table",
+   "how": "family style is this house's answer"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "dinner prices",
+  "the price of a Picon here"
+ ],
+ "sources": [
+  "louis-site",
+  "travelnevada-basque",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

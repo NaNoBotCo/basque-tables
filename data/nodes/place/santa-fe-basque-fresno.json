@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "id": "santa-fe-basque-fresno",
+ "type": "place",
+ "names": {
+  "name": "Santa Fe Basque Restaurant"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Fresno, on Maroa. A small family house that keeps two standing dates: a chicken-liver dinner the second Thursday of the month, and a Basque breakfast.",
+  "today": "Noon to seven Monday and Tuesday, noon to eight Wednesday to Saturday, shut Sunday. Reservations help them staff the night.",
+  "table": "The chicken-liver dinner comes as soup, salad, potato salad with shrimp, chicken livers with gravy, fried chicken, wine and dessert. The Basque breakfast is eggs, bacon, chorizo, biscuits and gravy, potatoes, pancakes, cheese and wine."
+ },
+ "address": {
+  "street": "3110 North Maroa Avenue",
+  "city": "Fresno",
+  "state": "CA",
+  "zip": "93704",
+  "phone": "(559) 226-7499",
+  "url": "https://santafebasque.com/",
+  "tier": "cited",
+  "source": "santafe-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "santafe-site"
+ },
+ "seating": {
+  "kind": "unknown",
+  "reservations": "taken",
+  "note": "The house asks for reservations so it can prepare and staff; it does not say on its site how two people are seated.",
+  "tier": "cited",
+  "source": "santafe-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "santafe-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "basque-breakfast",
+   "how": "keeps one of its own"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "the chicken-liver night is one, printed course by course"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "santafe-site",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun"
+  ],
+  "text": "Mon–Tue noon–7pm · Wed–Sat noon–8pm",
+  "tier": "cited",
+  "source": "santafe-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "a small, family-owned and operated business",
+  "tier": "cited",
+  "source": "santafe-site"
+ },
+ "needs_verification": [
+  "dinner prices",
+  "how two people are seated",
+  "whether it descends from the old Santa Fe Hotel",
+  "whether the bar makes a Picon Punch"
+ ]
+}

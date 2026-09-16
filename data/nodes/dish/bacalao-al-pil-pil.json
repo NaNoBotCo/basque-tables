@@ -1,0 +1,78 @@
+{
+ "id": "bacalao-al-pil-pil",
+ "type": "dish",
+ "names": {
+  "name": "Bacalao al pil-pil",
+  "eu": "bakailaoa pil-pilean"
+ },
+ "region": [
+  "euskal-herria"
+ ],
+ "text": {
+  "short": "Salt cod, garlic, oil and chilli, worked until the cod's own gelatin turns the oil into a sauce. Four ingredients, no cream.",
+  "note": "The sauce is an emulsion made by moving the pan, not by adding anything."
+ },
+ "kin": [
+  {
+   "id": "txakoli",
+   "how": "what is poured beside it"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "needs_verification": [
+  "which room in this directory serves it, from that house's own menu"
+ ],
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "bacalao-al-pil-pil/bacalao-al-pil-pil-bacalao-al-pil-pil-vizcaya.jpg",
+   "source": "commons",
+   "title": "File:Bacalao al Pil Pil (Vizcaya).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bacalao_al_Pil_Pil_%28Vizcaya%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABacalao_al_Pil_Pil_%28Vizcaya%29.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "jlastras",
+   "credit": "Flickr",
+   "alt": "Bacalao al Pil Pil (en proceso de cocinado)",
+   "date": "",
+   "primary": true,
+   "sha256": "5f8fe505962e7bf3f7445e9595874d6c20599f7d8ce77aa71e0f6943933572c2"
+  },
+  {
+   "file": "bacalao-al-pil-pil/bacalao-al-pil-pil-bacalaoalpilpil.jpg",
+   "source": "commons",
+   "title": "File:BacalaoalPilpil.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/BacalaoalPilpil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABacalaoalPilpil.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Boca Dorada",
+   "credit": "Flickr",
+   "alt": "Bacalao al pil-pil.  Famous dish from Basque.El duro trabajo",
+   "date": "Taken on 6 January 2006",
+   "primary": false,
+   "sha256": "e35204cbdd5fd55a85527134c483fcb2120f031832c53fe81e17b61a73cd75f3"
+  },
+  {
+   "file": "bacalao-al-pil-pil/bacalao-al-pil-pil-cocotxaspilpil.jpg",
+   "source": "commons",
+   "title": "File:CocotxasPilPil.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/CocotxasPilPil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACocotxasPilPil.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "BocaDorada",
+   "credit": "Flickr",
+   "alt": "Cocotxas al pil pil",
+   "date": "2007-03-20",
+   "primary": false,
+   "sha256": "0ab2f85e44ae001579396cec6457e96a3c8ba0a3a73f8e4b35c31706da0f69af"
+  }
+ ]
+}

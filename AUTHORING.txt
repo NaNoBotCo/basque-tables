@@ -1,0 +1,77 @@
+BASQUE TABLES — HOW TO WRITE A RECORD
+
+THE FIVE TIERS
+  cited        a named source in data/sources/sources.json says it, and it was read on the
+               date that source carries.
+  harvested    taken from a directory row or a listing. Fine for an address and a phone
+               number. Not fine on its own for whether a room is open tonight.
+  tradition    what the trade says, with no source that tests it. Legitimate, and labelled.
+  inference    reasoning from other records here. Say so.
+  field        seen in person.
+
+  Record-level `provenance` is the default. Any block — address, founded, status, seating,
+  picon, prices, hours, etymology, x_kitchen, a section — may carry its own `tier` and
+  `source`, and that wins for that block.
+
+WHAT MAY NEVER BE SOFT
+  seating · picon · prices · hours · status · address may not carry tier tradition or
+  inference. validate.py returns 1 if they do. Somebody drives to these.
+
+HOURS — THREE STATES
+  "hours": {"open": ["Tue","Wed"], "closed": ["Mon"], "text": "...", "tier": "cited",
+            "source": "...", "checked": "2026-09-16"}
+  Days in neither list are NOT PUBLISHED. They draw as a dashed square, they are excluded
+  from "open today", and they are never counted as open or closed. Guessing a closure is
+  worse than a blank, because a reader drives on it.
+
+SEATING — THE FIELD THE SITE IS BUILT AROUND
+  kind: shared | own | both | bar | unknown
+    shared   a long table, with strangers
+    own      your own table
+    both     the house does both, and the note says when
+    bar      a counter
+    unknown  nobody published it. Not a guess, not a default.
+  Also: reservations (required | taken | walk-in | unknown), a note in the house's own
+  words where possible, tier, source, checked.
+
+PRICES
+  Only what a house prints. items[] carries the dish and the dollars as printed;
+  dinner_low and dinner_high bound the dinner entrees; `includes` says what the price
+  carries with it. Never convert, never average, never estimate.
+
+X_KITCHEN
+  How the house describes its own kitchen, in its own words, with a source. This is how
+  the directory distinguishes a Basque boarding house from a Spanish tapas bar without
+  ranking either. Quote; do not adjudicate.
+
+KIN
+  kin[] is directional prose: "what the neighbour is to THIS page". The site prints the
+  neighbour's reply on the same card when the neighbour points back. Write both sides
+  when you can; a one-way link still renders, as "points here".
+
+NEEDS_VERIFICATION
+  A list of plain sentences naming what is not settled. They all surface on /gaps/.
+  Preferred over a confident guess, always.
+
+HOUSE STYLE
+  · Describe. Do not rank. validate.py refuses "authentic", "purist", "touristy",
+    "hidden gem", "the real deal" and the rest in our own prose — a source may use any of
+    them inside a quotation, we may not.
+  · It also refuses this project's banned words: "load-bearing", "honest", and the
+    food-writing filler ("nestled", "iconic", "eatery", "boasts", "elevated", "curated").
+  · Active verbs. Fewer adjectives. A noun is a noun — Sources is "Sources", not "Where
+    this came from".
+  · If you want a blurb, the record is missing a field.
+  · Never declare what the site stands for. Print the fields and let the reader decide.
+
+THE CAST — what has a record, and what does not yet
+  Rooms: 13 California, 8 Nevada, 7 Idaho. Ten of the 28 are a directory row and nothing
+  more; their status reads "not established" and they are held out of the filters.
+  Missing and worth writing: Bar Gernika's opening times (the house publishes only closing
+  times), dinner prices anywhere but Bakersfield, the Picon question at almost every bar,
+  a person record for the Erreguible and Artiach families, an event record for the
+  Sheepherders' Ball, and the National Basque Festival at Elko.
+
+ADDING A SOURCE
+  Put it in data/sources/sources.json with title, publisher, url, kind and the date you
+  read it. The validator refuses a record that cites an id the registry does not hold.

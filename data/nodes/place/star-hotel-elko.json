@@ -1,0 +1,109 @@
+{
+ "id": "star-hotel-elko",
+ "type": "place",
+ "names": {
+  "name": "The Star Hotel",
+  "sort": "Star Hotel",
+  "aliases": [
+   "The Star Hotel & Bar"
+  ]
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Elko, 1910. Family style, six days a week, on Silver Street.",
+  "today": "Lunch and dinner run straight through from 11 to 9:30; the bar keeps going after the kitchen stops.",
+  "table": "Cabbage soup, Basque beans, salad and bread come to the table before the order does."
+ },
+ "x_kitchen": {
+  "says": "Basque dining, family style",
+  "tier": "cited",
+  "source": "starhotel-site"
+ },
+ "address": {
+  "street": "246 Silver Street",
+  "city": "Elko",
+  "state": "NV",
+  "zip": "89801",
+  "phone": "(775) 738-9925",
+  "url": "https://www.elkostarhotel.com/",
+  "tier": "cited",
+  "source": "starhotel-site"
+ },
+ "founded": {
+  "year": 1910,
+  "tier": "cited",
+  "source": "starhotel-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "starhotel-site"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "unknown",
+  "note": "The house calls its dining family style; Travel Nevada describes the communal table as the point of the room.",
+  "tier": "cited",
+  "source": "travelnevada-basque",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "The bar runs past the kitchen; the site prints no drink list.",
+  "tier": "cited",
+  "source": "starhotel-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun"
+  ],
+  "text": "Mon–Sat 11am–9:30pm, bar later",
+  "tier": "cited",
+  "source": "starhotel-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "basque-beans",
+   "how": "on the table before you order"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the seating question, answered here by the house"
+  },
+  {
+   "id": "toki-ona-elko",
+   "how": "the other Basque room in Elko"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ],
+ "sources": [
+  "starhotel-site",
+  "travelnevada-basque",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

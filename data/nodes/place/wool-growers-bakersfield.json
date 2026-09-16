@@ -1,0 +1,148 @@
+{
+ "id": "wool-growers-bakersfield",
+ "type": "place",
+ "names": {
+  "name": "Wool Growers Restaurant",
+  "sort": "Wool Growers Restaurant (Bakersfield)",
+  "aliases": [
+   "Woolgrowers"
+  ]
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Bakersfield, 1954. The Maitia family's dining room behind a cocktail lounge on East 19th.",
+  "today": "Three generations of one family have run it: J.B. and Mayie Maitia opened in 1954, their daughter Jenny took it on, and Jenny's daughter Christiane works it now. The bar takes walk-ins; a table is a phone call ahead.",
+  "table": "A relish tray lands first — pickled tongue, salsa, beans, bread — and keeps landing. The entree is what you ordered; the rest of the meal is not."
+ },
+ "x_kitchen": {
+  "says": "Basque, in the sheepherder line, with a French Basque hand",
+  "tier": "inference",
+  "source": "woolgrowers-site"
+ },
+ "address": {
+  "street": "620 East 19th Street",
+  "city": "Bakersfield",
+  "state": "CA",
+  "phone": "(661) 327-9584",
+  "url": "https://woolgrowers.net/",
+  "tier": "cited",
+  "source": "woolgrowers-site"
+ },
+ "founded": {
+  "year": 1954,
+  "by": "J.B. and Mayie Maitia",
+  "tier": "cited",
+  "source": "woolgrowers-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "woolgrowers-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "required",
+  "note": "The house site puts it plainly: tables by reservation, walk-ins at the counter. Two people get their own table if they call.",
+  "tier": "cited",
+  "source": "woolgrowers-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "yes",
+  "price": 8.0,
+  "tier": "cited",
+  "source": "woolgrowers-site",
+  "checked": "2026-09-16"
+ },
+ "prices": {
+  "dinner_low": 22.0,
+  "dinner_high": 46.0,
+  "items": [
+   {
+    "item": "Fried chicken",
+    "usd": 22.0
+   },
+   {
+    "item": "Scampi",
+    "usd": 24.0
+   },
+   {
+    "item": "Vegetarian penne",
+    "usd": 28.0
+   },
+   {
+    "item": "Oxtail stew",
+    "usd": 30.0
+   },
+   {
+    "item": "Lamb chops",
+    "usd": 32.0
+   },
+   {
+    "item": "Shrimp a la planxa",
+    "usd": 34.0
+   },
+   {
+    "item": "Filet mignon",
+    "usd": 46.0
+   }
+  ],
+  "includes": "the relish tray, soup, beans and bread that arrive with every dinner",
+  "tier": "cited",
+  "source": "woolgrowers-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon"
+  ],
+  "text": "Tue–Thu 6pm–11pm · Fri–Sat 1–3:30pm and 6pm–midnight · Sun 1–4pm",
+  "tier": "cited",
+  "source": "woolgrowers-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "relish-tray",
+   "how": "what arrives before you have ordered anything"
+  },
+  {
+   "id": "picon-punch",
+   "how": "poured at the bar here for $8"
+  },
+  {
+   "id": "pyrenees-cafe",
+   "how": "eight blocks east, and older by half a century"
+  },
+  {
+   "id": "noriega-hotel",
+   "how": "the Bakersfield room this one outlived"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "recognitions": [],
+ "sources": [
+  "woolgrowers-site",
+  "visitbakersfield-basque",
+  "pbssocal-bakersfield"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

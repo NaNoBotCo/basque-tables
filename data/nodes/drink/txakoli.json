@@ -1,0 +1,86 @@
+{
+ "id": "txakoli",
+ "type": "drink",
+ "names": {
+  "name": "Txakoli",
+  "eu": "txakoli",
+  "es": "chacolí",
+  "said": "cha-ko-LEE"
+ },
+ "region": [
+  "euskal-herria"
+ ],
+ "text": {
+  "short": "Sharp, barely fizzy white from the Basque coast, poured from a height so it opens in the glass.",
+  "note": "Almost none of the Western rooms in this directory list it. It arrives with the newer city rooms."
+ },
+ "etymology": {
+  "root": "Basque txakolin",
+  "language": "Euskara",
+  "gloss": "the local wine",
+  "tier": "tradition"
+ },
+ "kin": [
+  {
+   "id": "pintxo",
+   "how": "what it is poured alongside"
+  }
+ ],
+ "needs_verification": [
+  "which rooms in this directory actually pour it"
+ ],
+ "sources": [
+  "lekuona-site"
+ ],
+ "provenance": "tradition",
+ "confidence": "low",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "txakoli/txakoli-bego-ako-txakolindegietako-edalontzi-eta-pitxerra.jpg",
+   "source": "commons",
+   "title": "File:Begoñako txakolindegietako edalontzi eta pitxerra.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Bego%C3%B1ako_txakolindegietako_edalontzi_eta_pitxerra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABego%C3%B1ako_txakolindegietako_edalontzi_eta_pitxerra.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Ksarasola",
+   "credit": "Own work",
+   "alt": "Typical jug and glass to drink chacoli in Begoña (Esteban Kadarso).",
+   "date": "2024-05-18",
+   "primary": true,
+   "sha256": "dfc71d705b4477c2efe396fdc3d41ce31aab84ca25bf5ee97ce92ec70d215376"
+  },
+  {
+   "file": "txakoli/txakoli-bego-ako-txakolindegietako-edalontzia.jpg",
+   "source": "commons",
+   "title": "File:Begoñako txakolindegietako edalontzia.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Bego%C3%B1ako_txakolindegietako_edalontzia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABego%C3%B1ako_txakolindegietako_edalontzia.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Ksarasola",
+   "credit": "Own work",
+   "alt": "Typial glass to drink chacoli in Begoña (Esteban Kadarso)",
+   "date": "2024-05-18",
+   "primary": false,
+   "sha256": "0626622ab2b3b26366700a0f3ee40c4bb72c90519d9620e909ffd0305280321b"
+  },
+  {
+   "file": "txakoli/txakoli-copa-de-txakoli.jpg",
+   "source": "commons",
+   "title": "File:Copa de Txakoli.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Copa_de_Txakoli.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACopa_de_Txakoli.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Raquel Pasandin and Alan Lorenzo",
+   "credit": "Self-photographed",
+   "alt": "Copa de Txakoli",
+   "date": "2011-04-06 16:48:56",
+   "primary": false,
+   "sha256": "535f7414a642fb99563ad1a64502eaf2936afb1843ab3977c011257f88662e1f"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "id": "michelle-anchustegui",
+ "type": "person",
+ "names": {
+  "name": "Michelle Anchustegui",
+  "sort": "Anchustegui, Michelle"
+ },
+ "region": [
+  "idaho"
+ ],
+ "text": {
+  "short": "The Triangle in Sweet, Idaho cooks her dishes; her family keeps them on the menu."
+ },
+ "kin": [
+  {
+   "id": "triangle-inn-sweet",
+   "how": "the room that carries her cooking"
+  }
+ ],
+ "sources": [
+  "kivi-triangle"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "schema": 1
+}

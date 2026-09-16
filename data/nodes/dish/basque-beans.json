@@ -1,0 +1,82 @@
+{
+ "id": "basque-beans",
+ "type": "dish",
+ "names": {
+  "name": "Basque beans"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "Small red or pink beans, long-cooked with pork and garlic. On the table at nearly every room in this directory."
+ },
+ "kin": [
+  {
+   "id": "star-hotel-elko",
+   "how": "brings them before you order"
+  },
+  {
+   "id": "martin-hotel-winnemucca",
+   "how": "one of ten things in the set dinner"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "a fixed member of it"
+  }
+ ],
+ "sources": [
+  "starhotel-site",
+  "martinhotel-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "basque-beans/basque-beans-alubia-tolosa.jpg",
+   "source": "commons",
+   "title": "File:Alubia tolosa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Alubia_tolosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AAlubia_tolosa.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Ardo Beltz",
+   "credit": "Own work",
+   "alt": "Alubias de Tolosa",
+   "date": "2009-01-04",
+   "primary": true,
+   "sha256": "f8af19f2a7428379b7e57c9a6b1ed0f3b4d8d46c84d12d83904fad1d26c4fdbc"
+  },
+  {
+   "file": "basque-beans/basque-beans-arabako-babarrun-nabarraren-lekatxoak.jpg",
+   "source": "commons",
+   "title": "File:Arabako babarrun nabarraren lekatxoak.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Arabako_babarrun_nabarraren_lekatxoak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AArabako_babarrun_nabarraren_lekatxoak.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Asier Sarasua Garmendia, Assar",
+   "credit": "Own work",
+   "alt": "Little pods of the motley bean from Araba/Álava (Basque Country, Spain)",
+   "date": "2011-07-27",
+   "primary": false,
+   "sha256": "e5e22212998d34eeb7d213e43970af260b26189d4baa10b6ec308040b3fa2e3c"
+  },
+  {
+   "file": "basque-beans/basque-beans-tolosako-babarrunak.jpg",
+   "source": "commons",
+   "title": "File:Tolosako babarrunak.jpeg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Tolosako_babarrunak.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ATolosako_babarrunak.jpeg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Xaverius",
+   "credit": "Own work",
+   "alt": "Tolosako babarrunak",
+   "date": "",
+   "primary": false,
+   "sha256": "7afd2aa84a5c4ac35b73083930b248fec02b699c0def228270b01f80311a034a"
+  }
+ ]
+}

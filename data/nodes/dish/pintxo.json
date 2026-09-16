@@ -1,0 +1,106 @@
+{
+ "id": "pintxo",
+ "type": "dish",
+ "names": {
+  "name": "Pintxo",
+  "eu": "pintxo"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "A single bite on a slice of bread, held with a stick. A bar counter's unit of measure.",
+  "note": "Spelled pincho in Spanish and pintxo in Euskara. Which spelling a sign uses says where the room is looking."
+ },
+ "kin": [
+  {
+   "id": "somni",
+   "how": "works the form at a counter"
+  }
+ ],
+ "sources": [
+  "lekuona-site",
+  "basquemarket-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "pintxo/pintxo-pincho-vitoria-15.jpg",
+   "source": "commons",
+   "title": "File:Pincho Vitoria 15.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Pincho_Vitoria_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APincho_Vitoria_15.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Basotxerri",
+   "credit": "Own work",
+   "alt": "Pincho en Vitoria-Gasteiz, País Vasco, España",
+   "date": "2016-03-27 13:07:35",
+   "primary": true,
+   "sha256": "904ee241bd2abe6f03b2cec3528ae4c775e33eeadf066c86de140b50763e70b8"
+  },
+  {
+   "file": "pintxo/pintxo-pincho-vitoria-16.jpg",
+   "source": "commons",
+   "title": "File:Pincho Vitoria 16.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Pincho_Vitoria_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APincho_Vitoria_16.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Basotxerri",
+   "credit": "Own work",
+   "alt": "Pincho in Vitoria-Gasteiz, Basque Country, Spain",
+   "date": "2016-08-19 20:56:46",
+   "primary": false,
+   "sha256": "b8b0bf9a29884f42e025855d787db0c9ca818e8d65aa936d4389422896c96d2c"
+  },
+  {
+   "file": "pintxo/pintxo-pinchos-bermeo-2.jpg",
+   "source": "commons",
+   "title": "File:Pinchos bermeo 2.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Pinchos_bermeo_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APinchos_bermeo_2.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Telle",
+   "credit": "Own work",
+   "alt": "Pinchos of Bermeo´s old port",
+   "date": "2007-07-12",
+   "primary": false,
+   "sha256": "72718299aee4cf87e85d6938052a764967f43c6c2d5b8ed16c20f2aeb9829428"
+  },
+  {
+   "file": "pintxo/pintxo-pintxo-de-pulpo-con-alcachofa.jpg",
+   "source": "commons",
+   "title": "File:Pintxo de pulpo con alcachofa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Pintxo_de_pulpo_con_alcachofa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APintxo_de_pulpo_con_alcachofa.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "author": "Tamorlan",
+   "credit": "Own work",
+   "alt": "Pincho (pintxo) de pulpo con alcahofa",
+   "date": "",
+   "primary": false,
+   "sha256": "f0851d0916b5d0c80032e5bc8eaae00b08950bdd046af3e8b546bf34251fdf84"
+  },
+  {
+   "file": "pintxo/pintxo-pintxos-15640616804.jpg",
+   "source": "commons",
+   "title": "File:Pintxos (15640616804).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Pintxos_%2815640616804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APintxos_%2815640616804%29.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "istolethetv",
+   "credit": "pintxos",
+   "alt": "pintxos",
+   "date": "2015-01-02 21:12",
+   "primary": false,
+   "sha256": "3308fdb7f474de7ef70c843bd7393dc1e295aaf540d96a9580802bf7c96d8757"
+  }
+ ]
+}

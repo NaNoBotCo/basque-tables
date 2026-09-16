@@ -1,0 +1,105 @@
+{
+ "id": "idaho",
+ "type": "region",
+ "names": {
+  "name": "Idaho"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "One city block in Boise carries more Basque life than any other address in the United States — a museum in a boarding house, a bar, a market, a dining room, a club, and a festival that brings 30,000 people every five years."
+ },
+ "sections": [
+  {
+   "heading": "The Basque Block",
+   "body": "Grove Street between Sixth and Capitol. A pub, a market, a dining room with a hotel over it, the Basque Center, and the museum — inside the boarding house the museum grew out of. Nowhere else in America concentrates the whole apparatus on one block.",
+   "tier": "cited",
+   "source": "basqueblock-site"
+  },
+  {
+   "heading": "The building the rest of this site is about",
+   "body": "Cyrus Jacobs put up a brick house on Grove Street in 1864. It became a Basque boarding house; the Uberuaga family ran it from 1917, bought it in 1928, and kept taking boarders until 1969. Adelia Simplot bought it from them and opened the Basque Museum & Cultural Center in it in 1985 — the first museum in the country given to Basque history. Every long table in California and Nevada descends from a room like that one, and this is the room still standing.",
+   "tier": "cited",
+   "source": "basquemuseum-house"
+  },
+  {
+   "heading": "Jaialdi",
+   "body": "Every five years Boise holds Jaialdi, six days, 30,000 to 50,000 people. The last one ran 29 July to 3 August 2025. The next is 2030.",
+   "tier": "cited",
+   "source": "ktvb-jaialdi"
+  },
+  {
+   "heading": "And outside Boise",
+   "body": "Meridian has a family restaurant founded in 1999 by the descendants of a woman born in Bizkaia in 1903. Sweet, population small, has an inn that opens Friday to Sunday. Idaho's Basque country is not only a city block.",
+   "tier": "cited",
+   "source": "euskalkazeta-idaho"
+  }
+ ],
+ "kin": [
+  {
+   "id": "the-basque-block",
+   "how": "the long version of this page"
+  },
+  {
+   "id": "uberuaga-boarding-house",
+   "how": "the building the block is built around"
+  },
+  {
+   "id": "jaialdi",
+   "how": "what happens here every five years"
+  },
+  {
+   "id": "nevada",
+   "how": "the state next door, with the same trade behind it"
+  },
+  {
+   "id": "california",
+   "how": "the third state in this directory"
+  }
+ ],
+ "sources": [
+  "basqueblock-site",
+  "basquemuseum-house",
+  "ktvb-jaialdi",
+  "euskalkazeta-idaho",
+  "visitboise-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "idaho/idaho-basque-immigrant-graves.jpg",
+   "source": "commons",
+   "title": "File:Basque immigrant graves.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Basque_immigrant_graves.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_immigrant_graves.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Carl Burnett",
+   "credit": "Own work",
+   "alt": "Graves belonging to Basque immigrants and their descendants buried in Morris Hill Cemetery, Boise, Idaho, USA.",
+   "date": "Taken on 22 September 2013, 15:53:58",
+   "primary": true,
+   "sha256": "6e6f14e86beea23025bd562cfb771207d265e8f14959dc4471cef42e74923708"
+  },
+  {
+   "file": "idaho/idaho-basque-plaque-in-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Basque plaque in Boise, Idaho.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Basque_plaque_in_Boise%2C_Idaho.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_plaque_in_Boise%2C_Idaho.JPG",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "No machine-readable author provided. Terfili assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "Basque plaque in Boise, Idaho.JPG",
+   "date": "28 December 2005 (according to Exif data",
+   "primary": false,
+   "sha256": "c71f0d489b87af2db451b69f59afc05770a74fbd7e8107c6655f4e52b61c686f"
+  }
+ ]
+}

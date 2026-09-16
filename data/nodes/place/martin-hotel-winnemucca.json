@@ -1,0 +1,134 @@
+{
+ "id": "martin-hotel-winnemucca",
+ "type": "place",
+ "names": {
+  "name": "The Martin Hotel",
+  "sort": "Martin Hotel"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Winnemucca, 1898. Built by the railroad to feed sheepherders; still serving the full set dinner.",
+  "today": "Every dinner carries the same long tail of courses, whatever the entree.",
+  "history": "It went up in 1898 beside the tracks, and took in Basque men working sheep in the Humboldt country."
+ },
+ "x_kitchen": {
+  "says": "Basque tradition, full set dinner",
+  "tier": "cited",
+  "source": "martinhotel-site"
+ },
+ "address": {
+  "street": "94 West Railroad Street",
+  "city": "Winnemucca",
+  "state": "NV",
+  "zip": "89445",
+  "phone": "(775) 623-3197",
+  "url": "https://www.themartinhotel.com/",
+  "tier": "cited",
+  "source": "martinhotel-site"
+ },
+ "founded": {
+  "year": 1898,
+  "tier": "cited",
+  "source": "martinhotel-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "martinhotel-site"
+ },
+ "seating": {
+  "kind": "unknown",
+  "reservations": "unknown",
+  "note": "The house is adding table reservations through OpenTable; its banquet room seats 70. It does not say on the site whether two people share a table with strangers.",
+  "tier": "cited",
+  "source": "martinhotel-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "martinhotel-site",
+  "checked": "2026-09-16"
+ },
+ "courses": [
+  "a glass of wine",
+  "homemade soup",
+  "salad",
+  "Basque beans",
+  "mashed potatoes",
+  "a Basque side dish",
+  "a vegetable",
+  "home-baked bread",
+  "hand-cut fries",
+  "Martin bread pudding"
+ ],
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "Mon–Fri 11am–9pm · Sat–Sun 4pm–9pm",
+  "tier": "cited",
+  "source": "martinhotel-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "the-set-dinner",
+   "how": "this house prints the longest version of it"
+  },
+  {
+   "id": "basque-beans",
+   "how": "one of the ten things that arrive whatever you ordered"
+  },
+  {
+   "id": "ormacheas-winnemucca",
+   "how": "the other Basque room in Winnemucca, four blocks away"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "how two people are seated",
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ],
+ "sources": [
+  "martinhotel-site",
+  "wikipedia-martin-hotel",
+  "euskalkazeta-nevada",
+  "travelnevada-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "martin-hotel-winnemucca/martin-hotel-winnemucca-martin-hotel-winnemucca-nevada.jpg",
+   "source": "commons",
+   "title": "File:Martin Hotel (Winnemucca, Nevada).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Martin_Hotel_%28Winnemucca%2C_Nevada%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AMartin_Hotel_%28Winnemucca%2C_Nevada%29.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Finetooth",
+   "credit": "Own work",
+   "alt": "Martin Hotel in Winnemucca in the U.S. state of Nevada. \n\n\n\n\n\nThis is an image of a place or building that is listed on the National Register of Historic Places in the United States of America. Its re",
+   "date": "2013-04-03",
+   "primary": true,
+   "sha256": "a9d63004f2b47f79244eecc6f1c2a83631ae32c83b72f230f2f6ce30429b4444"
+  }
+ ]
+}

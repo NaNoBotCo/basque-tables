@@ -1,0 +1,98 @@
+{
+ "id": "zazpi-basque-cultural-center",
+ "type": "place",
+ "names": {
+  "name": "Zazpi at the Basque Cultural Center",
+  "sort": "Zazpi",
+  "aliases": [
+   "Basque Cultural Center"
+  ]
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "South San Francisco. A club dining room, renovated, open to anyone who walks in.",
+  "today": "The Basque Cultural Center is a members' club; its restaurant, now called Zazpi, serves the public lunch and dinner six days a week.",
+  "note": "Zazpi is seven in Euskara — the seven Basque provinces, the same count in the Zazpiak Bat motto."
+ },
+ "x_kitchen": {
+  "says": "Basque",
+  "tier": "cited",
+  "source": "bcc-site"
+ },
+ "address": {
+  "street": "599 Railroad Avenue",
+  "city": "South San Francisco",
+  "state": "CA",
+  "zip": "94080",
+  "phone": "(650) 583-8091",
+  "url": "https://sfbasqueculturalcenter.org/restaurant",
+  "tier": "cited",
+  "source": "bcc-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "bcc-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "taken",
+  "note": "A restaurant room, not a boarding-house table.",
+  "tier": "harvested",
+  "source": "bcc-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "bcc-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon"
+  ],
+  "text": "Tue–Sun 11am–2pm and 5pm–8:30pm",
+  "tier": "cited",
+  "source": "bcc-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "zazpiak-bat",
+   "how": "the motto the room is named for"
+  },
+  {
+   "id": "nabo",
+   "how": "the federation the centre belongs to"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "whether the bar makes a Picon Punch",
+  "dinner prices"
+ ],
+ "sources": [
+  "bcc-site",
+  "euskalkazeta-restaurants"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

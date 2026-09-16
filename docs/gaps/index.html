@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaps — Basque Tables</title>
+<meta name="description" content="What this directory does not know, counted field by field.">
+<link rel="canonical" href="https://nanobotco.github.io/basque-tables/gaps/">
+<meta property="og:title" content="Gaps — Basque Tables"><meta property="og:description" content="What this directory does not know, counted field by field.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://nanobotco.github.io/basque-tables/gaps/">
+<meta property="og:site_name" content="Basque Tables">
+<link rel="alternate" hreflang="en" href="https://nanobotco.github.io/basque-tables/gaps/"><link rel="alternate" hreflang="eu" href="https://nanobotco.github.io/basque-tables/eu/gaps/">
+<style>
+:root{
+ --paper:#faf6ef; --ink:#221c15; --ink2:#5c5043; --ink3:#867a6c;
+ --rule:#d8cdbb; --lift:#fffdf8; --accent:#9a2b2b; --accent2:#0f8f79;
+ --c1:#2a6fd6; --c2:#c2620a; --c3:#0f8f79; --c4:#9333ea;
+ --ok:#0f8f79; --no:#c0392b;
+ --display:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+ --sign:Futura,"Avenir Next",Optima,"Gill Sans","Trebuchet MS",sans-serif;
+ --body:Georgia,"Iowan Old Style",serif;
+ --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+ --shadow:0 1px 0 rgba(34,28,21,.04),0 8px 24px -14px rgba(34,28,21,.30);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}}
+:root[data-theme="dark"]{
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:19px/1.65 var(--body);margin:0;
+ -webkit-text-size-adjust:100%;}
+.wrap{max-width:66rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+a{color:var(--ink);text-decoration-color:var(--rule);text-underline-offset:3px}
+a:hover{color:var(--accent);text-decoration-color:currentColor}
+h1,h2,h3{font-family:var(--display);font-weight:normal;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,5.5vw,3.3rem);margin:.2em 0 .1em}
+h2{font-size:clamp(1.45rem,3.2vw,2rem);margin:2.2rem 0 .4rem}
+h3{font-size:1.2rem;margin:1.6rem 0 .3rem}
+.eyebrow{font:600 .78rem/1.4 var(--sign);letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin:0}
+.lede{font-size:1.22rem;color:var(--ink2);max-width:46rem}
+p{max-width:44rem}
+hr{border:0;border-top:1px solid var(--rule);margin:2.4rem 0}
+header.top{border-bottom:1px solid var(--rule);background:var(--lift);position:sticky;top:0;z-index:20;
+ backdrop-filter:saturate(1.2)}
+header.top .wrap{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem}
+.brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;white-space:nowrap}
+.brand b{font-weight:normal;color:var(--accent)}
+nav.top-nav{display:flex;gap:.1rem .95rem;flex-wrap:wrap;font:500 .95rem/1.9 var(--ui)}
+nav.top-nav a{text-decoration:none;color:var(--ink2);padding:0 .15rem;border-radius:4px}
+nav.top-nav a:hover{color:var(--ink);background:linear-gradient(transparent 72%,var(--rule) 72%)}
+main{padding:2rem 0 4rem}
+footer.foot{border-top:1px solid var(--rule);color:var(--ink3);font:0.92rem/1.7 var(--ui);padding:2rem 0 4rem}
+footer.foot a{color:var(--ink2)}
+
+/* the 1997 directory front */
+.dir{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:.4rem 2.4rem;margin:1.2rem 0}
+.dir section{break-inside:avoid;padding:.6rem 0}
+.dir h2{font-size:1.15rem;margin:.2rem 0 .3rem;font-family:var(--sign);letter-spacing:.09em;
+ text-transform:uppercase;font-size:.84rem;color:var(--ink3)}
+.dir ul{list-style:none;margin:0;padding:0;font-size:1.02rem;line-height:1.85}
+.dir li em{font-style:normal;color:var(--ink3);font-size:.9em}
+.dir a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.dir a:hover{border-bottom-color:currentColor}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.6rem}
+.card{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:1.05rem 1.15rem;
+ box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.card h3{margin:.1rem 0 .3rem;font-size:1.12rem}
+.card p{margin:.2rem 0;font-size:.98rem;color:var(--ink2)}
+
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.1rem;margin:1.2rem 0;font-size:1rem}
+.facts dt{font:600 .74rem/1.9 var(--sign);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
+ white-space:nowrap}
+.facts dd{margin:0}
+.tier{font:600 .68rem/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
+ border:1px solid var(--rule);border-radius:999px;padding:.18rem .42rem;margin-left:.4rem;white-space:nowrap}
+.tier[data-t="cited"]{color:var(--accent2);border-color:currentColor}
+.tier[data-t="tradition"],.tier[data-t="inference"]{font-style:italic}
+
+table{border-collapse:collapse;width:100%;font-size:.97rem;font-family:var(--ui)}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+th{text-align:left;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;
+ color:var(--ink3);border-bottom:2px solid var(--rule);padding:.5rem .6rem;white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.55rem .6rem;vertical-align:top}
+tr:hover td{background:var(--lift)}
+td a{text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.chip{display:inline-flex;align-items:center;gap:.35rem;font:600 .78rem/1 var(--ui);
+ border:1px solid var(--rule);border-radius:999px;padding:.38rem .7rem;background:var(--lift);
+ color:var(--ink2);cursor:pointer;transition:transform .14s ease,border-color .14s ease,color .14s ease}
+.chip:hover{transform:translateY(-1px);border-color:var(--ink3);color:var(--ink)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem}
+
+.week{display:inline-flex;gap:4px;vertical-align:middle;margin:.15rem 0}
+.week i{width:21px;height:21px;border-radius:5px;display:inline-block;font:700 11px/21px var(--ui);
+ text-align:center;font-style:normal;color:var(--paper)}
+.week i.o{background:var(--ok)}
+.week i.c{background:var(--no)}
+.week i.u{background:none;border:1.5px dashed var(--rule);color:var(--ink3);line-height:18px}
+
+.fig{margin:1.8rem 0;padding:0}
+.fig-scroll{overflow-x:auto}
+.chart{width:100%;height:auto;min-width:32rem;font-family:var(--ui)}
+.chart .ttl{font:600 .78rem/1 var(--sign);letter-spacing:.14em;text-transform:uppercase;fill:var(--ink3)}
+.chart .lab{font-size:12px;fill:var(--ink2)}
+.chart .val{font-size:12px;font-weight:600;fill:var(--ink)}
+.chart .cap{font-size:11px;fill:var(--ink3)}
+.chart .grid{stroke:var(--rule);stroke-width:1;opacity:.55}
+.chart .bar,.chart .dot{transition:opacity .16s ease}
+.chart:hover .bar{opacity:.55}
+.chart .bar:hover,.chart .dot:hover{opacity:1}
+figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-width:44rem}
+
+.hero{margin:1.4rem 0 1.8rem;padding:0}
+.hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
+ box-shadow:var(--shadow);display:block}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
+ align-items:start}
+.shot{margin:0;font-size:.9rem}
+.shot figcaption{margin-top:.45rem;line-height:1.45}
+.shot img{width:100%;height:11rem;object-fit:cover;border-radius:10px;display:block;
+ transition:transform .22s ease,filter .22s ease;box-shadow:var(--shadow)}
+.shot a{display:block;border-radius:10px;overflow:hidden}
+.shot:hover img{transform:scale(1.03)}
+figcaption .cred{color:var(--ink3);font-size:.82rem}
+.featured{background:var(--lift);border:1px solid var(--rule);border-radius:16px;
+ padding:1.4rem 1.6rem 1.2rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
+.featured h2 a{text-decoration:none}
+.featured .facts{margin:1rem 0}
+.note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
+.gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
+.kin{list-style:none;padding:0;margin:.6rem 0}
+.kin li{padding:.42rem 0;border-bottom:1px solid var(--rule)}
+.kin li span{color:var(--ink3)}
+.src{font:0.9rem/1.7 var(--ui);color:var(--ink2)}
+.src li{margin:.25rem 0}
+.big{font-family:var(--display);font-size:clamp(2.4rem,7vw,4rem);line-height:1;letter-spacing:-.02em}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.2rem;margin:1.6rem 0}
+.stat div span{display:block;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px solid var(--rule);
+ border-radius:8px;background:var(--lift);color:var(--ink);min-width:14rem}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:.5rem;position:fixed;background:var(--lift);padding:.6rem 1rem;border-radius:8px;z-index:99}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{header.top{position:static}.chip{display:none}}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to the page</a>
+<header class="top"><div class="wrap">
+ <a class="brand" href="/">Basque <b>Tables</b></a>
+ <nav class="top-nav" aria-label="Sections"><a href="/">Front</a><a href="/two/">A table for two</a><a href="/places/">Rooms</a><a href="/drink/picon-punch/">Picon</a><a href="/pictures/">Pictures</a><a href="/words/">Words</a><a href="/numbers/">Numbers</a><a href="/stories/">Stories</a><a href="/gaps/">Gaps</a><a href="/wander/">Wander</a><a href="/eu/gaps/" hreflang="eu" lang="eu">Euskaraz</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="eyebrow">Gaps</p><h1>What is missing</h1>
+<p class="lede">A directory that hides its holes is a directory you cannot check. Here are ours,
+counted.</p>
+<div class="tbl-scroll"><table>
+<thead><tr><th>Field</th><th style="text-align:right">Rooms with it</th><th style="text-align:right">Without</th></tr></thead>
+<tbody><tr><td>publishes its days</td><td style='text-align:right'>24</td><td style='text-align:right'>4</td></tr><tr><td>says how it seats two</td><td style='text-align:right'>26</td><td style='text-align:right'>2</td></tr><tr><td>says whether it pours a Picon</td><td style='text-align:right'>3</td><td style='text-align:right'>25</td></tr><tr><td>publishes a price</td><td style='text-align:right'>4</td><td style='text-align:right'>24</td></tr><tr><td>publishes a founding year</td><td style='text-align:right'>19</td><td style='text-align:right'>9</td></tr><tr><td>has an address</td><td style='text-align:right'>28</td><td style='text-align:right'>0</td></tr></tbody></table></div>
+<p class="note">Every one of these closes with a phone call and a note of who answered.
+None of them closes by guessing.</p>
+<h2>Open questions, by record</h2>
+<ol class="src"><li>Bacalao al pil-pil — which room in this directory serves it, from that house's own menu</li><li><a href='/place/bar-gernika/'>Bar Gernika</a> — opening time each day — the site publishes only closing times</li><li><a href='/place/bar-gernika/'>Bar Gernika</a> — the year it opened</li><li><a href='/place/bar-gernika/'>Bar Gernika</a> — prices</li><li><a href='/place/bar-gernika/'>Bar Gernika</a> — whether it pours Kalimotxo or Picon</li><li>Basque Museum &amp; Cultural Center — the museum's street number and current opening hours</li><li><a href='/place/basquenese/'>Basquenese</a> — hours</li><li><a href='/place/basquenese/'>Basquenese</a> — prices</li><li><a href='/place/basquenese/'>Basquenese</a> — the year the stall opened</li><li><a href='/place/benjis-basque/'>Benji's French Basque Restaurant</a> — the year it opened</li><li><a href='/place/benjis-basque/'>Benji's French Basque Restaurant</a> — dinner prices</li><li><a href='/place/benjis-basque/'>Benji's French Basque Restaurant</a> — whether the bar makes a Picon Punch</li><li><a href='/place/chalet-basque/'>Chalet Basque</a> — Euskal Kazeta's front page also lists a Chalet Basque in La Puente — two rooms, or one stale row</li><li><a href='/place/chalet-basque/'>Chalet Basque</a> — dinner prices</li><li><a href='/place/chalet-basque/'>Chalet Basque</a> — whether the bar makes a Picon Punch</li><li><a href='/place/chalet-basque/'>Chalet Basque</a> — Lisa's surname</li><li>Croquetas — which rooms in this directory print them on a menu</li><li><a href='/place/doms-taverna/'>Dom's Taverna</a> — dinner prices</li><li><a href='/place/doms-taverna/'>Dom's Taverna</a> — the year it opened</li><li><a href='/place/doms-taverna/'>Dom's Taverna</a> — whether the bar makes a Picon Punch</li><li><a href='/place/epis-meridian/'>Epi's, a Basque Restaurant</a> — dinner prices</li><li><a href='/place/epis-meridian/'>Epi's, a Basque Restaurant</a> — the restaurant's own site — episabasquerestaurant.com did not resolve on 16 September 2026</li><li><a href='/place/glendora-continental/'>Glendora Continental Restaurant</a> — dinner prices</li><li><a href='/place/glendora-continental/'>Glendora Continental Restaurant</a> — whether the bar makes a Picon Punch</li><li><a href='/place/glendora-continental/'>Glendora Continental Restaurant</a> — whether the kitchen serves on Sunday</li><li>Gâteau basque — which room in this directory serves it, from that house's own menu</li><li>Idiazabal — which room in this directory serves it, from that house's own menu</li><li><a href='/place/jt-basque-gardnerville/'>J.T. Basque Bar and Dining Room</a> — current dinner prices</li><li>Kalimotxo — which rooms in this directory pour it, from each house's own drinks list</li><li>Kalimotxo — the 1970s origin story, which circulates without a source that tests it</li><li><a href='/place/leku-ona/'>Leku Ona</a> — dinner prices</li><li><a href='/place/leku-ona/'>Leku Ona</a> — whether the bar makes a Picon Punch</li><li><a href='/place/louis-basque-corner/'>Louis' Basque Corner</a> — dinner prices</li><li><a href='/place/louis-basque-corner/'>Louis' Basque Corner</a> — the price of a Picon here</li><li>Marmitako — which room in this directory serves it, from that house's own menu</li><li><a href='/place/noriega-hotel/'>Noriega Hotel</a> — the 1893 founding year against the several dates in circulation</li><li><a href='/place/ormacheas-winnemucca/'>Ormachea's</a> — dinner prices</li><li><a href='/place/ormacheas-winnemucca/'>Ormachea's</a> — whether the bar makes a Picon Punch</li><li>Patxaran — which other rooms in this directory stock it</li><li>Pintxo-pote — whether any other room in this directory runs one</li><li><a href='/place/pyrenees-cafe/'>Pyrenees Café</a> — the 1901 date against the 1899 one that circulates</li><li><a href='/place/pyrenees-cafe/'>Pyrenees Café</a> — whether the bar makes a Picon Punch</li><li><a href='/place/santa-fe-basque-fresno/'>Santa Fe Basque Restaurant</a> — dinner prices</li><li><a href='/place/santa-fe-basque-fresno/'>Santa Fe Basque Restaurant</a> — how two people are seated</li><li><a href='/place/santa-fe-basque-fresno/'>Santa Fe Basque Restaurant</a> — whether it descends from the old Santa Fe Hotel</li><li><a href='/place/santa-fe-basque-fresno/'>Santa Fe Basque Restaurant</a> — whether the bar makes a Picon Punch</li><li>Solomo — which Boise rooms serve it, from each house's own menu</li><li><a href='/place/somni/'>Somni</a> — the current star count and the current price, straight from the house rather than from reports</li><li><a href='/place/somni/'>Somni</a> — hours</li><li><a href='/place/somni/'>Somni</a> — the street address from the restaurant itself</li><li>Talo — which room in this directory serves it, from that house's own menu</li><li><a href='/place/taylors-cafe-chino/'>Taylor's Café</a> — the year it opened</li><li><a href='/place/taylors-cafe-chino/'>Taylor's Café</a> — prices</li><li><a href='/place/taylors-cafe-chino/'>Taylor's Café</a> — whether the bar makes a Picon Punch</li><li><a href='/place/the-basque-market/'>The Basque Market</a> — prices for pintxos and a paella plate</li><li><a href='/place/martin-hotel-winnemucca/'>The Martin Hotel</a> — how two people are seated</li><li><a href='/place/martin-hotel-winnemucca/'>The Martin Hotel</a> — dinner prices</li><li><a href='/place/martin-hotel-winnemucca/'>The Martin Hotel</a> — whether the bar makes a Picon Punch</li><li><a href='/place/star-hotel-elko/'>The Star Hotel</a> — dinner prices</li><li><a href='/place/star-hotel-elko/'>The Star Hotel</a> — whether the bar makes a Picon Punch</li><li><a href='/place/triangle-inn-sweet/'>The Triangle</a> — prices</li><li><a href='/place/triangle-inn-sweet/'>The Triangle</a> — the year it opened</li><li><a href='/place/triangle-inn-sweet/'>The Triangle</a> — whether the paella arrived</li><li><a href='/place/toki-ona-elko/'>Toki Ona</a> — dinner prices</li><li><a href='/place/toki-ona-elko/'>Toki Ona</a> — the family's name</li><li><a href='/place/toki-ona-elko/'>Toki Ona</a> — whether the bar makes a Picon Punch</li><li>Txakoli — which rooms in this directory actually pour it</li><li><a href='/place/villa-basque-deli/'>Villa Basque Café and Deli</a> — prices</li><li><a href='/place/villa-basque-deli/'>Villa Basque Café and Deli</a> — Pete and Martha's years at this address</li><li><a href='/place/wool-growers-los-banos/'>Wool Growers Restaurant</a> — which six days — the house says six, and names none</li><li><a href='/place/wool-growers-los-banos/'>Wool Growers Restaurant</a> — the founding year</li><li><a href='/place/wool-growers-los-banos/'>Wool Growers Restaurant</a> — dinner prices</li><li><a href='/place/wool-growers-los-banos/'>Wool Growers Restaurant</a> — whether the bar makes a Picon Punch</li><li><a href='/place/zazpi-basque-cultural-center/'>Zazpi at the Basque Cultural Center</a> — whether the bar makes a Picon Punch</li><li><a href='/place/zazpi-basque-cultural-center/'>Zazpi at the Basque Cultural Center</a> — dinner prices</li></ol>
+<h2>Rooms we have not reached</h2>
+<p>0 rooms in this directory come from a published directory row and nothing else — an address,
+a phone number, a name. They are here because leaving them out would misrepresent how many
+Basque rooms these three states hold. Their status reads <b>not established</b> and they are
+excluded from every filter that would put two people in a car.</p>
+</div></main>
+<footer class="foot"><div class="wrap">
+ <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
+ a field with no source reads <b>unknown</b> and stays out of the filters.</p>
+ <p>Built by NaN · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
+ <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
+</div></footer>
+<script>document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!=='/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href='/wander/';}});</script>
+</body></html>

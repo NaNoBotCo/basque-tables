@@ -1,0 +1,135 @@
+{
+ "id": "artzain",
+ "type": "term",
+ "names": {
+  "name": "Artzain",
+  "eu": "artzain"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "ardi + zain",
+  "language": "Euskara",
+  "gloss": "sheep-keeper",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "Shepherd. The job that brought the men the boarding houses were built for."
+ },
+ "kin": [
+  {
+   "id": "ostatua",
+   "how": "where he stayed between contracts"
+  },
+  {
+   "id": "lamb-chops",
+   "how": "the animal, on the plate"
+  },
+  {
+   "id": "nevada",
+   "how": "the country he worked"
+  }
+ ],
+ "sources": [
+  "smithsonian-basque",
+  "travelnevada-basque"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "artzain/artzain-basque-tree-carving.jpg",
+   "source": "commons",
+   "title": "File:Basque-tree-carving.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Basque-tree-carving.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque-tree-carving.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "US Bureau of Land Management",
+   "credit": "http://www.publicdomainfiles.com/show_file.php?id=13935486017543",
+   "alt": "Basque carvings on Aspen tree near Steens Mountain.",
+   "date": "2014-02-27",
+   "primary": true,
+   "sha256": "fdd5e8eda316315a804a4285aadd80d979ecf4101765654824b414cc1b8dd7be"
+  },
+  {
+   "file": "artzain/artzain-deer-aspenflat-trickman.jpg",
+   "source": "commons",
+   "title": "File:Deer aspenflat trickman.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Deer_aspenflat_trickman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ADeer_aspenflat_trickman.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "L. Hanson",
+   "credit": "https://www.fs.usda.gov/wildflowers/beauty/aspen/carvings.shtml",
+   "alt": "Lertxun marrak Ameriketako Estatu Batuetako Tahoe Baso Nazionalean, Sierra Nevadako ekialdean",
+   "date": "2003-09-17",
+   "primary": false,
+   "sha256": "61505653d975e78aa90802c0dcfa421aed42c92cd26a6d1f68184f56a2a6160d"
+  },
+  {
+   "file": "artzain/artzain-house-carving-lhanson.jpg",
+   "source": "commons",
+   "title": "File:House carving lhanson.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/House_carving_lhanson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AHouse_carving_lhanson.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "L. Hanson",
+   "credit": "https://www.fs.usda.gov/wildflowers/beauty/aspen/carvings.shtml",
+   "alt": "Lertxun marrak Ameriketako Estatu Batuetako Tahoe Baso Nazionalean, Sierra Nevadako ekialdean",
+   "date": "2003-09-17",
+   "primary": false,
+   "sha256": "441d0d42a14efb854f86946437ca80a0aed5916a3552b7cdaed86055e8e8597a"
+  },
+  {
+   "file": "artzain/artzain-ladys-face-carving-lhanson.jpg",
+   "source": "commons",
+   "title": "File:Ladys face carving lhanson.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ladys_face_carving_lhanson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALadys_face_carving_lhanson.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "L. Hanson",
+   "credit": "https://www.fs.usda.gov/wildflowers/beauty/aspen/carvings.shtml",
+   "alt": "Lertxun marrak Ameriketako Estatu Batuetako Tahoe Baso Nazionalean, Sierra Nevadako ekialdean",
+   "date": "2003-09-17",
+   "primary": false,
+   "sha256": "e3c3a8d972a9c1479092a9a321d4a50f4044a1cf4efda7142e6d46580f8bf82a"
+  },
+  {
+   "file": "artzain/artzain-sheep-herder-wagon-7874.jpg",
+   "source": "commons",
+   "title": "File:Sheep herder wagon 7874.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Sheep_herder_wagon_7874.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASheep_herder_wagon_7874.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Chris Light",
+   "credit": "Own work",
+   "alt": "Sheep herders wagon from the Yakima Valley.",
+   "date": "2024-06-25 11:40:35",
+   "primary": false,
+   "sha256": "b76d1628643888f74d36c5c03a5d048daa159beda3db7af97066abdc9125f0fd"
+  },
+  {
+   "file": "artzain/artzain-viva-france-carving-lhanson.jpg",
+   "source": "commons",
+   "title": "File:Viva france carving lhanson.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Viva_france_carving_lhanson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AViva_france_carving_lhanson.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "L. Hanson",
+   "credit": "https://www.fs.usda.gov/wildflowers/beauty/aspen/carvings.shtml",
+   "alt": "Lertxun marrak Ameriketako Estatu Batuetako Tahoe Baso Nazionalean, Sierra Nevadako ekialdean",
+   "date": "2003-09-17",
+   "primary": false,
+   "sha256": "9be75649429666c6ede49ce3c76ae2d2a685e27f5231ebe9355d699d32228b33"
+  }
+ ]
+}

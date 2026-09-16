@@ -1,0 +1,83 @@
+{
+ "id": "nevada",
+ "type": "region",
+ "names": {
+  "name": "Nevada"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Hotels built beside the tracks to feed sheepherders, still setting the long table. In 2025 the state made the Picon Punch its official cocktail."
+ },
+ "sections": [
+  {
+   "heading": "The hotels",
+   "body": "Winnemucca 1898, Elko 1910, a building hauled to Gardnerville from Virginia City in 1896. Every one of them went up where the railroad met the sheep country, and every one fed men who had nowhere else to eat and nobody who spoke their language.",
+   "tier": "cited",
+   "source": "travelnevada-basque"
+  },
+  {
+   "heading": "The state cocktail",
+   "body": "Nevada designated the Picon Punch its official state cocktail in 2025. The bitter it is built on has never been imported from France in any reliable quantity; the version Nevada just made official is made in Reno.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  }
+ ],
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "the drink this state made official"
+  },
+  {
+   "id": "martin-hotel-winnemucca",
+   "how": "the oldest room in the state's list here"
+  },
+  {
+   "id": "california",
+   "how": "the state next door, with the same trade behind it"
+  }
+ ],
+ "sources": [
+  "travelnevada-basque",
+  "wikipedia-picon-punch",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "nevada/nevada-gateway-to-the-scenic-west-hotel-humboldt-winnemucca-ebc59f6.jpg",
+   "source": "commons",
+   "title": "File:Gateway to the scenic west, Hotel Humboldt, Winnemucca, Nevada (81055).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Gateway_to_the_scenic_west%2C_Hotel_Humboldt%2C_Winnemucca%2C_Nevada_%2881055%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AGateway_to_the_scenic_west%2C_Hotel_Humboldt%2C_Winnemucca%2C_Nevada_%2881055%29.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Pub. by Elmo M. Sellers, Los Angeles, Calif.",
+   "credit": "Boston Public Library Tichnor Brothers collection #81055",
+   "alt": "Title: Gateway to the scenic west, Hotel Humboldt, Winnemucca, Nevada\nSubjects: Hotels\nPlaces: Nevada &gt; Humboldt (county) &gt; Winnemucca\nNotes: Title from item.\nExtent: 1 print (postcard) : linen ",
+   "date": "between circa 1930 and circa 1945date QS",
+   "primary": true,
+   "sha256": "46dc1555713806207ce35de458608e9efc95300658611f3b252272a3a7882207"
+  },
+  {
+   "file": "nevada/nevada-winnemucca-1877.jpg",
+   "source": "commons",
+   "title": "File:Winnemucca 1877.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Winnemucca_1877.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AWinnemucca_1877.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "G.M. Wheeler",
+   "credit": "https://www.davidrumsey.com/luna/servlet/view/all/who/United+States.+Army.+Corps+of+Engineers/?&amp;sort=Pub_Date,Country,Pub_List_No,Series_No",
+   "alt": "Old survey maps, including WInnemucca Nevada from 1877",
+   "date": "1877",
+   "primary": false,
+   "sha256": "eca343c24a7af12f94717073642579e5ed89ec17dde2d376738b1eecb37b4c5d"
+  }
+ ]
+}

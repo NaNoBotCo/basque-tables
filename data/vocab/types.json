@@ -1,0 +1,11 @@
+{
+ "place": {"label": "Rooms", "one": "room", "blurb": "a dining room you can sit down in"},
+ "dish": {"label": "Dishes", "one": "dish", "blurb": "what arrives at the table"},
+ "drink": {"label": "Drinks", "one": "drink", "blurb": "what the bar pours"},
+ "term": {"label": "Words", "one": "word", "blurb": "Euskara and the trade's own vocabulary"},
+ "person": {"label": "People", "one": "person", "blurb": "cooks, owners, families"},
+ "org": {"label": "Organizations", "one": "organization", "blurb": "clubs, federations, museums"},
+ "event": {"label": "Events", "one": "event", "blurb": "festivals and dinners that recur"},
+ "story": {"label": "Stories", "one": "story", "blurb": "longer pieces, sourced line by line"},
+ "region": {"label": "Regions", "one": "region", "blurb": "a state, and what it holds"}
+}

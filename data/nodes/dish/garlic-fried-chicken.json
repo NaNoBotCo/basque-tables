@@ -1,0 +1,27 @@
+{
+ "id": "garlic-fried-chicken",
+ "type": "dish",
+ "names": {
+  "name": "Garlic fried chicken"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "The cheapest dinner on the Wool Growers list at $22, and the one people drive for."
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "prints it at $22"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site",
+  "smithsonian-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

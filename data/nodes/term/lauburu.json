@@ -1,0 +1,101 @@
+{
+ "id": "lauburu",
+ "type": "term",
+ "names": {
+  "name": "Lauburu",
+  "eu": "lauburu"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "lau + buru",
+  "language": "Euskara",
+  "gloss": "four heads",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "Four comma-shaped heads turning around a centre. Cut into gravestones, chests, cheese rinds and pastry lids.",
+  "note": "It is carved on Basque graves in Idaho as readily as in Bizkaia."
+ },
+ "kin": [
+  {
+   "id": "gateau-basque",
+   "how": "scored on its lid"
+  },
+  {
+   "id": "etxe",
+   "how": "cut into the furniture of one"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "lauburu/lauburu-armoire-basque-avec-lauburu.jpg",
+   "source": "commons",
+   "title": "File:Armoire basque avec lauburu.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Armoire_basque_avec_lauburu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AArmoire_basque_avec_lauburu.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Basque cupboard with lauburu (=basque cross), (Pyrénées-Atlantiques, France).",
+   "date": "2017-09-16",
+   "primary": true,
+   "sha256": "587a1d5f6fb6f1c6f0d1f184c201a16d423595db6901e785e866dd421afefe17"
+  },
+  {
+   "file": "lauburu/lauburu-cheese-with-lauburu-2.jpg",
+   "source": "commons",
+   "title": "File:Cheese with lauburu 2.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Cheese_with_lauburu_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACheese_with_lauburu_2.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Goat's-milk cheese with lauburu (basque cross). Espelette, (Pyrénées-Atlantiques, France).",
+   "date": "2017-09-13",
+   "primary": false,
+   "sha256": "32aef17114a3b01e5a61ac76269b7dbb65029d6f262cedeb7d44493571a8a25b"
+  },
+  {
+   "file": "lauburu/lauburu-lauburu-ganalto-01.jpg",
+   "source": "commons",
+   "title": "File:Lauburu Ganalto 01.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lauburu_Ganalto_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALauburu_Ganalto_01.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Basotxerri",
+   "credit": "Own work",
+   "alt": "Stele showing a Basque cross on the Ganalto summit. Gorbeia mountain range in the background. Badaia mountain range, Álava, Basque Country, Spain",
+   "date": "2016-02-19 12:23:46",
+   "primary": false,
+   "sha256": "e809136190596ff8134571043a8753122b61460096eb6d673cf1817bf9dfdc17"
+  },
+  {
+   "file": "lauburu/lauburu-lauburu-sur-les-pav-s.jpg",
+   "source": "commons",
+   "title": "File:Lauburu sur les pavés.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Lauburu_sur_les_pav%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALauburu_sur_les_pav%C3%A9s.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Lauburu on the cobblestones, rue de la citadelle. Saint-Jean-Pied-de-Port (Pyrénées-Atlantiques, France).",
+   "date": "2018-01-07",
+   "primary": false,
+   "sha256": "75a7e3a99b101274a0e39e8c5a1b827c6c451c0bd9a179abddddaa0c19bba53f"
+  }
+ ]
+}

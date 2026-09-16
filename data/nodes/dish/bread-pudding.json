@@ -1,0 +1,30 @@
+{
+ "id": "bread-pudding",
+ "type": "dish",
+ "names": {
+  "name": "Bread pudding"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "The last of the ten courses at Winnemucca, and the house's own."
+ },
+ "kin": [
+  {
+   "id": "martin-hotel-winnemucca",
+   "how": "ends every dinner with it"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "the last item on the list"
+  }
+ ],
+ "sources": [
+  "martinhotel-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

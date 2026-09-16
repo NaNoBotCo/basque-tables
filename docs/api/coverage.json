@@ -1,0 +1,26 @@
+{
+ "hours": {
+  "have": 24,
+  "of": 28
+ },
+ "seating": {
+  "have": 26,
+  "of": 28
+ },
+ "picon": {
+  "have": 3,
+  "of": 28
+ },
+ "prices": {
+  "have": 4,
+  "of": 28
+ },
+ "founded": {
+  "have": 19,
+  "of": 28
+ },
+ "address": {
+  "have": 28,
+  "of": 28
+ }
+}

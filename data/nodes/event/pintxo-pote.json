@@ -1,0 +1,41 @@
+{
+ "id": "pintxo-pote",
+ "type": "event",
+ "names": {
+  "name": "Pintxo-pote",
+  "eu": "pintxo-potea"
+ },
+ "region": [
+  "nevada",
+  "euskal-herria",
+  "west"
+ ],
+ "text": {
+  "short": "A pintxo and a pote — one drink — taken together, at a fixed price, in a fixed hour. Elko keeps one on Thursday and Friday, 4:30 to 6, at $5.",
+  "note": "In the Basque Country it is a whole town's habit: a street of bars, one pintxo and one small drink at each, moving on. Elko does it in one room."
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "the room in this directory that keeps it"
+  },
+  {
+   "id": "pintxo",
+   "how": "the food half"
+  },
+  {
+   "id": "sagardoa",
+   "how": "one of the three drinks it can be taken with"
+  }
+ ],
+ "needs_verification": [
+  "whether any other room in this directory runs one"
+ ],
+ "sources": [
+  "ogideli-pintxos"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

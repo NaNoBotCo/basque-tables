@@ -1,0 +1,57 @@
+{
+ "id": "lamb-chops",
+ "type": "dish",
+ "names": {
+  "name": "Lamb chops"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "The sheepherder's own animal, and the most-priced dish across this directory."
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "prints them at $32"
+  },
+  {
+   "id": "louis-basque-corner",
+   "how": "on the family-style list"
+  },
+  {
+   "id": "star-hotel-elko",
+   "how": "on the menu"
+  },
+  {
+   "id": "artzain",
+   "how": "the trade that brought the animal"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site",
+  "louis-site",
+  "travelnevada-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "lamb-chops/lamb-chops-sheep-herder-wagon-7874.jpg",
+   "source": "commons",
+   "title": "File:Sheep herder wagon 7874.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Sheep_herder_wagon_7874.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASheep_herder_wagon_7874.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Chris Light",
+   "credit": "Own work",
+   "alt": "Sheep herders wagon from the Yakima Valley.",
+   "date": "2024-06-25 11:40:35",
+   "primary": true,
+   "sha256": "b76d1628643888f74d36c5c03a5d048daa159beda3db7af97066abdc9125f0fd"
+  }
+ ]
+}

@@ -1,0 +1,464 @@
+{
+ "euskalkazeta-restaurants": {
+  "title": "Basque Restaurants directory",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/basquerestaurants/",
+  "kind": "directory",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-socal": {
+  "title": "Basque Restaurants — Southern California",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/basquerestaurants/southern-california/",
+  "kind": "directory",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-nevada": {
+  "title": "Basque Restaurants — Nevada",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/basquerestaurants/nevada/",
+  "kind": "directory",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-picon": {
+  "title": "Picon Punch — the Basque American drink",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/picon-punch-the-true-basque-american-drink/",
+  "kind": "article",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-noriega-closes": {
+  "title": "Noriega's Hotel in Bakersfield Closes for Good",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/noriegas-hotel-in-bakersfield-closes-for-good/",
+  "kind": "article",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-noriega-beard": {
+  "title": "Bakersfield's Noriega Hotel Wins James Beard Foundation Award",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/bakersfields-noriega-hotel-wins-prestigious-james-beard-foundation-award/",
+  "kind": "article",
+  "read": "2026-09-16"
+ },
+ "nabo-members": {
+  "title": "NABO Member Organizations",
+  "publisher": "North American Basque Organizations",
+  "url": "https://nabasque.eus/members.html",
+  "kind": "directory",
+  "read": "2026-09-16"
+ },
+ "wikipedia-picon-punch": {
+  "title": "Picon Punch",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Picon_Punch",
+  "kind": "encyclopedia",
+  "read": "2026-09-16",
+  "license": "CC BY-SA 4.0"
+ },
+ "wikipedia-noriega": {
+  "title": "Noriega Hotel",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Noriega_Hotel",
+  "kind": "encyclopedia",
+  "read": "2026-09-16",
+  "license": "CC BY-SA 4.0"
+ },
+ "wikipedia-martin-hotel": {
+  "title": "Martin Hotel (Winnemucca, Nevada)",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Martin_Hotel_(Winnemucca,_Nevada)",
+  "kind": "encyclopedia",
+  "read": "2026-09-16",
+  "license": "CC BY-SA 4.0"
+ },
+ "wikipedia-basque-americans-ca": {
+  "title": "Basque Americans in California",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Basque_Americans_in_California",
+  "kind": "encyclopedia",
+  "read": "2026-09-16",
+  "license": "CC BY-SA 4.0"
+ },
+ "woolgrowers-site": {
+  "title": "Wool Growers Restaurant & Cocktail Lounge",
+  "publisher": "the restaurant",
+  "url": "https://woolgrowers.net/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "pyrenees-site": {
+  "title": "Pyrenees Cafe",
+  "publisher": "the restaurant",
+  "url": "https://thepyreneescafe.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "centrobasco-site": {
+  "title": "Centro Basco",
+  "publisher": "the restaurant",
+  "url": "https://www.centrobasco.net/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "starhotel-site": {
+  "title": "The Star Hotel & Bar",
+  "publisher": "the restaurant",
+  "url": "https://www.elkostarhotel.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "martinhotel-site": {
+  "title": "The Martin Hotel",
+  "publisher": "the restaurant",
+  "url": "https://www.themartinhotel.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "louis-site": {
+  "title": "Louis' Basque Corner",
+  "publisher": "the restaurant",
+  "url": "https://louisbasquecorner.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "jt-site": {
+  "title": "J.T. Basque Bar and Dining Room",
+  "publisher": "the restaurant",
+  "url": "https://www.jtbasquenv.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "bcc-site": {
+  "title": "Zazpi at the Basque Cultural Center",
+  "publisher": "the restaurant",
+  "url": "https://sfbasqueculturalcenter.org/restaurant",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "visitbakersfield-basque": {
+  "title": "Bakersfield Basque",
+  "publisher": "Visit Bakersfield",
+  "url": "https://www.visitbakersfield.com/restaurants/bakersfield-basque/",
+  "kind": "visitor bureau",
+  "read": "2026-09-16"
+ },
+ "travelnevada-basque": {
+  "title": "Exploring Basque Culture in Elko, Winnemucca & Reno",
+  "publisher": "Travel Nevada",
+  "url": "https://travelnevada.com/basque/exploring-basque-culture-in-northern-nevada/",
+  "kind": "state tourism office",
+  "read": "2026-09-16"
+ },
+ "punch-picon": {
+  "title": "The Picon Punch Cocktail Makes a Comeback",
+  "publisher": "PUNCH",
+  "url": "https://punchdrink.com/articles/picon-punch-cocktail/",
+  "kind": "magazine",
+  "read": "2026-09-16"
+ },
+ "wineenthusiast-picon": {
+  "title": "Putting the Amer in America",
+  "publisher": "Wine Enthusiast",
+  "url": "https://www.wineenthusiast.com/culture/spirits/picon-amer/",
+  "kind": "magazine",
+  "read": "2026-09-16"
+ },
+ "smithsonian-basque": {
+  "title": "Indulging in American Basque Cuisine",
+  "publisher": "Smithsonian Magazine",
+  "url": "https://www.smithsonianmag.com/travel/indulging-in-american-basque-cuisine-160720458/",
+  "kind": "magazine",
+  "read": "2026-09-16"
+ },
+ "sifestival-picon": {
+  "title": "Tasting Basque: Nevada's Picon Punch",
+  "publisher": "Smithsonian Folklife Festival",
+  "url": "https://festival.si.edu/blog/2016/tasting-basque-nevada-picon-punch-cocktail/",
+  "kind": "museum",
+  "read": "2026-09-16"
+ },
+ "kget-noriega": {
+  "title": "Noriega Hotel closes permanently",
+  "publisher": "KGET 17 News",
+  "url": "https://www.kget.com/health/coronavirus/noriega-hotel-james-beard-award-winner-and-dining-destination-that-drew-crowds-for-nearly-90-years-closes-permanently/",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "turnto23-noriega": {
+  "title": "New Noriega's opens for business",
+  "publisher": "23ABC Bakersfield",
+  "url": "https://www.turnto23.com/open/new-noriegas-reopens-for-business",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "pbssocal-bakersfield": {
+  "title": "The Beauty of Bakersfield's Basque Cuisine",
+  "publisher": "PBS SoCal / KCET",
+  "url": "https://www.pbssocal.org/travel/the-beauty-of-bakersfields-basque-cuisine",
+  "kind": "public television",
+  "read": "2026-09-16"
+ },
+ "euskalkazeta-idaho": {
+  "title": "Basque Restaurants — Idaho",
+  "publisher": "Euskal Kazeta",
+  "url": "https://euskalkazeta.com/basquerestaurants/idaho/",
+  "kind": "directory",
+  "read": "2026-09-16"
+ },
+ "lekuona-site": {
+  "title": "Leku Ona",
+  "publisher": "the restaurant",
+  "url": "https://lekuonaboise.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "gernika-site": {
+  "title": "Bar Gernika",
+  "publisher": "the restaurant",
+  "url": "https://bargernika.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "basquemarket-site": {
+  "title": "The Basque Market",
+  "publisher": "the shop",
+  "url": "https://www.thebasquemarket.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "yelp-epis": {
+  "title": "Epi's A Basque Restaurant",
+  "publisher": "Yelp",
+  "url": "https://www.yelp.com/biz/epis-a-basque-restaurant-meridian",
+  "kind": "listing",
+  "read": "2026-09-16"
+ },
+ "kivi-epis": {
+  "title": "Made in Idaho: Basque family restaurant serves up tradition",
+  "publisher": "KIVI 6 On Your Side",
+  "url": "https://www.kivitv.com/news/local-news/in-your-neighborhood/meridian/made-in-idaho-basque-family-restaurant-serves-up-tradition",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "basquemuseum-house": {
+  "title": "Cyrus Jacobs / Uberuaga House",
+  "publisher": "Basque Museum & Cultural Center",
+  "url": "https://basquemuseum.eus/see/current-exhibits/cyrus-jacobs-uberuaga-house/",
+  "kind": "museum",
+  "read": "2026-09-16"
+ },
+ "basqueblock-site": {
+  "title": "The Basque Block — The Neighborhood",
+  "publisher": "The Basque Block",
+  "url": "https://www.thebasqueblock.com/the-neighborhood",
+  "kind": "neighbourhood association",
+  "read": "2026-09-16"
+ },
+ "jaialdi-faq": {
+  "title": "Jaialdi FAQ",
+  "publisher": "Jaialdi",
+  "url": "https://www.jaialdi.com/faq/",
+  "kind": "the festival's own site",
+  "read": "2026-09-16"
+ },
+ "ktvb-jaialdi": {
+  "title": "Boise's Jaialdi Festival set to return in 2025",
+  "publisher": "KTVB",
+  "url": "https://www.ktvb.com/article/news/local/idaho-press/boises-jaialdi-festival-to-return-2025/277-0f3959a5-b831-4e41-96c2-f4d9cd02b529",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "visitboise-basque": {
+  "title": "Basque — Visit Boise",
+  "publisher": "Visit Boise",
+  "url": "https://visitboise.com/play/arts-and-culture/basque/",
+  "kind": "visitor bureau",
+  "read": "2026-09-16"
+ },
+ "sah-uberuaga": {
+  "title": "Cyrus Jacobs-Uberuaga Boarding House",
+  "publisher": "SAH Archipedia",
+  "url": "https://sah-archipedia.org/buildings/ID-01-001-0077",
+  "kind": "architectural survey",
+  "read": "2026-09-16"
+ },
+ "commons": {
+  "title": "Wikimedia Commons",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://commons.wikimedia.org/",
+  "kind": "media archive",
+  "read": "2026-09-16",
+  "note": "the pictures, each under its own licence; the file page is linked beside every image"
+ },
+ "sifestival-basque": {
+  "title": "Basque: Innovation by Culture — 2016 Smithsonian Folklife Festival",
+  "publisher": "Smithsonian Folklife Festival",
+  "url": "https://festival.si.edu/2016/basque",
+  "kind": "museum",
+  "read": "2026-09-16"
+ },
+ "ogideli-site": {
+  "title": "Ogi Deli",
+  "publisher": "the deli",
+  "url": "https://www.ogideli.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "ogideli-pintxos": {
+  "title": "Bar & Pintxos — Elko",
+  "publisher": "the deli",
+  "url": "https://www.ogideli.com/bar-pintxos",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "euskalkultura-ogi": {
+  "title": "The Elko press names Lopategui's Ogi Deli one of the top 10 businesses of 2017",
+  "publisher": "EuskalKultura.eus",
+  "url": "https://www.euskalkultura.eus/english/news/the-elko-nv-local-press-names-lopateguis-ogi-deli-one-of-the-top-10-businesses-of-2017-in-town",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "ogideli-facebook": {
+  "title": "Ogi Deli, Bar & Pintxos",
+  "publisher": "the deli, on Facebook",
+  "url": "https://www.facebook.com/ogideli/",
+  "kind": "the house's own page",
+  "read": "2026-09-16"
+ },
+ "travelnevada-ogi": {
+  "title": "Ogi Deli Bar & Pintxos",
+  "publisher": "Travel Nevada",
+  "url": "https://travelnevada.com/basque/ogi-deli-bar-pintxos/",
+  "kind": "state tourism office",
+  "read": "2026-09-16",
+  "note": "403 to a fetch from this machine on 2026-09-16; read through search result summaries"
+ },
+ "benjis-site": {
+  "title": "Benji's French Basque Restaurant",
+  "publisher": "the restaurant",
+  "url": "https://benjisbasque.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "santafe-site": {
+  "title": "Santa Fe Basque Restaurant and Bar",
+  "publisher": "the restaurant",
+  "url": "https://santafebasque.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "woolgrowers-losbanos-site": {
+  "title": "Wool Growers Restaurant, Los Banos",
+  "publisher": "the restaurant",
+  "url": "https://woolgrowerslosbanos.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "glendora-site": {
+  "title": "Glendora Continental Restaurant",
+  "publisher": "the restaurant",
+  "url": "https://glendoracontinental.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "doms-site": {
+  "title": "Dom's Taverna",
+  "publisher": "the restaurant",
+  "url": "https://domstaverna.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "ansots-site": {
+  "title": "Ansots Basque Chorizos & Catering",
+  "publisher": "the shop",
+  "url": "https://ansots.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "tokiona-site": {
+  "title": "Toki Ona",
+  "publisher": "the restaurant",
+  "url": "https://www.eattokiona.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "elkodaily-tokiona": {
+  "title": "Family-run Toki Ona restaurant still serves up Basque specialties",
+  "publisher": "Elko Daily Free Press",
+  "url": "https://elkodaily.com/news/local/business/family-run-toki-ona-restaurant-still-serves-up-basque-specialties/article_739e636a-88bb-11ee-9ff5-87c9f77e5a15.html",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "ormacheas-site": {
+  "title": "Ormachea's",
+  "publisher": "the restaurant",
+  "url": "https://ormacheas.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "villabasque-site": {
+  "title": "Villa Basque Cafe and Deli",
+  "publisher": "the deli",
+  "url": "https://villabasquecafe.com/",
+  "kind": "the house's own site",
+  "read": "2026-09-16"
+ },
+ "kivi-triangle": {
+  "title": "Sweet's Triangle Restaurant keeps Basque culture alive through family legacy",
+  "publisher": "KIVI 6 On Your Side",
+  "url": "https://www.kivitv.com/sweets-triangle-restaurant-keeps-basque-culture-alive-through-family-legacy",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "michelin-somni": {
+  "title": "Somni — West Hollywood",
+  "publisher": "MICHELIN Guide",
+  "url": "https://guide.michelin.com/en/california/west-hollywood/restaurant/somni",
+  "kind": "restaurant guide",
+  "read": "2026-09-16"
+ },
+ "wikipedia-somni": {
+  "title": "Somni",
+  "publisher": "Wikipedia",
+  "url": "https://en.wikipedia.org/wiki/Somni",
+  "kind": "encyclopedia",
+  "read": "2026-09-16",
+  "license": "CC BY-SA 4.0"
+ },
+ "boisedev-basquenese": {
+  "title": "In-demand food truck Basquenese to go brick and mortar",
+  "publisher": "BoiseDev",
+  "url": "https://boisedev.com/news/2024/07/24/basquenese-boise/",
+  "kind": "news",
+  "read": "2026-09-16"
+ },
+ "warehouse-basquenese": {
+  "title": "From Food Truck to Food Hall: Basquenese Debuts at The Warehouse",
+  "publisher": "The Warehouse Food Hall",
+  "url": "https://www.warehouseboise.com/post/from-food-truck-to-food-hall-basquenese-debuts-at-the-warehouse",
+  "kind": "landlord's own site",
+  "read": "2026-09-16"
+ },
+ "yelp-chalet": {
+  "title": "Chalet Basque Restaurant",
+  "publisher": "Yelp",
+  "url": "https://www.yelp.com/biz/chalet-basque-restaurant-bakersfield-2",
+  "kind": "listing",
+  "read": "2026-09-16"
+ },
+ "visitbakersfield-chalet": {
+  "title": "Chalet Basque Restaurant & Pub",
+  "publisher": "Visit Bakersfield",
+  "url": "https://www.visitbakersfield.com/directory/chalet-basque-restaurant-pub/",
+  "kind": "visitor bureau",
+  "read": "2026-09-16"
+ },
+ "yelp-taylors": {
+  "title": "Taylor's Cafe, Chino",
+  "publisher": "Yelp",
+  "url": "https://www.yelp.com/biz/taylors-cafe-chino",
+  "kind": "listing",
+  "read": "2026-09-16"
+ }
+}

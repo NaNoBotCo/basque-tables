@@ -1,0 +1,93 @@
+{
+ "id": "the-basque-market",
+ "type": "place",
+ "names": {
+  "name": "The Basque Market"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, on Grove. A shop with a pintxo counter and paella cooked outside twice a week.",
+  "today": "Paella Wednesdays and Fridays at noon, first Thursdays at 6. Walk up, order, eat on the patio or carry it off. Pintxo Hour keeps the door open to 6 on Thursday, Friday and Saturday.",
+  "note": "It is a market that feeds people, not a dining room. Two people can eat here without sitting down."
+ },
+ "x_kitchen": {
+  "says": "pintxos, paella, Spanish and Basque wine, a deli",
+  "tier": "cited",
+  "source": "basquemarket-site"
+ },
+ "address": {
+  "street": "608 West Grove Street",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "phone": "(208) 433-1208",
+  "url": "https://www.thebasquemarket.com/",
+  "tier": "cited",
+  "source": "basquemarket-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "basquemarket-site"
+ },
+ "seating": {
+  "kind": "bar",
+  "reservations": "walk-in",
+  "note": "A pintxo counter, a patio, and tables inside. The paella needs no booking — the house says no reservation, no fuss.",
+  "tier": "cited",
+  "source": "basquemarket-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "basquemarket-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Tue–Sat 11am–5pm, to 6pm Thu–Sat for Pintxo Hour",
+  "tier": "cited",
+  "source": "basquemarket-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "pintxo",
+   "how": "sold over this counter"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "the shop door on it"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "needs_verification": [
+  "prices for pintxos and a paella plate"
+ ],
+ "sources": [
+  "basquemarket-site",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

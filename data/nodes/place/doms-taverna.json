@@ -1,0 +1,93 @@
+{
+ "schema": 1,
+ "id": "doms-taverna",
+ "type": "place",
+ "names": {
+  "name": "Dom's Taverna"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Santa Barbara, on Victoria. Chef Dom Crisp cooks Basque against the Central Coast — seafood, cured meat, farm produce.",
+  "today": "Dinner every night from five. Bar bites five to six daily, and late ones after nine Tuesday to Saturday. Book through OpenTable.",
+  "note": "The marble bar came out of a decommissioned church and was put back together with kintsugi — the breaks gilded rather than hidden."
+ },
+ "address": {
+  "street": "30 East Victoria Street",
+  "city": "Santa Barbara",
+  "state": "CA",
+  "zip": "93101",
+  "phone": "(805) 724-4338",
+  "url": "https://domstaverna.com/",
+  "tier": "cited",
+  "source": "doms-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "doms-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "taken",
+  "note": "A restaurant table or the bar; booked through OpenTable.",
+  "tier": "cited",
+  "source": "doms-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "doms-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "pintxo",
+   "how": "what bar bites are, under another name"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  },
+  {
+   "id": "the-long-table",
+   "how": "a bar at five o'clock is a sixth answer"
+  }
+ ],
+ "sources": [
+  "doms-site",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "Sun and Mon 5pm–9pm · Tue–Sat 5pm–11pm · bar bites daily 5–6pm, late Tue–Sat",
+  "tier": "cited",
+  "source": "doms-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque-inspired coastal cooking, drawing on Spain's Basque Country and the California Central Coast",
+  "tier": "cited",
+  "source": "doms-site"
+ },
+ "needs_verification": [
+  "dinner prices",
+  "the year it opened",
+  "whether the bar makes a Picon Punch"
+ ]
+}

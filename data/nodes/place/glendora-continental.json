@@ -1,0 +1,95 @@
+{
+ "schema": 1,
+ "id": "glendora-continental",
+ "type": "place",
+ "names": {
+  "name": "Glendora Continental Restaurant"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Glendora, on Route 66, 1980. Jean and Elisabeth Sabarots came from the Basque Country; she had worked in a hotel there.",
+  "today": "Lunch and dinner six days, bar until two in the morning every day. Bingo on Tuesday, karaoke on Wednesday, a band on Friday and Saturday, an open jam on Sunday night.",
+  "note": "The only room in this directory whose bar runs later than its kitchen by twelve hours."
+ },
+ "address": {
+  "street": "316 West Route 66",
+  "city": "Glendora",
+  "state": "CA",
+  "zip": "91740",
+  "phone": "(626) 914-1834",
+  "url": "https://glendoracontinental.com/",
+  "tier": "cited",
+  "source": "glendora-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "glendora-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "taken",
+  "note": "A restaurant room with a lounge beside it. Reservations through the house's own system.",
+  "tier": "cited",
+  "source": "glendora-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "glendora-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  },
+  {
+   "id": "the-long-table",
+   "how": "a bar with a band is a fifth answer to it"
+  }
+ ],
+ "sources": [
+  "glendora-site",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "year": 1980,
+  "by": "Jean and Elisabeth Sabarots",
+  "tier": "cited",
+  "source": "glendora-site"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "Mon–Thu lunch 11am–3pm, dinner 3pm–10pm · Fri dinner 3pm–10pm · Sat lunch 11am–4pm, dinner 4pm–10pm · Sun bar only · bar every day 11am–2am",
+  "tier": "cited",
+  "source": "glendora-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque, by way of a hotel kitchen in the Basque Country",
+  "tier": "cited",
+  "source": "glendora-site"
+ },
+ "needs_verification": [
+  "dinner prices",
+  "whether the bar makes a Picon Punch",
+  "whether the kitchen serves on Sunday"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "id": "pickled-tongue",
+ "type": "dish",
+ "names": {
+  "name": "Pickled tongue"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "Beef tongue, brined and sliced thin, on the relish tray at the Bakersfield rooms."
+ },
+ "kin": [
+  {
+   "id": "relish-tray",
+   "how": "where it turns up"
+  },
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "serves it"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site",
+  "smithsonian-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

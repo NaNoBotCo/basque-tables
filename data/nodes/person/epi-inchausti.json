@@ -1,0 +1,30 @@
+{
+ "id": "epi-inchausti",
+ "type": "person",
+ "names": {
+  "name": "Maria Epifania Lamiquis-Inchausti",
+  "sort": "Inchausti, Maria Epifania",
+  "aliases": [
+   "Epi"
+  ]
+ },
+ "region": [
+  "idaho"
+ ],
+ "text": {
+  "short": "Born 4 February 1903 in Bizkaia. Her descendants opened Epi's in Meridian in 1999 and named it for her."
+ },
+ "kin": [
+  {
+   "id": "epis-meridian",
+   "how": "the room named for her"
+  }
+ ],
+ "sources": [
+  "kivi-epis"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

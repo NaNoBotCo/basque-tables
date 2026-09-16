@@ -1,0 +1,99 @@
+{
+ "id": "centro-basco-chino",
+ "type": "place",
+ "names": {
+  "name": "Centro Basco"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Chino, 1940. A boarding house that still sets a boarders' table one Saturday a month.",
+  "today": "Dinner comes in separate courses, not all at once. On the last Saturday of the month the house sets the Boarder's Table at 12:30 — one sitting, everyone together, the way the building fed men who worked the dairies.",
+  "history": "It opened in 1940 as a boarding house for Basque immigrants."
+ },
+ "x_kitchen": {
+  "says": "Basque, from the Pays Basque side of the Pyrenees",
+  "tier": "cited",
+  "source": "centrobasco-site"
+ },
+ "address": {
+  "street": "13432 Central Avenue",
+  "city": "Chino",
+  "state": "CA",
+  "zip": "91710",
+  "phone": "(909) 628-9014",
+  "url": "https://www.centrobasco.net/",
+  "tier": "cited",
+  "source": "centrobasco-site"
+ },
+ "founded": {
+  "year": 1940,
+  "tier": "cited",
+  "source": "centrobasco-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "centrobasco-site"
+ },
+ "seating": {
+  "kind": "both",
+  "reservations": "taken",
+  "note": "Ordinary nights, your own table and separate courses. The last Saturday of the month, one long table at 12:30.",
+  "tier": "cited",
+  "source": "centrobasco-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "centrobasco-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon"
+  ],
+  "text": "Lunch Wed–Fri 11:30–2 · Dinner Tue 5–9, Wed–Sat 4–9, Sun 12–8 · Boarder's Table, last Saturday, 12:30",
+  "tier": "cited",
+  "source": "centrobasco-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "boarders-table",
+   "how": "the monthly sitting this house keeps"
+  },
+  {
+   "id": "ostatua",
+   "how": "what the building was in 1940"
+  },
+  {
+   "id": "taylors-cafe-chino",
+   "how": "the other Basque room in Chino"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "centrobasco-site",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

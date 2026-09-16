@@ -1,0 +1,101 @@
+{
+ "schema": 1,
+ "id": "chalet-basque",
+ "type": "place",
+ "names": {
+  "name": "Chalet Basque"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Bakersfield, 1969, on Oak Street. Family style, seven days, and one owner since 2002.",
+  "today": "Open every day, lunch straight through to dinner. Lisa has run it since 2002.",
+  "history": "It opened in 1969 and has stood on Oak Street since."
+ },
+ "address": {
+  "street": "200 Oak Street",
+  "city": "Bakersfield",
+  "state": "CA",
+  "phone": "(661) 327-2915",
+  "tier": "cited",
+  "source": "visitbakersfield-chalet"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "harvested",
+  "source": "yelp-chalet"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "unknown",
+  "note": "The listing describes family-style dining; we have not reached the house to ask how two people are placed.",
+  "tier": "harvested",
+  "source": "yelp-chalet",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "yelp-chalet",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "fifteen years older, two miles east"
+  },
+  {
+   "id": "the-long-table",
+   "how": "one of the Bakersfield rooms that kept it"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "yelp-chalet",
+  "visitbakersfield-chalet",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "harvested",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "founded": {
+  "year": 1969,
+  "by": "Lisa has owned it since 2002",
+  "tier": "harvested",
+  "source": "yelp-chalet"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon"
+  ],
+  "text": "Tue–Thu 11am–9pm · Fri–Sat 11am–9:30pm · Sun 11am–8pm",
+  "tier": "harvested",
+  "source": "yelp-chalet",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "traditional Basque dishes, family-style",
+  "tier": "harvested",
+  "source": "yelp-chalet"
+ },
+ "needs_verification": [
+  "Euskal Kazeta's front page also lists a Chalet Basque in La Puente — two rooms, or one stale row",
+  "dinner prices",
+  "whether the bar makes a Picon Punch",
+  "Lisa's surname"
+ ]
+}

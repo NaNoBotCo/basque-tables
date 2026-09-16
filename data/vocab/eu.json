@@ -1,0 +1,344 @@
+{
+ "_note": "The interface in Euskara. English is kept beside every string so a Basque speaker can check the pair without reading code. `check: true` marks the ones I am least sure of. Record write-ups are NOT translated — no English-to-Basque machine translator was available: Cloudflare Workers AI's m2m100-1.2b rejects \"eu\" outright, and no local translator is installed. A Basque speaker, or an API that covers Euskara, closes this.",
+ "site_name": {
+  "en": "Basque Tables",
+  "eu": "Euskal Mahaiak"
+ },
+ "tagline": {
+  "en": "Basque dining rooms of California, Nevada and Idaho",
+  "eu": "Kalifornia, Nevada eta Idahoko euskal jatetxeak"
+ },
+ "front": {
+  "en": "Front",
+  "eu": "Hasiera"
+ },
+ "two": {
+  "en": "A table for two",
+  "eu": "Bi lagunentzako mahaia"
+ },
+ "rooms": {
+  "en": "Rooms",
+  "eu": "Jatetxeak"
+ },
+ "picon": {
+  "en": "Picon",
+  "eu": "Picon"
+ },
+ "words": {
+  "en": "Words",
+  "eu": "Hitzak"
+ },
+ "numbers": {
+  "en": "Numbers",
+  "eu": "Zenbakiak"
+ },
+ "stories": {
+  "en": "Stories",
+  "eu": "Istorioak"
+ },
+ "gaps": {
+  "en": "Gaps",
+  "eu": "Hutsuneak"
+ },
+ "wander": {
+  "en": "Wander",
+  "eu": "Ausaz"
+ },
+ "search": {
+  "en": "Search",
+  "eu": "Bilatu"
+ },
+ "pictures": {
+  "en": "Pictures",
+  "eu": "Argazkiak"
+ },
+ "dishes": {
+  "en": "Dishes",
+  "eu": "Platerak"
+ },
+ "drinks": {
+  "en": "Drinks",
+  "eu": "Edariak"
+ },
+ "people": {
+  "en": "People",
+  "eu": "Pertsonak"
+ },
+ "orgs": {
+  "en": "Organizations",
+  "eu": "Erakundeak"
+ },
+ "events": {
+  "en": "Events",
+  "eu": "Ekitaldiak"
+ },
+ "regions": {
+  "en": "Regions",
+  "eu": "Estatuak",
+  "check": true
+ },
+ "where": {
+  "en": "Where",
+  "eu": "Non"
+ },
+ "phone": {
+  "en": "Phone",
+  "eu": "Telefonoa"
+ },
+ "own_site": {
+  "en": "Its own site",
+  "eu": "Webgunea"
+ },
+ "opened": {
+  "en": "Opened",
+  "eu": "Noiz ireki zen",
+  "check": true
+ },
+ "status": {
+  "en": "Status",
+  "eu": "Egoera"
+ },
+ "seating": {
+  "en": "Seating",
+  "eu": "Nola esertzen zaren",
+  "check": true
+ },
+ "dinner": {
+  "en": "Dinner",
+  "eu": "Afaria"
+ },
+ "week": {
+  "en": "Week",
+  "eu": "Astea"
+ },
+ "root": {
+  "en": "Root",
+  "eu": "Erroa"
+ },
+ "sources": {
+  "en": "Sources",
+  "eu": "Iturriak"
+ },
+ "kin": {
+  "en": "Kin",
+  "eu": "Senideak",
+  "check": true
+ },
+ "town": {
+  "en": "Town",
+  "eu": "Herria"
+ },
+ "state": {
+  "en": "State",
+  "eu": "Estatua"
+ },
+ "room": {
+  "en": "Room",
+  "eu": "Jatetxea"
+ },
+ "now": {
+  "en": "Now",
+  "eu": "Gaur egun"
+ },
+ "at_the_table": {
+  "en": "At the table",
+  "eu": "Mahaian"
+ },
+ "before": {
+  "en": "Before",
+  "eu": "Lehen"
+ },
+ "note": {
+  "en": "Note",
+  "eu": "Oharra"
+ },
+ "build": {
+  "en": "Build",
+  "eu": "Nola prestatu",
+  "check": true
+ },
+ "what_arrives": {
+  "en": "What arrives",
+  "eu": "Zer ekartzen duten",
+  "check": true
+ },
+ "recognized": {
+  "en": "Recognized",
+  "eu": "Aitorpenak",
+  "check": true
+ },
+ "calls_kitchen": {
+  "en": "Calls its kitchen",
+  "eu": "Nola deitzen dio bere sukaldeari",
+  "check": true
+ },
+ "open": {
+  "en": "open",
+  "eu": "zabalik"
+ },
+ "closed": {
+  "en": "closed",
+  "eu": "itxita"
+ },
+ "not_published": {
+  "en": "not published",
+  "eu": "argitaratu gabe"
+ },
+ "not_established": {
+  "en": "not established",
+  "eu": "egiaztatu gabe",
+  "check": true
+ },
+ "moving": {
+  "en": "open, and moving",
+  "eu": "zabalik, eta lekuz aldatzen"
+ },
+ "yes": {
+  "en": "yes",
+  "eu": "bai"
+ },
+ "no": {
+  "en": "no",
+  "eu": "ez"
+ },
+ "seat_shared": {
+  "en": "a long table, with strangers",
+  "eu": "mahai luze bat, ezezagunekin"
+ },
+ "seat_own": {
+  "en": "your own table",
+  "eu": "zeuen mahaia"
+ },
+ "seat_both": {
+  "en": "both, depending on the night",
+  "eu": "biak, gauaren arabera"
+ },
+ "seat_bar": {
+  "en": "a counter",
+  "eu": "barra bat"
+ },
+ "seat_shared_s": {
+  "en": "long table",
+  "eu": "mahai luzea"
+ },
+ "seat_own_s": {
+  "en": "own table",
+  "eu": "zeuen mahaia"
+ },
+ "seat_both_s": {
+  "en": "both",
+  "eu": "biak"
+ },
+ "seat_bar_s": {
+  "en": "counter",
+  "eu": "barra"
+ },
+ "reservations": {
+  "en": "reservations",
+  "eu": "erreserbak"
+ },
+ "required": {
+  "en": "required",
+  "eu": "beharrezkoak"
+ },
+ "taken": {
+  "en": "taken",
+  "eu": "onartzen dira",
+  "check": true
+ },
+ "walkin": {
+  "en": "walk-in",
+  "eu": "erreserbarik gabe",
+  "check": true
+ },
+ "checked": {
+  "en": "checked",
+  "eu": "egiaztatua"
+ },
+ "open_questions": {
+  "en": "Open on this page",
+  "eu": "Orri honetan zabalik dagoena",
+  "check": true
+ },
+ "all": {
+  "en": "all",
+  "eu": "guztiak"
+ },
+ "in_basque": {
+  "en": "Euskaraz",
+  "eu": "Euskaraz"
+ },
+ "in_english": {
+  "en": "English",
+  "eu": "English"
+ },
+ "prose_note": {
+  "en": "The interface here is in Euskara. The write-ups are in English: no English-to-Basque machine translator was available, so none was faked.",
+  "eu": "Interfazea euskaraz dago. Testuak ingelesez daude: ez zegoen ingelesetik euskarara itzultzeko makinarik eskuragarri, eta ez da itzulpen faltsurik egin.",
+  "check": true
+ },
+ "unreviewed": {
+  "en": "This Basque interface has not been reviewed by a Basque speaker.",
+  "eu": "Euskarazko interfaze hau ez du euskaldun batek berrikusi.",
+  "check": true
+ },
+ "a_directory": {
+  "en": "A directory",
+  "eu": "Zerrenda bat"
+ },
+ "front_h1": {
+  "en": "Basque tables",
+  "eu": "Euskal mahaiak"
+ },
+ "front_lede": {
+  "en": "Every Basque dining room this directory can document in California, Nevada and Idaho, with the four facts two people need before they choose one: how the house seats you, what dinner costs, which nights the door opens, and whether the bar makes a Picon Punch.",
+  "eu": "Kalifornian, Nevadan eta Idahon dokumentatu ahal izan ditugun euskal jatetxe guztiak, bi lagunek aukeratu aurretik behar dituzten lau datuekin: nola esertzen zaituzten, zenbat balio duen afariak, zein gauetan irekitzen duten, eta barran Picon Punch-a egiten duten.",
+  "check": true
+ },
+ "find_two": {
+  "en": "Find a table for two →",
+  "eu": "Bilatu bi lagunentzako mahai bat →"
+ },
+ "why_long": {
+  "en": "Why the tables are long",
+  "eu": "Zergatik diren mahaiak luzeak",
+  "check": true
+ },
+ "the_block": {
+  "en": "The Basque Block",
+  "eu": "Euskal Bloka",
+  "check": true
+ },
+ "stat_rooms": {
+  "en": "Rooms",
+  "eu": "Jatetxeak"
+ },
+ "stat_own": {
+  "en": "Your own table",
+  "eu": "Zeuen mahaia"
+ },
+ "stat_long": {
+  "en": "A long table",
+  "eu": "Mahai luzea"
+ },
+ "stat_picon": {
+  "en": "Picon confirmed",
+  "eu": "Picon baieztatua",
+  "check": true
+ },
+ "front_note": {
+  "en": "Those counts leave out every room whose seating no source states — %d of %d. An unlisted room is not a room that seats you badly; it is a room nobody has published it for.",
+  "eu": "Kontu horiek alde batera uzten dituzte iturriren batek eserlekurik zehazten ez dien jatetxe guztiak — %d / %d. Zerrendatu gabeko jatetxe bat ez da gaizki esertzen zaituena; inork argitaratu ez duena baizik.",
+  "check": true
+ },
+ "map_caption": {
+  "en": "Bakersfield holds the most rooms of any town here; Boise holds the most Basque institutions of any town in America. Town coordinates are centroids, not doorways.",
+  "eu": "Bakersfieldek du hemengo jatetxe gehien; Boisek du Amerikako euskal erakunde gehien. Herrien koordenatuak zentroideak dira, ez ateak.",
+  "check": true
+ },
+ "site_title": {
+  "en": "Basque Tables — dining rooms of California, Nevada and Idaho",
+  "eu": "Euskal Mahaiak — Kalifornia, Nevada eta Idahoko jatetxeak",
+  "check": true
+ }
+}

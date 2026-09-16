@@ -1,0 +1,28 @@
+{
+ "id": "anamarie-lopategui",
+ "type": "person",
+ "names": {
+  "name": "Anamarie Lopategui",
+  "sort": "Lopategui, Anamarie"
+ },
+ "region": [
+  "nevada"
+ ],
+ "text": {
+  "short": "Started Ogi Deli in Elko on her own Basque side, with sandwiches, and grew it into a pintxo bar."
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "the room she started"
+  }
+ ],
+ "sources": [
+  "euskalkultura-ogi",
+  "travelnevada-ogi"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

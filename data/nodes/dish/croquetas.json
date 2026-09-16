@@ -1,0 +1,67 @@
+{
+ "id": "croquetas",
+ "type": "dish",
+ "names": {
+  "name": "Croquetas",
+  "eu": "kroketak"
+ },
+ "region": [
+  "west",
+  "idaho"
+ ],
+ "text": {
+  "short": "Thick béchamel, set cold, breaded and fried. The pintxo counter's staple."
+ },
+ "kin": [
+  {
+   "id": "pintxo",
+   "how": "what it is served as"
+  },
+  {
+   "id": "the-basque-market",
+   "how": "a pintxo counter that rotates them"
+  }
+ ],
+ "needs_verification": [
+  "which rooms in this directory print them on a menu"
+ ],
+ "sources": [
+  "basquemarket-site"
+ ],
+ "provenance": "tradition",
+ "confidence": "low",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "croquetas/croquetas-pincho-de-tortilla-de-esp-rragos.jpg",
+   "source": "commons",
+   "title": "File:Pincho de tortilla de espárragos.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Pincho_de_tortilla_de_esp%C3%A1rragos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APincho_de_tortilla_de_esp%C3%A1rragos.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Juan Emilio Prades Bel",
+   "credit": "Own work",
+   "alt": "Pincho de tortilla de espárragos.",
+   "date": "2022-07-08 22:35:10",
+   "primary": true,
+   "sha256": "d0433294b203b24a17cf4ddad2859635fd25a583a0f4ede8951bd3fe703b36f7"
+  },
+  {
+   "file": "croquetas/croquetas-pincho-tortilla-34.jpg",
+   "source": "commons",
+   "title": "File:Pincho tortilla-34.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Pincho_tortilla-34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APincho_tortilla-34.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Centenoyespelta",
+   "credit": "Own work",
+   "alt": "Pincho o tapa de tortilla de patata",
+   "date": "2023-03-11 12:04:12",
+   "primary": false,
+   "sha256": "e10e4cd6a320c6c8a908b187e09a9bbf2f6f68760a47893279a067e5bdb35fad"
+  }
+ ]
+}

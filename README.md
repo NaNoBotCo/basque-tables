@@ -1,0 +1,61 @@
+# Basque Tables
+
+A directory of Basque dining rooms in **California, Nevada and Idaho** — with, for two
+people deciding where to eat, the four facts that settle it: how the house seats you,
+what dinner costs, which nights the door opens, and whether the bar makes a Picon Punch.
+
+**→ https://nanobotco.github.io/basque-tables/**
+
+84 records · 28 rooms · 200 pages · 110 freely-licensed pictures · English and Euskara.
+
+## The rule the whole thing is built on
+
+**Three states, never two.** A day in `hours.open` is open. A day in `hours.closed` is
+closed. A day in neither is **not published** — it draws as a dashed box, and it is
+excluded from every filter rather than guessed either way. The same goes for seating and
+for the Picon: `unknown` is a value, not a blank.
+
+And the validator refuses to let `seating`, `picon`, `prices`, `hours`, `status` or
+`address` rest on tier `tradition` or `inference`. Somebody drives to those.
+
+## What it does not do
+
+It does not rank rooms, and it never calls one romantic. It prints the fields and the
+source for each one. Where the sources disagree, both are recorded and neither is
+settled. Where nothing is published, the page says so — 75 open questions are listed on
+[/gaps/](https://nanobotco.github.io/basque-tables/gaps/), each naming its record.
+
+## Some of what is in it
+
+- **The long table.** A Basque dining room in the West is a boarding house that outlived
+  its boarders, and a boarding house seats everybody at one table. Eight rooms still do.
+  Thirteen give two people a table of their own.
+- **The Basque Block**, Boise: a pub, a market, a dining room, a club and a museum on one
+  block of Grove Street — and the museum is inside the 1864 boarding house the rest grew
+  around, which took Basque boarders until 1969.
+- **The Picon Punch**, which was invented in the American West, is barely drunk in the
+  Basque Country, became Nevada's state cocktail in 2025, and is built on a French bitter
+  that has never been reliably imported.
+- **Euskara**: the interface is translated at `/eu/`. The write-ups are not, and the page
+  says why — no English-to-Basque machine translator was available.
+
+## Running it
+
+Python 3 standard library only. No framework, no database, no webfont, no CDN, no tracking.
+
+```
+python3 tools/validate.py     refuse anything the site should not publish
+python3 tools/build.py        counts, kin backlinks, price and hours tables, search docs
+python3 tools/site.py         write build/
+python3 tools/serve.py        look at it on http://localhost:8802/
+python3 tests/test_all.py     run before any publish
+./publish.sh                  validate, build, test, copy into docs/
+```
+
+`README.txt` is the working guide and `AUTHORING.txt` explains how to write a record.
+
+## Licence
+
+Layered on purpose — see [LICENSE](LICENSE). Records CC BY 4.0; **every picture carries
+its own licence in a sidecar `.json` beside it** (CC0, public domain, CC BY, CC BY-SA or
+FAL, and the credit prints on every page); code MIT.

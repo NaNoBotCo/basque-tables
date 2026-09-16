@@ -1,0 +1,44 @@
+{
+ "id": "kalimotxo",
+ "type": "drink",
+ "names": {
+  "name": "Kalimotxo",
+  "eu": "kalimotxo"
+ },
+ "region": [
+  "euskal-herria",
+  "west",
+  "idaho"
+ ],
+ "text": {
+  "short": "Red wine and cola, half and half, over ice. The festival drink.",
+  "note": "Unlike the Picon Punch, this one is drunk in the Basque Country too — it is said to have been mixed at a Basque festival in the 1970s."
+ },
+ "etymology": {
+  "root": "kali + motxo",
+  "language": "Euskara",
+  "gloss": "the origin of the name is disputed",
+  "tier": "tradition"
+ },
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "the other Basque American drink, and the one that stayed here"
+  },
+  {
+   "id": "jaialdi",
+   "how": "where it is poured by the thousand"
+  }
+ ],
+ "needs_verification": [
+  "which rooms in this directory pour it, from each house's own drinks list",
+  "the 1970s origin story, which circulates without a source that tests it"
+ ],
+ "sources": [
+  "visitboise-basque"
+ ],
+ "provenance": "tradition",
+ "confidence": "low",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

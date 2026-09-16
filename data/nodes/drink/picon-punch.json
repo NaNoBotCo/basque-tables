@@ -1,0 +1,105 @@
+{
+ "id": "picon-punch",
+ "type": "drink",
+ "names": {
+  "name": "Picon Punch"
+ },
+ "region": [
+  "west",
+  "california",
+  "nevada"
+ ],
+ "text": {
+  "short": "Bitter orange amer, a spoon of grenadine, soda, a float of brandy, a lemon twist. Basque America's drink, and not a Basque Country one.",
+  "today": "Nevada made it the official state cocktail in 2025. Ask for one in Bilbao and nobody will know what you mean.",
+  "history": "It appears to have been put together in the American West, most likely San Francisco, in the last years of the 1800s — Amer Picon had just reached the coast, Gold Rush bar culture was running, and Basque boarding houses took it up as a house pour. One of the earliest printed versions is in the second edition of William Boothby's American Bartender, San Francisco, 1900, filed simply as Amer Picon."
+ },
+ "recipe": {
+  "yield": "one glass",
+  "ingredients": [
+   "amer (Amer Picon where you can get it; in the United States, Torani Amer or the Ferino version)",
+   "grenadine",
+   "soda water",
+   "a float of brandy",
+   "a lemon twist"
+  ],
+  "method": [
+   "Build over ice.",
+   "Float the brandy.",
+   "Twist the lemon over the top."
+  ],
+  "license": "proportions not reproduced — the houses that pour it do not publish them",
+  "tier": "cited",
+  "source": "wikipedia-picon-punch"
+ },
+ "sections": [
+  {
+   "heading": "The glass is regional",
+   "body": "Northern Nevada pours it into a stemmed glass made for the purpose by the Louie Picon Glass Company. Elsewhere it lands in a highball or a Collins.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  },
+  {
+   "heading": "The bitter has a supply problem",
+   "body": "Amer Picon from Marseille is not reliably available in the United States, so bars pour Torani Amer instead — a San Francisco product. In 2024 a production change sent Torani back for recertification in California while the company turned toward its syrup business, and the Basque bars ran short. In 2025 Torani handed the recipe to Ferino Distillery in Reno. Nevada's state cocktail is now made in Nevada.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  },
+  {
+   "heading": "What it was for",
+   "body": "Gaétan Picon built the original bitter in 1837 as a malaria remedy in the French Foreign Legion in Algeria — quinine, bark, roots, orange.",
+   "tier": "cited",
+   "source": "punch-picon"
+  }
+ ],
+ "kin": [
+  {
+   "id": "louis-basque-corner",
+   "how": "bills itself as home of it"
+  },
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "calls it a mandatory beginning to dinner"
+  },
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "pours one for $8"
+  },
+  {
+   "id": "the-picon-supply",
+   "how": "the long version of the bitter's supply problem"
+  },
+  {
+   "id": "nevada",
+   "how": "the state that made it official"
+  }
+ ],
+ "sources": [
+  "wikipedia-picon-punch",
+  "punch-picon",
+  "wineenthusiast-picon",
+  "euskalkazeta-picon",
+  "sifestival-picon"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "picon-punch/picon-punch-picon-punch-5307913384.jpg",
+   "source": "commons",
+   "title": "File:Picon Punch (5307913384).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Picon_Punch_%285307913384%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3APicon_Punch_%285307913384%29.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Adrian Scottow from London, England",
+   "credit": "Picon Punch",
+   "alt": "Picon Punch",
+   "date": "2010-12-30 22:14",
+   "primary": true,
+   "sha256": "71eb604db1df07b4cfac4ff3b0757f166ad68d04ecec3bf5c46fd534da846999"
+  }
+ ]
+}

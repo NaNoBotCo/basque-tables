@@ -1,0 +1,80 @@
+{
+ "id": "california",
+ "type": "region",
+ "names": {
+  "name": "California"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Kern County holds more Basque dining rooms than any county in the United States. The rest of the state runs from a members' club in South San Francisco to a tasting counter in West Hollywood."
+ },
+ "sections": [
+  {
+   "heading": "Why Bakersfield",
+   "body": "Basque men came to the southern San Joaquin to run sheep, and the boarding houses that fed them clustered by the Bakersfield rail yard on Sumner and East 19th. The houses outlasted the trade. Two of them still serve on the same streets.",
+   "tier": "cited",
+   "source": "pbssocal-bakersfield"
+  },
+  {
+   "heading": "The spread",
+   "body": "A room in Chino keeps a monthly boarders' table. A club in South San Francisco opened its dining room to anyone. A counter in West Hollywood files itself under Basque and Catalan. Same state, four different answers to what a Basque restaurant is.",
+   "tier": "inference",
+   "source": "euskalkazeta-socal"
+  }
+ ],
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "the Bakersfield room with the fullest record here"
+  },
+  {
+   "id": "nevada",
+   "how": "the state next door, with the same trade behind it"
+  }
+ ],
+ "sources": [
+  "euskalkazeta-socal",
+  "pbssocal-bakersfield",
+  "wikipedia-basque-americans-ca",
+  "visitbakersfield-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "california/california-2009-0726-ca-bakersfield-thepadre.jpg",
+   "source": "commons",
+   "title": "File:2009-0726-CA-Bakersfield-ThePadre.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/2009-0726-CA-Bakersfield-ThePadre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3A2009-0726-CA-Bakersfield-ThePadre.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "author": "Bobak Ha'Eri",
+   "credit": "Own work",
+   "alt": "The Hotel Padre has long been a landmark in downtown Bakersfield, California, USA.",
+   "date": "Taken on 26 July 2009",
+   "primary": true,
+   "sha256": "1ae7c5fb31ad2f6bc11be6f6cf67f626aa5ba5b8b207a8e666064b4a0fbc874d"
+  },
+  {
+   "file": "california/california-crites-bldg-bakersfield-ca.jpg",
+   "source": "commons",
+   "title": "File:Crites Bldg, Bakersfield, CA.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Crites_Bldg%2C_Bakersfield%2C_CA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ACrites_Bldg%2C_Bakersfield%2C_CA.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Publichall",
+   "credit": "Own work",
+   "alt": "The Arthur S. Crites Building at the SW corner of 19th and Eye Streets. Originally built in 1901 by J.B. Berges for the Redlick Brothers department store who occupied the entire building until 1911. D",
+   "date": "2017-07-10 11:00:53",
+   "primary": false,
+   "sha256": "f0119ef3dfd6c33fa07f63b59249008efc6471a244ce0ee93c3fb0e161557b34"
+  }
+ ]
+}

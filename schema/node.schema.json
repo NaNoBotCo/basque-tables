@@ -1,0 +1,691 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://basquetables.org/schema/node.schema.json",
+ "title": "Basque table node record",
+ "description": "One record per node: a dining room, a dish, a drink, a word, a person, an organization, an event, a story, or a region. Every field carries provenance (record default plus per-field override). Keys beginning with x_ are free extension slots.",
+ "type": "object",
+ "required": [
+  "schema",
+  "id",
+  "type",
+  "names",
+  "region",
+  "text",
+  "sources",
+  "provenance",
+  "confidence",
+  "updated"
+ ],
+ "additionalProperties": false,
+ "patternProperties": {
+  "^x_": {}
+ },
+ "properties": {
+  "schema": {
+   "type": "integer",
+   "const": 1
+  },
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+  },
+  "type": {
+   "type": "string",
+   "enum": [
+    "place",
+    "dish",
+    "drink",
+    "term",
+    "person",
+    "org",
+    "event",
+    "story",
+    "region"
+   ]
+  },
+  "names": {
+   "type": "object",
+   "required": [
+    "name"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "name": {
+     "type": "string",
+     "minLength": 1
+    },
+    "eu": {
+     "type": "string",
+     "description": "the Basque (Euskara) form, when one exists"
+    },
+    "es": {
+     "type": "string",
+     "description": "the Spanish or French form, when one exists"
+    },
+    "aliases": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "said": {
+     "type": "string"
+    },
+    "sort": {
+     "type": "string"
+    }
+   }
+  },
+  "etymology": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "root": {
+     "type": "string"
+    },
+    "language": {
+     "type": "string"
+    },
+    "gloss": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "tradition",
+      "inference",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    }
+   }
+  },
+  "region": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1
+  },
+  "text": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "short": {
+     "type": "string",
+     "maxLength": 240
+    },
+    "today": {
+     "type": "string"
+    },
+    "history": {
+     "type": "string"
+    },
+    "table": {
+     "type": "string",
+     "description": "what arrives, and in what order"
+    },
+    "note": {
+     "type": "string"
+    }
+   }
+  },
+  "address": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "street": {
+     "type": "string"
+    },
+    "city": {
+     "type": "string"
+    },
+    "state": {
+     "type": "string",
+     "enum": [
+      "CA",
+      "NV",
+      "OH",
+      "ID",
+      "OR",
+      "WA",
+      "WY",
+      "UT",
+      "CO",
+      "NY",
+      "RI",
+      "DC",
+      "NM"
+     ]
+    },
+    "zip": {
+     "type": "string"
+    },
+    "phone": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string"
+    },
+    "lat": {
+     "type": "number"
+    },
+    "lon": {
+     "type": "number"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "tradition",
+      "inference",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    }
+   }
+  },
+  "founded": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "year": {
+     "type": "integer"
+    },
+    "by": {
+     "type": "string"
+    },
+    "circa": {
+     "type": "boolean"
+    },
+    "note": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "tradition",
+      "inference",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    }
+   }
+  },
+  "status": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "state"
+   ],
+   "properties": {
+    "state": {
+     "type": "string",
+     "enum": [
+      "open",
+      "closed",
+      "moving",
+      "unknown"
+     ]
+    },
+    "since": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    },
+    "checked": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "tradition",
+      "inference",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    }
+   }
+  },
+  "seating": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "kind"
+   ],
+   "description": "How two people are seated. shared = a long table with strangers. own = your own table. both = the house does both. bar = counter only. Never inferred.",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "enum": [
+      "shared",
+      "own",
+      "both",
+      "bar",
+      "unknown"
+     ]
+    },
+    "note": {
+     "type": "string"
+    },
+    "reservations": {
+     "type": "string",
+     "enum": [
+      "required",
+      "taken",
+      "walk-in",
+      "unknown"
+     ]
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    },
+    "checked": {
+     "type": "string"
+    }
+   }
+  },
+  "picon": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "served"
+   ],
+   "description": "Does the bar pour a Picon Punch, and with which amer. Never inferred.",
+   "properties": {
+    "served": {
+     "type": "string",
+     "enum": [
+      "yes",
+      "no",
+      "unknown"
+     ]
+    },
+    "amer": {
+     "type": "string"
+    },
+    "price": {
+     "type": "number"
+    },
+    "glass": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    },
+    "checked": {
+     "type": "string"
+    }
+   }
+  },
+  "prices": {
+   "type": "object",
+   "additionalProperties": false,
+   "description": "Menu prices as printed. dinner_low/dinner_high bound the dinner entrees. Never inferred.",
+   "properties": {
+    "dinner_low": {
+     "type": "number"
+    },
+    "dinner_high": {
+     "type": "number"
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "item",
+       "usd"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "item": {
+        "type": "string"
+       },
+       "usd": {
+        "type": "number"
+       },
+       "note": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "includes": {
+     "type": "string",
+     "description": "what the entree price carries with it"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    },
+    "checked": {
+     "type": "string"
+    }
+   }
+  },
+  "hours": {
+   "type": "object",
+   "additionalProperties": false,
+   "description": "Three states, never two: a day in open[] is open, a day in closed[] is closed, a day in neither is NOT PUBLISHED and is excluded from every filter.",
+   "properties": {
+    "open": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "enum": [
+       "Mon",
+       "Tue",
+       "Wed",
+       "Thu",
+       "Fri",
+       "Sat",
+       "Sun"
+      ]
+     }
+    },
+    "closed": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "enum": [
+       "Mon",
+       "Tue",
+       "Wed",
+       "Thu",
+       "Fri",
+       "Sat",
+       "Sun"
+      ]
+     }
+    },
+    "text": {
+     "type": "string"
+    },
+    "seasonal": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    },
+    "checked": {
+     "type": "string"
+    }
+   }
+  },
+  "courses": {
+   "type": "array",
+   "description": "The set dinner as the house prints it, in order.",
+   "items": {
+    "type": "string"
+   }
+  },
+  "recognitions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "by",
+     "what"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "by": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     },
+     "year": {
+      "type": "integer"
+     },
+     "source": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "sections": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "heading",
+     "body"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "heading": {
+      "type": "string"
+     },
+     "body": {
+      "type": "string"
+     },
+     "tier": {
+      "type": "string",
+      "enum": [
+       "cited",
+       "harvested",
+       "tradition",
+       "inference",
+       "field"
+      ]
+     },
+     "source": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "recipe": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "yield": {
+     "type": "string"
+    },
+    "ingredients": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "method": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "license": {
+     "type": "string"
+    },
+    "attribution": {
+     "type": "string"
+    },
+    "tier": {
+     "type": "string",
+     "enum": [
+      "cited",
+      "harvested",
+      "tradition",
+      "inference",
+      "field"
+     ]
+    },
+    "source": {
+     "type": "string"
+    }
+   }
+  },
+  "kin": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "how"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "how": {
+      "type": "string",
+      "description": "what the neighbour is to THIS page, in prose"
+     }
+    }
+   }
+  },
+  "sources": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1
+  },
+  "provenance": {
+   "type": "string",
+   "enum": [
+    "cited",
+    "harvested",
+    "tradition",
+    "inference",
+    "field"
+   ]
+  },
+  "confidence": {
+   "type": "string",
+   "enum": [
+    "high",
+    "medium",
+    "low"
+   ]
+  },
+  "needs_verification": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "updated": {
+   "type": "string",
+   "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+  },
+  "images": {
+   "type": "array",
+   "description": "Pictures we may republish. Only CC0, public domain, CC BY, CC BY-SA and FAL; the licence and author ride with the file and are printed beside it.",
+   "items": {
+    "type": "object",
+    "required": [
+     "file",
+     "license"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "file": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     },
+     "page_url": {
+      "type": "string"
+     },
+     "license": {
+      "type": "string"
+     },
+     "license_url": {
+      "type": "string"
+     },
+     "author": {
+      "type": "string"
+     },
+     "credit": {
+      "type": "string"
+     },
+     "alt": {
+      "type": "string"
+     },
+     "date": {
+      "type": "string"
+     },
+     "primary": {
+      "type": "boolean"
+     },
+     "sha256": {
+      "type": "string"
+     },
+     "width": {
+      "type": "integer"
+     },
+     "height": {
+      "type": "integer"
+     }
+    }
+   }
+  }
+ }
+}

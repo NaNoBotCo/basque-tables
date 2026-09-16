@@ -1,0 +1,27 @@
+{
+ "id": "maitia-family",
+ "type": "person",
+ "names": {
+  "name": "The Maitia family",
+  "sort": "Maitia family"
+ },
+ "region": [
+  "california"
+ ],
+ "text": {
+  "short": "J.B. and Mayie Maitia opened Wool Growers in 1954; their daughter Jenny and granddaughter Christiane run it."
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "three generations in the same room"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

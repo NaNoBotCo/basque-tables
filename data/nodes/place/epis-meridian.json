@@ -1,0 +1,102 @@
+{
+ "id": "epis-meridian",
+ "type": "place",
+ "names": {
+  "name": "Epi's, a Basque Restaurant",
+  "sort": "Epis a Basque Restaurant"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Meridian, 1999. A family restaurant named for a woman born in Bizkaia in 1903.",
+  "today": "Five nights, dinner only, five to eight. The house asks you to call or text.",
+  "history": "Founded by the descendants of Maria Epifania Lamiquis-Inchausti — Epi — born 4 February 1903 in Bizkaia.",
+  "table": "Lamb shank as a standing special; solomo, marinated pork loin with pimentos, in a sandwich."
+ },
+ "x_kitchen": {
+  "says": "Basque",
+  "tier": "harvested",
+  "source": "kivi-epis"
+ },
+ "address": {
+  "street": "1115 North Main Street",
+  "city": "Meridian",
+  "state": "ID",
+  "zip": "83642",
+  "phone": "(208) 884-0142",
+  "tier": "cited",
+  "source": "yelp-epis"
+ },
+ "founded": {
+  "year": 1999,
+  "by": "the descendants of Maria Epifania Lamiquis-Inchausti",
+  "tier": "cited",
+  "source": "kivi-epis"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "harvested",
+  "source": "yelp-epis"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "taken",
+  "note": "Reservations by phone or text; a small room.",
+  "tier": "harvested",
+  "source": "yelp-epis",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "yelp-epis",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Tue–Thu 5–8pm · Fri–Sat 5–8:30pm",
+  "tier": "harvested",
+  "source": "yelp-epis",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "epi-inchausti",
+   "how": "the woman the room is named for"
+  },
+  {
+   "id": "solomo",
+   "how": "on the menu here"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "dinner prices",
+  "the restaurant's own site — episabasquerestaurant.com did not resolve on 16 September 2026"
+ ],
+ "sources": [
+  "yelp-epis",
+  "kivi-epis",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "harvested",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

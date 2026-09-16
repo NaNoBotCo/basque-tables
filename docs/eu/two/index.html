@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="eu"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A table for two — Basque Tables</title>
+<meta name="description" content="Filter Basque dining rooms by seating, state, Picon Punch and whether they are open today.">
+<link rel="canonical" href="https://nanobotco.github.io/basque-tables/two/">
+<meta property="og:title" content="A table for two — Basque Tables"><meta property="og:description" content="Filter Basque dining rooms by seating, state, Picon Punch and whether they are open today.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://nanobotco.github.io/basque-tables/two/">
+<meta property="og:site_name" content="Basque Tables">
+<link rel="alternate" hreflang="en" href="https://nanobotco.github.io/basque-tables/two/"><link rel="alternate" hreflang="eu" href="https://nanobotco.github.io/basque-tables/eu/two/">
+<style>
+:root{
+ --paper:#faf6ef; --ink:#221c15; --ink2:#5c5043; --ink3:#867a6c;
+ --rule:#d8cdbb; --lift:#fffdf8; --accent:#9a2b2b; --accent2:#0f8f79;
+ --c1:#2a6fd6; --c2:#c2620a; --c3:#0f8f79; --c4:#9333ea;
+ --ok:#0f8f79; --no:#c0392b;
+ --display:"Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+ --sign:Futura,"Avenir Next",Optima,"Gill Sans","Trebuchet MS",sans-serif;
+ --body:Georgia,"Iowan Old Style",serif;
+ --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+ --shadow:0 1px 0 rgba(34,28,21,.04),0 8px 24px -14px rgba(34,28,21,.30);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}}
+:root[data-theme="dark"]{
+ --paper:#16130f; --ink:#f2ece2; --ink2:#c0b5a6; --ink3:#8d8274;
+ --rule:#3b342b; --lift:#1f1b16; --accent:#e08a7e; --accent2:#19a585;
+ --c1:#4c8ae0; --c2:#c27b1e; --c3:#19a585; --c4:#a06ae0;
+ --ok:#19a585; --no:#d4544a;
+ --shadow:0 1px 0 rgba(0,0,0,.30),0 10px 28px -16px #000;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:19px/1.65 var(--body);margin:0;
+ -webkit-text-size-adjust:100%;}
+.wrap{max-width:66rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+a{color:var(--ink);text-decoration-color:var(--rule);text-underline-offset:3px}
+a:hover{color:var(--accent);text-decoration-color:currentColor}
+h1,h2,h3{font-family:var(--display);font-weight:normal;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.1rem,5.5vw,3.3rem);margin:.2em 0 .1em}
+h2{font-size:clamp(1.45rem,3.2vw,2rem);margin:2.2rem 0 .4rem}
+h3{font-size:1.2rem;margin:1.6rem 0 .3rem}
+.eyebrow{font:600 .78rem/1.4 var(--sign);letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin:0}
+.lede{font-size:1.22rem;color:var(--ink2);max-width:46rem}
+p{max-width:44rem}
+hr{border:0;border-top:1px solid var(--rule);margin:2.4rem 0}
+header.top{border-bottom:1px solid var(--rule);background:var(--lift);position:sticky;top:0;z-index:20;
+ backdrop-filter:saturate(1.2)}
+header.top .wrap{display:flex;gap:1rem;align-items:baseline;flex-wrap:wrap;padding-top:.6rem;padding-bottom:.6rem}
+.brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;white-space:nowrap}
+.brand b{font-weight:normal;color:var(--accent)}
+nav.top-nav{display:flex;gap:.1rem .95rem;flex-wrap:wrap;font:500 .95rem/1.9 var(--ui)}
+nav.top-nav a{text-decoration:none;color:var(--ink2);padding:0 .15rem;border-radius:4px}
+nav.top-nav a:hover{color:var(--ink);background:linear-gradient(transparent 72%,var(--rule) 72%)}
+main{padding:2rem 0 4rem}
+footer.foot{border-top:1px solid var(--rule);color:var(--ink3);font:0.92rem/1.7 var(--ui);padding:2rem 0 4rem}
+footer.foot a{color:var(--ink2)}
+
+/* the 1997 directory front */
+.dir{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:.4rem 2.4rem;margin:1.2rem 0}
+.dir section{break-inside:avoid;padding:.6rem 0}
+.dir h2{font-size:1.15rem;margin:.2rem 0 .3rem;font-family:var(--sign);letter-spacing:.09em;
+ text-transform:uppercase;font-size:.84rem;color:var(--ink3)}
+.dir ul{list-style:none;margin:0;padding:0;font-size:1.02rem;line-height:1.85}
+.dir li em{font-style:normal;color:var(--ink3);font-size:.9em}
+.dir a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.dir a:hover{border-bottom-color:currentColor}
+
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.6rem}
+.card{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:1.05rem 1.15rem;
+ box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 0 rgba(0,0,0,.04),0 16px 34px -18px rgba(0,0,0,.45)}
+.card h3{margin:.1rem 0 .3rem;font-size:1.12rem}
+.card p{margin:.2rem 0;font-size:.98rem;color:var(--ink2)}
+
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.1rem;margin:1.2rem 0;font-size:1rem}
+.facts dt{font:600 .74rem/1.9 var(--sign);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
+ white-space:nowrap}
+.facts dd{margin:0}
+.tier{font:600 .68rem/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
+ border:1px solid var(--rule);border-radius:999px;padding:.18rem .42rem;margin-left:.4rem;white-space:nowrap}
+.tier[data-t="cited"]{color:var(--accent2);border-color:currentColor}
+.tier[data-t="tradition"],.tier[data-t="inference"]{font-style:italic}
+
+table{border-collapse:collapse;width:100%;font-size:.97rem;font-family:var(--ui)}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+th{text-align:left;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;
+ color:var(--ink3);border-bottom:2px solid var(--rule);padding:.5rem .6rem;white-space:nowrap}
+td{border-bottom:1px solid var(--rule);padding:.55rem .6rem;vertical-align:top}
+tr:hover td{background:var(--lift)}
+td a{text-decoration:none;border-bottom:1px solid var(--rule)}
+
+.chip{display:inline-flex;align-items:center;gap:.35rem;font:600 .78rem/1 var(--ui);
+ border:1px solid var(--rule);border-radius:999px;padding:.38rem .7rem;background:var(--lift);
+ color:var(--ink2);cursor:pointer;transition:transform .14s ease,border-color .14s ease,color .14s ease}
+.chip:hover{transform:translateY(-1px);border-color:var(--ink3);color:var(--ink)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.4rem}
+
+.week{display:inline-flex;gap:4px;vertical-align:middle;margin:.15rem 0}
+.week i{width:21px;height:21px;border-radius:5px;display:inline-block;font:700 11px/21px var(--ui);
+ text-align:center;font-style:normal;color:var(--paper)}
+.week i.o{background:var(--ok)}
+.week i.c{background:var(--no)}
+.week i.u{background:none;border:1.5px dashed var(--rule);color:var(--ink3);line-height:18px}
+
+.fig{margin:1.8rem 0;padding:0}
+.fig-scroll{overflow-x:auto}
+.chart{width:100%;height:auto;min-width:32rem;font-family:var(--ui)}
+.chart .ttl{font:600 .78rem/1 var(--sign);letter-spacing:.14em;text-transform:uppercase;fill:var(--ink3)}
+.chart .lab{font-size:12px;fill:var(--ink2)}
+.chart .val{font-size:12px;font-weight:600;fill:var(--ink)}
+.chart .cap{font-size:11px;fill:var(--ink3)}
+.chart .grid{stroke:var(--rule);stroke-width:1;opacity:.55}
+.chart .bar,.chart .dot{transition:opacity .16s ease}
+.chart:hover .bar{opacity:.55}
+.chart .bar:hover,.chart .dot:hover{opacity:1}
+figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-width:44rem}
+
+.hero{margin:1.4rem 0 1.8rem;padding:0}
+.hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
+ box-shadow:var(--shadow);display:block}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
+ align-items:start}
+.shot{margin:0;font-size:.9rem}
+.shot figcaption{margin-top:.45rem;line-height:1.45}
+.shot img{width:100%;height:11rem;object-fit:cover;border-radius:10px;display:block;
+ transition:transform .22s ease,filter .22s ease;box-shadow:var(--shadow)}
+.shot a{display:block;border-radius:10px;overflow:hidden}
+.shot:hover img{transform:scale(1.03)}
+figcaption .cred{color:var(--ink3);font-size:.82rem}
+.featured{background:var(--lift);border:1px solid var(--rule);border-radius:16px;
+ padding:1.4rem 1.6rem 1.2rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.featured::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
+.featured h2 a{text-decoration:none}
+.featured .facts{margin:1rem 0}
+.note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
+.gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
+.kin{list-style:none;padding:0;margin:.6rem 0}
+.kin li{padding:.42rem 0;border-bottom:1px solid var(--rule)}
+.kin li span{color:var(--ink3)}
+.src{font:0.9rem/1.7 var(--ui);color:var(--ink2)}
+.src li{margin:.25rem 0}
+.big{font-family:var(--display);font-size:clamp(2.4rem,7vw,4rem);line-height:1;letter-spacing:-.02em}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:1.2rem;margin:1.6rem 0}
+.stat div span{display:block;font:600 .72rem/1.6 var(--sign);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px solid var(--rule);
+ border-radius:8px;background:var(--lift);color:var(--ink);min-width:14rem}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:.5rem;position:fixed;background:var(--lift);padding:.6rem 1rem;border-radius:8px;z-index:99}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{header.top{position:static}.chip{display:none}}
+</style>
+</head><body>
+<a class="skip" href="#main">Skip to the page</a>
+<header class="top"><div class="wrap">
+ <a class="brand" href="/eu/">Basque <b>Tables</b></a>
+ <nav class="top-nav" aria-label="Sections"><a href="/eu/">Hasiera</a><a href="/eu/two/">Bi lagunentzako mahaia</a><a href="/eu/places/">Jatetxeak</a><a href="/eu/drink/picon-punch/">Picon</a><a href="/eu/pictures/">Argazkiak</a><a href="/eu/words/">Hitzak</a><a href="/eu/numbers/">Zenbakiak</a><a href="/eu/stories/">Istorioak</a><a href="/eu/gaps/">Hutsuneak</a><a href="/eu/wander/">Ausaz</a><a href="/eu/two/" hreflang="en" lang="en">English</a></nav>
+</div></header>
+<main id="main"><div class="wrap">
+<p class="eyebrow">A table for two</p>
+<h1>A table for two</h1>
+<p class="lede">Basque dining rooms in the West were boarding houses, and a boarding house seats
+everybody at one table. Some still do. Pick what you want and the list answers from the records.</p>
+<div class="chips">
+ <button class="chip" data-filter="state" data-value="CA" aria-pressed="false">California</button>
+ <button class="chip" data-filter="state" data-value="NV" aria-pressed="false">Nevada</button>
+ <button class="chip" data-filter="state" data-value="ID" aria-pressed="false">Idaho</button>
+ <button class="chip" data-filter="seat" data-value="own" aria-pressed="false">Our own table</button>
+ <button class="chip" data-filter="seat" data-value="shared" aria-pressed="false">Sit us with strangers</button>
+ <button class="chip" data-filter="picon" data-value="1" aria-pressed="false">Makes a Picon Punch</button>
+ <button class="chip" data-filter="today" data-value="1" aria-pressed="false">Open <span id="today-name">today</span></button>
+ <button class="chip" data-filter="price" data-value="1" aria-pressed="false">Prints its prices</button>
+</div>
+<p><b id="two-count">28</b> rooms.</p>
+<div class="cols" id="two-results"></div>
+<hr>
+<h2>What the chips can and cannot do</h2>
+<svg viewBox="0 0 720 128" role="img" aria-label="How the houses seat two people" class="chart"><text x="0.0" y="18.0" class="ttl" text-anchor="start">How the houses seat two people</text><rect x="1.0" y="30" width="280.9" height="30" rx="4" fill="var(--c1)"><title>your own table: 11</title></rect><rect x="283.9" y="30" width="49.4" height="30" rx="4" fill="var(--c2)"><title>both: 2</title></rect><rect x="335.3" y="30" width="203.7" height="30" rx="4" fill="var(--c3)"><title>a long table: 8</title></rect><rect x="541.0" y="30" width="126.6" height="30" rx="4" fill="var(--c4)"><title>a counter: 5</title></rect><rect x="669.6" y="30" width="49.4" height="30" rx="4" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="5 4"><title>not published: 2</title></rect><rect x="0" y="86" width="12" height="12" rx="3" fill="var(--c1)"/><text x="18.0" y="97.0" class="lab" text-anchor="start">your own table 11</text><rect x="168" y="86" width="12" height="12" rx="3" fill="var(--c2)"/><text x="186.8" y="97.0" class="lab" text-anchor="start">both 2</text><rect x="245" y="86" width="12" height="12" rx="3" fill="var(--c3)"/><text x="263.2" y="97.0" class="lab" text-anchor="start">a long table 8</text><rect x="388" y="86" width="12" height="12" rx="3" fill="var(--c4)"/><text x="406.8" y="97.0" class="lab" text-anchor="start">a counter 5</text><rect x="507" y="86" width="12" height="12" rx="3" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="4 3"/><text x="525.2" y="97.0" class="lab" text-anchor="start">not published 2</text></svg>
+<p class="note">2 of 28 rooms publish nothing about seating, so they answer neither
+<i>our own table</i> nor <i>sit us with strangers</i> and drop out of both. Closing that is
+ordinary work — a phone call each — and it is listed on <a href="/eu/gaps/">Gaps</a>.</p>
+<p>The <i>open today</i> chip reads your own clock and matches it against days a source published.
+A day nobody published never counts as open.</p>
+<script>
+(function(){
+ var ROWS = [{"id": "ansots", "name": "Ansots Basque Chorizos", "city": "Boise", "state": "ID", "seating": "bar", "picon": "unknown", "picon_price": null, "dinner_low": 9.0, "dinner_high": 20.0, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": null, "short": "Boise, in the Pioneer Building on West Main. The Ansotegui family's chorizo counter, and a lunch bar beside it."}, {"id": "bar-gernika", "name": "Bar Gernika", "city": "Boise", "state": "ID", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": null, "short": "Boise, at Capitol and Grove. A Basque pub on the corner of the Block, five days a week."}, {"id": "basquenese", "name": "Basquenese", "city": "Boise", "state": "ID", "seating": "bar", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": [], "closed": [], "founded": null, "short": "Boise, in the Warehouse Food Hall. Basque and Vietnamese in one kitchen, run by a couple who are each half of it."}, {"id": "benjis-basque", "name": "Benji's French Basque Restaurant", "city": "Bakersfield", "state": "CA", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": ["Mon"], "founded": null, "short": "Bakersfield, on Rosedale. French Basque, six days, lunch and dinner with the afternoon shut."}, {"id": "centro-basco-chino", "name": "Centro Basco", "city": "Chino", "state": "CA", "seating": "both", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": ["Mon"], "founded": 1940, "short": "Chino, 1940. A boarding house that still sets a boarders' table one Saturday a month."}, {"id": "chalet-basque", "name": "Chalet Basque", "city": "Bakersfield", "state": "CA", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": ["Mon"], "founded": 1969, "short": "Bakersfield, 1969, on Oak Street. Family style, seven days, and one owner since 2002."}, {"id": "doms-taverna", "name": "Dom's Taverna", "city": "Santa Barbara", "state": "CA", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": null, "short": "Santa Barbara, on Victoria. Chef Dom Crisp cooks Basque against the Central Coast — seafood, cured meat, farm produce."}, {"id": "epis-meridian", "name": "Epi's, a Basque Restaurant", "city": "Meridian", "state": "ID", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": 1999, "short": "Meridian, 1999. A family restaurant named for a woman born in Bizkaia in 1903."}, {"id": "glendora-continental", "name": "Glendora Continental Restaurant", "city": "Glendora", "state": "CA", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": 1980, "short": "Glendora, on Route 66, 1980. Jean and Elisabeth Sabarots came from the Basque Country; she had worked in a hotel there."}, {"id": "jt-basque-gardnerville", "name": "J.T. Basque Bar and Dining Room", "city": "Gardnerville", "state": "NV", "seating": "shared", "picon": "yes", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Sun"], "founded": 1955, "short": "Gardnerville. A building hauled from Virginia City in 1896; the Lekumberry family since April Fool's Day, 1960."}, {"id": "leku-ona", "name": "Leku Ona", "city": "Boise", "state": "ID", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Sun"], "founded": 2005, "short": "Boise, the Basque Block, December 2005. A dining room with a hotel over it, two patios, and a bar that runs to midnight."}, {"id": "louis-basque-corner", "name": "Louis' Basque Corner", "city": "Reno", "state": "NV", "seating": "shared", "picon": "yes", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": 1967, "short": "Reno, 1967. Family style at the corner of Fourth and Evans, and it says so about the Picon."}, {"id": "martin-hotel-winnemucca", "name": "The Martin Hotel", "city": "Winnemucca", "state": "NV", "seating": "unknown", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": 1898, "short": "Winnemucca, 1898. Built by the railroad to feed sheepherders; still serving the full set dinner."}, {"id": "noriega-hotel", "name": "Noriega Hotel", "city": "Bakersfield", "state": "CA", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": [], "closed": [], "founded": 1893, "short": "Bakersfield, 1893–2020, then 2021–2025. Closed twice. The bar and the neon sign are in a museum."}, {"id": "ogi-deli-elko", "name": "Ogi Deli", "city": "Elko", "state": "NV", "seating": "bar", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri"], "closed": ["Sat", "Sun"], "founded": null, "short": "Elko, 460 Commercial Street. Bread all day, and on Thursday and Friday nights the only pintxo-pote in this directory — a pintxo and a pint for $5."}, {"id": "ormacheas-winnemucca", "name": "Ormachea's", "city": "Winnemucca", "state": "NV", "seating": "both", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": 1978, "short": "Winnemucca, on Melarkey, since 1978. A Basque-inspired steakhouse where family style starts at six people."}, {"id": "pyrenees-cafe", "name": "Pyrenees Café", "city": "Bakersfield", "state": "CA", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": 1901, "short": "Bakersfield, 1901. A boarding house by the rail yard that never stopped feeding people."}, {"id": "santa-fe-basque-fresno", "name": "Santa Fe Basque Restaurant", "city": "Fresno", "state": "CA", "seating": "unknown", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Sun"], "founded": null, "short": "Fresno, on Maroa. A small family house that keeps two standing dates: a chicken-liver dinner the second Thursday of the month, and a Basque breakfast."}, {"id": "somni", "name": "Somni", "city": "West Hollywood", "state": "CA", "seating": "bar", "picon": "unknown", "picon_price": null, "dinner_low": 645.0, "dinner_high": 785.0, "open": [], "closed": [], "founded": null, "short": "West Hollywood. Twenty courses from Aitor Zabala, who cooked at elBulli. The most expensive table in Los Angeles, and the only three-star one in this directory."}, {"id": "star-hotel-elko", "name": "The Star Hotel", "city": "Elko", "state": "NV", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Sun"], "founded": 1910, "short": "Elko, 1910. Family style, six days a week, on Silver Street."}, {"id": "taylors-cafe-chino", "name": "Taylor's Café", "city": "Chino", "state": "CA", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri"], "closed": ["Sat", "Sun"], "founded": null, "short": "Chino, on Chino Avenue. Weekday mornings only — a Basque and Mexican counter with a full bar."}, {"id": "the-basque-market", "name": "The Basque Market", "city": "Boise", "state": "ID", "seating": "bar", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": null, "short": "Boise, on Grove. A shop with a pintxo counter and paella cooked outside twice a week."}, {"id": "toki-ona-elko", "name": "Toki Ona", "city": "Elko", "state": "NV", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": [], "founded": 1990, "short": "Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days."}, {"id": "triangle-inn-sweet", "name": "The Triangle", "city": "Sweet", "state": "ID", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Fri", "Sat", "Sun"], "closed": ["Mon", "Tue", "Wed", "Thu"], "founded": null, "short": "Sweet, Gem County, on Highway 52. Friday to Sunday only, and Basque because of one family."}, {"id": "villa-basque-deli", "name": "Villa Basque Café and Deli", "city": "Carson City", "state": "NV", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat"], "closed": ["Mon", "Sun"], "founded": 1984, "short": "Carson City, on a street called Basque Way. Pete and Martha Coscarart's counter, and the home of Pete's chorizo."}, {"id": "wool-growers-bakersfield", "name": "Wool Growers Restaurant", "city": "Bakersfield", "state": "CA", "seating": "own", "picon": "yes", "picon_price": 8.0, "dinner_low": 22.0, "dinner_high": 46.0, "open": ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": ["Mon"], "founded": 1954, "short": "Bakersfield, 1954. The Maitia family's dining room behind a cocktail lounge on East 19th."}, {"id": "wool-growers-los-banos", "name": "Wool Growers Restaurant", "city": "Los Banos", "state": "CA", "seating": "shared", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": [], "closed": [], "founded": null, "short": "Los Banos, on H Street. Family style, six days, and by its own account more than a hundred years old."}, {"id": "zazpi-basque-cultural-center", "name": "Zazpi at the Basque Cultural Center", "city": "South San Francisco", "state": "CA", "seating": "own", "picon": "unknown", "picon_price": null, "dinner_low": null, "dinner_high": null, "open": ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": ["Mon"], "founded": null, "short": "South San Francisco. A club dining room, renovated, open to anyone who walks in."}];
+ var f = {state:'', seat:'', picon:false, today:false, price:false};
+ var LAB = {"shared": "mahai luze bat, ezezagunekin", "own": "zeuen mahaia", "both": "biak, gauaren arabera", "bar": "barra bat", "unknown": "argitaratu gabe"};
+ var DAYS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+ var todayName = DAYS[(new Date().getDay()+6)%7];
+ var el = document.getElementById('two-results');
+ var count = document.getElementById('two-count');
+ document.getElementById('today-name').textContent = todayName;
+ function pass(r){
+  if(f.state && r.state !== f.state) return false;
+  if(f.seat === 'own' && !(r.seating === 'own' || r.seating === 'both')) return false;
+  if(f.seat === 'shared' && !(r.seating === 'shared' || r.seating === 'both')) return false;
+  if(f.picon && r.picon !== 'yes') return false;
+  if(f.today && r.open.indexOf(todayName) < 0) return false;
+  if(f.price && r.dinner_low === null) return false;
+  return true;
+ }
+ function weekHtml(r){
+  var s = '<span class="week">';
+  for(var i=0;i<7;i++){
+   var d = DAYS[i];
+   var c = r.open.indexOf(d)>=0 ? 'o' : (r.closed.indexOf(d)>=0 ? 'c' : 'u');
+   s += '<i class="'+c+'" title="'+d+'">'+d[0]+'</i>';
+  }
+  return s + '</span>';
+ }
+ function money(v){ return v === null ? '' : '$' + v; }
+ function draw(){
+  var hits = ROWS.filter(pass);
+  count.textContent = hits.length;
+  if(!hits.length){
+   el.innerHTML = '<div class="gap">No room in the records answers all of that. Loosen a chip, or read '
+     + '<a href="/eu/gaps/">what is missing</a> — the commonest reason a room drops out is that nobody published the field.</div>';
+   return;
+  }
+  var h = '';
+  for(var i=0;i<hits.length;i++){
+   var r = hits[i];
+   h += '<div class="card"><h3><a href="/eu/place/'+r.id+'/">'+r.name+'</a></h3>';
+   h += '<p>'+(r.city||'')+', '+(r.state||'')+(r.founded?' &middot; opened '+r.founded:'')+'</p>';
+   h += '<p><b>'+LAB[r.seating]+'</b>';
+   if(r.picon === 'yes'){ h += ' &middot; Picon' + (r.picon_price ? ' ' + money(r.picon_price) : ''); }
+   if(r.dinner_low !== null){ h += ' &middot; dinner ' + money(r.dinner_low) + '&ndash;' + money(r.dinner_high); }
+   h += '</p><p>'+weekHtml(r)+'</p>';
+   if(r.short){ h += '<p>'+r.short+'</p>'; }
+   h += '</div>';
+  }
+  el.innerHTML = h;
+ }
+ function bind(id, fn){
+  var b = document.getElementById(id);
+  if(!b) return;
+  b.addEventListener('click', function(){
+   fn(b);
+   draw();
+  });
+ }
+ var chips = document.querySelectorAll('[data-filter]');
+ for(var i=0;i<chips.length;i++){
+  (function(b){
+   b.addEventListener('click', function(){
+    var key = b.getAttribute('data-filter');
+    var val = b.getAttribute('data-value');
+    if(key === 'state' || key === 'seat'){
+     var on = f[key] === val;
+     f[key] = on ? '' : val;
+     var sibs = document.querySelectorAll('[data-filter="'+key+'"]');
+     for(var j=0;j<sibs.length;j++){ sibs[j].setAttribute('aria-pressed', 'false'); }
+     b.setAttribute('aria-pressed', on ? 'false' : 'true');
+    } else {
+     f[key] = !f[key];
+     b.setAttribute('aria-pressed', f[key] ? 'true' : 'false');
+    }
+    draw();
+   });
+  })(chips[i]);
+ }
+ draw();
+})();
+</script>
+</div></main>
+<footer class="foot"><div class="wrap">
+ <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
+ a field with no source reads <b>unknown</b> and stays out of the filters.</p>
+ <p>Built by NaN · records CC BY 4.0 · <a href="/eu/gaps/">what is missing</a> ·
+ <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
+</div></footer>
+<script>document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!=='/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href='/wander/';}});</script>
+</body></html>

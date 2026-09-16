@@ -1,0 +1,141 @@
+{
+ "schema": 1,
+ "id": "ansots",
+ "type": "place",
+ "names": {
+  "name": "Ansots Basque Chorizos"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, in the Pioneer Building on West Main. The Ansotegui family's chorizo counter, and a lunch bar beside it.",
+  "today": "Tuesday to Saturday, ten to three, with evenings by reservation. Chorizo at $10 a pound, small hot plates $9 to $20, a dozen uncooked croquetas $11.",
+  "history": "The Ansoteguis put down roots in Idaho in the early 1900s. Dan Ansotegui opened Bar Gernika in 1991 and The Basque Market in 1999 before this one. Dan, Tamara and Ellie run it.",
+  "table": "Chorizos, marinated solomo, Basque bacon over the counter; croquetas, patatas bravas, seafood and meatballs at the bar, with Basque wine and cider.",
+  "note": "Three of the doors in this directory were opened by the same man."
+ },
+ "address": {
+  "street": "560 West Main Street",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "phone": "(208) 336-9166",
+  "url": "https://ansots.com/",
+  "tier": "cited",
+  "source": "ansots-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "ansots-site"
+ },
+ "seating": {
+  "kind": "bar",
+  "reservations": "taken",
+  "note": "A lunch counter, plus a banquet room called Ondoan for up to 24, and evenings by reservation.",
+  "tier": "cited",
+  "source": "ansots-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "The list names Basque wine and cider.",
+  "tier": "cited",
+  "source": "ansots-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "dan-ansotegui",
+   "how": "opened this, and two more doors on the Block"
+  },
+  {
+   "id": "bar-gernika",
+   "how": "his first, 1991"
+  },
+  {
+   "id": "the-basque-market",
+   "how": "his second, 1999"
+  },
+  {
+   "id": "solomo",
+   "how": "marinated here and sold by the pound"
+  },
+  {
+   "id": "croquetas",
+   "how": "sold by the dozen, uncooked"
+  },
+  {
+   "id": "villa-basque-deli",
+   "how": "the other chorizo counter in this directory"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "sources": [
+  "ansots-site",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "by": "Dan, Tamara and Ellie Ansotegui",
+  "note": "the family arrived in Idaho in the early 1900s",
+  "tier": "cited",
+  "source": "ansots-site"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Tue–Sat 10am–3pm, evenings by reservation",
+  "tier": "cited",
+  "source": "ansots-site",
+  "checked": "2026-09-16"
+ },
+ "prices": {
+  "dinner_low": 9.0,
+  "dinner_high": 20.0,
+  "items": [
+   {
+    "item": "Traditional chorizos, a pound",
+    "usd": 10.0
+   },
+   {
+    "item": "Croquetas, a dozen, uncooked",
+    "usd": 11.0
+   },
+   {
+    "item": "Small hot plates, from",
+    "usd": 9.0
+   },
+   {
+    "item": "Small hot plates, to",
+    "usd": 20.0
+   }
+  ],
+  "includes": "counter service; the chorizo is sold by weight to take away",
+  "tier": "cited",
+  "source": "ansots-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque chorizos, marinated solomo and Basque bacon, with a lunch counter",
+  "tier": "cited",
+  "source": "ansots-site"
+ }
+}

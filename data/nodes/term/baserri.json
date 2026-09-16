@@ -1,0 +1,105 @@
+{
+ "id": "baserri",
+ "type": "term",
+ "names": {
+  "name": "Baserri",
+  "eu": "baserri"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "baso + herri",
+  "language": "Euskara",
+  "gloss": "wild place, settlement",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "The Basque farmhouse: house, barn, byre and family under one roof, and the unit of inheritance that sent younger sons to America.",
+  "note": "Primogeniture kept the baserri whole and gave the rest of the children a ticket. That is the mechanism behind every room in this directory."
+ },
+ "kin": [
+  {
+   "id": "artzain",
+   "how": "what he left, and why"
+  },
+  {
+   "id": "ostatua",
+   "how": "what met him at the other end"
+  },
+  {
+   "id": "etxe",
+   "how": "the word inside the word"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "baserri/baserri-amundarain-baserria.jpg",
+   "source": "commons",
+   "title": "File:Amundarain baserria.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Amundarain_baserria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AAmundarain_baserria.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Txapisotegi",
+   "credit": "Own work",
+   "alt": "Ataungo Amundarain baserria",
+   "date": "19 October 2024 (according to Exif data)",
+   "primary": true,
+   "sha256": "1b3465b21c9762a15d92580664a9bcbe4115871caae99bb586b7d94416c2fd30"
+  },
+  {
+   "file": "baserri/baserri-etxeberri-baserria-anoeta.jpg",
+   "source": "commons",
+   "title": "File:Etxeberri baserria (Anoeta).jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Etxeberri_baserria_%28Anoeta%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AEtxeberri_baserria_%28Anoeta%29.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Aioramu",
+   "credit": "Own work",
+   "alt": "Etxeberri baserria Anoetan (Gipuzkoa).",
+   "date": "2022-02-10",
+   "primary": false,
+   "sha256": "01e7b61df870180fb08c69a7c2d5c29dd4d6427f096d8dafde07c8bcfeb50289"
+  },
+  {
+   "file": "baserri/baserri-goiuriako-baserri-bat.jpg",
+   "source": "commons",
+   "title": "File:Goiuriako baserri bat.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Goiuriako_baserri_bat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AGoiuriako_baserri_bat.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Asier Sarasua Garmendia, Assar",
+   "credit": "Own work",
+   "alt": "Goiuriako baserri bat (Iurreta, Bizkaia)",
+   "date": "2017-01-01 12:09:13",
+   "primary": false,
+   "sha256": "1390164bdf17203f0801ff00d1deba2bb2f509b5fde29b426233e74c39b1efd3"
+  },
+  {
+   "file": "baserri/baserri-iztueta-berri.jpg",
+   "source": "commons",
+   "title": "File:Iztueta Berri.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Iztueta_Berri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AIztueta_Berri.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Txapisotegi",
+   "credit": "Own work",
+   "alt": "Iztueta Berri baserria, Lazkaoko Lazkaomendi auzoan.",
+   "date": "6 July 2024 (according to Exif data)",
+   "primary": false,
+   "sha256": "1c3d84c1dbfc7c7f9ff5174cbfe6e9cc6fad031345a86ff9b05ce81c8aff7105"
+  }
+ ]
+}

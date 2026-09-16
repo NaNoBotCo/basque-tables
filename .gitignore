@@ -1,0 +1,11 @@
+# the rendered build; docs/ is the published copy and IS committed
+/build/
+__pycache__/
+*.pyc
+.DS_Store
+
+# working notes that carry local paths — never publish these
+/BASQUE TABLES — *.txt
+
+# Commons triage lists: large, regenerable, and not part of the site
+/data/images/_triage/

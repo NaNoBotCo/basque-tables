@@ -1,0 +1,85 @@
+{
+ "id": "pilota",
+ "type": "term",
+ "names": {
+  "name": "Pilota",
+  "eu": "pilota"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "pilota",
+  "language": "Euskara",
+  "gloss": "ball",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "The handball game, played against a wall. Every Basque town has a fronton; so do Boise and Elko."
+ },
+ "kin": [
+  {
+   "id": "jaialdi",
+   "how": "played there"
+  },
+  {
+   "id": "idaho",
+   "how": "where the American frontons are"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "low",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "pilota/pilota-berrizko-bola-jokoa.jpg",
+   "source": "commons",
+   "title": "File:Berrizko bola jokoa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Berrizko_bola_jokoa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABerrizko_bola_jokoa.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Janfri",
+   "credit": "Own work",
+   "alt": "Berrizko (Bizkaia) bolatokia, zabaleko hiru txirlotara jokatzen",
+   "date": "2025-10-04 17:43:49",
+   "primary": true,
+   "sha256": "0e0aad0fd65c8dac1276b782aa4fb2cb7ca9786f4e120491b68f6f52d799e4f9"
+  },
+  {
+   "file": "pilota/pilota-bola-jokoa-0001.jpg",
+   "source": "commons",
+   "title": "File:Bola jokoa 0001.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bola_jokoa_0001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABola_jokoa_0001.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Joxemai",
+   "credit": "Own work",
+   "alt": "Bola jokoa",
+   "date": "2015-09-05 09:29:41",
+   "primary": false,
+   "sha256": "c6548374d8c1855d85704c1850390704918182ce3caa460aed72a2e275f5ab1c"
+  },
+  {
+   "file": "pilota/pilota-bola-jokoa-foruen-plazan.jpg",
+   "source": "commons",
+   "title": "File:Bola jokoa Foruen plazan.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Bola_jokoa_Foruen_plazan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABola_jokoa_Foruen_plazan.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Birasuegi",
+   "credit": "Own work",
+   "alt": "Erromeria eguneko bola jokoa Errenteriako Foruen plazan 2026-07-18",
+   "date": "18 July 2026 (according to Exif data)",
+   "primary": false,
+   "sha256": "52e33adfcf282250482029899cfe97b44222f39e067fb009e9eba3a9d3949182"
+  }
+ ]
+}

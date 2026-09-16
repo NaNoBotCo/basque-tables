@@ -1,0 +1,103 @@
+{
+ "id": "the-long-table",
+ "type": "story",
+ "names": {
+  "name": "The long table"
+ },
+ "region": [
+  "west",
+  "california",
+  "nevada"
+ ],
+ "text": {
+  "short": "You booked dinner for two. The house seats you with four strangers and brings everyone the same nine dishes. This directory counts which rooms do that, and leaves the verdict to you."
+ },
+ "sections": [
+  {
+   "heading": "Where the table came from",
+   "body": "A Basque boarding house fed men who worked sheep on contract and came to town between them. One kitchen, one sitting, one price, and a table long enough for everyone in the building. Nobody designed it for couples. It solved a housing problem in Winnemucca in 1898 and in Bakersfield a few years later, and the restaurants are the part of that arrangement that outlived the arrangement.",
+   "tier": "cited",
+   "source": "smithsonian-basque"
+  },
+  {
+   "heading": "It has not gone away",
+   "body": "Gardnerville still seats communal long tables and passes the dishes down the row. Reno still calls its dinner family style. Elko prints Basque Dining, Family Style on its own front page. Chino re-stages the boarders' table one Saturday a month, at 12:30, one sitting.",
+   "tier": "cited",
+   "source": "jt-site"
+  },
+  {
+   "heading": "And some rooms answer differently",
+   "body": "Wool Growers in Bakersfield takes walk-ins at the counter and gives you a table if you call. Centro Basco runs separate courses at your own table six nights a week and saves the long table for that one Saturday. Etxe in Cincinnati books you a two-top through Resy. Three answers, all Basque, all current.",
+   "tier": "cited",
+   "source": "woolgrowers-site"
+  },
+  {
+   "heading": "Which is the romantic one",
+   "body": "Not a question with a general answer, so this site does not print one. It prints the seating, the reservation policy, the price of the dinner and the price of the Picon, and lets two people decide whether they want a table to themselves or a table with a sheepherding county on it. The counts on the table-for-two page come from the records, and every one names the source that supports it. Where no source says, the field reads unknown and stays out of the filters.",
+   "tier": "inference",
+   "source": "woolgrowers-site"
+  }
+ ],
+ "kin": [
+  {
+   "id": "the-set-dinner",
+   "how": "what arrives once you are seated"
+  },
+  {
+   "id": "ostatua",
+   "how": "the institution the table is left over from"
+  },
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "the plainest communal table still running"
+  },
+  {
+   "id": "boarders-table",
+   "how": "the long table, kept on purpose, monthly"
+  }
+ ],
+ "sources": [
+  "smithsonian-basque",
+  "jt-site",
+  "woolgrowers-site",
+  "centrobasco-site",
+  "starhotel-site",
+  "lekuona-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "the-long-table/the-long-table-dolarea2.jpg",
+   "source": "commons",
+   "title": "File:Dolarea2.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Dolarea2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ADolarea2.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Xabier Eskisabel",
+   "credit": "http://www.guregipuzkoa.net/photo/1000480",
+   "alt": "A cider-maker house inside Igartubeiti Farm Museum in Ezkio-Itsaso village. Guipuscoa, Basque Country.",
+   "date": "2008-12-20",
+   "primary": true,
+   "sha256": "d433a191203e2d24690f871a28c89c2c11d1a920fea6e93d2c24df54e85817ed"
+  },
+  {
+   "file": "the-long-table/the-long-table-irigoien-herrero-sagardotegia-astigarraga.jpg",
+   "source": "commons",
+   "title": "File:Irigoien Herrero sagardotegia, Astigarraga.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Irigoien_Herrero_sagardotegia%2C_Astigarraga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AIrigoien_Herrero_sagardotegia%2C_Astigarraga.jpg",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "author": "Mikel Arrazola",
+   "credit": "http://argazki.irekia.euskadi.net/eu/search/87895/photos/2340",
+   "alt": "Sidreria \"Irigoien Herrero\" de Astigarraga",
+   "date": "2009-11-24 18:42:11",
+   "primary": false,
+   "sha256": "4ed82752511a304cb95ca6da8cd9eda18287e7e8883edd48ab2af5197b709efc"
+  }
+ ]
+}

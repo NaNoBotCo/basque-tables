@@ -1,0 +1,115 @@
+{
+ "id": "noriega-hotel",
+ "type": "place",
+ "names": {
+  "name": "Noriega Hotel",
+  "aliases": [
+   "Noriega's"
+  ]
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Bakersfield, 1893–2020, then 2021–2025. Closed twice. The bar and the neon sign are in a museum.",
+  "today": "Nothing serves under this name. The Sumner Street building stands empty.",
+  "history": "One seating, one bell, one price, whatever the kitchen cooked that day, at a table you shared. The James Beard Foundation named it an America's Classic in 2011. It closed in 2020. New owners reopened a Noriega's on Stockdale Highway in June 2021 with the old recipes and the old chairs; that closed in early 2025. The bar and the neon went to the Kern County Museum."
+ },
+ "x_kitchen": {
+  "says": "Basque boarding-house table, one seating, set menu",
+  "tier": "cited",
+  "source": "wikipedia-noriega"
+ },
+ "address": {
+  "street": "525 Sumner Street",
+  "city": "Bakersfield",
+  "state": "CA",
+  "tier": "cited",
+  "source": "wikipedia-noriega"
+ },
+ "founded": {
+  "year": 1893,
+  "tier": "cited",
+  "source": "wikipedia-noriega"
+ },
+ "status": {
+  "state": "closed",
+  "since": "2025",
+  "note": "Closed at Sumner Street in 2020; the Stockdale Highway room closed in early 2025.",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "euskalkazeta-noriega-closes"
+ },
+ "seating": {
+  "kind": "shared",
+  "note": "One bell, one seating, strangers down the length of the table. Recorded as it was.",
+  "tier": "cited",
+  "source": "wikipedia-noriega",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "The bar itself now sits in the Kern County Museum.",
+  "tier": "cited",
+  "source": "euskalkazeta-noriega-closes",
+  "checked": "2026-09-16"
+ },
+ "recognitions": [
+  {
+   "by": "James Beard Foundation",
+   "what": "America's Classics",
+   "year": 2011,
+   "source": "euskalkazeta-noriega-beard"
+  }
+ ],
+ "kin": [
+  {
+   "id": "the-long-table",
+   "how": "the room that set the shape everyone else is measured against"
+  },
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "eight blocks away, and still open"
+  },
+  {
+   "id": "ostatua",
+   "how": "what this was before it was a restaurant"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sat in"
+  }
+ ],
+ "needs_verification": [
+  "the 1893 founding year against the several dates in circulation"
+ ],
+ "sources": [
+  "wikipedia-noriega",
+  "euskalkazeta-noriega-closes",
+  "euskalkazeta-noriega-beard",
+  "kget-noriega",
+  "turnto23-noriega"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "noriega-hotel/noriega-hotel-dinner-menu-for-noriega-hotel-bakersfield.jpg",
+   "source": "commons",
+   "title": "File:Dinner Menu for Noriega Hotel Bakersfield.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Dinner_Menu_for_Noriega_Hotel_Bakersfield.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ADinner_Menu_for_Noriega_Hotel_Bakersfield.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Jjazz76",
+   "credit": "Own work",
+   "alt": "A 2011 dinner menu for Noriega Hotel in Bakersfield, California",
+   "date": "2026-05-10",
+   "primary": true,
+   "sha256": "f2865a0fe88a3a0d357a90a3f8c2c53e55dd65a57fed19fd39789475983ca75d"
+  }
+ ]
+}

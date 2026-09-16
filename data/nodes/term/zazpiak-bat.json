@@ -1,0 +1,70 @@
+{
+ "id": "zazpiak-bat",
+ "type": "term",
+ "names": {
+  "name": "Zazpiak Bat",
+  "eu": "zazpiak bat"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "zazpi + bat",
+  "language": "Euskara",
+  "gloss": "the seven are one",
+  "tier": "cited"
+ },
+ "text": {
+  "short": "Seven provinces, one people. The motto, and the name of clubs from Reno to Vancouver."
+ },
+ "kin": [
+  {
+   "id": "zazpi-basque-cultural-center",
+   "how": "the South San Francisco room named for the seven"
+  },
+  {
+   "id": "nabo",
+   "how": "the federation those clubs belong to"
+  }
+ ],
+ "sources": [
+  "nabo-members"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "zazpiak-bat/zazpiak-bat-funerary-st-le-with-the-basque-flag-in-espelette.jpg",
+   "source": "commons",
+   "title": "File:Funerary stèle with the basque flag in Espelette.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Funerary_st%C3%A8le_with_the_basque_flag_in_Espelette.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AFunerary_st%C3%A8le_with_the_basque_flag_in_Espelette.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Funerary stele with the basque flag (ikurrina) in the old cemetery of the church Saint-Étienne in Espelette (Pyrénées-Atlantiques, France).",
+   "date": "2018-09-09",
+   "primary": true,
+   "sha256": "6e245956ce625f0bbe04fedd97f12c36eaae1bd54b94c73048262893b8b0494e"
+  },
+  {
+   "file": "zazpiak-bat/zazpiak-bat-ikurri-a-en-getaria.jpg",
+   "source": "commons",
+   "title": "File:Ikurriña en Getaria.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Ikurri%C3%B1a_en_Getaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AIkurri%C3%B1a_en_Getaria.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Artistosteles",
+   "credit": "Own work",
+   "alt": "Ikurriña en Getaria",
+   "date": "2024-08-07 17:03:47",
+   "primary": false,
+   "sha256": "6723053c63bf6bfd14227ce7d161137271efdfbf772f9c521b92076c3c75eb99"
+  }
+ ]
+}

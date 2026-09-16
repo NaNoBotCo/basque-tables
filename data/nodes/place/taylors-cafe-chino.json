@@ -1,0 +1,91 @@
+{
+ "schema": 1,
+ "id": "taylors-cafe-chino",
+ "type": "place",
+ "names": {
+  "name": "Taylor's Café",
+  "sort": "Taylors Cafe"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Chino, on Chino Avenue. Weekday mornings only — a Basque and Mexican counter with a full bar.",
+  "today": "Seven to three, Monday to Friday, shut at the weekend. Bread comes out with whipped butter and salsa, which is the whole story of this room in one plate."
+ },
+ "address": {
+  "street": "7049 Chino Avenue",
+  "city": "Chino",
+  "state": "CA",
+  "zip": "91710",
+  "phone": "(909) 628-3506",
+  "tier": "cited",
+  "source": "yelp-taylors"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "harvested",
+  "source": "yelp-taylors"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "walk-in",
+  "note": "A breakfast and lunch room; you take a table.",
+  "tier": "harvested",
+  "source": "yelp-taylors",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "There is a full bar. Nothing published says what is on it.",
+  "tier": "harvested",
+  "source": "yelp-taylors",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "centro-basco-chino",
+   "how": "the other Basque room in Chino, five minutes away"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "yelp-taylors",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "harvested",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "closed": [
+   "Sat",
+   "Sun"
+  ],
+  "text": "Mon–Fri 7am–3pm",
+  "tier": "harvested",
+  "source": "yelp-taylors",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque and Mexican, with a full bar",
+  "tier": "harvested",
+  "source": "yelp-taylors"
+ },
+ "needs_verification": [
+  "the year it opened",
+  "prices",
+  "whether the bar makes a Picon Punch"
+ ]
+}

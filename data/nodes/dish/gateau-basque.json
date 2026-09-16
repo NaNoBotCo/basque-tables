@@ -1,0 +1,97 @@
+{
+ "id": "gateau-basque",
+ "type": "dish",
+ "names": {
+  "name": "Gâteau basque",
+  "eu": "euskal pastela"
+ },
+ "region": [
+  "euskal-herria"
+ ],
+ "text": {
+  "short": "Two discs of short pastry around pastry cream or black-cherry jam, baked in a tin and often scored with a lauburu.",
+  "note": "It belongs to Lapurdi and the French side. American Basque rooms mostly end dinner with ice cream or a bread pudding instead."
+ },
+ "kin": [
+  {
+   "id": "lauburu",
+   "how": "scored into the top of it"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "the course this would be, on the other side of the ocean"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "needs_verification": [
+  "which room in this directory serves it, from that house's own menu"
+ ],
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "gateau-basque/gateau-basque-gateau-basque-avec-lauburu.jpg",
+   "source": "commons",
+   "title": "File:Gateau basque avec Lauburu.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Gateau_basque_avec_Lauburu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AGateau_basque_avec_Lauburu.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Gateau basque with Lauburu (basque cross).",
+   "date": "2019-10-10",
+   "primary": true,
+   "sha256": "cee50f59792767f262b80d1dd797a684135ac90f40f98120e583eae3d9f214f9"
+  },
+  {
+   "file": "gateau-basque/gateau-basque-gateau-basque-et-croix-basques.jpg",
+   "source": "commons",
+   "title": "File:Gateau basque et croix basques.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Gateau_basque_et_croix_basques.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AGateau_basque_et_croix_basques.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Own work",
+   "alt": "Cake of the basque country, with decorations made with sugar powder in shape of basque crosses (lauburu). In the restaurant \"Hostellerie du chateau\" in Mauléon-Licharre (Pyrénées-Atlantiques, France).",
+   "date": "2012-01-27 20:26:14",
+   "primary": false,
+   "sha256": "5d506c768be954426661ffed48b0e55f1704158f30efb2787f92208ddca44cdd"
+  },
+  {
+   "file": "gateau-basque/gateau-basque-g-teau-basque-01.jpg",
+   "source": "commons",
+   "title": "File:Gâteau basque 01.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/G%C3%A2teau_basque_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AG%C3%A2teau_basque_01.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Arnaud 25",
+   "credit": "Own work",
+   "alt": "Gâteau basque",
+   "date": "2023-09-15 19:27:54",
+   "primary": false,
+   "sha256": "426e4f818604a21afdaa2cfbcd9c6c8b16b24781443cf66dcf8dccf9d892d22a"
+  },
+  {
+   "file": "gateau-basque/gateau-basque-g-teau-basque-la-cerise-noire.jpg",
+   "source": "commons",
+   "title": "File:Gâteau basque à la cerise noire.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/G%C3%A2teau_basque_%C3%A0_la_cerise_noire.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AG%C3%A2teau_basque_%C3%A0_la_cerise_noire.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Marianne Casamance",
+   "credit": "Own work (allegedly)",
+   "alt": "Gâteau basque à la cerise noire",
+   "date": "2016-04-21 12:54:06",
+   "primary": false,
+   "sha256": "470949ea1b1446160f6a200a36ebe44c01bedbbb72e084774ae65e0f3db9c92c"
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "id": "ogi-deli-elko",
+ "type": "place",
+ "names": {
+  "name": "Ogi Deli",
+  "eu": "ogi",
+  "aliases": [
+   "Ogi Deli, Bar & Pintxos"
+  ],
+  "said": "OH-ghee"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Elko, 460 Commercial Street. Bread all day, and on Thursday and Friday nights the only pintxo-pote in this directory — a pintxo and a pint for $5.",
+  "today": "Deli hours are weekday mornings and lunch. Then twice a week the room turns into a bar: pintxos out on the counter, Basque cider on tap, and from 4:30 to 6 a pintxo with a pote — a pint of beer, a glass of house wine, or a glass of sagardoa — for $5 the pair. On Fridays you can watch or play mus.",
+  "history": "Anamarie Lopategui started it on her own Basque side, with sandwiches. In December 2016 it moved into a restored historic building at 460 Commercial Street and grew a pintxo counter and a bar. Choch Goicoechea and Carolyn took it on in October 2022.",
+  "table": "Basque chorizo on a French roll. A lamb sandwich. Pintxos on skewers. Imported sagardoa, patxaran, Basque wine, craft beer on tap.",
+  "note": "Ogi is bread in Euskara. The name is the shortest statement of purpose in this directory."
+ },
+ "x_kitchen": {
+  "says": "delicious, handcrafted Basque and American sandwiches, salads, pintxos (Basque tapas) and drinks — served in a beautifully restored historic building",
+  "tier": "cited",
+  "source": "ogideli-site"
+ },
+ "address": {
+  "street": "460 Commercial Street",
+  "city": "Elko",
+  "state": "NV",
+  "zip": "89801",
+  "phone": "(775) 753-9290",
+  "url": "https://www.ogideli.com/",
+  "tier": "cited",
+  "source": "ogideli-site"
+ },
+ "founded": {
+  "by": "Anamarie Lopategui; Choch Goicoechea and Carolyn since October 2022",
+  "note": "Moved into 460 Commercial Street in December 2016.",
+  "tier": "cited",
+  "source": "euskalkultura-ogi"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "ogideli-site"
+ },
+ "seating": {
+  "kind": "bar",
+  "reservations": "walk-in",
+  "note": "A counter and tables. On pintxo nights the counter is the point: you stand, you eat off a skewer, and on Fridays there is a card game going.",
+  "tier": "cited",
+  "source": "ogideli-pintxos",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "The bar's own list names sagardoa, patxaran, Basque wine and craft beer on tap. It does not name a Picon.",
+  "tier": "cited",
+  "source": "ogideli-pintxos",
+  "checked": "2026-09-16"
+ },
+ "prices": {
+  "items": [
+   {
+    "item": "Pintxo-pote — a pintxo and a pint, a glass of house wine, or a glass of sagardoa",
+    "usd": 5.0,
+    "note": "Thursday and Friday, 4:30 to 6"
+   }
+  ],
+  "includes": "the pairing — the food and the drink together, which is what pote means",
+  "tier": "cited",
+  "source": "ogideli-pintxos",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri"
+  ],
+  "closed": [
+   "Sat",
+   "Sun"
+  ],
+  "text": "Deli Mon–Fri 8am–3pm · Bar & Pintxos Thu and Fri 4:30pm–10pm · pintxo-pote 4:30–6",
+  "tier": "cited",
+  "source": "ogideli-site",
+  "checked": "2026-09-16"
+ },
+ "recognitions": [
+  {
+   "by": "the Elko local press",
+   "what": "one of the town's top 10 businesses",
+   "year": 2017,
+   "source": "euskalkultura-ogi"
+  }
+ ],
+ "kin": [
+  {
+   "id": "pintxo-pote",
+   "how": "the hour this room keeps twice a week"
+  },
+  {
+   "id": "pintxo",
+   "how": "what goes on the counter"
+  },
+  {
+   "id": "sagardoa",
+   "how": "poured here, imported"
+  },
+  {
+   "id": "patxaran",
+   "how": "on the back bar"
+  },
+  {
+   "id": "mus",
+   "how": "played here on Friday nights"
+  },
+  {
+   "id": "anamarie-lopategui",
+   "how": "started it"
+  },
+  {
+   "id": "euskara",
+   "how": "the language the name is in — ogi is bread"
+  },
+  {
+   "id": "star-hotel-elko",
+   "how": "the long table three blocks away"
+  },
+  {
+   "id": "the-long-table",
+   "how": "a counter is the fourth answer, and this room gives it"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "sources": [
+  "ogideli-site",
+  "ogideli-pintxos",
+  "euskalkultura-ogi",
+  "travelnevada-ogi",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

@@ -1,0 +1,103 @@
+# Basque Tables
+
+> A directory of Basque dining rooms in California, Nevada and Idaho. Every field names its source.
+
+## How to read a record
+- provenance tier: cited (a named source says it), harvested (a directory row),
+  tradition (what the trade says, untested), inference (reasoning from records here), field (seen).
+- seating, picon, prices, hours, status and address may NEVER carry tier tradition or inference.
+- hours have three states: open, closed, and not published. A day nobody published is
+  excluded from every filter rather than guessed either way.
+
+## Data
+- /api/places.json — every room, flat
+- /api/counts.json — counts by type and state
+- /api/coverage.json — what is missing
+- /api/prices.json — every printed menu price
+- /api/search.json — search documents
+
+## Pages
+- [Bacalao al pil-pil](https://nanobotco.github.io/basque-tables/dish/bacalao-al-pil-pil/): Salt cod, garlic, oil and chilli, worked until the cod's own gelatin turns the oil into a sauce. Four ingredients, no cream.
+- [Basque beans](https://nanobotco.github.io/basque-tables/dish/basque-beans/): Small red or pink beans, long-cooked with pork and garlic. On the table at nearly every room in this directory.
+- [Bread pudding](https://nanobotco.github.io/basque-tables/dish/bread-pudding/): The last of the ten courses at Winnemucca, and the house's own.
+- [Croquetas](https://nanobotco.github.io/basque-tables/dish/croquetas/): Thick béchamel, set cold, breaded and fried. The pintxo counter's staple.
+- [Garlic fried chicken](https://nanobotco.github.io/basque-tables/dish/garlic-fried-chicken/): The cheapest dinner on the Wool Growers list at $22, and the one people drive for.
+- [Gâteau basque](https://nanobotco.github.io/basque-tables/dish/gateau-basque/): Two discs of short pastry around pastry cream or black-cherry jam, baked in a tin and often scored with a lauburu.
+- [Idiazabal](https://nanobotco.github.io/basque-tables/dish/idiazabal/): Hard sheep's-milk cheese from Latxa and Carranzana ewes, often smoked. The shepherd's own product.
+- [Lamb chops](https://nanobotco.github.io/basque-tables/dish/lamb-chops/): The sheepherder's own animal, and the most-priced dish across this directory.
+- [Marmitako](https://nanobotco.github.io/basque-tables/dish/marmitako/): Tuna, potato, onion, pepper — the pot a Bay of Biscay crew cooked on board, now a festival competition ashore.
+- [Oxtail stew](https://nanobotco.github.io/basque-tables/dish/oxtail-stew/): A boarding-house cut cooked long. $30 at Wool Growers; on the family-style list at Louis'.
+- [Pickled tongue](https://nanobotco.github.io/basque-tables/dish/pickled-tongue/): Beef tongue, brined and sliced thin, on the relish tray at the Bakersfield rooms.
+- [Pintxo](https://nanobotco.github.io/basque-tables/dish/pintxo/): A single bite on a slice of bread, held with a stick. A bar counter's unit of measure.
+- [Solomo](https://nanobotco.github.io/basque-tables/dish/solomo/): Pork loin marinated with pimentos, served in a sandwich. Boise's own counter food.
+- [Talo](https://nanobotco.github.io/basque-tables/dish/talo/): A flat maize cake cooked on iron, folded around chistorra or cheese. Bread before wheat bread.
+- [The relish tray](https://nanobotco.github.io/basque-tables/dish/relish-tray/): What lands before you have ordered anything: pickled tongue, salsa, beans, bread, and it keeps coming back.
+- [The set dinner](https://nanobotco.github.io/basque-tables/dish/the-set-dinner/): Not a menu. A sequence the house serves whatever you ordered — soup, salad, beans, potatoes, a side, a vegetable, bread, fries, dessert.
+- [Txuleta](https://nanobotco.github.io/basque-tables/dish/txuleta/): A thick bone-in beef chop over wood. The dish the Cincinnati room is built around.
+- [Kalimotxo](https://nanobotco.github.io/basque-tables/drink/kalimotxo/): Red wine and cola, half and half, over ice. The festival drink.
+- [Patxaran](https://nanobotco.github.io/basque-tables/drink/patxaran/): Sloes steeped in anise spirit until it turns rose-brown. Sweet, taken cold after dinner.
+- [Picon Punch](https://nanobotco.github.io/basque-tables/drink/picon-punch/): Bitter orange amer, a spoon of grenadine, soda, a float of brandy, a lemon twist. Basque America's drink, and not a Basque Country one.
+- [Sagardoa](https://nanobotco.github.io/basque-tables/drink/sagardoa/): Dry Basque cider, still, poured thin from a height so it breaks on the glass. Elko imports it.
+- [Txakoli](https://nanobotco.github.io/basque-tables/drink/txakoli/): Sharp, barely fizzy white from the Basque coast, poured from a height so it opens in the glass.
+- [Basque breakfast](https://nanobotco.github.io/basque-tables/event/basque-breakfast/): Gardnerville, twice a year, $19 a person plus tax.
+- [Jaialdi](https://nanobotco.github.io/basque-tables/event/jaialdi/): Boise, every five years, six days. Between 30,000 and 50,000 people. Last held 29 July to 3 August 2025; next in 2030.
+- [Pintxo-pote](https://nanobotco.github.io/basque-tables/event/pintxo-pote/): A pintxo and a pote — one drink — taken together, at a fixed price, in a fixed hour. Elko keeps one on Thursday and Friday, 4:30 to 6, at $5.
+- [The Boarder's Table](https://nanobotco.github.io/basque-tables/event/boarders-table/): Chino, the last Saturday of the month, 12:30. One sitting, everyone at it.
+- [Basque Museum & Cultural Center](https://nanobotco.github.io/basque-tables/org/uberuaga-boarding-house/): Boise, Grove Street. A boarding house that took Basque men from 1917 to 1969, and has been the country's first Basque museum since 1985.
+- [North American Basque Organizations](https://nanobotco.github.io/basque-tables/org/nabo/): The federation of Basque clubs in North America. Its member roster is the clearest map of where Basque America organized itself.
+- [Michelle Anchustegui](https://nanobotco.github.io/basque-tables/person/michelle-anchustegui/): The Triangle in Sweet, Idaho cooks her dishes; her family keeps them on the menu.
+- [Dan Ansotegui](https://nanobotco.github.io/basque-tables/person/dan-ansotegui/): Opened Bar Gernika in 1991, The Basque Market in 1999, and Ansots. Three doors on or beside the Basque Block, from one family that arrived in Idaho in the early
+- [Jose Mari Artiach](https://nanobotco.github.io/basque-tables/person/jose-mari-artiach/): Came from the Basque Country to herd sheep, and opened Leku Ona on the Basque Block in December 2005.
+- [Louis Erreguible](https://nanobotco.github.io/basque-tables/person/louis-erreguible/): Opened Louis' Basque Corner in Reno with Lorraine Erreguible in 1967.
+- [Maria Epifania Lamiquis-Inchausti](https://nanobotco.github.io/basque-tables/person/epi-inchausti/): Born 4 February 1903 in Bizkaia. Her descendants opened Epi's in Meridian in 1999 and named it for her.
+- [The Lekumberry family](https://nanobotco.github.io/basque-tables/person/lekumberry-family/): Bought the J.T. in Gardnerville on 1 April 1960 and have run it since.
+- [Anamarie Lopategui](https://nanobotco.github.io/basque-tables/person/anamarie-lopategui/): Started Ogi Deli in Elko on her own Basque side, with sandwiches, and grew it into a pintxo bar.
+- [The Maitia family](https://nanobotco.github.io/basque-tables/person/maitia-family/): J.B. and Mayie Maitia opened Wool Growers in 1954; their daughter Jenny and granddaughter Christiane run it.
+- [Ansots Basque Chorizos](https://nanobotco.github.io/basque-tables/place/ansots/): Boise, in the Pioneer Building on West Main. The Ansotegui family's chorizo counter, and a lunch bar beside it.
+- [Bar Gernika](https://nanobotco.github.io/basque-tables/place/bar-gernika/): Boise, at Capitol and Grove. A Basque pub on the corner of the Block, five days a week.
+- [Basquenese](https://nanobotco.github.io/basque-tables/place/basquenese/): Boise, in the Warehouse Food Hall. Basque and Vietnamese in one kitchen, run by a couple who are each half of it.
+- [Benji's French Basque Restaurant](https://nanobotco.github.io/basque-tables/place/benjis-basque/): Bakersfield, on Rosedale. French Basque, six days, lunch and dinner with the afternoon shut.
+- [Centro Basco](https://nanobotco.github.io/basque-tables/place/centro-basco-chino/): Chino, 1940. A boarding house that still sets a boarders' table one Saturday a month.
+- [Chalet Basque](https://nanobotco.github.io/basque-tables/place/chalet-basque/): Bakersfield, 1969, on Oak Street. Family style, seven days, and one owner since 2002.
+- [Dom's Taverna](https://nanobotco.github.io/basque-tables/place/doms-taverna/): Santa Barbara, on Victoria. Chef Dom Crisp cooks Basque against the Central Coast — seafood, cured meat, farm produce.
+- [Epi's, a Basque Restaurant](https://nanobotco.github.io/basque-tables/place/epis-meridian/): Meridian, 1999. A family restaurant named for a woman born in Bizkaia in 1903.
+- [Glendora Continental Restaurant](https://nanobotco.github.io/basque-tables/place/glendora-continental/): Glendora, on Route 66, 1980. Jean and Elisabeth Sabarots came from the Basque Country; she had worked in a hotel there.
+- [J.T. Basque Bar and Dining Room](https://nanobotco.github.io/basque-tables/place/jt-basque-gardnerville/): Gardnerville. A building hauled from Virginia City in 1896; the Lekumberry family since April Fool's Day, 1960.
+- [Leku Ona](https://nanobotco.github.io/basque-tables/place/leku-ona/): Boise, the Basque Block, December 2005. A dining room with a hotel over it, two patios, and a bar that runs to midnight.
+- [Louis' Basque Corner](https://nanobotco.github.io/basque-tables/place/louis-basque-corner/): Reno, 1967. Family style at the corner of Fourth and Evans, and it says so about the Picon.
+- [The Martin Hotel](https://nanobotco.github.io/basque-tables/place/martin-hotel-winnemucca/): Winnemucca, 1898. Built by the railroad to feed sheepherders; still serving the full set dinner.
+- [Noriega Hotel](https://nanobotco.github.io/basque-tables/place/noriega-hotel/): Bakersfield, 1893–2020, then 2021–2025. Closed twice. The bar and the neon sign are in a museum.
+- [Ogi Deli](https://nanobotco.github.io/basque-tables/place/ogi-deli-elko/): Elko, 460 Commercial Street. Bread all day, and on Thursday and Friday nights the only pintxo-pote in this directory — a pintxo and a pint for $5.
+- [Ormachea's](https://nanobotco.github.io/basque-tables/place/ormacheas-winnemucca/): Winnemucca, on Melarkey, since 1978. A Basque-inspired steakhouse where family style starts at six people.
+- [Pyrenees Café](https://nanobotco.github.io/basque-tables/place/pyrenees-cafe/): Bakersfield, 1901. A boarding house by the rail yard that never stopped feeding people.
+- [Santa Fe Basque Restaurant](https://nanobotco.github.io/basque-tables/place/santa-fe-basque-fresno/): Fresno, on Maroa. A small family house that keeps two standing dates: a chicken-liver dinner the second Thursday of the month, and a Basque breakfast.
+- [Somni](https://nanobotco.github.io/basque-tables/place/somni/): West Hollywood. Twenty courses from Aitor Zabala, who cooked at elBulli. The most expensive table in Los Angeles, and the only three-star one in this directory.
+- [The Star Hotel](https://nanobotco.github.io/basque-tables/place/star-hotel-elko/): Elko, 1910. Family style, six days a week, on Silver Street.
+- [Taylor's Café](https://nanobotco.github.io/basque-tables/place/taylors-cafe-chino/): Chino, on Chino Avenue. Weekday mornings only — a Basque and Mexican counter with a full bar.
+- [The Basque Market](https://nanobotco.github.io/basque-tables/place/the-basque-market/): Boise, on Grove. A shop with a pintxo counter and paella cooked outside twice a week.
+- [Toki Ona](https://nanobotco.github.io/basque-tables/place/toki-ona-elko/): Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days.
+- [The Triangle](https://nanobotco.github.io/basque-tables/place/triangle-inn-sweet/): Sweet, Gem County, on Highway 52. Friday to Sunday only, and Basque because of one family.
+- [Villa Basque Café and Deli](https://nanobotco.github.io/basque-tables/place/villa-basque-deli/): Carson City, on a street called Basque Way. Pete and Martha Coscarart's counter, and the home of Pete's chorizo.
+- [Wool Growers Restaurant](https://nanobotco.github.io/basque-tables/place/wool-growers-bakersfield/): Bakersfield, 1954. The Maitia family's dining room behind a cocktail lounge on East 19th.
+- [Wool Growers Restaurant](https://nanobotco.github.io/basque-tables/place/wool-growers-los-banos/): Los Banos, on H Street. Family style, six days, and by its own account more than a hundred years old.
+- [Zazpi at the Basque Cultural Center](https://nanobotco.github.io/basque-tables/place/zazpi-basque-cultural-center/): South San Francisco. A club dining room, renovated, open to anyone who walks in.
+- [California](https://nanobotco.github.io/basque-tables/region/california/): Kern County holds more Basque dining rooms than any county in the United States. The rest of the state runs from a members' club in South San Francisco to a tas
+- [Idaho](https://nanobotco.github.io/basque-tables/region/idaho/): One city block in Boise carries more Basque life than any other address in the United States — a museum in a boarding house, a bar, a market, a dining room, a c
+- [Nevada](https://nanobotco.github.io/basque-tables/region/nevada/): Hotels built beside the tracks to feed sheepherders, still setting the long table. In 2025 the state made the Picon Punch its official cocktail.
+- [The Basque Block](https://nanobotco.github.io/basque-tables/story/the-basque-block/): Grove Street between Sixth and Capitol, Boise. A pub, a market, a dining room, a club and a museum — and the museum is the boarding house all of it came out of.
+- [The bitter has a supply problem](https://nanobotco.github.io/basque-tables/story/the-picon-supply/): Nevada made the Picon Punch its state cocktail in 2025. The bitter it is built on has never reliably crossed the Atlantic, and the version Nevada made official 
+- [The long table](https://nanobotco.github.io/basque-tables/story/the-long-table/): You booked dinner for two. The house seats you with four strangers and brings everyone the same nine dishes. This directory counts which rooms do that, and leav
+- [Artzain](https://nanobotco.github.io/basque-tables/term/artzain/): Shepherd. The job that brought the men the boarding houses were built for.
+- [Baserri](https://nanobotco.github.io/basque-tables/term/baserri/): The Basque farmhouse: house, barn, byre and family under one roof, and the unit of inheritance that sent younger sons to America.
+- [Dantza](https://nanobotco.github.io/basque-tables/term/dantza/): The dances — aurresku danced to greet someone, ezpata-dantza with swords, fandango at the end of the night.
+- [Etxe](https://nanobotco.github.io/basque-tables/term/etxe/): House. The Cincinnati room took it for a name.
+- [Euskara](https://nanobotco.github.io/basque-tables/term/euskara/): The language. Related to nothing else living — not to Spanish, not to French, not to anything in the Indo-European family.
+- [Ikurriña](https://nanobotco.github.io/basque-tables/term/ikurrina/): Red ground, white cross over a green saltire. Designed in 1894; flown over American Basque clubs since long before it was legal at home.
+- [Lauburu](https://nanobotco.github.io/basque-tables/term/lauburu/): Four comma-shaped heads turning around a centre. Cut into gravestones, chests, cheese rinds and pastry lids.
+- [Mus](https://nanobotco.github.io/basque-tables/term/mus/): The card game. Four players, two pairs, bidding in four rounds, and signals across the table that everyone can see and nobody is supposed to.
+- [Ostatua](https://nanobotco.github.io/basque-tables/term/ostatua/): The boarding house. Every old room in this directory was one first.
+- [Pilota](https://nanobotco.github.io/basque-tables/term/pilota/): The handball game, played against a wall. Every Basque town has a fronton; so do Boise and Elko.
+- [Sagardotegi](https://nanobotco.github.io/basque-tables/term/sagardotegi/): A cider house: barrels along one wall, txotx called when a barrel is opened, cod omelette and a beef chop at a shared table standing up.
+- [Txistu](https://nanobotco.github.io/basque-tables/term/txistu/): A three-holed flute played with the left hand while the right beats a drum. One musician, two instruments.
+- [Txoko](https://nanobotco.github.io/basque-tables/term/txoko/): A members' cooking society — a kitchen a group keeps and cooks in for itself.
+- [Zazpiak Bat](https://nanobotco.github.io/basque-tables/term/zazpiak-bat/): Seven provinces, one people. The motto, and the name of clubs from Reno to Vancouver.

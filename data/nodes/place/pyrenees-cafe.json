@@ -1,0 +1,105 @@
+{
+ "id": "pyrenees-cafe",
+ "type": "place",
+ "names": {
+  "name": "Pyrenees Café",
+  "sort": "Pyrenees Cafe"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Bakersfield, 1901. A boarding house by the rail yard that never stopped feeding people.",
+  "today": "It opens for breakfast, which almost no Basque dining room does, and runs through to a late bar.",
+  "history": "It went up near the Bakersfield train station in 1901 and took in Basque men who arrived by rail and left for the hills with a flock. The boarders are gone; the long tables stayed."
+ },
+ "x_kitchen": {
+  "says": "Basque, out of a boarding house",
+  "tier": "cited",
+  "source": "pyrenees-site"
+ },
+ "address": {
+  "street": "601 Sumner Street",
+  "city": "Bakersfield",
+  "state": "CA",
+  "zip": "93305",
+  "phone": "(661) 323-0053",
+  "url": "https://thepyreneescafe.com/",
+  "tier": "cited",
+  "source": "pyrenees-site"
+ },
+ "founded": {
+  "year": 1901,
+  "note": "Other accounts put the house at 1899; the café's own site says 1901.",
+  "tier": "cited",
+  "source": "pyrenees-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "pyrenees-site"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "taken",
+  "note": "Long tables, dishes passed. Call ahead and the house will seat you.",
+  "tier": "harvested",
+  "source": "pyrenees-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "The bar runs until 9 or 10 most nights; the site does not print a drink list.",
+  "tier": "cited",
+  "source": "pyrenees-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "Mon and Wed 8am–9pm · Tue dining to 3pm, bar to 9pm · Thu–Fri 8am–10pm · Sat 7am–10pm · Sun 7am–9pm",
+  "tier": "cited",
+  "source": "pyrenees-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "ostatua",
+   "how": "the word for what this building was first"
+  },
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "the other Bakersfield room still serving"
+  },
+  {
+   "id": "the-long-table",
+   "how": "why two people here sit with four strangers"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "the 1901 date against the 1899 one that circulates",
+  "whether the bar makes a Picon Punch"
+ ],
+ "sources": [
+  "pyrenees-site",
+  "euskalkazeta-socal",
+  "visitbakersfield-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

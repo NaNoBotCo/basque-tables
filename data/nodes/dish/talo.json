@@ -1,0 +1,93 @@
+{
+ "id": "talo",
+ "type": "dish",
+ "names": {
+  "name": "Talo",
+  "eu": "taloa"
+ },
+ "region": [
+  "euskal-herria"
+ ],
+ "text": {
+  "short": "A flat maize cake cooked on iron, folded around chistorra or cheese. Bread before wheat bread.",
+  "note": "Sold hot at markets and festivals; the iron it is cooked on is a museum object in its own right."
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "named for bread, which this is the older kind of"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "needs_verification": [
+  "which room in this directory serves it, from that house's own menu"
+ ],
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "talo/talo-bidart-taloa.jpg",
+   "source": "commons",
+   "title": "File:Bidart Taloa.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bidart_Taloa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABidart_Taloa.jpg",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5/",
+   "author": "No machine-readable author provided. Harrieta171 assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "Bidart, fabrication de taloa au marché. Photo prise le 01/08/06 par Harrieta171",
+   "date": "1 August 2006 (according to Exif data)",
+   "primary": true,
+   "sha256": "a226a948180ed25e6349b0b359dd9d78c1507df1af3698d83b78aad352425229"
+  },
+  {
+   "file": "talo/talo-kristina-saralegi-talogilea-talo-egunean.jpg",
+   "source": "commons",
+   "title": "File:Kristina Saralegi talogilea, talo egunean.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Kristina_Saralegi_talogilea%2C_talo_egunean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AKristina_Saralegi_talogilea%2C_talo_egunean.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "erran.eus",
+   "credit": "https://erran.eus/leitzaldea/1662545461108-kristina-saralegi-omenduko-dute-leitzan-irailaren-11ko-talo-egunean",
+   "alt": "Kristina Saralegi, día del talo",
+   "date": "2022-09-08",
+   "primary": false,
+   "sha256": "4e372ead1adede08931c77ffc832eb2af95777647d1b6fb98aec45aa225be5f7"
+  },
+  {
+   "file": "talo/talo-talo-galette-de-ma-s-servie-chaude-avec-de-la-txisto-d4ef257.jpg",
+   "source": "commons",
+   "title": "File:Talo (galette de maïs) servie chaude avec de la txistorra (saucisse) et des tranches de fromage de brebis.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Talo_%28galette_de_ma%C3%AFs%29_servie_chaude_avec_de_la_txistorra_%28saucisse%29_et_des_tranches_de_fromage_de_brebis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ATalo_%28galette_de_ma%C3%AFs%29_servie_chaude_avec_de_la_txistorra_%28saucisse%29_et_des_tranches_de_fromage_de_brebis.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Assassas77",
+   "credit": "Own work",
+   "alt": "Photo prise sur un stand (etalo.eus) vendant des taloak à Donostia",
+   "date": "Taken on 14 August 2026, 15:19",
+   "primary": false,
+   "sha256": "53d6bfd03ad42220bfa19eb5b043c2df2850b53e041991acee0261ba87b05915"
+  },
+  {
+   "file": "talo/talo-talo-supazterrean.jpg",
+   "source": "commons",
+   "title": "File:Talo Supazterrean.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Talo_Supazterrean.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ATalo_Supazterrean.jpg",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Asp.",
+   "credit": "Own work",
+   "alt": "Talo in fireplace (reconstitution for touristical purpose in Montory, France)",
+   "date": "2007-07-14",
+   "primary": false,
+   "sha256": "2c39e84bccb2937626155fa230f7598a7326463a0ca621e536b5d0db3cebd502"
+  }
+ ]
+}

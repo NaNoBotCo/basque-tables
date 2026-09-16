@@ -1,0 +1,36 @@
+{
+ "id": "patxaran",
+ "type": "drink",
+ "names": {
+  "name": "Patxaran",
+  "eu": "patxaran"
+ },
+ "region": [
+  "euskal-herria",
+  "nevada"
+ ],
+ "text": {
+  "short": "Sloes steeped in anise spirit until it turns rose-brown. Sweet, taken cold after dinner.",
+  "note": "On the back bar in Elko, which is not a common sight in the United States."
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "keeps a bottle"
+  },
+  {
+   "id": "picon-punch",
+   "how": "the other bitter-sweet thing a Basque bar pours"
+  }
+ ],
+ "needs_verification": [
+  "which other rooms in this directory stock it"
+ ],
+ "sources": [
+  "ogideli-pintxos"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

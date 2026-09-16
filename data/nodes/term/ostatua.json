@@ -1,0 +1,80 @@
+{
+ "id": "ostatua",
+ "type": "term",
+ "names": {
+  "name": "Ostatua",
+  "eu": "ostatua"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "ostatu",
+  "language": "Euskara",
+  "gloss": "inn, lodging",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "The boarding house. Every old room in this directory was one first.",
+  "note": "A bed, a meal, a place to leave your money and your mail, and someone who spoke Euskara. The restaurant is the part that survived."
+ },
+ "kin": [
+  {
+   "id": "pyrenees-cafe",
+   "how": "was one, by the Bakersfield tracks"
+  },
+  {
+   "id": "centro-basco-chino",
+   "how": "opened as one in 1940"
+  },
+  {
+   "id": "noriega-hotel",
+   "how": "was one until 2020"
+  },
+  {
+   "id": "the-long-table",
+   "how": "why the tables are long"
+  }
+ ],
+ "sources": [
+  "smithsonian-basque",
+  "centrobasco-site"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "ostatua/ostatua-armoire-basque-avec-lauburu.jpg",
+   "source": "commons",
+   "title": "File:Armoire basque avec lauburu.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Armoire_basque_avec_lauburu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AArmoire_basque_avec_lauburu.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Basque cupboard with lauburu (=basque cross), (Pyrénées-Atlantiques, France).",
+   "date": "2017-09-16",
+   "primary": true,
+   "sha256": "587a1d5f6fb6f1c6f0d1f184c201a16d423595db6901e785e866dd421afefe17"
+  },
+  {
+   "file": "ostatua/ostatua-restaurant-du-col-d-osquich-basque-cupboard.jpg",
+   "source": "commons",
+   "title": "File:Restaurant du col d'Osquich - Basque cupboard.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Restaurant_du_col_d%27Osquich_-_Basque_cupboard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ARestaurant_du_col_d%27Osquich_-_Basque_cupboard.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Basque cupboard with lauburu (=basque cross) in the rooom of the restaurant du col d'Osquich (Pyrénées-Atlantiques, France).",
+   "date": "2018-09-08",
+   "primary": false,
+   "sha256": "d4754f94fbfe1fe75d18c02f0d81ede094e1c0190f059d75e24c90af5d8d1515"
+  }
+ ]
+}

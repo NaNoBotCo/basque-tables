@@ -1,0 +1,84 @@
+{
+ "schema": 1,
+ "id": "basquenese",
+ "type": "place",
+ "names": {
+  "name": "Basquenese"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, in the Warehouse Food Hall. Basque and Vietnamese in one kitchen, run by a couple who are each half of it.",
+  "today": "Solomo sandos, croquetas, chorizo hoagies, and noodle soup with herbs. It started as a food truck and took a stall in the hall.",
+  "history": "Matthew Larrinaga is a fourth-generation Idahoan Basque; Barbie is Vietnamese and cooks from her family's table.",
+  "note": "The only kitchen in this directory where Basque is one half of a sentence rather than the whole of it."
+ },
+ "address": {
+  "street": "The Warehouse Food Hall, 370 South 8th Street",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "phone": "(208) 996-6804",
+  "url": "https://basquenese.com/",
+  "tier": "cited",
+  "source": "warehouse-basquenese"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "warehouse-basquenese"
+ },
+ "seating": {
+  "kind": "bar",
+  "reservations": "walk-in",
+  "note": "A stall in a food hall — you order at the counter and sit in the common room.",
+  "tier": "cited",
+  "source": "warehouse-basquenese",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "warehouse-basquenese",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "solomo",
+   "how": "in a sando here"
+  },
+  {
+   "id": "croquetas",
+   "how": "on the counter"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "two blocks from it"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "sources": [
+  "warehouse-basquenese",
+  "boisedev-basquenese",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "x_kitchen": {
+  "says": "a fusion of Vietnamese and Basque street food",
+  "tier": "cited",
+  "source": "warehouse-basquenese"
+ },
+ "needs_verification": [
+  "hours",
+  "prices",
+  "the year the stall opened"
+ ]
+}

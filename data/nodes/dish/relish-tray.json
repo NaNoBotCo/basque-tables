@@ -1,0 +1,36 @@
+{
+ "id": "relish-tray",
+ "type": "dish",
+ "names": {
+  "name": "The relish tray"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "What lands before you have ordered anything: pickled tongue, salsa, beans, bread, and it keeps coming back.",
+  "table": "It is not an appetiser you choose. It arrives because you sat down, and it is refilled without being asked for. Two people who order one entree between them will still be fed."
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "the room this directory can document it at"
+  },
+  {
+   "id": "pickled-tongue",
+   "how": "the item on it people remember"
+  },
+  {
+   "id": "the-set-dinner",
+   "how": "the first course of a meal that has many"
+  }
+ ],
+ "sources": [
+  "woolgrowers-site",
+  "smithsonian-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

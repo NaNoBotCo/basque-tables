@@ -1,0 +1,77 @@
+{
+ "id": "jaialdi",
+ "type": "event",
+ "names": {
+  "name": "Jaialdi",
+  "eu": "jaialdi"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, every five years, six days. Between 30,000 and 50,000 people. Last held 29 July to 3 August 2025; next in 2030.",
+  "note": "Jaialdi is festival in Euskara."
+ },
+ "etymology": {
+  "root": "jai + aldi",
+  "language": "Euskara",
+  "gloss": "festival time",
+  "tier": "tradition"
+ },
+ "kin": [
+  {
+   "id": "idaho",
+   "how": "the state that holds it"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "the streets it centres on"
+  },
+  {
+   "id": "nabo",
+   "how": "the federation whose clubs come to it"
+  }
+ ],
+ "sources": [
+  "jaialdi-faq",
+  "ktvb-jaialdi",
+  "visitboise-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "jaialdi/jaialdi-basque-joaldunak-folk-tradition-and-festival-visit-w-6bd5b78.jpg",
+   "source": "commons",
+   "title": "File:Basque Joaldunak Folk tradition and festival visit Washington, DC in 2016.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Basque_Joaldunak_Folk_tradition_and_festival_visit_Washington%2C_DC_in_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_Joaldunak_Folk_tradition_and_festival_visit_Washington%2C_DC_in_2016.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Maitemangos",
+   "credit": "Own work",
+   "alt": "Joaldun is a traditional carnival character the the Basque Country that wears fur and cow bells to ward off evil.",
+   "date": "2016-07-02 15:59:51",
+   "primary": true,
+   "sha256": "d8baf1e32a447d00520f01ad55b75fd5ab7759242a3d031974ef290467fcfd5e"
+  },
+  {
+   "file": "jaialdi/jaialdi-urkullu-jaialdia-2015-karrokanpo.jpg",
+   "source": "commons",
+   "title": "File:Urkullu-Jaialdia 2015-Karrokanpo.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Urkullu-Jaialdia_2015-Karrokanpo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AUrkullu-Jaialdia_2015-Karrokanpo.jpg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Irekia",
+   "credit": "Eusko Jaurlaritza - Irekia http://www.irekia.euskadi.eus/es/albums/3804-lehendakari-asegura-que-presencia-jaialdi-servido-para-profundizar-las-relaciones-economicas-culturales-con-idaho-boise?criterio",
+   "alt": "Basque president Iñigo Urkullu in Boise's Jaialdia 2015 Basque festival with wife in a Basque Shepherd Wagon expo",
+   "date": "2015-08-01 19:50:25",
+   "primary": false,
+   "sha256": "9bdf1dea6d940bbcd630e496b6960ac4e7b94db26dbc2cbe087d596f8a211c65"
+  }
+ ]
+}

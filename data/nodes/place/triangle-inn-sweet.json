@@ -1,0 +1,101 @@
+{
+ "schema": 1,
+ "id": "triangle-inn-sweet",
+ "type": "place",
+ "names": {
+  "name": "The Triangle",
+  "sort": "Triangle"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Sweet, Gem County, on Highway 52. Friday to Sunday only, and Basque because of one family.",
+  "today": "Friday eleven to ten, Saturday eight to ten, Sunday eight to nine. Aaron Lowe runs it.",
+  "history": "The Basque cooking here carries on from Michelle Anchustegui, through her family and the dishes she made.",
+  "note": "Chorizo is on now; the house has said paella and more are coming."
+ },
+ "address": {
+  "street": "8770 North Highway 52",
+  "city": "Sweet",
+  "state": "ID",
+  "zip": "83670",
+  "phone": "(208) 584-3246",
+  "tier": "cited",
+  "source": "kivi-triangle"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "kivi-triangle"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "walk-in",
+  "note": "A country dining room; you take a table.",
+  "tier": "harvested",
+  "source": "kivi-triangle",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "kivi-triangle",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "michelle-anchustegui",
+   "how": "whose cooking this room carries"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this room sits in"
+  },
+  {
+   "id": "the-long-table",
+   "how": "a three-day week is its own answer to when, if not how"
+  }
+ ],
+ "sources": [
+  "kivi-triangle",
+  "euskalkazeta-idaho"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "by": "Aaron Lowe now; the Basque cooking descends from Michelle Anchustegui",
+  "tier": "cited",
+  "source": "kivi-triangle"
+ },
+ "hours": {
+  "open": [
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu"
+  ],
+  "text": "Fri 11am–10pm · Sat 8am–10pm · Sun 8am–9pm",
+  "tier": "cited",
+  "source": "kivi-triangle",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque dishes in a country restaurant",
+  "tier": "cited",
+  "source": "kivi-triangle"
+ },
+ "needs_verification": [
+  "prices",
+  "the year it opened",
+  "whether the paella arrived"
+ ]
+}

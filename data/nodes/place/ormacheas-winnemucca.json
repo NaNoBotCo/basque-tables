@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "id": "ormacheas-winnemucca",
+ "type": "place",
+ "names": {
+  "name": "Ormachea's",
+  "sort": "Ormacheas"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Winnemucca, on Melarkey, since 1978. A Basque-inspired steakhouse where family style starts at six people.",
+  "today": "Dinner only, Tuesday to Saturday, four to nine. Every entree carries soup or salad and Basque beans.",
+  "note": "The clearest published seating rule in this directory: your own table for two, the long one for six."
+ },
+ "address": {
+  "street": "180 Melarkey Street",
+  "city": "Winnemucca",
+  "state": "NV",
+  "zip": "89445",
+  "phone": "(775) 623-3455",
+  "url": "https://ormacheas.com/",
+  "tier": "cited",
+  "source": "ormacheas-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "ormacheas-site"
+ },
+ "seating": {
+  "kind": "both",
+  "reservations": "taken",
+  "note": "Family-style service for parties of six or more; two people get a table.",
+  "tier": "cited",
+  "source": "ormacheas-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "ormacheas-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "martin-hotel-winnemucca",
+   "how": "the 1898 room four blocks away"
+  },
+  {
+   "id": "basque-beans",
+   "how": "arrives with every entree here"
+  },
+  {
+   "id": "the-long-table",
+   "how": "this house draws the line at six"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "ormacheas-site",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "year": 1978,
+  "tier": "cited",
+  "source": "ormacheas-site"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Tue–Sat 4pm–9pm",
+  "tier": "cited",
+  "source": "ormacheas-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "a Basque-inspired steakhouse",
+  "tier": "cited",
+  "source": "ormacheas-site"
+ },
+ "needs_verification": [
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "id": "euskara",
+ "type": "term",
+ "names": {
+  "name": "Euskara",
+  "eu": "euskara"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "euskara",
+  "language": "Euskara",
+  "gloss": "the Basque language",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "The language. Related to nothing else living — not to Spanish, not to French, not to anything in the Indo-European family."
+ },
+ "kin": [
+  {
+   "id": "toki-ona-elko",
+   "how": "named in it: good place"
+  },
+  {
+   "id": "ogi-deli-elko",
+   "how": "named in it: bread"
+  },
+  {
+   "id": "zazpiak-bat",
+   "how": "a motto in it"
+  }
+ ],
+ "sources": [
+  "nabo-members"
+ ],
+ "provenance": "tradition",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "euskara/euskara-basque-notice-in-boise-idaho.jpg",
+   "source": "commons",
+   "title": "File:Basque notice in Boise, Idaho.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Basque_notice_in_Boise%2C_Idaho.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_notice_in_Boise%2C_Idaho.JPG",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "No machine-readable author provided. Terfili assumed (based on copyright claims).",
+   "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+   "alt": "a notice in English and Basque in a restaurant in Boise, Idaho",
+   "date": "28 December 2005 (according to Exif data",
+   "primary": true,
+   "sha256": "e7626e3d4c240a82f46c4dfe22aa8b6ede90adbd7374398a6139d17dd11be676"
+  }
+ ]
+}

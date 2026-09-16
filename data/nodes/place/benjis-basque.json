@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "id": "benjis-basque",
+ "type": "place",
+ "names": {
+  "name": "Benji's French Basque Restaurant",
+  "sort": "Benjis French Basque Restaurant"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Bakersfield, on Rosedale. French Basque, six days, lunch and dinner with the afternoon shut.",
+  "today": "Lunch 11:30 to 2, dinner 5 to 9, Tuesday through Sunday. The house asks you to call for a table."
+ },
+ "address": {
+  "street": "4001 Rosedale Highway",
+  "city": "Bakersfield",
+  "state": "CA",
+  "zip": "93308",
+  "phone": "(661) 328-0400",
+  "url": "https://benjisbasque.com/",
+  "tier": "cited",
+  "source": "benjis-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "benjis-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "required",
+  "note": "The site's one instruction in capitals: please call for reservations.",
+  "tier": "cited",
+  "source": "benjis-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "benjis-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "the older Bakersfield room across town"
+  },
+  {
+   "id": "pyrenees-cafe",
+   "how": "the oldest one"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "benjis-site",
+  "euskalkazeta-socal",
+  "visitbakersfield-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "closed": [
+   "Mon"
+  ],
+  "text": "Tue–Sun lunch 11:30am–2pm, dinner 5pm–9pm",
+  "tier": "cited",
+  "source": "benjis-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "French Basque",
+  "tier": "harvested",
+  "source": "euskalkazeta-socal"
+ },
+ "needs_verification": [
+  "the year it opened",
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ]
+}

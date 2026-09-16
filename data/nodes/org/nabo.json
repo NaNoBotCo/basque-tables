@@ -1,0 +1,50 @@
+{
+ "id": "nabo",
+ "type": "org",
+ "names": {
+  "name": "North American Basque Organizations",
+  "aliases": [
+   "NABO"
+  ]
+ },
+ "region": [
+  "everywhere"
+ ],
+ "text": {
+  "short": "The federation of Basque clubs in North America. Its member roster is the clearest map of where Basque America organized itself.",
+  "note": "Read 16 September 2026: clubs in California, Colorado, Idaho, Nevada, New York, Oregon, Rhode Island, Utah, Washington, Wyoming, the District of Columbia, British Columbia, Quebec and Saint-Pierre-et-Miquelon."
+ },
+ "sections": [
+  {
+   "heading": "Where the clubs are",
+   "body": "Idaho and Nevada carry the most between them, and Boise alone holds five member organizations. The rooms in this directory sit exactly where the clubs sit — which is the shape of one migration, not a coincidence of restaurant openings.",
+   "tier": "cited",
+   "source": "nabo-members"
+  }
+ ],
+ "kin": [
+  {
+   "id": "idaho",
+   "how": "the state with five member organizations in one city"
+  },
+  {
+   "id": "zazpiak-bat",
+   "how": "the motto half its clubs are named for"
+  },
+  {
+   "id": "zazpi-basque-cultural-center",
+   "how": "a member centre with a dining room open to the public"
+  },
+  {
+   "id": "jaialdi",
+   "how": "what its clubs travel to"
+  }
+ ],
+ "sources": [
+  "nabo-members"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

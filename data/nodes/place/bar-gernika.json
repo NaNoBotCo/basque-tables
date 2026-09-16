@@ -1,0 +1,96 @@
+{
+ "id": "bar-gernika",
+ "type": "place",
+ "names": {
+  "name": "Bar Gernika"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, at Capitol and Grove. A Basque pub on the corner of the Block, five days a week.",
+  "note": "Named for the town the Luftwaffe bombed in 1937, and for Picasso's painting of it."
+ },
+ "x_kitchen": {
+  "says": "a Basque pub and eatery",
+  "tier": "cited",
+  "source": "gernika-site"
+ },
+ "address": {
+  "street": "202 South Capitol Boulevard",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "phone": "(208) 344-2175",
+  "url": "https://bargernika.com/",
+  "tier": "cited",
+  "source": "gernika-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "gernika-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "walk-in",
+  "note": "A pub — you take a table or the bar.",
+  "tier": "harvested",
+  "source": "gernika-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "gernika-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Tue–Thu until 9pm · Fri–Sat until 10pm",
+  "tier": "cited",
+  "source": "gernika-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "the-basque-block",
+   "how": "the corner door of it"
+  },
+  {
+   "id": "leku-ona",
+   "how": "the other dining room on the Block"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "opening time each day — the site publishes only closing times",
+  "the year it opened",
+  "prices",
+  "whether it pours Kalimotxo or Picon"
+ ],
+ "sources": [
+  "gernika-site",
+  "euskalkazeta-idaho",
+  "basqueblock-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

@@ -1,0 +1,72 @@
+{
+ "id": "the-picon-supply",
+ "type": "story",
+ "names": {
+  "name": "The bitter has a supply problem"
+ },
+ "region": [
+  "nevada",
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Nevada made the Picon Punch its state cocktail in 2025. The bitter it is built on has never reliably crossed the Atlantic, and the version Nevada made official is distilled in Reno."
+ },
+ "sections": [
+  {
+   "heading": "A malaria remedy, 1837",
+   "body": "Gaétan Picon compounded the original in Algeria with the French Foreign Legion — quinine, bark, roots and orange, taken for fever. It reached the American West coast late in the century, right as Basque boarding houses were looking for a house pour.",
+   "tier": "cited",
+   "source": "punch-picon"
+  },
+  {
+   "heading": "It never got imported",
+   "body": "Amer Picon from Marseille does not reach the United States in any dependable quantity. American bars pour Torani Amer, made in San Francisco largely because Basque bars needed it.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  },
+  {
+   "heading": "2024: the shortage",
+   "body": "A production change sent Torani Amer back for recertification by California authorities while the company leaned toward its syrup business. Bars from Bakersfield to Elko rationed.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  },
+  {
+   "heading": "2025: Reno takes it over",
+   "body": "Torani handed the recipe to Ferino Distillery in Reno. The same year, Nevada named the drink its official state cocktail. Gardnerville's bar now names Ferino on its own page.",
+   "tier": "cited",
+   "source": "jt-site"
+  },
+  {
+   "heading": "Not a Basque Country drink",
+   "body": "It barely exists in the Pyrenees. It belongs to the diaspora — southern Idaho, northern and central California, northern Nevada — and to nowhere else.",
+   "tier": "cited",
+   "source": "wikipedia-picon-punch"
+  }
+ ],
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "the record with the build and the glassware"
+  },
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "names Ferino on its own page"
+  },
+  {
+   "id": "nevada",
+   "how": "the state that made it official"
+  }
+ ],
+ "sources": [
+  "wikipedia-picon-punch",
+  "punch-picon",
+  "wineenthusiast-picon",
+  "jt-site",
+  "sifestival-picon"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

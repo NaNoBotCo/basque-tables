@@ -1,0 +1,67 @@
+{
+ "id": "etxe",
+ "type": "term",
+ "names": {
+  "name": "Etxe",
+  "eu": "etxe",
+  "said": "ET-sheh"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "etxe",
+  "language": "Euskara",
+  "gloss": "house",
+  "tier": "cited"
+ },
+ "text": {
+  "short": "House. The Cincinnati room took it for a name."
+ },
+ "kin": [
+  {
+   "id": "ostatua",
+   "how": "the house that took boarders"
+  }
+ ],
+ "sources": [
+  "lekuona-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "etxe/etxe-house-with-lauburu-in-savoie.jpg",
+   "source": "commons",
+   "title": "File:House with lauburu in Savoie.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/House_with_lauburu_in_Savoie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AHouse_with_lauburu_in_Savoie.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Own work",
+   "alt": "House in the hamlet of Sougey near Samoëns (Haute-Savoie, France) with openings in shapes of Basque cross.",
+   "date": "2013-09-06",
+   "primary": true,
+   "sha256": "ad3b867db417ec9a8e37dc8d8235d03bafdd46f3d0dfd654f167e18f98112ada"
+  },
+  {
+   "file": "etxe/etxe-lauburu-sur-les-pav-s.jpg",
+   "source": "commons",
+   "title": "File:Lauburu sur les pavés.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Lauburu_sur_les_pav%C3%A9s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ALauburu_sur_les_pav%C3%A9s.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Tangopaso",
+   "credit": "Self-photographed",
+   "alt": "Lauburu on the cobblestones, rue de la citadelle. Saint-Jean-Pied-de-Port (Pyrénées-Atlantiques, France).",
+   "date": "2018-01-07",
+   "primary": false,
+   "sha256": "75a7e3a99b101274a0e39e8c5a1b827c6c451c0bd9a179abddddaa0c19bba53f"
+  }
+ ]
+}

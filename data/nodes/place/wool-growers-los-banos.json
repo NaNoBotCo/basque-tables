@@ -1,0 +1,86 @@
+{
+ "schema": 1,
+ "id": "wool-growers-los-banos",
+ "type": "place",
+ "names": {
+  "name": "Wool Growers Restaurant",
+  "sort": "Wool Growers Restaurant (Los Banos)"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "Los Banos, on H Street. Family style, six days, and by its own account more than a hundred years old.",
+  "today": "Private dining rooms, wine, and a book-by-email reservation. Same name as the Bakersfield room, a different house.",
+  "note": "The house describes uniforms, artwork and family-style service; it does not publish its hours day by day."
+ },
+ "address": {
+  "street": "609 H Street",
+  "city": "Los Banos",
+  "state": "CA",
+  "zip": "93635",
+  "phone": "(209) 826-4593",
+  "url": "https://woolgrowerslosbanos.com/",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "taken",
+  "note": "Family style, with private rooms for a party that wants one. Book by email.",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "wool-growers-bakersfield",
+   "how": "shares the name and the trade it is named for, 230 miles south"
+  },
+  {
+   "id": "the-long-table",
+   "how": "family style, by the house's own word"
+  },
+  {
+   "id": "california",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "woolgrowers-losbanos-site",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "circa": true,
+  "note": "the house says more than 100 years; it does not give a year",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site"
+ },
+ "x_kitchen": {
+  "says": "family-style Basque",
+  "tier": "cited",
+  "source": "woolgrowers-losbanos-site"
+ },
+ "needs_verification": [
+  "which six days — the house says six, and names none",
+  "the founding year",
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "dan-ansotegui",
+ "type": "person",
+ "names": {
+  "name": "Dan Ansotegui",
+  "sort": "Ansotegui, Dan"
+ },
+ "region": [
+  "idaho"
+ ],
+ "text": {
+  "short": "Opened Bar Gernika in 1991, The Basque Market in 1999, and Ansots. Three doors on or beside the Basque Block, from one family that arrived in Idaho in the early 1900s."
+ },
+ "kin": [
+  {
+   "id": "bar-gernika",
+   "how": "his first room"
+  },
+  {
+   "id": "the-basque-market",
+   "how": "his second"
+  },
+  {
+   "id": "ansots",
+   "how": "his chorizo counter"
+  },
+  {
+   "id": "the-basque-block",
+   "how": "three of its doors are his"
+  }
+ ],
+ "sources": [
+  "ansots-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "schema": 1
+}

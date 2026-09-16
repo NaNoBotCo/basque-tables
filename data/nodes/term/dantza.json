@@ -1,0 +1,119 @@
+{
+ "id": "dantza",
+ "type": "term",
+ "names": {
+  "name": "Dantza",
+  "eu": "dantza"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "dantza",
+  "language": "Euskara",
+  "gloss": "dance",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "The dances — aurresku danced to greet someone, ezpata-dantza with swords, fandango at the end of the night."
+ },
+ "kin": [
+  {
+   "id": "txistu",
+   "how": "what it is danced to"
+  },
+  {
+   "id": "jaialdi",
+   "how": "six days of it"
+  },
+  {
+   "id": "idaho",
+   "how": "where American groups keep it"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "dantza/dantza-au-pays-basque-danse.jpg",
+   "source": "commons",
+   "title": "File:Au Pays Basque - danse.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Au_Pays_Basque_-_danse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AAu_Pays_Basque_-_danse.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Marcel Delboy",
+   "credit": "Private postcard collection",
+   "alt": "Au Pays Basque - danse du Fandango",
+   "date": "between 1900 and 1905date QS:P571,+1900-",
+   "primary": true,
+   "sha256": "0d5af94c9df0cda3cb578c13da01f5d77160acd32ad923759103926ac2115b3b"
+  },
+  {
+   "file": "dantza/dantza-basque-dancers.jpg",
+   "source": "commons",
+   "title": "File:Basque dancers.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Basque_dancers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_dancers.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Kezka Dantza Taldea Eibar",
+   "credit": "2006-12-27_Ezpata-dantza_FL_802",
+   "alt": "Basque Dancers",
+   "date": "2006-12-27 12:01",
+   "primary": false,
+   "sha256": "85c06ce28fb6d38543244add06d95150482483987e4845075daf14ccb83f3810"
+  },
+  {
+   "file": "dantza/dantza-basque-dancers-01.jpg",
+   "source": "commons",
+   "title": "File:Basque dancers 01.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Basque_dancers_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_dancers_01.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Kezka",
+   "credit": "Flickr",
+   "alt": "Basque Dancers2007-12-27_Ezpata-dantza_AU108",
+   "date": "2007-01-15",
+   "primary": false,
+   "sha256": "41bbac672c1f8970febff28d0ce16b9aa55724b546ac854e3425e7b68040c991"
+  },
+  {
+   "file": "dantza/dantza-basque-girls-dancing-001.jpg",
+   "source": "commons",
+   "title": "File:Basque girls dancing 001.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Basque_girls_dancing_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ABasque_girls_dancing_001.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Goiena.net",
+   "credit": "https://www.flickr.com/photos/goienanet/5851593527",
+   "alt": "Basque girls dancing.",
+   "date": "2011-06-19 10:30:29",
+   "primary": false,
+   "sha256": "478b9962013cb829547ba1129bb249619660032c71aecdc05aaaae84f7ca7d3f"
+  },
+  {
+   "file": "dantza/dantza-ezpatadantzariak.jpg",
+   "source": "commons",
+   "title": "File:Ezpatadantzariak.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Ezpatadantzariak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AEzpatadantzariak.jpg",
+   "license": "Public domain",
+   "license_url": "https://en.wikipedia.org/wiki/Public_domain",
+   "author": "Aurelio Arteta",
+   "credit": "https://apps.euskadi.eus/emsime/katalogoa/egileak-arteta-aurelio-/izenburua-ezpatadantzariak/objektua-margoa/ciuVerFicha/museo-1/ninv-3064",
+   "alt": "Ezpatadantzariak, Aurelio Artetaren margolana",
+   "date": "1913-01-01",
+   "primary": false,
+   "sha256": "a2d4de6c3c07f598ad1353c531656b2637acba6bfae56793a0c3a08e25cfcea0"
+  }
+ ]
+}

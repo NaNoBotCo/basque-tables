@@ -1,0 +1,65 @@
+{
+ "id": "the-set-dinner",
+ "type": "dish",
+ "names": {
+  "name": "The set dinner"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "Not a menu. A sequence the house serves whatever you ordered — soup, salad, beans, potatoes, a side, a vegetable, bread, fries, dessert.",
+  "table": "The Martin Hotel prints its own, in order: a glass of wine, homemade soup, salad, Basque beans, mashed potatoes, a Basque side dish, a vegetable, home-baked bread, hand-cut fries, Martin bread pudding. The entree you chose is one line in a meal of eleven."
+ },
+ "kin": [
+  {
+   "id": "martin-hotel-winnemucca",
+   "how": "prints the longest version of it"
+  },
+  {
+   "id": "relish-tray",
+   "how": "how it starts"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the seating that goes with it"
+  },
+  {
+   "id": "ostatua",
+   "how": "the institution the sequence came out of"
+  }
+ ],
+ "sources": [
+  "martinhotel-site",
+  "smithsonian-basque"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "sections": [
+  {
+   "heading": "What it does to a dinner for two",
+   "body": "It removes almost every choice, and with it almost every reason to study a menu. Two people order two entrees and then eat the same nine other things as the table. Whether that reads as romantic is not something this directory decides — but it is the fact that decides it.",
+   "tier": "inference",
+   "source": "martinhotel-site"
+  }
+ ],
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "the-set-dinner/the-set-dinner-dinner-menu-for-noriega-hotel-bakersfield.jpg",
+   "source": "commons",
+   "title": "File:Dinner Menu for Noriega Hotel Bakersfield.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Dinner_Menu_for_Noriega_Hotel_Bakersfield.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ADinner_Menu_for_Noriega_Hotel_Bakersfield.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Jjazz76",
+   "credit": "Own work",
+   "alt": "A 2011 dinner menu for Noriega Hotel in Bakersfield, California",
+   "date": "2026-05-10",
+   "primary": true,
+   "sha256": "f2865a0fe88a3a0d357a90a3f8c2c53e55dd65a57fed19fd39789475983ca75d"
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "id": "leku-ona",
+ "type": "place",
+ "names": {
+  "name": "Leku Ona",
+  "eu": "leku ona"
+ },
+ "region": [
+  "idaho",
+  "west"
+ ],
+ "text": {
+  "short": "Boise, the Basque Block, December 2005. A dining room with a hotel over it, two patios, and a bar that runs to midnight.",
+  "today": "Kitchen to 10, bar to midnight, six days. Booking through Resy. Happy hour Tuesday to Saturday, 4 to 6.",
+  "history": "Jose Mari Artiach came from the Basque Country as a sheepherder and opened it in December 2005.",
+  "note": "Leku ona is good place in Euskara — the same two words as Toki Ona in Elko, said another way."
+ },
+ "x_kitchen": {
+  "says": "Basque",
+  "tier": "cited",
+  "source": "lekuona-site"
+ },
+ "address": {
+  "street": "117 South 6th Street",
+  "city": "Boise",
+  "state": "ID",
+  "zip": "83702",
+  "phone": "(208) 345-6665",
+  "url": "https://lekuonaboise.com/",
+  "tier": "cited",
+  "source": "lekuona-site"
+ },
+ "founded": {
+  "year": 2005,
+  "by": "Jose Mari Artiach",
+  "tier": "cited",
+  "source": "lekuona-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "lekuona-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "taken",
+  "note": "Table dining, casual and formal, inside and on two patios. Nothing on the site puts strangers together.",
+  "tier": "cited",
+  "source": "lekuona-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "A drinks menu and a happy hour; the site names neither Picon nor Kalimotxo.",
+  "tier": "cited",
+  "source": "lekuona-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun"
+  ],
+  "text": "Mon–Sat noon–midnight, kitchen closes 10pm",
+  "tier": "cited",
+  "source": "lekuona-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "the-basque-block",
+   "how": "one of the five doors on it"
+  },
+  {
+   "id": "toki-ona-elko",
+   "how": "the same two Euskara words, 400 miles south"
+  },
+  {
+   "id": "jose-mari-artiach",
+   "how": "came as a sheepherder and opened this room"
+  },
+  {
+   "id": "idaho",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "dinner prices",
+  "whether the bar makes a Picon Punch"
+ ],
+ "sources": [
+  "lekuona-site",
+  "euskalkazeta-idaho",
+  "basqueblock-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

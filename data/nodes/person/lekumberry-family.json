@@ -1,0 +1,27 @@
+{
+ "id": "lekumberry-family",
+ "type": "person",
+ "names": {
+  "name": "The Lekumberry family",
+  "sort": "Lekumberry family"
+ },
+ "region": [
+  "nevada"
+ ],
+ "text": {
+  "short": "Bought the J.T. in Gardnerville on 1 April 1960 and have run it since."
+ },
+ "kin": [
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "the room they bought on April Fool's Day"
+  }
+ ],
+ "sources": [
+  "jt-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

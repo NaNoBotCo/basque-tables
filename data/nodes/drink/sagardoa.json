@@ -1,0 +1,45 @@
+{
+ "id": "sagardoa",
+ "type": "drink",
+ "names": {
+  "name": "Sagardoa",
+  "eu": "sagardoa",
+  "es": "sidra"
+ },
+ "region": [
+  "euskal-herria",
+  "nevada"
+ ],
+ "text": {
+  "short": "Dry Basque cider, still, poured thin from a height so it breaks on the glass. Elko imports it.",
+  "note": "In a sagardotegi it comes straight from the barrel when someone calls txotx."
+ },
+ "etymology": {
+  "root": "sagar + ardo",
+  "language": "Euskara",
+  "gloss": "apple wine",
+  "tier": "tradition"
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "pours it, imported, in Elko"
+  },
+  {
+   "id": "sagardotegi",
+   "how": "the room built around it"
+  },
+  {
+   "id": "pintxo-pote",
+   "how": "one of the three drinks in the pairing"
+  }
+ ],
+ "sources": [
+  "ogideli-pintxos",
+  "commons"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

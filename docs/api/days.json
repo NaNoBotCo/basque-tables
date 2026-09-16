@@ -1,0 +1,37 @@
+{
+ "Mon": {
+  "open": 12,
+  "closed": 12,
+  "unpublished": 4
+ },
+ "Tue": {
+  "open": 23,
+  "closed": 1,
+  "unpublished": 4
+ },
+ "Wed": {
+  "open": 23,
+  "closed": 1,
+  "unpublished": 4
+ },
+ "Thu": {
+  "open": 23,
+  "closed": 1,
+  "unpublished": 4
+ },
+ "Fri": {
+  "open": 24,
+  "closed": 0,
+  "unpublished": 4
+ },
+ "Sat": {
+  "open": 22,
+  "closed": 2,
+  "unpublished": 4
+ },
+ "Sun": {
+  "open": 12,
+  "closed": 12,
+  "unpublished": 4
+ }
+}

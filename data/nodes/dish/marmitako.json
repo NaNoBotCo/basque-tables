@@ -1,0 +1,138 @@
+{
+ "id": "marmitako",
+ "type": "dish",
+ "names": {
+  "name": "Marmitako",
+  "eu": "marmitako"
+ },
+ "region": [
+  "euskal-herria"
+ ],
+ "text": {
+  "short": "Tuna, potato, onion, pepper — the pot a Bay of Biscay crew cooked on board, now a festival competition ashore.",
+  "note": "Named for the marmita, the pot. Ondarroa and Algorta run contests for it."
+ },
+ "kin": [
+  {
+   "id": "the-set-dinner",
+   "how": "a one-pot answer to the many-course one"
+  }
+ ],
+ "sources": [
+  "commons"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "needs_verification": [
+  "which room in this directory serves it, from that house's own menu"
+ ],
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "marmitako/marmitako-making-of-marmitako.jpg",
+   "source": "commons",
+   "title": "File:Making of Marmitako.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Making_of_Marmitako.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AMaking_of_Marmitako.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "igorre1969",
+   "credit": "https://www.flickr.com/photos/igorre1969/2881904842/",
+   "alt": "Making of marmitako",
+   "date": "2008-09-14 13:00:29",
+   "primary": true,
+   "sha256": "1bb32c3d23e55a515b27b003fb8c2e90546649e27f32221dafe887039296d288"
+  },
+  {
+   "file": "marmitako/marmitako-marmitako.jpg",
+   "source": "commons",
+   "title": "File:Marmitako.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Marmitako.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AMarmitako.JPG",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+   "author": "Núria Pueyo",
+   "credit": "Own work",
+   "alt": "Tuna pot, Cantabrian and Basque typical dish.",
+   "date": "2006-11-30",
+   "primary": false,
+   "sha256": "a2fca02661b4d052fea9e4fc0802811bbb757e424f842ce89926ff2011590f3f"
+  },
+  {
+   "file": "marmitako/marmitako-marmitako-algorta-001.jpg",
+   "source": "commons",
+   "title": "File:Marmitako algorta 001.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Marmitako_algorta_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AMarmitako_algorta_001.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "www_ukberri_net",
+   "credit": "https://www.flickr.com/photos/www_ukberri_net/2759669559/",
+   "alt": "Marmitako festival in Algorta, Biscay.",
+   "date": "2008-08-12",
+   "primary": false,
+   "sha256": "239812e1e3f0341cf6aa7d1191422653808f28771595089f0977786bc09ea3b8"
+  },
+  {
+   "file": "marmitako/marmitako-ondarroa-marmitako-2024-1.jpg",
+   "source": "commons",
+   "title": "File:Ondarroa Marmitako 2024 1.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Ondarroa_Marmitako_2024_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOndarroa_Marmitako_2024_1.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Txo",
+   "credit": "Own work",
+   "alt": "Momento del concurso de marmitako 2024 en Ondarroa (Bizkaia País Vasco)",
+   "date": "2024-08-16 13:43:14",
+   "primary": false,
+   "sha256": "f4ad32f4faf797b7c5c1127c8dce548145fca33bb0c88e104fd5709d0ade6448"
+  },
+  {
+   "file": "marmitako/marmitako-ondarroa-marmitako-2024-10.jpg",
+   "source": "commons",
+   "title": "File:Ondarroa marmitako 2024 10.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ondarroa_marmitako_2024_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOndarroa_marmitako_2024_10.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Txo",
+   "credit": "Own work",
+   "alt": "Preparación de marmitako, pochando la cebolla.",
+   "date": "2024-08-16 10:55:06",
+   "primary": false,
+   "sha256": "48a37d3e74c425b315fad74500dc130523bcee41de48a43467a1b70382c41e5d"
+  },
+  {
+   "file": "marmitako/marmitako-ondarroa-marmitako-2024-12.jpg",
+   "source": "commons",
+   "title": "File:Ondarroa marmitako 2024 12.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Ondarroa_marmitako_2024_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOndarroa_marmitako_2024_12.jpg",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "author": "Txo",
+   "credit": "Own work",
+   "alt": "Preparación de marmitako, pelando patatas y pochando la cebolla",
+   "date": "2024-08-16 10:43:18",
+   "primary": false,
+   "sha256": "335c52fdb4f221bcd2a1863ba5cba4514ff1835b0529511468a7d37cc18b3770"
+  },
+  {
+   "file": "marmitako/marmitako-ondarruko-marmitako.jpg",
+   "source": "commons",
+   "title": "File:Ondarruko marmitako.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Ondarruko_marmitako.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3AOndarruko_marmitako.JPG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Txo",
+   "credit": "Own work",
+   "alt": "Marmitako de Ondarroa. Ganador en el concurso de marmitako celebrado el 16 de agosto de 2015 en Ondarroa, Bizkaia País Vasco (España). Cocinero Francisco Pérez ayudante José Ignacio Eizagirre.",
+   "date": "2015-08-16",
+   "primary": false,
+   "sha256": "2231923a25cc0a8dd489338f53fcafceb9ce967ce6cd242619d1e5001be061b6"
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "id": "jt-basque-gardnerville",
+ "type": "place",
+ "names": {
+  "name": "J.T. Basque Bar and Dining Room",
+  "sort": "JT Basque Bar and Dining Room"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Gardnerville. A building hauled from Virginia City in 1896; the Lekumberry family since April Fool's Day, 1960.",
+  "today": "Communal long tables, dishes passed down the row. The house calls the Picon Punch a mandatory beginning to a Basque dinner.",
+  "history": "The J.T. in the name is the initials of the owners who put it up in 1955. The Lekumberrys bought it on 1 April 1960. In the 1960s lunch was $1.25 and dinner $1.50."
+ },
+ "x_kitchen": {
+  "says": "Basque, family style, multi-course",
+  "tier": "cited",
+  "source": "jt-site"
+ },
+ "address": {
+  "street": "1426 Highway 395",
+  "city": "Gardnerville",
+  "state": "NV",
+  "zip": "89410",
+  "phone": "(775) 782-2074",
+  "url": "https://www.jtbasquenv.com/",
+  "tier": "cited",
+  "source": "jt-site"
+ },
+ "founded": {
+  "year": 1955,
+  "by": "the owners whose initials are the name; the Lekumberry family since 1960",
+  "note": "The building itself was moved from Virginia City in 1896.",
+  "tier": "cited",
+  "source": "jt-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "jt-site"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "taken",
+  "note": "Communal long tables, dishes passed. The house seats parties of 1 to 100 and asks large ones to call.",
+  "tier": "cited",
+  "source": "jt-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "yes",
+  "amer": "Ferino Distillery, Reno",
+  "note": "The house calls it a mandatory beginning to a Basque dinner and notes it is now Nevada's state drink.",
+  "tier": "cited",
+  "source": "jt-site",
+  "checked": "2026-09-16"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun"
+  ],
+  "text": "Mon–Sat lunch 11:30am–4pm, dinner 4pm–close",
+  "tier": "cited",
+  "source": "jt-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "picon-punch",
+   "how": "the house calls it mandatory"
+  },
+  {
+   "id": "lekumberry-family",
+   "how": "has run this room since 1960"
+  },
+  {
+   "id": "basque-breakfast",
+   "how": "held here twice a year"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the plainest communal table in this directory"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "needs_verification": [
+  "current dinner prices"
+ ],
+ "sources": [
+  "jt-site",
+  "wikipedia-picon-punch",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "jt-basque-gardnerville/jt-basque-gardnerville-downtown-gardnerville-nevada-06-26-2012.jpg",
+   "source": "commons",
+   "title": "File:Downtown Gardnerville, Nevada 06-26-2012.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Downtown_Gardnerville%2C_Nevada_06-26-2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ADowntown_Gardnerville%2C_Nevada_06-26-2012.jpg",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+   "author": "Flickr user Ken Lund",
+   "credit": "https://www.flickr.com/photos/kenlund/7455426250/",
+   "alt": "Downtown Gardnerville, Nevada",
+   "date": "Taken on 26 June 2012, 04:06:46",
+   "primary": true,
+   "sha256": "a1bef94830f231898f090cb104170d1c2d6b9ab38860db19658a90a13010420e"
+  }
+ ]
+}

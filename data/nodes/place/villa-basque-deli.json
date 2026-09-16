@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "id": "villa-basque-deli",
+ "type": "place",
+ "names": {
+  "name": "Villa Basque Café and Deli",
+  "sort": "Villa Basque Cafe and Deli"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Carson City, on a street called Basque Way. Pete and Martha Coscarart's counter, and the home of Pete's chorizo.",
+  "today": "Kitchen six to half past two, Tuesday to Saturday; the chorizo shop stays open to four.",
+  "history": "Pete's Basque chorizo started in Battle Mountain in 1984 and came south with them.",
+  "note": "Two businesses in one door: a café you sit down in, and a sausage counter you leave with a bag from."
+ },
+ "address": {
+  "street": "730 Basque Way",
+  "city": "Carson City",
+  "state": "NV",
+  "zip": "89706",
+  "phone": "(775) 684-4451",
+  "url": "https://villabasquecafe.com/",
+  "tier": "cited",
+  "source": "villabasque-site"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "villabasque-site"
+ },
+ "seating": {
+  "kind": "own",
+  "reservations": "walk-in",
+  "note": "A café room and a shop counter. Breakfast and lunch only.",
+  "tier": "cited",
+  "source": "villabasque-site",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "note": "It closes before a Picon hour.",
+  "tier": "cited",
+  "source": "villabasque-site",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "fifteen miles south, and the full dinner"
+  },
+  {
+   "id": "ansots",
+   "how": "the other chorizo counter in this directory, in Boise"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "sources": [
+  "villabasque-site",
+  "euskalkazeta-nevada"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "year": 1984,
+  "by": "Pete and Martha Coscarart",
+  "note": "the chorizo began in Battle Mountain in 1984",
+  "tier": "cited",
+  "source": "villabasque-site"
+ },
+ "hours": {
+  "open": [
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat"
+  ],
+  "closed": [
+   "Sun",
+   "Mon"
+  ],
+  "text": "Kitchen Tue–Sat 6am–2:30pm · chorizo shop Tue–Sat 6am–4pm",
+  "tier": "cited",
+  "source": "villabasque-site",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque deli and café — home of Pete's chorizo",
+  "tier": "cited",
+  "source": "villabasque-site"
+ },
+ "needs_verification": [
+  "prices",
+  "Pete and Martha's years at this address"
+ ]
+}

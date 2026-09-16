@@ -1,0 +1,111 @@
+{
+ "schema": 1,
+ "id": "toki-ona-elko",
+ "type": "place",
+ "names": {
+  "name": "Toki Ona",
+  "eu": "toki ona",
+  "said": "TOH-kee OH-nah"
+ },
+ "region": [
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "Elko, on Idaho Street, since 1990. Family-run, family style, and open from six in the morning to half past nine at night, seven days.",
+  "today": "The longest opening hours of any room in this directory. Breakfast through dinner, every day.",
+  "table": "Homemade soups, Caesar salads, baked potatoes, served family style.",
+  "note": "Toki ona is good place in Euskara — the same two words as Leku Ona in Boise, said the other way round."
+ },
+ "address": {
+  "street": "1550 Idaho Street",
+  "city": "Elko",
+  "state": "NV",
+  "zip": "89801",
+  "phone": "(775) 738-3214",
+  "url": "https://www.eattokiona.com/",
+  "tier": "cited",
+  "source": "euskalkazeta-nevada"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "harvested",
+  "source": "elkodaily-tokiona"
+ },
+ "seating": {
+  "kind": "shared",
+  "reservations": "walk-in",
+  "note": "Family style, by the local paper's account of the house. A diner room as well as a Basque one.",
+  "tier": "harvested",
+  "source": "elkodaily-tokiona",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "elkodaily-tokiona",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "leku-ona",
+   "how": "the same two Euskara words, 400 miles north"
+  },
+  {
+   "id": "star-hotel-elko",
+   "how": "the 1910 room on Silver Street"
+  },
+  {
+   "id": "ogi-deli-elko",
+   "how": "the third Basque door in Elko"
+  },
+  {
+   "id": "euskara",
+   "how": "the language the name is in"
+  },
+  {
+   "id": "nevada",
+   "how": "the state this room sits in"
+  }
+ ],
+ "sources": [
+  "elkodaily-tokiona",
+  "tokiona-site",
+  "euskalkazeta-nevada",
+  "travelnevada-basque"
+ ],
+ "provenance": "harvested",
+ "confidence": "high",
+ "updated": "2026-09-16",
+ "founded": {
+  "year": 1990,
+  "tier": "harvested",
+  "source": "elkodaily-tokiona"
+ },
+ "hours": {
+  "open": [
+   "Mon",
+   "Tue",
+   "Wed",
+   "Thu",
+   "Fri",
+   "Sat",
+   "Sun"
+  ],
+  "text": "every day 6am–9:30pm",
+  "tier": "harvested",
+  "source": "elkodaily-tokiona",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "family-style Basque",
+  "tier": "harvested",
+  "source": "elkodaily-tokiona"
+ },
+ "needs_verification": [
+  "dinner prices",
+  "the family's name",
+  "whether the bar makes a Picon Punch"
+ ]
+}

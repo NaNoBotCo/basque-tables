@@ -1,0 +1,30 @@
+{
+ "id": "basque-breakfast",
+ "type": "event",
+ "names": {
+  "name": "Basque breakfast"
+ },
+ "region": [
+  "nevada"
+ ],
+ "text": {
+  "short": "Gardnerville, twice a year, $19 a person plus tax."
+ },
+ "kin": [
+  {
+   "id": "jt-basque-gardnerville",
+   "how": "the house that holds it"
+  },
+  {
+   "id": "picon-punch",
+   "how": "what the bar opens with, even at breakfast"
+  }
+ ],
+ "sources": [
+  "jt-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

@@ -1,0 +1,45 @@
+{
+ "id": "mus",
+ "type": "term",
+ "names": {
+  "name": "Mus",
+  "eu": "mus"
+ },
+ "region": [
+  "euskal-herria",
+  "nevada",
+  "west"
+ ],
+ "text": {
+  "short": "The card game. Four players, two pairs, bidding in four rounds, and signals across the table that everyone can see and nobody is supposed to.",
+  "note": "Friday nights in Elko you can watch it or sit in. NABO runs a mus tournament across its clubs."
+ },
+ "etymology": {
+  "root": "mus",
+  "language": "Euskara",
+  "gloss": "the call that opens a new hand",
+  "tier": "tradition"
+ },
+ "kin": [
+  {
+   "id": "ogi-deli-elko",
+   "how": "played there on Fridays"
+  },
+  {
+   "id": "nabo",
+   "how": "runs a tournament of it between clubs"
+  },
+  {
+   "id": "the-long-table",
+   "how": "another thing a shared table is for"
+  }
+ ],
+ "sources": [
+  "ogideli-pintxos",
+  "nabo-members"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "somni",
+ "type": "place",
+ "names": {
+  "name": "Somni"
+ },
+ "region": [
+  "california",
+  "west"
+ ],
+ "text": {
+  "short": "West Hollywood. Twenty courses from Aitor Zabala, who cooked at elBulli. The most expensive table in Los Angeles, and the only three-star one in this directory.",
+  "today": "A counter, a tasting menu, and a drinks pairing you cannot decline. Reported at $645 a head on relaunch and $745 to $785 with the mandatory pairing; pairings run $150 for mocktails, $190 half and half, and $225, $415 or $1,000 for wine.",
+  "note": "Euskal Kazeta files it under Basque and Catalan. It belongs to the same directory as a $5 pintxo in Elko, and the distance between those two numbers is the point of printing both."
+ },
+ "address": {
+  "street": "9045 Nemo Street",
+  "city": "West Hollywood",
+  "state": "CA",
+  "url": "https://somnirestaurant.com/",
+  "tier": "harvested",
+  "source": "euskalkazeta-socal"
+ },
+ "status": {
+  "state": "open",
+  "checked": "2026-09-16",
+  "tier": "cited",
+  "source": "michelin-somni"
+ },
+ "seating": {
+  "kind": "bar",
+  "reservations": "required",
+  "note": "A chef's counter, booked ahead through Resy.",
+  "tier": "harvested",
+  "source": "wikipedia-somni",
+  "checked": "2026-09-16"
+ },
+ "picon": {
+  "served": "unknown",
+  "tier": "harvested",
+  "source": "wikipedia-somni",
+  "checked": "2026-09-16"
+ },
+ "kin": [
+  {
+   "id": "pintxo",
+   "how": "the form, taken as far from a bar counter as it goes"
+  },
+  {
+   "id": "ogi-deli-elko",
+   "how": "the $5 pintxo at the other end of this directory"
+  },
+  {
+   "id": "california",
+   "how": "the state this counter sits in"
+  }
+ ],
+ "sources": [
+  "michelin-somni",
+  "wikipedia-somni",
+  "euskalkazeta-socal"
+ ],
+ "provenance": "harvested",
+ "confidence": "medium",
+ "updated": "2026-09-16",
+ "prices": {
+  "dinner_low": 645.0,
+  "dinner_high": 785.0,
+  "items": [
+   {
+    "item": "Twenty courses, as first reported on relaunch",
+    "usd": 645.0
+   },
+   {
+    "item": "With the mandatory beverage pairing, reported range",
+    "usd": 785.0
+   }
+  ],
+  "includes": "a pairing that cannot be declined; wine pairings above the base run $225, $415 or $1,000",
+  "tier": "harvested",
+  "source": "wikipedia-somni",
+  "checked": "2026-09-16"
+ },
+ "x_kitchen": {
+  "says": "Basque and Catalan",
+  "tier": "harvested",
+  "source": "euskalkazeta-socal"
+ },
+ "recognitions": [
+  {
+   "by": "MICHELIN Guide",
+   "what": "three stars",
+   "source": "michelin-somni"
+  }
+ ],
+ "needs_verification": [
+  "the current star count and the current price, straight from the house rather than from reports",
+  "hours",
+  "the street address from the restaurant itself"
+ ]
+}

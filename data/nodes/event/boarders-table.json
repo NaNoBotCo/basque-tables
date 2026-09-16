@@ -1,0 +1,35 @@
+{
+ "id": "boarders-table",
+ "type": "event",
+ "names": {
+  "name": "The Boarder's Table"
+ },
+ "region": [
+  "california"
+ ],
+ "text": {
+  "short": "Chino, the last Saturday of the month, 12:30. One sitting, everyone at it.",
+  "today": "Centro Basco sets it the way the building fed the men who lived upstairs."
+ },
+ "kin": [
+  {
+   "id": "centro-basco-chino",
+   "how": "the house that keeps it"
+  },
+  {
+   "id": "the-long-table",
+   "how": "the clearest surviving instance of it"
+  },
+  {
+   "id": "ostatua",
+   "how": "what it is a re-enactment of, monthly"
+  }
+ ],
+ "sources": [
+  "centrobasco-site"
+ ],
+ "provenance": "cited",
+ "confidence": "high",
+ "schema": 1,
+ "updated": "2026-09-16"
+}

@@ -1,0 +1,81 @@
+{
+ "items": [
+  {
+   "place": "ogi-deli-elko",
+   "item": "Pintxo-pote — a pintxo and a pint, a glass of house wine, or a glass of sagardoa",
+   "usd": 5.0
+  },
+  {
+   "place": "ansots",
+   "item": "Small hot plates, from",
+   "usd": 9.0
+  },
+  {
+   "place": "ansots",
+   "item": "Traditional chorizos, a pound",
+   "usd": 10.0
+  },
+  {
+   "place": "ansots",
+   "item": "Croquetas, a dozen, uncooked",
+   "usd": 11.0
+  },
+  {
+   "place": "ansots",
+   "item": "Small hot plates, to",
+   "usd": 20.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Fried chicken",
+   "usd": 22.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Scampi",
+   "usd": 24.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Vegetarian penne",
+   "usd": 28.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Oxtail stew",
+   "usd": 30.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Lamb chops",
+   "usd": 32.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Shrimp a la planxa",
+   "usd": 34.0
+  },
+  {
+   "place": "wool-growers-bakersfield",
+   "item": "Filet mignon",
+   "usd": 46.0
+  },
+  {
+   "place": "somni",
+   "item": "Twenty courses, as first reported on relaunch",
+   "usd": 645.0
+  },
+  {
+   "place": "somni",
+   "item": "With the mandatory beverage pairing, reported range",
+   "usd": 785.0
+  }
+ ],
+ "rooms_with_a_price": 3,
+ "rooms_without": 25,
+ "median_item": 28.0,
+ "low": 5.0,
+ "high": 785.0,
+ "dinner_for_two_low": 9.0,
+ "dinner_for_two_high": 785.0
+}

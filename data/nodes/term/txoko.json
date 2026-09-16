@@ -1,0 +1,86 @@
+{
+ "id": "txoko",
+ "type": "term",
+ "names": {
+  "name": "Txoko",
+  "eu": "txoko",
+  "said": "CHO-ko"
+ },
+ "region": [
+  "euskal-herria",
+  "west"
+ ],
+ "etymology": {
+  "root": "txoko",
+  "language": "Euskara",
+  "gloss": "corner, nook",
+  "tier": "tradition"
+ },
+ "text": {
+  "short": "A members' cooking society — a kitchen a group keeps and cooks in for itself."
+ },
+ "kin": [
+  {
+   "id": "zazpi-basque-cultural-center",
+   "how": "the closest thing in this directory: a club that opened its kitchen"
+  },
+  {
+   "id": "etxe",
+   "how": "the other word for a Basque room"
+  }
+ ],
+ "sources": [
+  "nabo-members"
+ ],
+ "provenance": "tradition",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "txoko/txoko-sagardo.jpg",
+   "source": "commons",
+   "title": "File:Sagardo.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sagardo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASagardo.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Asp.",
+   "credit": "Own work",
+   "alt": "Service du cidre en Sagardotegi, Oiartzun.",
+   "date": "2010-03-13 15:20:39",
+   "primary": true,
+   "sha256": "9c2ae523083d9a10e999f1aa039536fca8963ebd1dc953ea107e24d69858c59e"
+  },
+  {
+   "file": "txoko/txoko-sagardotegi-baten-barnealdea.jpg",
+   "source": "commons",
+   "title": "File:Sagardotegi baten barnealdea.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sagardotegi_baten_barnealdea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASagardotegi_baten_barnealdea.jpg",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0/",
+   "author": "https://www.flickr.com/people/jonnyhunter/",
+   "credit": "https://www.flickr.com/photos/jonnyhunter/378226897/sizes/o/in/set-72157594515371379/",
+   "alt": "Sagardotegi baten barnealdea.",
+   "date": "2007-02-03",
+   "primary": false,
+   "sha256": "33ea81ad00a9bf6912dd3fd74e06cdb1967002e85d34ecbb1f726d92e61cd32d"
+  },
+  {
+   "file": "txoko/txoko-sidreria-2.jpg",
+   "source": "commons",
+   "title": "File:Sidreria 2.JPG",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Sidreria_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ASidreria_2.JPG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Kippelboy",
+   "credit": "Own work",
+   "alt": "Sidreria",
+   "date": "2012-04-21 00:04:51",
+   "primary": false,
+   "sha256": "0377ee6c860dacb770e7108f84d537f1b021dbee3a93597567e0d59a2ddbcc68"
+  }
+ ]
+}

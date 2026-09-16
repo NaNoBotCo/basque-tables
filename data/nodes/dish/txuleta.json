@@ -1,0 +1,41 @@
+{
+ "id": "txuleta",
+ "type": "dish",
+ "names": {
+  "name": "Txuleta",
+  "eu": "txuleta"
+ },
+ "region": [
+  "west"
+ ],
+ "text": {
+  "short": "A thick bone-in beef chop over wood. The dish the Cincinnati room is built around.",
+  "note": "No Western room in this directory lists it. It came with the newer restaurants, from the asadors of Gipuzkoa and Bizkaia rather than from the sheep camps."
+ },
+ "kin": [],
+ "sources": [
+  "basqueblock-site",
+  "lekuona-site"
+ ],
+ "provenance": "cited",
+ "confidence": "medium",
+ "schema": 1,
+ "updated": "2026-09-16",
+ "images": [
+  {
+   "file": "txuleta/txuleta-txuletak.jpg",
+   "source": "commons",
+   "title": "File:Txuletak.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Txuletak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "page_url": "https://commons.wikimedia.org/wiki/File%3ATxuletak.jpg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "author": "Txapisotegi",
+   "credit": "Own work",
+   "alt": "Txuletak sagardotegi batetan",
+   "date": "31 July 2019 (according to Exif data)",
+   "primary": true,
+   "sha256": "6814935c5b1b251996f68543de3bab25092b2b9b3b9023fe4431b2a01e893007"
+  }
+ ]
+}
