@@ -184,6 +184,9 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 .say-use{font-size:.92rem;color:var(--ink2);margin-top:.35rem!important}
 .say-more{margin-top:.6rem!important;font:0.88rem var(--ui)}
 .say-more a{color:var(--ink3)}
+.bqs{display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.1rem;margin:1rem 0 2rem}
+.bqs .bq{margin:0;max-width:none}
+.bqs .bq-eu{font-size:1.45rem}
 .phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 2rem}
 .phrase{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.05rem;
  box-shadow:var(--shadow);transition:transform .18s ease}
@@ -192,6 +195,45 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 td.eu,th.eu{font-family:var(--display);font-size:1.05rem}
 .rules{max-width:44rem;color:var(--ink2)}
 .rules li{margin:.4rem 0}
+/* ---- picture band and wall ---- */
+.band{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(10.5rem,1fr);gap:.55rem;
+ margin:1.6rem 0 2rem;overflow-x:auto;padding-bottom:.4rem;scroll-snap-type:x proximity;
+ -webkit-overflow-scrolling:touch}
+.band .tile-link{scroll-snap-align:start}
+.band img{height:10.5rem}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.6rem;margin:1.4rem 0 1.8rem}
+.wall img{height:12rem}
+.tile-link{position:relative;display:block;border-radius:12px;overflow:hidden;text-decoration:none;
+ background:var(--lift);box-shadow:var(--shadow);
+ transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s ease}
+.tile-link img{width:100%;object-fit:cover;display:block;
+ transition:transform .55s cubic-bezier(.2,.7,.3,1),filter .35s ease}
+.tile-link:hover{transform:translateY(-4px);box-shadow:0 3px 0 rgba(0,0,0,.05),0 22px 40px -20px rgba(0,0,0,.55)}
+.tile-link:hover img{transform:scale(1.07)}
+.tile-cap{position:absolute;inset:auto 0 0 0;padding:1.6rem .7rem .55rem;
+ background:linear-gradient(transparent,rgba(12,10,8,.86));
+ opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease}
+.tile-link:hover .tile-cap,.tile-link:focus-visible .tile-cap{opacity:1;transform:none}
+.tile-cap b{display:block;color:#f4efe6;font-family:var(--display);font-weight:normal;font-size:.98rem;
+ line-height:1.2;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.tile-cap em{display:block;font:600 .64rem/1.7 var(--sign);letter-spacing:.14em;text-transform:uppercase;
+ color:#cdbfae;font-style:normal}
+
+/* ---- basquisms ---- */
+.bq{position:relative;background:var(--lift);border:1px solid var(--rule);border-radius:14px;
+ padding:1.15rem 1.35rem 1.25rem;margin:2rem 0;max-width:36rem;box-shadow:var(--shadow);overflow:hidden}
+.bq::after{content:"";position:absolute;right:-30px;top:-30px;width:130px;height:130px;border-radius:50%;
+ background:radial-gradient(circle,color-mix(in oklab,var(--accent2) 24%,transparent),transparent 70%)}
+.bq.bq-saying::after{background:radial-gradient(circle,color-mix(in oklab,var(--c4) 26%,transparent),transparent 70%)}
+.bq p{margin:0;max-width:none;position:relative}
+.bq-eu{font-family:var(--display);font-size:1.7rem;line-height:1.15;margin:.3rem 0 .15rem!important;color:var(--ink)}
+.bq-say{font:600 .9rem/1.5 var(--ui);color:var(--accent2);letter-spacing:.02em}
+.bq.bq-saying .bq-say{color:var(--c4)}
+.bq-lit{font-style:italic;color:var(--ink3);font-size:.95rem;margin-top:.4rem!important}
+.bq-en{color:var(--ink);margin-top:.45rem!important;line-height:1.55}
+.bq-wink{color:var(--ink2);font-size:.95rem;margin-top:.5rem!important;
+ border-top:1px dashed var(--rule);padding-top:.5rem}
+
 .note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
 .gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
 .kin{list-style:none;padding:0;margin:.6rem 0}
@@ -206,7 +248,34 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
  border-radius:8px;background:var(--lift);color:var(--ink);min-width:14rem}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:1rem;top:.5rem;position:fixed;background:var(--lift);padding:.6rem 1rem;border-radius:8px;z-index:99}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* ---- motion ----
+   Transform and opacity only, never layout, and never over a number — a count that
+   animates is a count you cannot read. Everything is visible without JavaScript:
+   the hidden state is only applied once the document marks itself .js. */
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;
+ transition:opacity .55s ease,transform .6s cubic-bezier(.2,.7,.3,1);
+ transition-delay:calc(var(--i,0) * 45ms)}
+.hero{animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(12px) scale(.995)}to{opacity:1;transform:none}}
+header.top{transition:box-shadow .3s ease}
+header.top.stuck{box-shadow:0 10px 30px -22px rgba(0,0,0,.8)}
+nav.top-nav a{position:relative}
+nav.top-nav a::after{content:"";position:absolute;left:.15rem;right:.15rem;bottom:-2px;height:2px;
+ background:var(--accent);transform:scaleX(0);transform-origin:left;
+ transition:transform .28s cubic-bezier(.2,.7,.3,1)}
+nav.top-nav a:hover::after,nav.top-nav a:focus-visible::after{transform:scaleX(1)}
+.chip{will-change:transform}
+.chip:active{transform:scale(.96)}
+.featured::before{transform:scaleY(0);transform-origin:top;transition:transform .8s cubic-bezier(.2,.7,.3,1) .15s}
+.js .featured.in::before{transform:scaleY(1)}
+.big{transition:none}
+a:focus-visible,button:focus-visible,.tile-link:focus-visible{outline:2px solid var(--accent);
+ outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){
+ *{transition:none!important;animation:none!important}
+ .js .reveal,.js .featured::before{opacity:1!important;transform:none!important}
+}
 @media print{header.top{position:static}.chip{display:none}}
 """
 
@@ -277,7 +346,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
  <p>Built by %s · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
  <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
 </div></footer>
-<script>(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
+<script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6%% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var t=function(){h.classList.toggle('stuck',window.scrollY>8);};addEventListener('scroll',t,{passive:true});t();})();(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
 </body></html>""" % (head_lang, C.esc(title), C.esc(desc or title), full, C.esc(title), C.esc(desc or title),
                       full, card, C.esc(title), card, C.SITE_NAME,
                       C.SITE_URL.rstrip("/") + path, C.SITE_URL.rstrip("/") + "/eu" + path,

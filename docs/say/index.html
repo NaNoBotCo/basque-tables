@@ -187,6 +187,9 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 .say-use{font-size:.92rem;color:var(--ink2);margin-top:.35rem!important}
 .say-more{margin-top:.6rem!important;font:0.88rem var(--ui)}
 .say-more a{color:var(--ink3)}
+.bqs{display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.1rem;margin:1rem 0 2rem}
+.bqs .bq{margin:0;max-width:none}
+.bqs .bq-eu{font-size:1.45rem}
 .phrases{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0 2rem}
 .phrase{background:var(--lift);border:1px solid var(--rule);border-radius:12px;padding:.9rem 1.05rem;
  box-shadow:var(--shadow);transition:transform .18s ease}
@@ -195,6 +198,45 @@ figcaption .cred{color:var(--ink3);font-size:.82rem}
 td.eu,th.eu{font-family:var(--display);font-size:1.05rem}
 .rules{max-width:44rem;color:var(--ink2)}
 .rules li{margin:.4rem 0}
+/* ---- picture band and wall ---- */
+.band{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(10.5rem,1fr);gap:.55rem;
+ margin:1.6rem 0 2rem;overflow-x:auto;padding-bottom:.4rem;scroll-snap-type:x proximity;
+ -webkit-overflow-scrolling:touch}
+.band .tile-link{scroll-snap-align:start}
+.band img{height:10.5rem}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.6rem;margin:1.4rem 0 1.8rem}
+.wall img{height:12rem}
+.tile-link{position:relative;display:block;border-radius:12px;overflow:hidden;text-decoration:none;
+ background:var(--lift);box-shadow:var(--shadow);
+ transition:transform .3s cubic-bezier(.2,.7,.3,1),box-shadow .3s ease}
+.tile-link img{width:100%;object-fit:cover;display:block;
+ transition:transform .55s cubic-bezier(.2,.7,.3,1),filter .35s ease}
+.tile-link:hover{transform:translateY(-4px);box-shadow:0 3px 0 rgba(0,0,0,.05),0 22px 40px -20px rgba(0,0,0,.55)}
+.tile-link:hover img{transform:scale(1.07)}
+.tile-cap{position:absolute;inset:auto 0 0 0;padding:1.6rem .7rem .55rem;
+ background:linear-gradient(transparent,rgba(12,10,8,.86));
+ opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease}
+.tile-link:hover .tile-cap,.tile-link:focus-visible .tile-cap{opacity:1;transform:none}
+.tile-cap b{display:block;color:#f4efe6;font-family:var(--display);font-weight:normal;font-size:.98rem;
+ line-height:1.2;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+.tile-cap em{display:block;font:600 .64rem/1.7 var(--sign);letter-spacing:.14em;text-transform:uppercase;
+ color:#cdbfae;font-style:normal}
+
+/* ---- basquisms ---- */
+.bq{position:relative;background:var(--lift);border:1px solid var(--rule);border-radius:14px;
+ padding:1.15rem 1.35rem 1.25rem;margin:2rem 0;max-width:36rem;box-shadow:var(--shadow);overflow:hidden}
+.bq::after{content:"";position:absolute;right:-30px;top:-30px;width:130px;height:130px;border-radius:50%;
+ background:radial-gradient(circle,color-mix(in oklab,var(--accent2) 24%,transparent),transparent 70%)}
+.bq.bq-saying::after{background:radial-gradient(circle,color-mix(in oklab,var(--c4) 26%,transparent),transparent 70%)}
+.bq p{margin:0;max-width:none;position:relative}
+.bq-eu{font-family:var(--display);font-size:1.7rem;line-height:1.15;margin:.3rem 0 .15rem!important;color:var(--ink)}
+.bq-say{font:600 .9rem/1.5 var(--ui);color:var(--accent2);letter-spacing:.02em}
+.bq.bq-saying .bq-say{color:var(--c4)}
+.bq-lit{font-style:italic;color:var(--ink3);font-size:.95rem;margin-top:.4rem!important}
+.bq-en{color:var(--ink);margin-top:.45rem!important;line-height:1.55}
+.bq-wink{color:var(--ink2);font-size:.95rem;margin-top:.5rem!important;
+ border-top:1px dashed var(--rule);padding-top:.5rem}
+
 .note{border-left:3px solid var(--rule);padding:.2rem 0 .2rem 1rem;color:var(--ink2);margin:1.4rem 0}
 .gap{border:1.5px dashed var(--rule);border-radius:10px;padding:.9rem 1.1rem;color:var(--ink2);margin:1.4rem 0}
 .kin{list-style:none;padding:0;margin:.6rem 0}
@@ -209,7 +251,34 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
  border-radius:8px;background:var(--lift);color:var(--ink);min-width:14rem}
 .skip{position:absolute;left:-9999px}
 .skip:focus{left:1rem;top:.5rem;position:fixed;background:var(--lift);padding:.6rem 1rem;border-radius:8px;z-index:99}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* ---- motion ----
+   Transform and opacity only, never layout, and never over a number — a count that
+   animates is a count you cannot read. Everything is visible without JavaScript:
+   the hidden state is only applied once the document marks itself .js. */
+.js .reveal{opacity:0;transform:translateY(16px)}
+.js .reveal.in{opacity:1;transform:none;
+ transition:opacity .55s ease,transform .6s cubic-bezier(.2,.7,.3,1);
+ transition-delay:calc(var(--i,0) * 45ms)}
+.hero{animation:rise .7s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(12px) scale(.995)}to{opacity:1;transform:none}}
+header.top{transition:box-shadow .3s ease}
+header.top.stuck{box-shadow:0 10px 30px -22px rgba(0,0,0,.8)}
+nav.top-nav a{position:relative}
+nav.top-nav a::after{content:"";position:absolute;left:.15rem;right:.15rem;bottom:-2px;height:2px;
+ background:var(--accent);transform:scaleX(0);transform-origin:left;
+ transition:transform .28s cubic-bezier(.2,.7,.3,1)}
+nav.top-nav a:hover::after,nav.top-nav a:focus-visible::after{transform:scaleX(1)}
+.chip{will-change:transform}
+.chip:active{transform:scale(.96)}
+.featured::before{transform:scaleY(0);transform-origin:top;transition:transform .8s cubic-bezier(.2,.7,.3,1) .15s}
+.js .featured.in::before{transform:scaleY(1)}
+.big{transition:none}
+a:focus-visible,button:focus-visible,.tile-link:focus-visible{outline:2px solid var(--accent);
+ outline-offset:3px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){
+ *{transition:none!important;animation:none!important}
+ .js .reveal,.js .featured::before{opacity:1!important;transform:none!important}
+}
 @media print{header.top{position:static}.chip{display:none}}
 </style>
 </head><body>
@@ -232,6 +301,13 @@ Spanish or French. That makes the spelling look harder than the sound is. Six le
 <p class="lede">Enough to come in, be fed, raise a glass and admit you have run out of Basque.</p>
 <h2>Coming in</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>Kaixo</p><p class='say-how'>KAI-sho</p><p class='say-en'>Hello</p><p class='say-use'>Any hour, anyone.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Egun on</p><p class='say-how'>eh-GOON own</p><p class='say-en'>Good morning</p><p class='say-use'>Until about one.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Arratsalde on</p><p class='say-how'>ah-rrat-SAL-deh own</p><p class='say-en'>Good afternoon</p><p class='say-use'>From lunch until dark.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Gabon</p><p class='say-how'>ga-BONE</p><p class='say-en'>Good evening</p><p class='say-use'>Also goodnight on the way out.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Ongi etorri</p><p class='say-how'>ON-ghee eh-TOH-rri</p><p class='say-en'>Welcome</p><p class='say-use'>What the house says to you, not the other way round. Worth knowing when you hear it.</p></div></div><h2>Manners</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>Mesedez</p><p class='say-how'>meh-seh-DES</p><p class='say-en'>Please</p><p class='say-use'>Goes on the end: beste bat, mesedez.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Eskerrik asko</p><p class='say-how'>es-KEH-rreek AS-ko</p><p class='say-en'>Thank you very much</p><p class='say-use'>The everyday thanks.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Mila esker</p><p class='say-how'>MEE-la es-KEHR</p><p class='say-en'>A thousand thanks</p><p class='say-use'>Warmer. For someone who has gone to trouble.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Ez horregatik</p><p class='say-how'>es oh-rreh-GA-teek</p><p class='say-en'>You're welcome</p><p class='say-use'>Literally: not for that.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Barkatu</p><p class='say-how'>bar-KA-too</p><p class='say-en'>Sorry, or excuse me</p><p class='say-use'>Getting past someone, or getting attention.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Bai / Ez</p><p class='say-how'>bye / es</p><p class='say-en'>Yes / no</p><p class='say-use'>Bai sounds exactly like the English bye.</p></div></div><h2>At the table</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>On egin!</p><p class='say-how'>own EH-gheen</p><p class='say-en'>Enjoy your meal</p><p class='say-use'>Said to anyone already eating as you pass their table. Literally: may it do good.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Oso goxoa</p><p class='say-how'>OH-so go-SHO-ah</p><p class='say-en'>Very good indeed</p><p class='say-use'>About food. The one compliment worth having ready.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Beste bat, mesedez</p><p class='say-how'>BES-teh bat meh-seh-DES</p><p class='say-en'>Another one, please</p><p class='say-use'>Works for the drink and the bread.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Kontua, mesedez</p><p class='say-how'>kon-TOO-ah meh-seh-DES</p><p class='say-en'>The bill, please</p></div><div class='phrase'><p class='say-eu' lang='eu'>Zenbat da?</p><p class='say-how'>SEN-bat da</p><p class='say-en'>How much is it?</p></div><div class='phrase'><p class='say-eu' lang='eu'>Jan eta edan</p><p class='say-how'>yan EH-ta EH-dan</p><p class='say-en'>Eat and drink</p><p class='say-use'>What the whole institution is for.</p></div></div><h2>At the bar</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>Topa!</p><p class='say-how'>TOH-pah</p><p class='say-en'>Cheers!</p><p class='say-use'>Glasses up. The one to have ready when the Picon lands.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Osasuna!</p><p class='say-how'>oh-sa-SOO-nah</p><p class='say-en'>To your health!</p><p class='say-use'>Also the name of the Pamplona football club, which is why people grin.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Gora!</p><p class='say-how'>GO-rah</p><p class='say-en'>Up with —!</p><p class='say-use'>Gora zu! — up with you. A toast, a cheer, a shout.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Zorionak</p><p class='say-how'>so-ree-OH-nak</p><p class='say-en'>Congratulations, or happy birthday</p></div><div class='phrase'><p class='say-eu' lang='eu'>Aupa!</p><p class='say-how'>OW-pah</p><p class='say-en'>Hey! Come on!</p><p class='say-use'>Greeting a friend across a room, or urging on a team.</p></div></div><h2>Coming clean</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>Ez dakit euskaraz</p><p class='say-how'>es DA-keet eus-KA-ras</p><p class='say-en'>I don't speak Basque</p><p class='say-use'>Said after the first four phrases have raised expectations.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Euskaraz badakizu?</p><p class='say-how'>eus-KA-ras ba-da-KEE-soo</p><p class='say-en'>Do you speak Basque?</p><p class='say-use'>In an American Basque room the answer is often no, and asking is still welcome.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Berriz, mesedez</p><p class='say-how'>BEH-rrees meh-seh-DES</p><p class='say-en'>Again, please</p><p class='say-use'>Ask twice. Nobody minds.</p></div></div><h2>Worth keeping</h2><div class='phrases'><div class='phrase'><p class='say-eu' lang='eu'>Adiskide onekin orduak labur</p><p class='say-how'>a-dees-KEE-deh oh-NEH-keen or-DOO-ak la-BOOR</p><p class='say-en'>With a good friend the hours are short</p><p class='say-use'>Carved into a bench on the Basque Block in Boise, in Euskara and English, and photographed on that page here. A diner at Louis' Basque Corner wrote it down in 2015 as well, translating it “time flies when you are among friends”.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Zazpiak bat</p><p class='say-how'>SAS-pee-ak bat</p><p class='say-en'>The seven are one</p><p class='say-use'>Seven provinces. On club walls from Reno to Vancouver.</p></div><div class='phrase'><p class='say-eu' lang='eu'>Maite zaitut</p><p class='say-how'>MAI-teh ZAI-toot</p><p class='say-en'>I love you</p><p class='say-use'>Across a long table with strangers on both sides of you, which is how these rooms were built.</p></div></div>
 <hr>
+<p class="eyebrow">Basquisms</p>
+<h2 style="margin-top:.2rem">Words English has not got</h2>
+<p class="lede">Nine of them, and not one is a food word by accident.</p>
+<div class="bqs"><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">hamaiketako</p><p class="bq-say">ah-mai-ke-TA-ko</p><p class="bq-lit">literally: the eleven-o'clock</p><p class="bq-en">A second breakfast with a proper name. Around eleven, work stops: a sandwich, often chorizo, and a glass of wine. Not a snack. An institution.</p><p class="bq-wink">English gets &quot;elevenses&quot; and a biscuit. Euskara gets a sandwich and a drink.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">kuadrilla</p><p class="bq-say">kwa-DREE-ya</p><p class="bq-lit">literally: the squad</p><p class="bq-en">The group of friends you fell in with at fifteen and are still seeing every week at sixty. You do not join one and you do not leave one.</p><p class="bq-wink">The reason a Basque bar at seven o'clock is full of people who already know what everyone is having.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">poteo</p><p class="bq-say">po-TEH-o</p><p class="bq-lit">literally: the potting</p><p class="bq-en">Going bar to bar, one small drink and one bite at each, standing, moving on. The pace is the point — you are not settling in anywhere.</p><p class="bq-wink">A pub crawl minus the crawling. Nobody gets drunk; everybody gets around.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">txikiteo</p><p class="bq-say">chi-ki-TEH-o</p><p class="bq-lit">literally: the little-one-ing</p><p class="bq-en">The same round, done on txikitos — small glasses of wine. Older, and more likely to be your grandfather's word for it.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">txotx</p><p class="bq-say">choch</p><p class="bq-lit">literally: the stick</p><p class="bq-en">The call in a cider house when a barrel is opened. Everyone drops what they are doing, walks over with a glass and catches the stream sideways.</p><p class="bq-wink">One word, and forty people stand up.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">bertsolari</p><p class="bq-say">behr-tso-LA-ree</p><p class="bq-lit">literally: verse-maker</p><p class="bq-en">Someone who improvises sung verse on a given topic, to a given metre, in front of thousands, in competition, with no notes.</p><p class="bq-wink">Rap battle, invented early, still sold out.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">herri kirolak</p><p class="bq-say">EH-rri ki-RO-lak</p><p class="bq-lit">literally: village sports</p><p class="bq-en">Stone-lifting, log-chopping, ox-dragging, bale-tossing, scythe-racing. Farm work, timed, with a crowd.</p><p class="bq-wink">Every one of them is a job someone used to do before lunch.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">lagun</p><p class="bq-say">LA-goon</p><p class="bq-lit">literally: friend, and also companion</p><p class="bq-en">It does the work of friend, mate, and the person you are with. A table for two is bi lagunentzat — for two laguns.</p><p class="bq-wink">Which is why this site's Basque button says bi lagunentzako mahaia and not anything about romance.</p></aside><aside class="bq"><p class="eyebrow">A word we have not got</p><p class="bq-eu" lang="eu">amatxi / amona</p><p class="bq-say">a-MA-chee / a-MO-na</p><p class="bq-lit">literally: grandmother, north / grandmother, south</p><p class="bq-en">Same woman, two sides of a border. Amatxi in Iparralde, the French side; amona in Hegoalde, the Spanish side.</p><p class="bq-wink">Which one a Bakersfield family uses tells you which valley they left.</p></aside></div>
+<h2>And things they say</h2>
+<div class="bqs"><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Adiskide onekin, orduak labur</p><p class="bq-say">a-dees-KEE-deh oh-NEH-keen, or-DOO-ak la-BOOR</p><p class="bq-lit">word for word: With a good friend, the hours short</p><p class="bq-en">Time goes when the company is right.</p><p class="bq-wink">Carved on a bench on the Basque Block in Boise, and written down by a diner at Louis' in Reno in 2015.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Nolako egurra, halako ezpala</p><p class="bq-say">no-LA-ko eh-GOO-rra, ha-LA-ko es-PA-la</p><p class="bq-lit">word for word: Such wood, such splinter</p><p class="bq-en">The chip off the old block.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Otsoa non aipa, han gerta</p><p class="bq-say">oh-TSO-ah non AI-pa, han GEHR-ta</p><p class="bq-lit">word for word: Where you name the wolf, there it turns up</p><p class="bq-en">Speak of the devil.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Txakur zaunkaria, ez da hozkaria</p><p class="bq-say">cha-KOOR saun-ka-REE-ah, es da hos-ka-REE-ah</p><p class="bq-lit">word for word: A barking dog is not a biting one</p><p class="bq-en">The loud one is not the dangerous one.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Hobe da bakarrik egon, gaizki lagunduta baino</p><p class="bq-say">HO-beh da ba-ka-RREEK EH-gon, GAIS-kee la-goon-DOO-ta BAI-no</p><p class="bq-lit">word for word: Better to be alone than badly accompanied</p><p class="bq-en">Better on your own than in poor company.</p><p class="bq-wink">Which a house that seats you with strangers is quietly betting against.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Goseak dagoenak, ogia amets</p><p class="bq-say">go-SEH-ak da-GO-eh-nak, oh-GHEE-ah ah-METS</p><p class="bq-lit">word for word: The one who is hungry dreams bread</p><p class="bq-en">You want what you are short of.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Zahar hitzak, zuhur hitzak</p><p class="bq-say">SA-har HEE-tsak, SOO-hoor HEE-tsak</p><p class="bq-lit">word for word: Old words, wise words</p><p class="bq-en">The sayings are old because they were right.</p></aside><aside class="bq bq-saying"><p class="eyebrow">They say</p><p class="bq-eu" lang="eu">Izena duen guztia, omen da</p><p class="bq-say">ee-SEH-na DOO-en GOOS-tee-ah, OH-men da</p><p class="bq-lit">word for word: Everything that has a name, they say exists</p><p class="bq-en">If there is a word for it, the thing is out there.</p><p class="bq-wink">Said about the old spirits, and quoted about everything since.</p></aside></div>
+<hr>
 <h2>Glossary</h2>
 <p>Every word with a record of its own on this site.</p>
 <div class="tbl-scroll"><table>
@@ -248,5 +324,5 @@ English sits beside the Basque for exactly that reason.</div>
  <p>Built by NaN · records CC BY 4.0 · <a href="/basque-tables/gaps/">what is missing</a> ·
  <a href="/basque-tables/llms.txt">llms.txt</a> · <a href="/basque-tables/api/places.json">places.json</a> · <a href="/basque-tables/sitemap.xml">sitemap</a></p>
 </div></footer>
-<script>(function(){var B="/basque-tables";document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
+<script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var t=function(){h.classList.toggle('stuck',window.scrollY>8);};addEventListener('scroll',t,{passive:true});t();})();(function(){var B="/basque-tables";document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
 </body></html>

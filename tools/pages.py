@@ -249,6 +249,7 @@ def front(nodes, d, shell, write):
 <p><a class="chip" href="/two/" aria-pressed="false">%s</a>
 <a class="chip" href="/story/the-long-table/" aria-pressed="false">%s</a>
 <a class="chip" href="/region/idaho/" aria-pressed="false">%s</a></p>
+%s
 <div class="stat">
  <div><span>%s</span><b class="big">%d</b></div>
  <div><span>%s</span><b class="big">%d</b></div>
@@ -259,23 +260,33 @@ def front(nodes, d, shell, write):
 <hr>
 %s
 %s
+%s
 <hr>
 <div class="dir">%s</div>
 <hr>
 %s
 <figcaption>%s</figcaption>
+<hr>
+<h2>%s</h2>
+%s
+<p><a class="chip" href="/pictures/">All %d pictures &rarr;</a>
+<a class="chip" href="/say/">Say it out loud &rarr;</a></p>
 """ % (C.esc(t_("a_directory")), C.esc(t_("front_h1")), C.esc(t_("front_lede")), lang_note,
        C.esc(t_("find_two")), C.esc(t_("why_long")), C.esc(t_("the_block")),
+       wall(picture_pool(nodes, 14), "band"),
        C.esc(t_("stat_rooms")), by["place"],
        C.esc(t_("stat_own")), seat.get("own", 0) + seat.get("both", 0),
        C.esc(t_("stat_long")), seat.get("shared", 0),
        C.esc(t_("stat_picon")), picon.get("yes", 0),
        C.esc(t_("front_note") % (seat.get("unknown", 0), by["place"])),
        say_block(phrase_named("Ongi etorri")),
+       basquism_block(basquism_named("kuadrilla")),
        featured(nodes, d),
        "".join([col("region"), col("place", 8), col("story"), col("dish", 6),
                 col("drink"), col("term", 6), col("person"), col("event"), col("org")]),
-       viz.scatter_map(d["places"], d["towns"]), C.esc(t_("map_caption")))
+       viz.scatter_map(d["places"], d["towns"]), C.esc(t_("map_caption")),
+       C.esc(t_("pictures")), wall(picture_pool(nodes, 24)),
+       sum(len(x.get("images") or []) for x in nodes.values()))
     write("/", shell(t_("site_title"), body,
                      "A sourced directory of Basque dining rooms in California, Nevada and Idaho: seating, prices, "
                      "hours and the Picon Punch, with every field naming where it came from.", "/",
@@ -302,7 +313,7 @@ def places_page(nodes, d, shell, write):
                       r["founded"] or '<span style="color:var(--ink3)">—</span>'))
     body = """
 <p class="eyebrow">%s</p><h1>%s</h1>
-<p class="lede">%d.</p>
+<p class="lede">%d of them, by state, which is how they cluster.</p>
 <div class="tbl-scroll"><table>
 <thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>Picon</th><th>%s</th><th>%s</th></tr></thead>
 <tbody>%s</tbody></table></div>
@@ -412,8 +423,8 @@ def two_page(nodes, d, shell, write):
     body = """
 <p class="eyebrow">A table for two</p>
 <h1>A table for two</h1>
-<p class="lede">Basque dining rooms in the West were boarding houses, and a boarding house seats
-everybody at one table. Some still do. Pick what you want and the list answers from the records.</p>
+<p class="lede">A Basque dining room out here started as a boarding house, and a boarding house
+seats everybody at one table. Nine still do. Say what you are after and the records answer.</p>
 <div class="chips">
  <button class="chip" data-filter="state" data-value="CA" aria-pressed="false">California</button>
  <button class="chip" data-filter="state" data-value="NV" aria-pressed="false">Nevada</button>
@@ -583,6 +594,7 @@ def node_page(n, nodes, d, shell, write):
 
     body.append(callout(n))
     body.append(kin_cards(n, nodes, d))
+    body.append(basquism_block(basquism_for(n)))
 
     if n.get("needs_verification"):
         body.append('<div class="gap"><b>%s</b><ul>%s</ul></div>'
@@ -673,7 +685,7 @@ def type_index(kind, nodes, d, shell, write):
     label = t_({"dish": "dishes", "drink": "drinks", "term": "words", "person": "people",
                 "org": "orgs", "event": "events", "story": "stories",
                 "region": "regions"}.get(kind, "rooms")) if LANG == "eu" else types[kind]["label"]
-    body = ('<p class="eyebrow">%s</p><h1>%s</h1><p class="lede">%s. %d.</p><div class="cols">%s</div>'
+    body = ('<p class="eyebrow">%s</p><h1>%s</h1><p class="lede">%s &mdash; %d of them.</p><div class="cols">%s</div>'
             % (C.esc(label), C.esc(label), C.esc(types[kind]["blurb"]), len(items), "".join(cards)))
     write(TYPE_INDEX[kind], shell("%s — %s" % (label, t_("site_name")), body,
                                   types[kind]["blurb"], TYPE_INDEX[kind]))
@@ -741,8 +753,8 @@ def gaps_page(nodes, d, shell, write):
                  for q in d["open_questions"])
     body = """
 <p class="eyebrow">Gaps</p><h1>What is missing</h1>
-<p class="lede">A directory that hides its holes is a directory you cannot check. Here are ours,
-counted.</p>
+<p class="lede">A directory that hides its holes is one you cannot check. Here are ours, counted,
+with nobody to blame but the phone we have not picked up.</p>
 <div class="tbl-scroll"><table>
 <thead><tr><th>Field</th><th style="text-align:right">Rooms with it</th><th style="text-align:right">Without</th></tr></thead>
 <tbody>%s</tbody></table></div>
@@ -771,7 +783,8 @@ def wander_page(nodes, d, shell, write):
           ).replace("__U__", ids)
     body = """
 <p class="eyebrow">Wander</p><h1>Take a ride</h1>
-<p class="lede">%d records. Press the button, or press <b>r</b> anywhere on the site.</p>
+<p class="lede">%d records and no particular plan. Press the button, or press <b>r</b> anywhere
+on the site and see where you land.</p>
 %s
 <p><button class="chip" id="roll" style="font-size:1.1rem;padding:.8rem 1.4rem">Somewhere &rarr;</button></p>
 <script>%s</script>
@@ -921,8 +934,9 @@ def pictures_page(nodes, d, shell, write):
     with_pics = len({n["id"] for n, _ in rows})
     body = """
 <p class="eyebrow">%s</p><h1>%s</h1>
-<p class="lede">%d pictures on %d of %d records. Every one is CC0, public domain, CC BY, CC BY-SA
-or FAL, and carries its photographer and its licence here and in a sidecar file beside the image.</p>
+<p class="lede">%d pictures on %d of %d records. Free to reuse, every one &mdash; CC0, public domain,
+CC BY, CC BY-SA or FAL &mdash; and each carries the photographer and the terms, here and in a file
+beside the image. Take them.</p>
 <p class="src">%s</p>
 <div class="shots">%s</div>
 %s
@@ -1026,6 +1040,13 @@ Spanish or French. That makes the spelling look harder than the sound is. Six le
 <p class="lede">Enough to come in, be fed, raise a glass and admit you have run out of Basque.</p>
 %s
 <hr>
+<p class="eyebrow">Basquisms</p>
+<h2 style="margin-top:.2rem">Words English has not got</h2>
+<p class="lede">Nine of them, and not one is a food word by accident.</p>
+<div class="bqs">%s</div>
+<h2>And things they say</h2>
+<div class="bqs">%s</div>
+<hr>
 <h2>Glossary</h2>
 <p>Every word with a record of its own on this site.</p>
 <div class="tbl-scroll"><table>
@@ -1035,7 +1056,85 @@ Spanish or French. That makes the spelling look harder than the sound is. Six le
 for an English ear, and the phrases were assembled by this project rather than by a speaker. Corrections
 are welcome and belong in <code>data/vocab/phrases.json</code> and <code>pronounce.json</code>, where the
 English sits beside the Basque for exactly that reason.</div>
-""" % (rows, rules, "".join(blocks), gloss)
+""" % (rows, rules, "".join(blocks),
+       "".join(basquism_block(w) for w in _basquisms()["words"]),
+       "".join(basquism_block(x) for x in _basquisms()["sayings"]),
+       gloss)
     write("/say/", shell("Say it out loud — Basque Tables", body,
                          "A pronunciation key for Euskara, twenty-eight phrases for a Basque dining room, "
                          "and a glossary of every word on this site.", "/say/"))
+
+
+# ---------------------------------------------------------------- basquisms
+def _basquisms():
+    return C.vocab("basquisms")
+
+
+def basquism_for(n):
+    """A word English has no room for, or a saying, dealt from the record's own id."""
+    b = _basquisms()
+    pool = b["words"] + b["sayings"]
+    h = sum(ord(c) * (i + 7) for i, c in enumerate(n["id"] + n["type"]))
+    return pool[h % len(pool)]
+
+
+def basquism_block(item, tone="word"):
+    if not item:
+        return ""
+    if "lit" in item and "wink" in item:
+        wink = '<p class="bq-wink">%s</p>' % C.esc(item["wink"]) if item.get("wink") else ""
+        return ('<aside class="bq"><p class="eyebrow">A word we have not got</p>'
+                '<p class="bq-eu" lang="eu">%s</p><p class="bq-say">%s</p>'
+                '<p class="bq-lit">literally: %s</p><p class="bq-en">%s</p>%s</aside>'
+                % (C.esc(item["eu"]), C.esc(item["say"]), C.esc(item["lit"]),
+                   C.esc(item["en"]), wink))
+    where = '<p class="bq-wink">%s</p>' % C.esc(item["where"]) if item.get("where") else ""
+    return ('<aside class="bq bq-saying"><p class="eyebrow">They say</p>'
+            '<p class="bq-eu" lang="eu">%s</p><p class="bq-say">%s</p>'
+            '<p class="bq-lit">word for word: %s</p><p class="bq-en">%s</p>%s</aside>'
+            % (C.esc(item["eu"]), C.esc(item["say"]), C.esc(item["lit"]),
+               C.esc(item["en"]), where))
+
+
+def basquism_named(eu):
+    for item in _basquisms()["words"] + _basquisms()["sayings"]:
+        if item["eu"].lower().startswith(eu.lower()):
+            return item
+    return None
+
+
+# ---------------------------------------------------------------- picture wall
+def picture_pool(nodes, limit=None, exclude=None):
+    """Every picture on the site, in a stable shuffled order so the wall does not
+    open on nine photographs of the same bean."""
+    rows = []
+    for n in sorted(nodes.values(), key=lambda x: x["id"]):
+        if exclude and n["id"] == exclude:
+            continue
+        for im in (n.get("images") or []):
+            rows.append((n, im))
+    rows.sort(key=lambda r: hashlib_h(r[0]["id"] + r[1]["file"]))
+    # one picture per record first, so the front is varied before it is deep
+    first, rest, seen = [], [], set()
+    for n, im in rows:
+        (first if n["id"] not in seen else rest).append((n, im))
+        seen.add(n["id"])
+    out = first + rest
+    return out[:limit] if limit else out
+
+
+def hashlib_h(s):
+    import hashlib
+    return int(hashlib.sha1(s.encode()).hexdigest()[:8], 16)
+
+
+def wall(rows, cls="wall"):
+    out = []
+    for i, (n, im) in enumerate(rows):
+        out.append('<a class="tile-link" href="%s" style="--i:%d">'
+                   '<img src="%s" alt="%s" loading="lazy" decoding="async">'
+                   '<span class="tile-cap"><b>%s</b><em>%s</em></span></a>'
+                   % (url(n), i % 12, C.esc(img_src(im)),
+                      C.esc(im.get("alt") or n["names"]["name"]),
+                      C.esc(n["names"]["name"]), C.esc(type_word(n["type"]))))
+    return '<div class="%s">%s</div>' % (cls, "".join(out))
