@@ -16,7 +16,7 @@ while true; do
   case "$n" in
     1) python3 tools/validate.py; printf '\n  Press return '; read x ;;
     2) python3 tools/site.py; printf '\n  Press return '; read x ;;
-    3) (sleep 2; open http://localhost:8802/) & python3 tools/serve.py ;;
+    3) (sleep 2; open http://localhost:8802/basque-tables/) & python3 tools/serve.py ;;
     4) python3 tests/test_all.py; printf '\n  Press return '; read x ;;
     5) ./publish.sh; printf '\n  Press return '; read x ;;
     6) less README.txt ;;

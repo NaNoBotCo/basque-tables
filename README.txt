@@ -10,6 +10,14 @@ WHAT IT IS
   their own table or at a long table with strangers, what does it cost, which nights is it
   open, and does the bar make a Picon Punch. Every one of those is a field with a source.
 
+THE BASE PATH — read this before changing a link
+  The site is published at a PATH (/basque-tables/), not a host root, because a GitHub
+  project page is served that way. So a link written "/places/" would land on the user
+  site and 404. common.BASE is taken from SITE_URL's own path and stamped onto every
+  internal href and src when the page is written; serve.py mounts the build under the
+  same base so local matches live; and a test refuses to publish if anything is missing
+  it. Buy a domain and BASE becomes "" and none of this does anything.
+
 THE RULE THAT SHAPES EVERYTHING
   Three states, never two. A day in hours.open is open. A day in hours.closed is closed. A
   day in neither is NOT PUBLISHED, and it is excluded from every filter rather than guessed
@@ -22,7 +30,7 @@ RUN IT
   python3 tools/validate.py     refuse anything the site should not publish
   python3 tools/build.py        counts, kin backlinks, price and hours tables, search docs
   python3 tools/site.py         write build/ — English at /, Euskara at /eu/
-  python3 tools/serve.py        look at it on http://localhost:8802/
+  python3 tools/serve.py        look at it on http://localhost:8802/basque-tables/
   python3 tests/test_all.py     run before any publish
   ./publish.sh                  validate, build, site, copy into docs/ for GitHub Pages
 
