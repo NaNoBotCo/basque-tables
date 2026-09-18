@@ -4,7 +4,8 @@ import os
 
 import fleet
 
-FLEET_ROW = fleet.row_html("basque-tables", cls="fleet").replace("%", "%%")
+FLEET_ROW = (fleet.row_html("basque-tables", cls="fleet")
+             + fleet.support_html()).replace("%", "%%")
 import re
 import shutil
 import sys
@@ -64,7 +65,7 @@ nav.top-nav a{text-decoration:none;color:var(--ink2);padding:0 .15rem;border-rad
 nav.top-nav a:hover{color:var(--ink);background:linear-gradient(transparent 72%,var(--rule) 72%)}
 main{padding:2rem 0 4rem}
 footer.foot{border-top:1px solid var(--rule);color:var(--ink3);font:0.92rem/1.7 var(--ui);padding:2rem 0 4rem}
-.fleet{margin:.6rem 0 0;line-height:1.9}.fleet a{margin-right:.55rem;white-space:nowrap}
+.support{margin:.45rem 0 0}.support a{margin-right:.5rem}.fleet{margin:.6rem 0 0;line-height:1.9}.fleet a{margin-right:.55rem;white-space:nowrap}
 footer.foot a{color:var(--ink2)}
 
 /* the 1997 directory front */
