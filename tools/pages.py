@@ -1,5 +1,7 @@
 """Every page the site publishes, in English at / and in Euskara at /eu/."""
 import json
+
+import fleet
 import os
 import sys
 
@@ -878,6 +880,8 @@ def machine(nodes, d, shell, write):
 
     with open(os.path.join(C.BUILD, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % C.SITE_URL.rstrip("/"))
+
+    fleet.decorate(C.BUILD, "basque-tables")
 
     os.makedirs(os.path.join(C.BUILD, "api"), exist_ok=True)
     for name in ("places", "counts", "coverage", "prices", "search", "seating", "days"):

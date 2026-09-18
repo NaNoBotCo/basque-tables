@@ -1,6 +1,10 @@
 """Render the site. Standard library only; no build step, no webfont, no CDN."""
 import json
 import os
+
+import fleet
+
+FLEET_ROW = fleet.row_html("basque-tables", cls="fleet").replace("%", "%%")
 import re
 import shutil
 import sys
@@ -60,6 +64,7 @@ nav.top-nav a{text-decoration:none;color:var(--ink2);padding:0 .15rem;border-rad
 nav.top-nav a:hover{color:var(--ink);background:linear-gradient(transparent 72%,var(--rule) 72%)}
 main{padding:2rem 0 4rem}
 footer.foot{border-top:1px solid var(--rule);color:var(--ink3);font:0.92rem/1.7 var(--ui);padding:2rem 0 4rem}
+.fleet{margin:.6rem 0 0;line-height:1.9}.fleet a{margin-right:.55rem;white-space:nowrap}
 footer.foot a{color:var(--ink2)}
 
 /* the 1997 directory front */
@@ -345,12 +350,13 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
  a field with no source reads <b>unknown</b> and stays out of the filters.</p>
  <p>Built by %s · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
  <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
+ %s
 </div></footer>
 <script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6%% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var t=function(){h.classList.toggle('stuck',window.scrollY>8);};addEventListener('scroll',t,{passive:true});t();})();(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
 </body></html>""" % (head_lang, C.esc(title), C.esc(desc or title), full, C.esc(title), C.esc(desc or title),
                       full, card, C.esc(title), card, C.SITE_NAME,
                       C.SITE_URL.rstrip("/") + path, C.SITE_URL.rstrip("/") + "/eu" + path,
-                      CSS, ld, extra_head, nav, body, C.BYLINE,
+                      CSS, ld, extra_head, nav, body, C.BYLINE, FLEET_ROW,
                       json.dumps(C.BASE))
 
 
