@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it as below."
+title: "Basque Tables"
+abstract: "A sourced directory of Basque dining rooms in California, Nevada and Idaho — seating, prices, published days and the Picon Punch, every field naming where it came from."
+type: dataset
+authors:
+  - name: "NaN"
+    website: "https://github.com/NaNoBotCo"
+repository-code: "https://github.com/NaNoBotCo/basque-tables"
+url: "https://nanobotco.github.io/basque-tables/"
+license:
+  - CC-BY-SA-4.0
+  - MIT
+date-released: "2026-09-18"
