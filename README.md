@@ -56,13 +56,13 @@ python3 tests/test_all.py     run before any publish
 
 ## Licence
 
-Layered on purpose — see [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt). Records CC BY-SA 4.0; **every picture carries
+Layered on purpose — see [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt). Records CC BY 4.0; **every picture carries
 its own licence in a sidecar `.json` beside it** (CC0, public domain, CC BY, CC BY-SA or
 FAL, and the credit prints on every page); code MIT.
 
-**Commercial licence.** If share-alike doesn't fit your use — a corpus, a
-product, a model — a commercial licence is available.
-[Open an issue](https://github.com/NaNoBotCo/basque-tables/issues) and say what you need.
+**Using it.** Attribution is the whole of the condition — copy it, adapt it,
+sell it, index it, train on it, and say where it came from.
+[Open an issue](https://github.com/NaNoBotCo/basque-tables/issues) if something is missing.
 
 ---
 
