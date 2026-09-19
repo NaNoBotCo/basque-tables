@@ -266,6 +266,15 @@ input[type=search],select{font:1rem var(--ui);padding:.55rem .7rem;border:1px so
 @keyframes rise{from{opacity:0;transform:translateY(12px) scale(.995)}to{opacity:1;transform:none}}
 header.top{transition:box-shadow .3s ease}
 header.top.stuck{box-shadow:0 10px 30px -22px rgba(0,0,0,.8)}
+/* ---- the bar gets out of the way on a phone (added 2026-09-19)
+   nav.top-nav wraps to three rows at 375px, and sticky held them there for
+   the whole page. Scroll down and the bar slides away; scroll up — any
+   amount — and it comes back. */
+@media (max-width:52rem){
+ header.top{transition:transform .2s ease}
+ body.nav-away header.top{transform:translateY(-100%)}
+}
+@media (prefers-reduced-motion:reduce){header.top{transition:none}}
 nav.top-nav a{position:relative}
 nav.top-nav a::after{content:"";position:absolute;left:.15rem;right:.15rem;bottom:-2px;height:2px;
  background:var(--accent);transform:scaleX(0);transform-origin:left;
@@ -353,7 +362,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
  <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
  %s
 </div></footer>
-<script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6%% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var t=function(){h.classList.toggle('stuck',window.scrollY>8);};addEventListener('scroll',t,{passive:true});t();})();(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
+<script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6%% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var b=document.body,last=window.pageYOffset,hh=h.offsetHeight;addEventListener('resize',function(){hh=h.offsetHeight},{passive:true});var t=function(){var y=window.pageYOffset,d=y-last;h.classList.toggle('stuck',y>8);if(y<=hh||d<-4){b.classList.remove('nav-away')}else if(d>4){b.classList.add('nav-away')}if(Math.abs(d)>1)last=y;};addEventListener('scroll',t,{passive:true});addEventListener('focusin',function(e){if(h.contains(e.target))b.classList.remove('nav-away')});t();})();(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>
 </body></html>""" % (head_lang, C.esc(title), C.esc(desc or title), full, C.esc(title), C.esc(desc or title),
                       full, card, C.esc(title), card, C.SITE_NAME,
                       C.SITE_URL.rstrip("/") + path, C.SITE_URL.rstrip("/") + "/eu" + path,
