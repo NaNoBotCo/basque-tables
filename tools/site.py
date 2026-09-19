@@ -5,7 +5,8 @@ import os
 import fleet
 
 FLEET_ROW = (fleet.row_html("basque-tables", cls="fleet")
-             + fleet.support_html()).replace("%", "%%")
+             + fleet.support_html()
+             + fleet.maker_html()).replace("%", "%%")
 import re
 import shutil
 import sys
