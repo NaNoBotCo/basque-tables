@@ -334,7 +334,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
     card = "%s/cards/%s.jpg" % (C.SITE_URL.rstrip("/"), card_for(path))
     head_lang = lang
     return """<!doctype html>
-<html lang="%s"><head>
+<html lang="%s" translate="no" class="notranslate"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>%s</title>
@@ -349,6 +349,9 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
 <meta property="og:site_name" content="%s">
 <link rel="alternate" hreflang="en" href="%s"><link rel="alternate" hreflang="eu" href="%s">
 <style>%s</style>%s%s
+<meta name="google" content="notranslate">
+<meta name="robots" content="notranslate">
+<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
 </head><body>
 <a class="skip" href="#main">Skip to the page</a>
 <header class="top"><div class="wrap">
