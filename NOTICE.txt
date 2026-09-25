@@ -21,6 +21,13 @@ PICTURES — data/images/ and docs/images/
 TOWN COORDINATES — data/geo/towns.json
   Town centroids, compiled for this project. CC BY 4.0 with the records.
 
+BASEMAP — data/geo/basemap.json
+  Natural Earth 1:10m (land, coastline, lakes, rivers, roads, boundaries, populated
+  places), clipped and simplified. Public domain. https://www.naturalearthdata.com/
+
+ROAD MILES — data/geo/roads.json
+  OSRM routing on OpenStreetMap data. © OpenStreetMap contributors, ODbL 1.0.
+
 CODE — tools/, tests/, publish.sh, the launcher
   MIT.
 

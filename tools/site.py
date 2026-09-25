@@ -13,6 +13,7 @@ import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 import common as C
+import basemap
 import viz
 import pages
 
@@ -135,6 +136,8 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
  box-shadow:var(--shadow);display:block}
 .hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
 .chart.plate{min-width:0}
+.chart .halo{paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
+@media (max-width:560px){.chart .bm .val{font-size:22px}}
 .chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}
 .chart .big{font-family:var(--display);font-size:22px;fill:var(--ink)}
 .shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1.4rem;margin:1rem 0 2rem;
@@ -293,7 +296,7 @@ a:focus-visible,button:focus-visible,.tile-link:focus-visible{outline:2px solid 
  .js .reveal,.js .featured::before{opacity:1!important;transform:none!important}
 }
 @media print{header.top{position:static}.chip{display:none}}
-"""
+""" + basemap.CSS
 
 NAV = [("/", "front"), ("/two/", "two"), ("/places/", "rooms"),
        ("/drink/picon-punch/", "picon"), ("/pictures/", "pictures"), ("/say/", "say"), ("/words/", "words"),
@@ -363,7 +366,8 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
  <p>A directory of Basque dining rooms in California, Nevada and Idaho. Every field names the source it came from;
  a field with no source reads <b>unknown</b> and stays out of the filters.</p>
  <p>Built by %s · records CC BY 4.0 · <a href="/gaps/">what is missing</a> ·
- <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a></p>
+ <a href="/llms.txt">llms.txt</a> · <a href="/api/places.json">places.json</a> · <a href="/sitemap.xml">sitemap</a> ·
+ maps: <a href="https://www.naturalearthdata.com/">Natural Earth</a>, public domain · road miles: OSRM on OpenStreetMap data, ODbL</p>
  %s
 </div></footer>
 <script>(function(){var r=document.documentElement;if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var sel='.card,.kin-card,.tile-link,.bq,.say,.phrase,.featured,.fig,.dir section';var all=[].slice.call(document.querySelectorAll(sel));var vh=window.innerHeight||800;var els=all.filter(function(el){return el.getBoundingClientRect().top>vh*0.92;});if(!els.length)return;r.classList.add('js');els.forEach(function(el,i){el.classList.add('reveal');el.style.setProperty('--i',String(i%%8));});var show=function(el){el.classList.add('in');};if(!('IntersectionObserver' in window)){els.forEach(show);return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -6%% 0px',threshold:0.02});els.forEach(function(el){io.observe(el);});setTimeout(function(){els.forEach(show);},2500);})();(function(){var h=document.querySelector('header.top');if(!h)return;var b=document.body,last=window.pageYOffset,hh=h.offsetHeight;addEventListener('resize',function(){hh=h.offsetHeight},{passive:true});var t=function(){var y=window.pageYOffset,d=y-last;h.classList.toggle('stuck',y>8);if(y<=hh||d<-4){b.classList.remove('nav-away')}else if(d>4){b.classList.add('nav-away')}if(Math.abs(d)>1)last=y;};addEventListener('scroll',t,{passive:true});addEventListener('focusin',function(e){if(h.contains(e.target))b.classList.remove('nav-away')});t();})();(function(){var B=%s;document.addEventListener('keydown',function(e){if((e.key==='r'||e.key==='R')&&location.pathname!==B+'/wander/'&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)){location.href=B+'/wander/';}});})();</script>

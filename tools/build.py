@@ -118,19 +118,27 @@ def build():
         "dinner_for_two_high": max((r["dinner_high"] for r in priced), default=None),
     }
 
-    # --- how far apart the states are, computed not asserted
-    west = [r for r in rows if r["state"] in ("CA", "NV") and r["lat"]]
-    oh = [r for r in rows if r["state"] == "OH" and r["lat"]]
-    gap = None
-    if west and oh:
-        gap = min(haversine((w["lat"], w["lon"]), (o["lat"], o["lon"])) for w in west for o in oh)
-    spread = 0
-    pts = [(r["lat"], r["lon"]) for r in rows if r["lat"]]
-    for i, a in enumerate(pts):
-        for b in pts[i + 1:]:
-            spread = max(spread, haversine(a, b))
-    out["distance"] = {"nearest_west_to_ohio_mi": round(gap) if gap else None,
-                       "widest_pair_mi": round(spread)}
+    # --- how far apart, from town centroids: straight-line, and by road where roads.py has it
+    import roads
+    towns_at = {}
+    for r in rows:
+        if r["lat"]:
+            towns_at.setdefault(r["town"], r)
+    tl = list(towns_at.values())
+    pairs = [(haversine((a["lat"], a["lon"]), (b["lat"], b["lon"])), a, b)
+             for i, a in enumerate(tl) for b in tl[i + 1:]]
+
+    def pair(p):
+        if not p:
+            return None
+        crow, a, b = p
+        road = roads.road_mi((a["lat"], a["lon"]), (b["lat"], b["lon"]))
+        return {"from": a["town"], "to": b["town"], "straight_mi": round(crow),
+                "road_mi": None if road is None else round(road)}
+    out["distance"] = {
+        "closest_cross_state": pair(min((p for p in pairs if p[1]["state"] != p[2]["state"]),
+                                        key=lambda p: p[0], default=None)),
+        "widest_pair": pair(max(pairs, key=lambda p: p[0], default=None))}
 
     # --- founding years
     years = sorted(r["founded"] for r in rows if r["founded"])
@@ -187,7 +195,10 @@ def main():
           " · ".join("%s %d" % (k, v) for k, v in c["by_state"].items())))
     print("seating: " + " · ".join("%s %d" % (k, v) for k, v in derived["seating"].items() if v))
     print("picon: " + " · ".join("%s %d" % (k, v) for k, v in derived["picon"].items() if v))
-    print("nearest California room to an Idaho one: %s mi" % derived["distance"]["nearest_west_to_ohio_mi"])
+    for k, v in derived["distance"].items():
+        if v:
+            print("%s: %s to %s, %s mi straight-line, %s mi by road"
+                  % (k.replace("_", " "), v["from"], v["to"], v["straight_mi"], v["road_mi"]))
     return 0
 
 

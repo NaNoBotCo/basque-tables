@@ -86,18 +86,17 @@ def drawn_hero(n, d):
     """Every record opens on a picture. With no photograph, one is drawn from the
     record's own fields — a room gets its county and its neighbours measured, a word
     gets its root, a person gets what they opened."""
-    import build as B
     t = n["type"]
     names = n["names"]
     text = n.get("text") or {}
     if t == "place":
         row = next((r for r in d["places"] if r["id"] == n["id"]), None)
         if row:
-            svg = viz.locator_svg(row, d["places"], B.haversine)
+            svg = viz.locator_svg(row, d["places"])
             if svg:
                 return ('<figure class="hero drawn">%s<figcaption>%s</figcaption></figure>'
-                        % (svg, C.esc("Where it stands, and the nearest room to it. "
-                                      "Town centroids, not doorways.")))
+                        % (svg, C.esc("Where it stands, and the nearest room in another town. "
+                                      "Town centroids, not doorways. Basemap: Natural Earth, public domain.")))
     eyebrow = type_word(t)
     sub, lines = None, []
     et = n.get("etymology") or {}
@@ -694,6 +693,17 @@ def type_index(kind, nodes, d, shell, write):
 
 
 # ---------------------------------------------------------------- numbers
+def pair_text(p):
+    """'<b>Reno</b> to <b>Alturas</b>, 170 miles by road (147 in a straight line)'."""
+    if not p:
+        return "not computable from these records"
+    a, b = (C.esc((t or "").split(",")[0]) for t in (p["from"], p["to"]))
+    if p.get("road_mi") is not None:
+        return "<b>%s</b> to <b>%s</b>, %s miles by road (%s in a straight line)" % (
+            a, b, "{:,}".format(p["road_mi"]), "{:,}".format(p["straight_mi"]))
+    return "<b>%s</b> to <b>%s</b>, %s miles in a straight line" % (a, b, "{:,}".format(p["straight_mi"]))
+
+
 def numbers_page(nodes, d, shell, write):
     p = d["prices"]
     rows = d["places"]
@@ -706,7 +716,7 @@ the page says so instead of estimating it.</p>
  <div><span>Records</span><b class="big">%d</b></div>
  <div><span>Rooms</span><b class="big">%d</b></div>
  <div><span>Oldest door</span><b class="big">%s</b></div>
- <div><span>Widest pair, miles</span><b class="big">%s</b></div>
+ <div><span>Widest pair, straight-line miles</span><b class="big">%s</b></div>
 </div>
 %s
 <figcaption>One room publishes a dinner price we could read — %d of %d. The rest print no prices
@@ -719,12 +729,11 @@ spend <b>%s</b> before the Picon, and the Picon at that bar is <b>$8</b>.</p>
 %s
 %s
 <h2>How far apart</h2>
-<p>Closest pair of towns holding rooms in different states: <b>%s miles</b>. Widest pair anywhere
-in the set: <b>%s miles</b> — Chino to Boise. Both computed from town centroids, which is why they
-are given to the mile and not the yard. Three states, one migration, and a day's drive between
-most of it.</p>
+<p>Closest pair of towns holding rooms in different states: %s. Widest pair anywhere
+in the set: %s. Both measured between town centroids, which is why they are given to the
+mile and not the yard. Three states, one migration, and a day's drive between most of it.</p>
 """ % (d["counts"]["records"], d["counts"]["by_type"]["place"],
-       yrs["oldest"] or "—", "{:,}".format(d["distance"]["widest_pair_mi"] or 0),
+       yrs["oldest"] or "—", "{:,}".format((d["distance"]["widest_pair"] or {}).get("straight_mi") or 0),
        viz.price_ladder(p["items"]), p["rooms_with_a_price"], len(rows),
        "%s and %s" % (C.money(p["low"]), C.money(p["high"])),
        viz.year_timeline(rows), yrs["rooms_with_a_year"], len(rows),
@@ -734,8 +743,8 @@ most of it.</p>
                             "bar": "a counter", "unknown": "not published"}),
        viz.week_strip(d["days"]),
        say_block(phrase_named("Zenbat da?")),
-       "{:,}".format(d["distance"]["nearest_west_to_ohio_mi"] or 0),
-       "{:,}".format(d["distance"]["widest_pair_mi"] or 0))
+       pair_text(d["distance"]["closest_cross_state"]),
+       pair_text(d["distance"]["widest_pair"]))
     write("/numbers/", shell("Numbers — Basque Tables", body,
                              "Prices, seating, published days and founding years, counted from the records.",
                              "/numbers/"))

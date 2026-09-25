@@ -64,6 +64,25 @@ def check_schema(node, schema, path="", errs=None, root=None):
     return errs
 
 
+def map_gate():
+    """Each room's coordinate against its state's box, and each map's pins against its
+    own frame."""
+    import basemap
+    import build as B
+    import viz
+    rows = B.build()[1]["places"]
+    pts = [("place/" + r["id"], r["lat"], r["lon"], r["state"]) for r in rows if r.get("lat")]
+    frames = []
+    fr = viz.scatter_frame(rows)
+    if fr:
+        frames.append(("home map", fr, [(r["lat"], r["lon"]) for r in rows if r.get("lat")]))
+    for r in rows:
+        fr, _, pins = viz.locator_layout(r, rows)
+        if fr:
+            frames.append(("place/" + r["id"], fr, [(la, lo) for *_, la, lo in pins]))
+    return basemap.gate(pts, frames)
+
+
 DRIVEN_ON = ["seating", "picon", "prices", "hours", "status", "address"]
 SOFT_TIERS = {"tradition", "inference"}
 
@@ -139,6 +158,7 @@ def main():
             if not n.get("address", {}).get("state"):
                 errs.append("%s: a room needs a state" % nid)
 
+    errs += map_gate()
     print("%d records" % len(nodes))
     for w in warns:
         print("  warn  %s" % w)

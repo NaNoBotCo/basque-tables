@@ -10,6 +10,7 @@ HOST=""
 export SITE_URL="$HOST"
 echo "publishing for $SITE_URL"
 python3 tools/validate.py
+python3 tools/roads.py      # road miles the cache lacks; warns and goes on offline
 python3 tools/site.py
 python3 tools/cards.py
 python3 tests/test_all.py
