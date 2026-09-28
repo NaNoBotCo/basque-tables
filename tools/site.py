@@ -90,7 +90,8 @@ footer.foot a{color:var(--ink2)}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.1rem;margin:1.2rem 0;font-size:1rem}
 .facts dt{font:600 .74rem/1.9 var(--sign);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
  white-space:nowrap}
-.facts dd{margin:0}
+.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+@media (max-width:560px){.facts{grid-template-columns:fit-content(40%) minmax(0,1fr)}.facts dt{white-space:normal}}
 .tier{font:600 .68rem/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
  border:1px solid var(--rule);border-radius:999px;padding:.18rem .42rem;margin-left:.4rem;white-space:nowrap}
 .tier[data-t="cited"]{color:var(--accent2);border-color:currentColor}
@@ -135,7 +136,7 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
 .hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
  box-shadow:var(--shadow);display:block}
 .hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
-.chart.plate{min-width:0}
+.chart.plate,.chart.map{min-width:0}
 .chart .halo{paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
 @media (max-width:560px){.chart .bm .val{font-size:22px}}
 .chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}

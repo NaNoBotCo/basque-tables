@@ -86,7 +86,8 @@ footer.foot a{color:var(--ink2)}
 .facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.1rem;margin:1.2rem 0;font-size:1rem}
 .facts dt{font:600 .74rem/1.9 var(--sign);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
  white-space:nowrap}
-.facts dd{margin:0}
+.facts dd{margin:0;min-width:0;overflow-wrap:anywhere}
+@media (max-width:560px){.facts{grid-template-columns:fit-content(40%) minmax(0,1fr)}.facts dt{white-space:normal}}
 .tier{font:600 .68rem/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);
  border:1px solid var(--rule);border-radius:999px;padding:.18rem .42rem;margin-left:.4rem;white-space:nowrap}
 .tier[data-t="cited"]{color:var(--accent2);border-color:currentColor}
@@ -131,7 +132,7 @@ figcaption{font:0.86rem/1.6 var(--ui);color:var(--ink3);margin-top:.5rem;max-wid
 .hero img{width:100%;height:auto;max-height:26rem;object-fit:cover;border-radius:14px;
  box-shadow:var(--shadow);display:block}
 .hero.drawn svg{width:100%;height:auto;min-width:0;display:block}
-.chart.plate{min-width:0}
+.chart.plate,.chart.map{min-width:0}
 .chart .halo{paint-order:stroke;stroke:var(--paper);stroke-width:3px;stroke-linejoin:round}
 @media (max-width:560px){.chart .bm .val{font-size:22px}}
 .chart .plate-title{font-family:var(--display);fill:var(--ink);letter-spacing:-.01em}
@@ -327,7 +328,7 @@ seats everybody at one table. Nine still do. Say what you are after and the reco
 <div class="cols" id="two-results"></div>
 <hr>
 <h2>What the chips can and cannot do</h2>
-<svg viewBox="0 0 720 128" role="img" aria-label="How the houses seat two people" class="chart"><text x="0.0" y="18.0" class="ttl" text-anchor="start">How the houses seat two people</text><rect x="1.0" y="30" width="271.1" height="30" rx="4" fill="var(--c1)"><title>your own table: 11</title></rect><rect x="274.1" y="30" width="47.7" height="30" rx="4" fill="var(--c2)"><title>both: 2</title></rect><rect x="323.8" y="30" width="221.4" height="30" rx="4" fill="var(--c3)"><title>a long table: 9</title></rect><rect x="547.2" y="30" width="122.1" height="30" rx="4" fill="var(--c4)"><title>a counter: 5</title></rect><rect x="671.3" y="30" width="47.7" height="30" rx="4" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="5 4"><title>not published: 2</title></rect><rect x="0" y="86" width="12" height="12" rx="3" fill="var(--c1)"/><text x="18.0" y="97.0" class="lab" text-anchor="start">your own table 11</text><rect x="168" y="86" width="12" height="12" rx="3" fill="var(--c2)"/><text x="186.8" y="97.0" class="lab" text-anchor="start">both 2</text><rect x="245" y="86" width="12" height="12" rx="3" fill="var(--c3)"/><text x="263.2" y="97.0" class="lab" text-anchor="start">a long table 9</text><rect x="388" y="86" width="12" height="12" rx="3" fill="var(--c4)"/><text x="406.8" y="97.0" class="lab" text-anchor="start">a counter 5</text><rect x="507" y="86" width="12" height="12" rx="3" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="4 3"/><text x="525.2" y="97.0" class="lab" text-anchor="start">not published 2</text></svg>
+<div class="fig-scroll"><svg viewBox="0 0 720 128" role="img" aria-label="How the houses seat two people" class="chart"><text x="0.0" y="18.0" class="ttl" text-anchor="start">How the houses seat two people</text><rect x="1.0" y="30" width="271.1" height="30" rx="4" fill="var(--c1)"><title>your own table: 11</title></rect><rect x="274.1" y="30" width="47.7" height="30" rx="4" fill="var(--c2)"><title>both: 2</title></rect><rect x="323.8" y="30" width="221.4" height="30" rx="4" fill="var(--c3)"><title>a long table: 9</title></rect><rect x="547.2" y="30" width="122.1" height="30" rx="4" fill="var(--c4)"><title>a counter: 5</title></rect><rect x="671.3" y="30" width="47.7" height="30" rx="4" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="5 4"><title>not published: 2</title></rect><rect x="0" y="86" width="12" height="12" rx="3" fill="var(--c1)"/><text x="18.0" y="97.0" class="lab" text-anchor="start">your own table 11</text><rect x="168" y="86" width="12" height="12" rx="3" fill="var(--c2)"/><text x="186.8" y="97.0" class="lab" text-anchor="start">both 2</text><rect x="245" y="86" width="12" height="12" rx="3" fill="var(--c3)"/><text x="263.2" y="97.0" class="lab" text-anchor="start">a long table 9</text><rect x="388" y="86" width="12" height="12" rx="3" fill="var(--c4)"/><text x="406.8" y="97.0" class="lab" text-anchor="start">a counter 5</text><rect x="507" y="86" width="12" height="12" rx="3" fill="none" stroke="var(--rule)" stroke-width="2" stroke-dasharray="4 3"/><text x="525.2" y="97.0" class="lab" text-anchor="start">not published 2</text></svg></div>
 <p class="note">2 of 29 rooms publish nothing about seating, so they answer neither
 <i>our own table</i> nor <i>sit us with strangers</i> and drop out of both. Closing that is
 ordinary work — a phone call each — and it is listed on <a href="/basque-tables/gaps/">Gaps</a>.</p>
