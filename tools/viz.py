@@ -29,6 +29,10 @@ def figure(svg, caption, label):
             '<figcaption>%s</figcaption></figure>' % (svg, caption)) if caption else svg
 
 
+def scroll(svg):
+    return '<div class="fig-scroll">%s</div>' % svg
+
+
 def price_ladder(items, width=720):
     """One bar per printed menu price. One series, so no legend — the title names it."""
     if not items:
@@ -49,7 +53,7 @@ def price_ladder(items, width=720):
         out.append(_t(pad_l + w + 8, y + 15, C.money(it["usd"]), "val"))
     out.append(_t(pad_l, h - 8, "source: the house's own menu", "cap"))
     out.append("</svg>")
-    return "".join(out)
+    return scroll("".join(out))
 
 
 def three_state_bar(counts, title, order, labels, width=720):
@@ -90,7 +94,7 @@ def three_state_bar(counts, title, order, labels, width=720):
         if lx > width - 150:
             lx, ly = 0, ly + 24
     out.append("</svg>")
-    return "".join(out)
+    return scroll("".join(out))
 
 
 def week_strip(days, width=720):
@@ -126,7 +130,7 @@ def week_strip(days, width=720):
                'stroke-width="2" stroke-dasharray="4 3"/>')
     out.append(_t(174, 203, "not published — kept out of every filter", "lab"))
     out.append("</svg>")
-    return "".join(out)
+    return scroll("".join(out))
 
 
 def year_timeline(rows, width=720):
@@ -164,7 +168,7 @@ def year_timeline(rows, width=720):
         out.append(_t(lx, ly + (-12 if up < 0 else 20), "%d %s" % (y, name), "lab", anchor))
         flip += 1
     out.append("</svg>")
-    return "".join(out)
+    return scroll("".join(out))
 
 
 STATE_FILL = {"CA": CAT[0], "NV": CAT[2], "ID": CAT[1]}
