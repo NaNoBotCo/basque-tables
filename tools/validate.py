@@ -161,13 +161,13 @@ def main():
     errs += map_gate()
     print("%d records" % len(nodes))
     for w in warns:
-        print("  warn  %s" % w)
+        print("  warn  %s" % w)  # stylecheck: allow — console output for the operator
     if errs:
         for e in errs:
             print("  ERROR %s" % e)
         print("%d errors" % len(errs))
         return 1
-    print("0 errors, %d warnings" % len(warns))
+    print("0 errors, %d warnings" % len(warns))  # stylecheck: allow — console output for the operator
     return 0
 
 
