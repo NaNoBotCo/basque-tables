@@ -34,7 +34,7 @@
      "eu": "Ongi etorri",
      "say": "ON-ghee eh-TOH-rri",
      "en": "Welcome",
-     "use": "What the house says to you, not the other way round. Worth knowing when you hear it."
+     "use": "What the house says to you, not the other way round."
     }
    ]
   },
@@ -94,7 +94,7 @@
      "eu": "Oso goxoa",
      "say": "OH-so go-SHO-ah",
      "en": "Very good indeed",
-     "use": "About food. The one compliment worth having ready."
+     "use": "About food."
     },
     {
      "eu": "Beste bat, mesedez",
@@ -130,7 +130,7 @@
      "eu": "Topa!",
      "say": "TOH-pah",
      "en": "Cheers!",
-     "use": "Glasses up. The one to have ready when the Picon lands."
+     "use": "Glasses up. Said when the Picon lands."
     },
     {
      "eu": "Osasuna!",
@@ -178,7 +178,7 @@
      "eu": "Berriz, mesedez",
      "say": "BEH-rrees meh-seh-DES",
      "en": "Again, please",
-     "use": "Ask twice. Nobody minds."
+     "use": "A second ask is welcome."
     }
    ]
   },

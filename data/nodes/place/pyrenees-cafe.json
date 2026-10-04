@@ -44,7 +44,7 @@
  "seating": {
   "kind": "shared",
   "reservations": "taken",
-  "note": "Long tables, dishes passed. Call ahead and the house will seat you.",
+  "note": "Long tables, dishes passed. Reservations by phone.",
   "tier": "harvested",
   "source": "pyrenees-site",
   "checked": "2026-09-16"
