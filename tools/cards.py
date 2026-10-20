@@ -212,7 +212,11 @@ def main():
             ("say", "Say it out loud", "A pronunciation key, a phrasebook and a glossary of Euskara."),
             ("pictures", "Pictures", "Freely licensed Basque pictures, each with its photographer and licence."),
             ("numbers", "Numbers", "Prices, seating, published days and founding years, counted."),
-            ("gaps", "Gaps", "What this directory does not know, counted field by field.")):
+            ("gaps", "Gaps", "What this directory does not know, counted field by field."),
+            ("words", "Words", "Euskara and the trade's own vocabulary"),
+            ("stories", "Stories", "longer pieces, sourced line by line"),
+            ("wander", "Wander", "A random record."),
+            ("index-eu", "Euskal Mahaiak", "A sourced directory of Basque dining rooms in California, Nevada and Idaho")):
         fake = {"id": slug, "type": "story", "names": {"name": title},
                 "text": {"short": short}, "kin": [], "images": []}
         card(fake, nodes, d, os.path.join(out, "page-%s.jpg" % slug))
