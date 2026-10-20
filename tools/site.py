@@ -313,12 +313,15 @@ INTERNAL = re.compile(r'(href=")(/(?!eu/)[^"]*)(")')
 
 STANDING = {"/": "page-index", "/two/": "page-two", "/places/": "page-places",
             "/say/": "page-say", "/pictures/": "page-pictures", "/numbers/": "page-numbers",
-            "/gaps/": "page-gaps"}
+            "/gaps/": "page-gaps", "/words/": "page-words", "/stories/": "page-stories",
+            "/wander/": "page-wander"}
 
 
 def card_for(path):
     """Which share card belongs to this page. Node pages have their own; the standing
     pages have one each; everything else falls back to the front card."""
+    if path == "/eu/":
+        return "page-index-eu"
     p = path[3:] if path.startswith("/eu") else path
     if p in STANDING:
         return STANDING[p]
