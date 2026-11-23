@@ -343,7 +343,7 @@ def shell(title, body, desc="", path="/", jsonld=None, extra_head=""):
     for block in (jsonld or []):
         ld += '<script type="application/ld+json">%s</script>' % json.dumps(block, ensure_ascii=False)
     full = C.SITE_URL.rstrip("/") + path
-    card = "%s/cards/%s.jpg" % (C.SITE_URL.rstrip("/"), card_for(path))
+    card = "%s/cards/%s.jpg" % (C.SITE_URL.rstrip("/"), card_for(pre + path))
     head_lang = lang
     return """<!doctype html>
 <html lang="%s" translate="no" class="notranslate"><head>
